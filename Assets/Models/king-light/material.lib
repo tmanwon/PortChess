@@ -1,0 +1,12 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2023 Aspose Pty Ltd.
+# File created: 04/10/2023 13:45:07
+
+newmtl LightWood
+	Ka 0.2 0.2 0.2
+	Kd 0.6478542685508728 0.48691183328628544 0.32406798005104064
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
