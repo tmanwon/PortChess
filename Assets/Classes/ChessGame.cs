@@ -73,6 +73,7 @@ public class ChessGame : MonoBehaviour
         lightPawns = new ArrayList();
         darkPawns = new ArrayList();
         isWhitesTurn = true;
+        matchHistory = new ArrayList();
 
         // Load SQLite DB File
         var formattedFilePath = string.Format("{0}/{1}", Application.persistentDataPath, "portchessdb.sqlite");
@@ -199,9 +200,11 @@ public class ChessGame : MonoBehaviour
 
     public void LoadMatchHistory()
     {
+        print("Master Project - Loading Match History");
         matchHistory.Clear();
         queryCommand = new SqliteCommand("SELECT * from matches;", databaseConnection);
         cursor = queryCommand.ExecuteReader();
+        print("Query Returned");
         // For every record...
         while (cursor.Read())
         {
@@ -215,6 +218,7 @@ public class ChessGame : MonoBehaviour
             buffer.Add(string.Format("{0}", cursor[4]));
             matchHistory.Add(buffer);
         }
+        print("Master Project - BALLS");
         ArrayList obj = (ArrayList) matchHistory[0];
         analysisContent.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "WIN";
         analysisContent.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().text = string.Format("{0}", obj[4]);
