@@ -11843,7 +11843,7 @@ IL_0021:
 		Assembly_t* L_10 = V_4;
 		NullCheck(L_10);
 		AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* L_11;
-		L_11 = VirtualFuncInvoker0< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* >::Invoke(21 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_10);
+		L_11 = VirtualFuncInvoker0< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* >::Invoke(23 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_10);
 		NullCheck(L_11);
 		String_t* L_12;
 		L_12 = AssemblyName_get_Name_m7899B9B3F289EEBAF62AEAB51D1CA91DA92C4E6A_inline(L_11, NULL);
@@ -11861,7 +11861,7 @@ IL_0021:
 		Assembly_t* L_15 = V_4;
 		NullCheck(L_15);
 		AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* L_16;
-		L_16 = VirtualFuncInvoker0< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* >::Invoke(21 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_15);
+		L_16 = VirtualFuncInvoker0< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* >::Invoke(23 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_15);
 		NullCheck(L_16);
 		String_t* L_17;
 		L_17 = AssemblyName_get_Name_m7899B9B3F289EEBAF62AEAB51D1CA91DA92C4E6A_inline(L_16, NULL);
@@ -11894,7 +11894,7 @@ IL_0066:
 		Assembly_t* L_20 = V_4;
 		NullCheck(L_20);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_21;
-		L_21 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(18 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_20);
+		L_21 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(19 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_20);
 		V_5 = L_21;
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_22 = V_5;
 		V_7 = L_22;
@@ -22830,11 +22830,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_3 = __this->___m_TargetTexture_8;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_5 = __this->___m_TargetTexture_8;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_5);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_7;
 		memset((&L_7), 0, sizeof(L_7));
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23((&L_7), (0.0f), (0.0f), ((float)L_4), ((float)L_6), /*hidden argument*/NULL);

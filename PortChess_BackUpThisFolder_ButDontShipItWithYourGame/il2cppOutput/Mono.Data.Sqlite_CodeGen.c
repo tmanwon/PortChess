@@ -642,311 +642,313 @@ extern void KeyQuery_Sync_mDC26353CACA8F5A31BB77E4DE114897524FE5BCC (void);
 extern void KeyQuery_Dispose_m3B917CD021934F6904B910A47131A30CE9688304 (void);
 // 0x00000157 System.Void Mono.Data.Sqlite.SqliteParameterCollection::.ctor(Mono.Data.Sqlite.SqliteCommand)
 extern void SqliteParameterCollection__ctor_mA5CA30301D7D7CAA39D7B60F667647C8D8F1DD5F (void);
-// 0x00000158 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::get_IsFixedSize()
+// 0x00000158 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::get_IsSynchronized()
+extern void SqliteParameterCollection_get_IsSynchronized_m70D67689E33B560092AC18E635B460E8943A795F (void);
+// 0x00000159 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::get_IsFixedSize()
 extern void SqliteParameterCollection_get_IsFixedSize_m13338BE24879824DA810D3E0EC428BC6690A46B8 (void);
-// 0x00000159 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::get_IsReadOnly()
+// 0x0000015A System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::get_IsReadOnly()
 extern void SqliteParameterCollection_get_IsReadOnly_mE2A5C8494B40EA6957B8A4F6B4346689FF42B917 (void);
-// 0x0000015A System.Object Mono.Data.Sqlite.SqliteParameterCollection::get_SyncRoot()
+// 0x0000015B System.Object Mono.Data.Sqlite.SqliteParameterCollection::get_SyncRoot()
 extern void SqliteParameterCollection_get_SyncRoot_m74B703D8AF9423FCB742E8AD3E0245410BBCBB4A (void);
-// 0x0000015B System.Collections.IEnumerator Mono.Data.Sqlite.SqliteParameterCollection::GetEnumerator()
+// 0x0000015C System.Collections.IEnumerator Mono.Data.Sqlite.SqliteParameterCollection::GetEnumerator()
 extern void SqliteParameterCollection_GetEnumerator_mB7FDC1AD31F6EDDC76404051EE6B6E58B3846D72 (void);
-// 0x0000015C System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::Add(Mono.Data.Sqlite.SqliteParameter)
+// 0x0000015D System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::Add(Mono.Data.Sqlite.SqliteParameter)
 extern void SqliteParameterCollection_Add_mE6915DDABE3BBF525AB7A2EB20789CFEDA5016E2 (void);
-// 0x0000015D System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::Add(System.Object)
+// 0x0000015E System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::Add(System.Object)
 extern void SqliteParameterCollection_Add_mD31740918679F3D83E9592D62698B60849670ECB (void);
-// 0x0000015E Mono.Data.Sqlite.SqliteParameter Mono.Data.Sqlite.SqliteParameterCollection::AddWithValue(System.String,System.Object)
+// 0x0000015F Mono.Data.Sqlite.SqliteParameter Mono.Data.Sqlite.SqliteParameterCollection::AddWithValue(System.String,System.Object)
 extern void SqliteParameterCollection_AddWithValue_m37B12C8D05C8FE5414C5ED3D37D2F65319A7D196 (void);
-// 0x0000015F System.Void Mono.Data.Sqlite.SqliteParameterCollection::Clear()
+// 0x00000160 System.Void Mono.Data.Sqlite.SqliteParameterCollection::Clear()
 extern void SqliteParameterCollection_Clear_m9DAF1E4A6FCF23269F13A61688D2E8F1C8980868 (void);
-// 0x00000160 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::Contains(System.Object)
+// 0x00000161 System.Boolean Mono.Data.Sqlite.SqliteParameterCollection::Contains(System.Object)
 extern void SqliteParameterCollection_Contains_m27D63905624509D2F981D7AB3FF819546C3936FF (void);
-// 0x00000161 System.Void Mono.Data.Sqlite.SqliteParameterCollection::CopyTo(System.Array,System.Int32)
+// 0x00000162 System.Void Mono.Data.Sqlite.SqliteParameterCollection::CopyTo(System.Array,System.Int32)
 extern void SqliteParameterCollection_CopyTo_mCB9B9DC8031D37497C0FD80757A471518C815358 (void);
-// 0x00000162 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::get_Count()
+// 0x00000163 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::get_Count()
 extern void SqliteParameterCollection_get_Count_mAA4C44ADE043B6D15EF356B4F223C3EA4D754AAA (void);
-// 0x00000163 Mono.Data.Sqlite.SqliteParameter Mono.Data.Sqlite.SqliteParameterCollection::get_Item(System.Int32)
+// 0x00000164 Mono.Data.Sqlite.SqliteParameter Mono.Data.Sqlite.SqliteParameterCollection::get_Item(System.Int32)
 extern void SqliteParameterCollection_get_Item_mFFE2972891BA3401665999BA12FA1833E8BEE795 (void);
-// 0x00000164 System.Data.Common.DbParameter Mono.Data.Sqlite.SqliteParameterCollection::GetParameter(System.Int32)
+// 0x00000165 System.Data.Common.DbParameter Mono.Data.Sqlite.SqliteParameterCollection::GetParameter(System.Int32)
 extern void SqliteParameterCollection_GetParameter_m618FEE4DF78B5EA8CFF0A9A67E2D6DFF78EE201E (void);
-// 0x00000165 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::IndexOf(System.String)
+// 0x00000166 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::IndexOf(System.String)
 extern void SqliteParameterCollection_IndexOf_mD024B7044E0C9973EC6289C3382BC356AE9E2866 (void);
-// 0x00000166 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::IndexOf(System.Object)
+// 0x00000167 System.Int32 Mono.Data.Sqlite.SqliteParameterCollection::IndexOf(System.Object)
 extern void SqliteParameterCollection_IndexOf_m64696F6D3AC4CC6F793BB47774E220599747E252 (void);
-// 0x00000167 System.Void Mono.Data.Sqlite.SqliteParameterCollection::Insert(System.Int32,System.Object)
+// 0x00000168 System.Void Mono.Data.Sqlite.SqliteParameterCollection::Insert(System.Int32,System.Object)
 extern void SqliteParameterCollection_Insert_mA684F281C0076194D693010E689B96570F6F3EEB (void);
-// 0x00000168 System.Void Mono.Data.Sqlite.SqliteParameterCollection::Remove(System.Object)
+// 0x00000169 System.Void Mono.Data.Sqlite.SqliteParameterCollection::Remove(System.Object)
 extern void SqliteParameterCollection_Remove_mD335A771606BFA8045F84B4478CE2FB0D3DD05BF (void);
-// 0x00000169 System.Void Mono.Data.Sqlite.SqliteParameterCollection::RemoveAt(System.Int32)
+// 0x0000016A System.Void Mono.Data.Sqlite.SqliteParameterCollection::RemoveAt(System.Int32)
 extern void SqliteParameterCollection_RemoveAt_m55464966C72E641BD05D4CCAB2712C83F9BE6551 (void);
-// 0x0000016A System.Void Mono.Data.Sqlite.SqliteParameterCollection::SetParameter(System.Int32,System.Data.Common.DbParameter)
+// 0x0000016B System.Void Mono.Data.Sqlite.SqliteParameterCollection::SetParameter(System.Int32,System.Data.Common.DbParameter)
 extern void SqliteParameterCollection_SetParameter_mF2D7F3F8926FBA899808517D8789C67CEFDB8B5A (void);
-// 0x0000016B System.Void Mono.Data.Sqlite.SqliteParameterCollection::Unbind()
+// 0x0000016C System.Void Mono.Data.Sqlite.SqliteParameterCollection::Unbind()
 extern void SqliteParameterCollection_Unbind_mFF73C8E133D5287156B1571161517A3BF120EA23 (void);
-// 0x0000016C System.Void Mono.Data.Sqlite.SqliteParameterCollection::MapParameters(Mono.Data.Sqlite.SqliteStatement)
+// 0x0000016D System.Void Mono.Data.Sqlite.SqliteParameterCollection::MapParameters(Mono.Data.Sqlite.SqliteStatement)
 extern void SqliteParameterCollection_MapParameters_m41FCD278F9549FBBBC26B8576F03B06FDA01B85E (void);
-// 0x0000016D System.Void Mono.Data.Sqlite.SqliteParameter::.ctor()
+// 0x0000016E System.Void Mono.Data.Sqlite.SqliteParameter::.ctor()
 extern void SqliteParameter__ctor_mC08BE662AFDFB480EBA4C8D3B80B5D12D8CF04BC (void);
-// 0x0000016E System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Object)
+// 0x0000016F System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Object)
 extern void SqliteParameter__ctor_mF91B41F76D3B4AA302E9AE73CCA0A958CC7B7AA2 (void);
-// 0x0000016F System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Data.DbType,System.Int32,System.String,System.Data.DataRowVersion)
+// 0x00000170 System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Data.DbType,System.Int32,System.String,System.Data.DataRowVersion)
 extern void SqliteParameter__ctor_m05E3983C77B23952EA964DDC16652EB7B27478CC (void);
-// 0x00000170 System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(Mono.Data.Sqlite.SqliteParameter)
+// 0x00000171 System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(Mono.Data.Sqlite.SqliteParameter)
 extern void SqliteParameter__ctor_m745C3B6D5DA280B490775788D4DFB7075D2FFA06 (void);
-// 0x00000171 System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)
+// 0x00000172 System.Void Mono.Data.Sqlite.SqliteParameter::.ctor(System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)
 extern void SqliteParameter__ctor_mC0CBB4B7E49693FEB2F263352A75F9AA9D5C0A1E (void);
-// 0x00000172 System.Boolean Mono.Data.Sqlite.SqliteParameter::get_IsNullable()
+// 0x00000173 System.Boolean Mono.Data.Sqlite.SqliteParameter::get_IsNullable()
 extern void SqliteParameter_get_IsNullable_mB7ADD7E68CFDAB5A67D8DD06FAFAF51432AD0F9F (void);
-// 0x00000173 System.Void Mono.Data.Sqlite.SqliteParameter::set_IsNullable(System.Boolean)
+// 0x00000174 System.Void Mono.Data.Sqlite.SqliteParameter::set_IsNullable(System.Boolean)
 extern void SqliteParameter_set_IsNullable_mD51B901B4D2D70FBF716A8E3BFE1AAE7763BE90F (void);
-// 0x00000174 System.Data.DbType Mono.Data.Sqlite.SqliteParameter::get_DbType()
+// 0x00000175 System.Data.DbType Mono.Data.Sqlite.SqliteParameter::get_DbType()
 extern void SqliteParameter_get_DbType_mF26376A5080C11784C3CE772A102612E0C3C0E8A (void);
-// 0x00000175 System.Void Mono.Data.Sqlite.SqliteParameter::set_DbType(System.Data.DbType)
+// 0x00000176 System.Void Mono.Data.Sqlite.SqliteParameter::set_DbType(System.Data.DbType)
 extern void SqliteParameter_set_DbType_mA5AC2B2E005D512633EE3867CCDC9234E0689567 (void);
-// 0x00000176 System.Data.ParameterDirection Mono.Data.Sqlite.SqliteParameter::get_Direction()
+// 0x00000177 System.Data.ParameterDirection Mono.Data.Sqlite.SqliteParameter::get_Direction()
 extern void SqliteParameter_get_Direction_m77BE16F84FDACB50353FDD621E4EE0CEC6749CD9 (void);
-// 0x00000177 System.Void Mono.Data.Sqlite.SqliteParameter::set_Direction(System.Data.ParameterDirection)
+// 0x00000178 System.Void Mono.Data.Sqlite.SqliteParameter::set_Direction(System.Data.ParameterDirection)
 extern void SqliteParameter_set_Direction_m0D4E338DA6A70038E99AA17A164120D0224B40EB (void);
-// 0x00000178 System.String Mono.Data.Sqlite.SqliteParameter::get_ParameterName()
+// 0x00000179 System.String Mono.Data.Sqlite.SqliteParameter::get_ParameterName()
 extern void SqliteParameter_get_ParameterName_m46ECE1039C2ED80F529743CC8590777DA150927B (void);
-// 0x00000179 System.Void Mono.Data.Sqlite.SqliteParameter::set_ParameterName(System.String)
+// 0x0000017A System.Void Mono.Data.Sqlite.SqliteParameter::set_ParameterName(System.String)
 extern void SqliteParameter_set_ParameterName_m5BD51D48813CB0745BAB5B41CD0B84BEB16825FD (void);
-// 0x0000017A System.Void Mono.Data.Sqlite.SqliteParameter::set_Size(System.Int32)
+// 0x0000017B System.Void Mono.Data.Sqlite.SqliteParameter::set_Size(System.Int32)
 extern void SqliteParameter_set_Size_mC518BCBCAD0F730EB49A00E2A642E4D949D5D290 (void);
-// 0x0000017B System.String Mono.Data.Sqlite.SqliteParameter::get_SourceColumn()
+// 0x0000017C System.String Mono.Data.Sqlite.SqliteParameter::get_SourceColumn()
 extern void SqliteParameter_get_SourceColumn_m675AB822C1693754E37FB5D832025F6561DC931D (void);
-// 0x0000017C System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceColumn(System.String)
+// 0x0000017D System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceColumn(System.String)
 extern void SqliteParameter_set_SourceColumn_mFE6C1BF105F6F65735AD46C94867ADF6FFF18ABA (void);
-// 0x0000017D System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceColumnNullMapping(System.Boolean)
+// 0x0000017E System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceColumnNullMapping(System.Boolean)
 extern void SqliteParameter_set_SourceColumnNullMapping_mC1B6BF85DEB24E3C96E840B4726182F29842FD6D (void);
-// 0x0000017E System.Data.DataRowVersion Mono.Data.Sqlite.SqliteParameter::get_SourceVersion()
+// 0x0000017F System.Data.DataRowVersion Mono.Data.Sqlite.SqliteParameter::get_SourceVersion()
 extern void SqliteParameter_get_SourceVersion_m0BA63D19EBA3515B13D1D186613FE99D54065A3D (void);
-// 0x0000017F System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceVersion(System.Data.DataRowVersion)
+// 0x00000180 System.Void Mono.Data.Sqlite.SqliteParameter::set_SourceVersion(System.Data.DataRowVersion)
 extern void SqliteParameter_set_SourceVersion_m3E0561EC7AFCD7E124C6E8E15C6476B1FED56878 (void);
-// 0x00000180 System.Object Mono.Data.Sqlite.SqliteParameter::get_Value()
+// 0x00000181 System.Object Mono.Data.Sqlite.SqliteParameter::get_Value()
 extern void SqliteParameter_get_Value_m791C1A362A8C497C4E2AEE7899B71E356063BFFA (void);
-// 0x00000181 System.Void Mono.Data.Sqlite.SqliteParameter::set_Value(System.Object)
+// 0x00000182 System.Void Mono.Data.Sqlite.SqliteParameter::set_Value(System.Object)
 extern void SqliteParameter_set_Value_mA3CC18A4E7FC7188E5E47FA9EC2AB732966D394E (void);
-// 0x00000182 System.Object Mono.Data.Sqlite.SqliteParameter::Clone()
+// 0x00000183 System.Object Mono.Data.Sqlite.SqliteParameter::Clone()
 extern void SqliteParameter_Clone_m3B4CBD13162F94D09CC9C089A9062129AA3A1E59 (void);
-// 0x00000183 System.Void Mono.Data.Sqlite.SqliteStatement::.ctor(Mono.Data.Sqlite.SQLiteBase,Mono.Data.Sqlite.SqliteStatementHandle,System.String,Mono.Data.Sqlite.SqliteStatement)
+// 0x00000184 System.Void Mono.Data.Sqlite.SqliteStatement::.ctor(Mono.Data.Sqlite.SQLiteBase,Mono.Data.Sqlite.SqliteStatementHandle,System.String,Mono.Data.Sqlite.SqliteStatement)
 extern void SqliteStatement__ctor_m4F9C106D5F9251CFC0D562E4AB61650E8C46030A (void);
-// 0x00000184 System.Boolean Mono.Data.Sqlite.SqliteStatement::MapParameter(System.String,Mono.Data.Sqlite.SqliteParameter)
+// 0x00000185 System.Boolean Mono.Data.Sqlite.SqliteStatement::MapParameter(System.String,Mono.Data.Sqlite.SqliteParameter)
 extern void SqliteStatement_MapParameter_m1CA754F6BEC29BB34B9A266A333E0B0F2FF8A84D (void);
-// 0x00000185 System.Void Mono.Data.Sqlite.SqliteStatement::Dispose()
+// 0x00000186 System.Void Mono.Data.Sqlite.SqliteStatement::Dispose()
 extern void SqliteStatement_Dispose_mF87F45C884E45C7EE8EE211FE401B425478D6BD2 (void);
-// 0x00000186 System.Void Mono.Data.Sqlite.SqliteStatement::BindParameters()
+// 0x00000187 System.Void Mono.Data.Sqlite.SqliteStatement::BindParameters()
 extern void SqliteStatement_BindParameters_m9063243A176C4A5DB8CAFA2A7F5AC2EFD549E505 (void);
-// 0x00000187 System.Void Mono.Data.Sqlite.SqliteStatement::BindParameter(System.Int32,Mono.Data.Sqlite.SqliteParameter)
+// 0x00000188 System.Void Mono.Data.Sqlite.SqliteStatement::BindParameter(System.Int32,Mono.Data.Sqlite.SqliteParameter)
 extern void SqliteStatement_BindParameter_mE6CFCD90E7884A0A58D374A485326F025BFCED3D (void);
-// 0x00000188 System.String[] Mono.Data.Sqlite.SqliteStatement::get_TypeDefinitions()
+// 0x00000189 System.String[] Mono.Data.Sqlite.SqliteStatement::get_TypeDefinitions()
 extern void SqliteStatement_get_TypeDefinitions_mA99FCF1526AF20A5136B6E600075D68A7439C1D1 (void);
-// 0x00000189 System.Void Mono.Data.Sqlite.SqliteStatement::SetTypes(System.String)
+// 0x0000018A System.Void Mono.Data.Sqlite.SqliteStatement::SetTypes(System.String)
 extern void SqliteStatement_SetTypes_mF06D56D7B7634D6F10E77EC3E6A88C7858A2F92E (void);
-// 0x0000018A System.Void Mono.Data.Sqlite.SqliteTransaction::.ctor(Mono.Data.Sqlite.SqliteConnection,System.Boolean)
+// 0x0000018B System.Void Mono.Data.Sqlite.SqliteTransaction::.ctor(Mono.Data.Sqlite.SqliteConnection,System.Boolean)
 extern void SqliteTransaction__ctor_m30392EE42D19069B73132AC832758976F7996958 (void);
-// 0x0000018B Mono.Data.Sqlite.SqliteConnection Mono.Data.Sqlite.SqliteTransaction::get_Connection()
+// 0x0000018C Mono.Data.Sqlite.SqliteConnection Mono.Data.Sqlite.SqliteTransaction::get_Connection()
 extern void SqliteTransaction_get_Connection_mE57C1BF4F7E793DC66797D1893482B6E9FE56420 (void);
-// 0x0000018C System.Void Mono.Data.Sqlite.SqliteTransaction::Dispose(System.Boolean)
+// 0x0000018D System.Void Mono.Data.Sqlite.SqliteTransaction::Dispose(System.Boolean)
 extern void SqliteTransaction_Dispose_m5CABF228127AF382BCD48398D60F4FB84889D9D8 (void);
-// 0x0000018D System.Void Mono.Data.Sqlite.SqliteTransaction::Rollback()
+// 0x0000018E System.Void Mono.Data.Sqlite.SqliteTransaction::Rollback()
 extern void SqliteTransaction_Rollback_m1574B691808CCDC9C7CA953804DD1B782362E9FD (void);
-// 0x0000018E System.Void Mono.Data.Sqlite.SqliteTransaction::IssueRollback(Mono.Data.Sqlite.SqliteConnection)
+// 0x0000018F System.Void Mono.Data.Sqlite.SqliteTransaction::IssueRollback(Mono.Data.Sqlite.SqliteConnection)
 extern void SqliteTransaction_IssueRollback_m73A629F5A0D93A41698B6455471353A7C1FE7DEB (void);
-// 0x0000018F System.Boolean Mono.Data.Sqlite.SqliteTransaction::IsValid(System.Boolean)
+// 0x00000190 System.Boolean Mono.Data.Sqlite.SqliteTransaction::IsValid(System.Boolean)
 extern void SqliteTransaction_IsValid_m5AFA33FA4116BC602BF4FE5B786392621E5A1FB8 (void);
-// 0x00000190 System.Resources.ResourceManager Mono.Data.Sqlite.SR::get_ResourceManager()
+// 0x00000191 System.Resources.ResourceManager Mono.Data.Sqlite.SR::get_ResourceManager()
 extern void SR_get_ResourceManager_mD460D34794585E2C2B770CB50A887CA19DB309FB (void);
-// 0x00000191 System.String Mono.Data.Sqlite.SR::get_DataTypes()
+// 0x00000192 System.String Mono.Data.Sqlite.SR::get_DataTypes()
 extern void SR_get_DataTypes_m7F89F9DDF89877B3681D0F8A6B16D736F7CB92CD (void);
-// 0x00000192 System.String Mono.Data.Sqlite.SR::get_Keywords()
+// 0x00000193 System.String Mono.Data.Sqlite.SR::get_Keywords()
 extern void SR_get_Keywords_m051A9E96BB78584393C0AFD481D9C10FE858182C (void);
-// 0x00000193 System.String Mono.Data.Sqlite.SR::get_MetaDataCollections()
+// 0x00000194 System.String Mono.Data.Sqlite.SR::get_MetaDataCollections()
 extern void SR_get_MetaDataCollections_m8A25F31AEBFF183EE56D48F8FAD2A42A64C02B00 (void);
-// 0x00000194 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_close(System.IntPtr)
+// 0x00000195 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_close(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_close_m5D0407F7755FEBE7D1F5FA0FE85B888F6FF1BB02 (void);
-// 0x00000195 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_create_function(System.IntPtr,System.Byte[],System.Int32,System.Int32,System.IntPtr,Mono.Data.Sqlite.SQLiteCallback,Mono.Data.Sqlite.SQLiteCallback,Mono.Data.Sqlite.SQLiteFinalCallback)
+// 0x00000196 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_create_function(System.IntPtr,System.Byte[],System.Int32,System.Int32,System.IntPtr,Mono.Data.Sqlite.SQLiteCallback,Mono.Data.Sqlite.SQLiteCallback,Mono.Data.Sqlite.SQLiteFinalCallback)
 extern void UnsafeNativeMethods_sqlite3_create_function_m4137BB84EE406CBA1524952BD08D673BE566EA81 (void);
-// 0x00000196 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_finalize(System.IntPtr)
+// 0x00000197 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_finalize(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_finalize_m2DA4B6E07C27391EA976ACC9C06BEA8E4435AFBE (void);
-// 0x00000197 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open_v2(System.Byte[],System.IntPtr&,System.Int32,System.IntPtr)
+// 0x00000198 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open_v2(System.Byte[],System.IntPtr&,System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_open_v2_m639006D92F05FC9AC0A5B3F87C9C3F8665A04C2C (void);
-// 0x00000198 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open(System.Byte[],System.IntPtr&)
+// 0x00000199 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open(System.Byte[],System.IntPtr&)
 extern void UnsafeNativeMethods_sqlite3_open_m24A3324C3B3A3AA421722E3899FA9CA1AF38EFF1 (void);
-// 0x00000199 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open16(System.String,System.IntPtr&)
+// 0x0000019A System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_open16(System.String,System.IntPtr&)
 extern void UnsafeNativeMethods_sqlite3_open16_mE2DE4F511414A8503FC38522776EA479557020C7 (void);
-// 0x0000019A System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_reset(System.IntPtr)
+// 0x0000019B System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_reset(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_reset_m5E318DE227B9203B043EAF145909F885BF5F08CA (void);
-// 0x0000019B System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_parameter_name(System.IntPtr,System.Int32)
+// 0x0000019C System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_parameter_name(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_bind_parameter_name_mC31E6FB7E805FB8D31576020795110AAF48E7E0A (void);
-// 0x0000019C System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_database_name(System.IntPtr,System.Int32)
+// 0x0000019D System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_database_name(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_database_name_m55982F7048D8E38EB4D9560D5690248D65E8D237 (void);
-// 0x0000019D System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_database_name16(System.IntPtr,System.Int32)
+// 0x0000019E System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_database_name16(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_database_name16_mC4EA3C63E0662CC4D9D3132FE74EE9BD26B4444A (void);
-// 0x0000019E System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_decltype(System.IntPtr,System.Int32)
+// 0x0000019F System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_decltype(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_decltype_mD8C4757FD0A31072D9F9F03DB724AA26581DF9CD (void);
-// 0x0000019F System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_name(System.IntPtr,System.Int32)
+// 0x000001A0 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_name(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_name_m1D513F41B447A364F606ACB611F3F7B7271F87EB (void);
-// 0x000001A0 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_name16(System.IntPtr,System.Int32)
+// 0x000001A1 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_name16(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_name16_m95C453EE7A5F3573DB7FEF5A2AF579D30BF7A448 (void);
-// 0x000001A1 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_origin_name(System.IntPtr,System.Int32)
+// 0x000001A2 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_origin_name(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_origin_name_m0CAC927F7948D58A271DED42A382BA24DECEBC4F (void);
-// 0x000001A2 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_origin_name16(System.IntPtr,System.Int32)
+// 0x000001A3 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_origin_name16(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_origin_name16_m18270FF93A7E5B7FAEF0226C50DFE90F94C0CFE7 (void);
-// 0x000001A3 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_table_name(System.IntPtr,System.Int32)
+// 0x000001A4 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_table_name(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_table_name_mA369EA2D2376F66F39014BB7A5D4505C0D233456 (void);
-// 0x000001A4 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_table_name16(System.IntPtr,System.Int32)
+// 0x000001A5 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_table_name16(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_table_name16_mB6E1A3690D82BC4C81E531EDA9A45F9F25765494 (void);
-// 0x000001A5 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_text(System.IntPtr,System.Int32)
+// 0x000001A6 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_text(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_text_mD67B719EA3F619E97FE99EB8E27C0A5542CB3599 (void);
-// 0x000001A6 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_text16(System.IntPtr,System.Int32)
+// 0x000001A7 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_text16(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_text16_m02DBCEFC27057AD901E86B52BA0442EE01ADF469 (void);
-// 0x000001A7 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_errmsg(System.IntPtr)
+// 0x000001A8 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_errmsg(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_errmsg_m2C22B4FAEEC73CC1EF4A7979E1CD4FFED44E6D22 (void);
-// 0x000001A8 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_prepare(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr&,System.IntPtr&)
+// 0x000001A9 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_prepare(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr&,System.IntPtr&)
 extern void UnsafeNativeMethods_sqlite3_prepare_m09B4E7CB6EEA6D0C8F899F6DBFD37BCC570BEAA5 (void);
-// 0x000001A9 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_table_column_metadata(System.IntPtr,System.Byte[],System.Byte[],System.Byte[],System.IntPtr&,System.IntPtr&,System.Int32&,System.Int32&,System.Int32&)
+// 0x000001AA System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_table_column_metadata(System.IntPtr,System.Byte[],System.Byte[],System.Byte[],System.IntPtr&,System.IntPtr&,System.Int32&,System.Int32&,System.Int32&)
 extern void UnsafeNativeMethods_sqlite3_table_column_metadata_mD53C07F5D7B937FF607DE66656BEA13C699CDC28 (void);
-// 0x000001AA System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_text(System.IntPtr)
+// 0x000001AB System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_text(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_text_m260A742B4F2B9DA605244D0571D174FB68F4B33F (void);
-// 0x000001AB System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_text16(System.IntPtr)
+// 0x000001AC System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_text16(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_text16_m4130EF59EC27469D2F4F79B2BB92AE3918576B87 (void);
-// 0x000001AC System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_libversion()
+// 0x000001AD System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_libversion()
 extern void UnsafeNativeMethods_sqlite3_libversion_m83EBFC5A6D1559C7FA2F8E48F403F09A5A6938A7 (void);
-// 0x000001AD System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_changes(System.IntPtr)
+// 0x000001AE System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_changes(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_changes_m9669086774D7CAAC9D3DEDD19337303D3F76FBB5 (void);
-// 0x000001AE System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_busy_timeout(System.IntPtr,System.Int32)
+// 0x000001AF System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_busy_timeout(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_busy_timeout_m25C25F2429C6945FA5D0478B10BA37D675416AE4 (void);
-// 0x000001AF System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_blob(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
+// 0x000001B0 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_blob(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_bind_blob_mE2687F5900F3430CD96F06EA0EC3CFBB87DAC6F0 (void);
-// 0x000001B0 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_double(System.IntPtr,System.Int32,System.Double)
+// 0x000001B1 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_double(System.IntPtr,System.Int32,System.Double)
 extern void UnsafeNativeMethods_sqlite3_bind_double_mF7DEDAABB6D3DBB04D6AC8F04C67E8D9E59372BD (void);
-// 0x000001B1 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_int(System.IntPtr,System.Int32,System.Int32)
+// 0x000001B2 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_int(System.IntPtr,System.Int32,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_bind_int_m1DA7425377FB1CCEB8540B394A52255D26BF6A9B (void);
-// 0x000001B2 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_int64(System.IntPtr,System.Int32,System.Int64)
+// 0x000001B3 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_int64(System.IntPtr,System.Int32,System.Int64)
 extern void UnsafeNativeMethods_sqlite3_bind_int64_m23A39A914086BA6C3404F6379D24C68E5D58019B (void);
-// 0x000001B3 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_null(System.IntPtr,System.Int32)
+// 0x000001B4 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_null(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_bind_null_m0A9AFF4D27609AD551C52DBB045A3022CC37C293 (void);
-// 0x000001B4 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_text(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
+// 0x000001B5 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_text(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_bind_text_mD7CB7338CB50AE22A684A54F6F79744E8DFD6E67 (void);
-// 0x000001B5 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_parameter_count(System.IntPtr)
+// 0x000001B6 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_parameter_count(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_bind_parameter_count_mA3ACEAF462D6FB69FEF23D03B6A8FC052A95A4EC (void);
-// 0x000001B6 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_count(System.IntPtr)
+// 0x000001B7 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_count(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_column_count_mCA50890E105355EA51E02B8906BFD3AC65E0802B (void);
-// 0x000001B7 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_step(System.IntPtr)
+// 0x000001B8 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_step(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_step_m1C1164D0BAD1349BEA4D3DB3E8C5E14571964775 (void);
-// 0x000001B8 System.Double Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_double(System.IntPtr,System.Int32)
+// 0x000001B9 System.Double Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_double(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_double_mA58FBDE032EC3E7337544786272730F2A67D1712 (void);
-// 0x000001B9 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_int(System.IntPtr,System.Int32)
+// 0x000001BA System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_int(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_int_m5DD386C4CBBA3C9F64F548805785E8129EED7B80 (void);
-// 0x000001BA System.Int64 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_int64(System.IntPtr,System.Int32)
+// 0x000001BB System.Int64 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_int64(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_int64_m8F9E6B12101FEC0B633F4AF0B8FA7B54A51DBFE2 (void);
-// 0x000001BB System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_blob(System.IntPtr,System.Int32)
+// 0x000001BC System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_blob(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_blob_mFB441C2A20DBD7F8101D2103E9320BC19661108C (void);
-// 0x000001BC System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_bytes(System.IntPtr,System.Int32)
+// 0x000001BD System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_bytes(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_bytes_m6424BDB0CB8F33D0633E203429602702D8DFE60D (void);
-// 0x000001BD Mono.Data.Sqlite.TypeAffinity Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_type(System.IntPtr,System.Int32)
+// 0x000001BE Mono.Data.Sqlite.TypeAffinity Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_column_type(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_column_type_m8A47835DEFB20E401E0907ACD376B5CB3AAEAEA9 (void);
-// 0x000001BE System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_create_collation(System.IntPtr,System.Byte[],System.Int32,System.IntPtr,Mono.Data.Sqlite.SQLiteCollation)
+// 0x000001BF System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_create_collation(System.IntPtr,System.Byte[],System.Int32,System.IntPtr,Mono.Data.Sqlite.SQLiteCollation)
 extern void UnsafeNativeMethods_sqlite3_create_collation_m4B547BF43C4C5315E981CA35A6CA59C9AB16D209 (void);
-// 0x000001BF System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_blob(System.IntPtr)
+// 0x000001C0 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_blob(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_blob_m058DF61F9861D53291FB6DC8C2D8C2EC0BFB063C (void);
-// 0x000001C0 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_bytes(System.IntPtr)
+// 0x000001C1 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_bytes(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_bytes_m98204F81F2D369966E111B745FB64381ADA0DE0C (void);
-// 0x000001C1 System.Double Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_double(System.IntPtr)
+// 0x000001C2 System.Double Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_double(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_double_mC8C86F63B19ADAB0CCA1B40EB8AACC83D7A77809 (void);
-// 0x000001C2 System.Int64 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_int64(System.IntPtr)
+// 0x000001C3 System.Int64 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_int64(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_int64_mA88CFC788EBD2DECE341FD0CDCA513E830BD0805 (void);
-// 0x000001C3 Mono.Data.Sqlite.TypeAffinity Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_type(System.IntPtr)
+// 0x000001C4 Mono.Data.Sqlite.TypeAffinity Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_value_type(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_value_type_mF43ED4E3CB241D1E6FA214B05033DB547EF28D7C (void);
-// 0x000001C4 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_blob(System.IntPtr,System.Byte[],System.Int32,System.IntPtr)
+// 0x000001C5 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_blob(System.IntPtr,System.Byte[],System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_result_blob_mA73A5A3166BEA4AA2560CF8866ED20FC3F47737F (void);
-// 0x000001C5 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_double(System.IntPtr,System.Double)
+// 0x000001C6 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_double(System.IntPtr,System.Double)
 extern void UnsafeNativeMethods_sqlite3_result_double_m7697F899B22059FFDF259DA75890675BDE528E7F (void);
-// 0x000001C6 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_error(System.IntPtr,System.Byte[],System.Int32)
+// 0x000001C7 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_error(System.IntPtr,System.Byte[],System.Int32)
 extern void UnsafeNativeMethods_sqlite3_result_error_m10AABF01CE78B4DB00CCBDBB5DCD4356EE44DA82 (void);
-// 0x000001C7 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_int64(System.IntPtr,System.Int64)
+// 0x000001C8 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_int64(System.IntPtr,System.Int64)
 extern void UnsafeNativeMethods_sqlite3_result_int64_m194C538E78A731317D598214129E32A7F0FEF4AA (void);
-// 0x000001C8 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_null(System.IntPtr)
+// 0x000001C9 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_null(System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_result_null_m3B6DD6DBB30BA2101FBEBD6E487AB7A84C6ECB35 (void);
-// 0x000001C9 System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_text(System.IntPtr,System.Byte[],System.Int32,System.IntPtr)
+// 0x000001CA System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_text(System.IntPtr,System.Byte[],System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_result_text_m695C9E65B996508C26442782CF23E2816835AFD9 (void);
-// 0x000001CA System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_aggregate_context(System.IntPtr,System.Int32)
+// 0x000001CB System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_aggregate_context(System.IntPtr,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_aggregate_context_mA1A551E4C6C1E29A950814469C4CFB0B431BD488 (void);
-// 0x000001CB System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_text16(System.IntPtr,System.Int32,System.String,System.Int32,System.IntPtr)
+// 0x000001CC System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_bind_text16(System.IntPtr,System.Int32,System.String,System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_bind_text16_m6A332AD99DCC060D8216FCE0F7400B3602A63C88 (void);
-// 0x000001CC System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_error16(System.IntPtr,System.String,System.Int32)
+// 0x000001CD System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_error16(System.IntPtr,System.String,System.Int32)
 extern void UnsafeNativeMethods_sqlite3_result_error16_mCC2E6D45971299DD85DEE3AEAADBC2A0028C0A3C (void);
-// 0x000001CD System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_text16(System.IntPtr,System.String,System.Int32,System.IntPtr)
+// 0x000001CE System.Void Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_result_text16(System.IntPtr,System.String,System.Int32,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_result_text16_mBC2ABCF56D94CF9E91ADB6E3AF58BD76584E0784 (void);
-// 0x000001CE System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_key(System.IntPtr,System.Byte[],System.Int32)
+// 0x000001CF System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_key(System.IntPtr,System.Byte[],System.Int32)
 extern void UnsafeNativeMethods_sqlite3_key_mA27F199B543A75B1CA36A8BA5F0288063B90B3B3 (void);
-// 0x000001CF System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_update_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteUpdateCallback,System.IntPtr)
+// 0x000001D0 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_update_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteUpdateCallback,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_update_hook_mAD67817FAE90DD386EDB7D3B25B9F3FEDF6E921E (void);
-// 0x000001D0 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_commit_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteCommitCallback,System.IntPtr)
+// 0x000001D1 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_commit_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteCommitCallback,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_commit_hook_mF9A6E28E470F82BB3FF9F37C0E88E66D74182A53 (void);
-// 0x000001D1 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_rollback_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteRollbackCallback,System.IntPtr)
+// 0x000001D2 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_rollback_hook(System.IntPtr,Mono.Data.Sqlite.SQLiteRollbackCallback,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_rollback_hook_m38BA6BFB5A17AED225168F12FB4E55B5E022EF03 (void);
-// 0x000001D2 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_next_stmt(System.IntPtr,System.IntPtr)
+// 0x000001D3 System.IntPtr Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_next_stmt(System.IntPtr,System.IntPtr)
 extern void UnsafeNativeMethods_sqlite3_next_stmt_m340404B5371383BB87CA544B1AC1E29D1D24B13A (void);
-// 0x000001D3 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_exec(System.IntPtr,System.Byte[],System.IntPtr,System.IntPtr,System.IntPtr&)
+// 0x000001D4 System.Int32 Mono.Data.Sqlite.UnsafeNativeMethods::sqlite3_exec(System.IntPtr,System.Byte[],System.IntPtr,System.IntPtr,System.IntPtr&)
 extern void UnsafeNativeMethods_sqlite3_exec_mE9C0A0E9F6BB7A420F29140741E07E22FB0CB5A7 (void);
-// 0x000001D4 System.Void Mono.Data.Sqlite.SqliteConnectionHandle::.ctor(System.IntPtr)
+// 0x000001D5 System.Void Mono.Data.Sqlite.SqliteConnectionHandle::.ctor(System.IntPtr)
 extern void SqliteConnectionHandle__ctor_mA1348DB5E1FC86DF4F2BD6D7B54C59518B99C13D (void);
-// 0x000001D5 System.Void Mono.Data.Sqlite.SqliteConnectionHandle::.ctor()
+// 0x000001D6 System.Void Mono.Data.Sqlite.SqliteConnectionHandle::.ctor()
 extern void SqliteConnectionHandle__ctor_m376261C8740551827FCBE8766A9F659C65F27528 (void);
-// 0x000001D6 System.Boolean Mono.Data.Sqlite.SqliteConnectionHandle::ReleaseHandle()
+// 0x000001D7 System.Boolean Mono.Data.Sqlite.SqliteConnectionHandle::ReleaseHandle()
 extern void SqliteConnectionHandle_ReleaseHandle_m3AA4CC2D6AB6C123E94053CAA88A4035A29D9730 (void);
-// 0x000001D7 System.Boolean Mono.Data.Sqlite.SqliteConnectionHandle::get_IsInvalid()
+// 0x000001D8 System.Boolean Mono.Data.Sqlite.SqliteConnectionHandle::get_IsInvalid()
 extern void SqliteConnectionHandle_get_IsInvalid_m6BE21CF28A771700FAC4D24E7C81CC0C15CDB371 (void);
-// 0x000001D8 System.IntPtr Mono.Data.Sqlite.SqliteConnectionHandle::op_Implicit(Mono.Data.Sqlite.SqliteConnectionHandle)
+// 0x000001D9 System.IntPtr Mono.Data.Sqlite.SqliteConnectionHandle::op_Implicit(Mono.Data.Sqlite.SqliteConnectionHandle)
 extern void SqliteConnectionHandle_op_Implicit_mDC743858AB480407C4970860ABB8B452AF626B9C (void);
-// 0x000001D9 Mono.Data.Sqlite.SqliteConnectionHandle Mono.Data.Sqlite.SqliteConnectionHandle::op_Implicit(System.IntPtr)
+// 0x000001DA Mono.Data.Sqlite.SqliteConnectionHandle Mono.Data.Sqlite.SqliteConnectionHandle::op_Implicit(System.IntPtr)
 extern void SqliteConnectionHandle_op_Implicit_m9547FEA7764FE8816085084CB6D6F0B6EA4DEBD7 (void);
-// 0x000001DA System.Void Mono.Data.Sqlite.SqliteStatementHandle::.ctor(System.IntPtr)
+// 0x000001DB System.Void Mono.Data.Sqlite.SqliteStatementHandle::.ctor(System.IntPtr)
 extern void SqliteStatementHandle__ctor_mF7FE8C7E8FCF5E1978758F43CFF572BCEC931D97 (void);
-// 0x000001DB System.Void Mono.Data.Sqlite.SqliteStatementHandle::.ctor()
+// 0x000001DC System.Void Mono.Data.Sqlite.SqliteStatementHandle::.ctor()
 extern void SqliteStatementHandle__ctor_m73E66047D4D61947703314954838AB13BA13A8B4 (void);
-// 0x000001DC System.Boolean Mono.Data.Sqlite.SqliteStatementHandle::ReleaseHandle()
+// 0x000001DD System.Boolean Mono.Data.Sqlite.SqliteStatementHandle::ReleaseHandle()
 extern void SqliteStatementHandle_ReleaseHandle_mDAB6BE53D3A68F9044B5EEC0630307E3BEA5B88E (void);
-// 0x000001DD System.Boolean Mono.Data.Sqlite.SqliteStatementHandle::get_IsInvalid()
+// 0x000001DE System.Boolean Mono.Data.Sqlite.SqliteStatementHandle::get_IsInvalid()
 extern void SqliteStatementHandle_get_IsInvalid_m918F7DDCC79E0A244D5992C5E656D0B16930BE16 (void);
-// 0x000001DE System.IntPtr Mono.Data.Sqlite.SqliteStatementHandle::op_Implicit(Mono.Data.Sqlite.SqliteStatementHandle)
+// 0x000001DF System.IntPtr Mono.Data.Sqlite.SqliteStatementHandle::op_Implicit(Mono.Data.Sqlite.SqliteStatementHandle)
 extern void SqliteStatementHandle_op_Implicit_m3C9DBBA391897EA522028941C924C16601F3ABC8 (void);
-// 0x000001DF Mono.Data.Sqlite.SqliteStatementHandle Mono.Data.Sqlite.SqliteStatementHandle::op_Implicit(System.IntPtr)
+// 0x000001E0 Mono.Data.Sqlite.SqliteStatementHandle Mono.Data.Sqlite.SqliteStatementHandle::op_Implicit(System.IntPtr)
 extern void SqliteStatementHandle_op_Implicit_mF1A030EA4E427501CB879D570B8C1881FFAB9E4C (void);
-// 0x000001E0 System.Void Mono.Data.Sqlite.SQLiteUpdateCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001E1 System.Void Mono.Data.Sqlite.SQLiteUpdateCallback::.ctor(System.Object,System.IntPtr)
 extern void SQLiteUpdateCallback__ctor_m85A3150AB010E2F89124DF1F3E42D5BC166617E3 (void);
-// 0x000001E1 System.Void Mono.Data.Sqlite.SQLiteUpdateCallback::Invoke(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Int64)
+// 0x000001E2 System.Void Mono.Data.Sqlite.SQLiteUpdateCallback::Invoke(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Int64)
 extern void SQLiteUpdateCallback_Invoke_m7451D70DC407A1BEF646D32D9DB8E9B547C54249 (void);
-// 0x000001E2 System.Void Mono.Data.Sqlite.SQLiteCommitCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001E3 System.Void Mono.Data.Sqlite.SQLiteCommitCallback::.ctor(System.Object,System.IntPtr)
 extern void SQLiteCommitCallback__ctor_mC6CD2366A4E118C92E848329A5BBA10786672E26 (void);
-// 0x000001E3 System.Int32 Mono.Data.Sqlite.SQLiteCommitCallback::Invoke(System.IntPtr)
+// 0x000001E4 System.Int32 Mono.Data.Sqlite.SQLiteCommitCallback::Invoke(System.IntPtr)
 extern void SQLiteCommitCallback_Invoke_mC774E5F3D3FC08D63C73249C7079CF94D1617FE1 (void);
-// 0x000001E4 System.Void Mono.Data.Sqlite.SQLiteRollbackCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001E5 System.Void Mono.Data.Sqlite.SQLiteRollbackCallback::.ctor(System.Object,System.IntPtr)
 extern void SQLiteRollbackCallback__ctor_mB2BEC5442F2FD60DF8ED2DB6874C484907A454C5 (void);
-// 0x000001E5 System.Void Mono.Data.Sqlite.SQLiteRollbackCallback::Invoke(System.IntPtr)
+// 0x000001E6 System.Void Mono.Data.Sqlite.SQLiteRollbackCallback::Invoke(System.IntPtr)
 extern void SQLiteRollbackCallback_Invoke_mFFA50529D277C5F9A80EB81329863415E612D7DD (void);
-// 0x000001E6 System.Void Mono.Data.Sqlite.SQLiteCommitHandler::.ctor(System.Object,System.IntPtr)
+// 0x000001E7 System.Void Mono.Data.Sqlite.SQLiteCommitHandler::.ctor(System.Object,System.IntPtr)
 extern void SQLiteCommitHandler__ctor_m87DD9A27FAB0029B0189E860566DD0800221A31C (void);
-// 0x000001E7 System.Void Mono.Data.Sqlite.SQLiteCommitHandler::Invoke(System.Object,Mono.Data.Sqlite.CommitEventArgs)
+// 0x000001E8 System.Void Mono.Data.Sqlite.SQLiteCommitHandler::Invoke(System.Object,Mono.Data.Sqlite.CommitEventArgs)
 extern void SQLiteCommitHandler_Invoke_m9796754D053C41F3DF0C040A8239895E9129EDCA (void);
-// 0x000001E8 System.Void Mono.Data.Sqlite.SQLiteUpdateEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x000001E9 System.Void Mono.Data.Sqlite.SQLiteUpdateEventHandler::.ctor(System.Object,System.IntPtr)
 extern void SQLiteUpdateEventHandler__ctor_m678DD51EE46C23624E28AC4471FF70A7A6C16981 (void);
-// 0x000001E9 System.Void Mono.Data.Sqlite.SQLiteUpdateEventHandler::Invoke(System.Object,Mono.Data.Sqlite.UpdateEventArgs)
+// 0x000001EA System.Void Mono.Data.Sqlite.SQLiteUpdateEventHandler::Invoke(System.Object,Mono.Data.Sqlite.UpdateEventArgs)
 extern void SQLiteUpdateEventHandler_Invoke_m67B92F7EDAA158C0379894DB8C0E6DD494261F1C (void);
-// 0x000001EA System.Void Mono.Data.Sqlite.SQLiteCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001EB System.Void Mono.Data.Sqlite.SQLiteCallback::.ctor(System.Object,System.IntPtr)
 extern void SQLiteCallback__ctor_mC3E071A4BD2C90DD42FBFBEE3B184136C0C092BE (void);
-// 0x000001EB System.Void Mono.Data.Sqlite.SQLiteCallback::Invoke(System.IntPtr,System.Int32,System.IntPtr)
+// 0x000001EC System.Void Mono.Data.Sqlite.SQLiteCallback::Invoke(System.IntPtr,System.Int32,System.IntPtr)
 extern void SQLiteCallback_Invoke_m44A27B55E2E05A76FD5127F6F040D3136EB1037E (void);
-// 0x000001EC System.Void Mono.Data.Sqlite.SQLiteFinalCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001ED System.Void Mono.Data.Sqlite.SQLiteFinalCallback::.ctor(System.Object,System.IntPtr)
 extern void SQLiteFinalCallback__ctor_mEF4564763D7BAF6971C73A8411EB90DF4166C245 (void);
-// 0x000001ED System.Void Mono.Data.Sqlite.SQLiteFinalCallback::Invoke(System.IntPtr)
+// 0x000001EE System.Void Mono.Data.Sqlite.SQLiteFinalCallback::Invoke(System.IntPtr)
 extern void SQLiteFinalCallback_Invoke_mDDEC4ECB0D5B9C44B3659055D42B68818C829EA3 (void);
-// 0x000001EE System.Void Mono.Data.Sqlite.SQLiteCollation::.ctor(System.Object,System.IntPtr)
+// 0x000001EF System.Void Mono.Data.Sqlite.SQLiteCollation::.ctor(System.Object,System.IntPtr)
 extern void SQLiteCollation__ctor_mDFA84021A9EB2C5BE1C16ECF9E2D50CFF8D194DF (void);
-// 0x000001EF System.Int32 Mono.Data.Sqlite.SQLiteCollation::Invoke(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.IntPtr)
+// 0x000001F0 System.Int32 Mono.Data.Sqlite.SQLiteCollation::Invoke(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.IntPtr)
 extern void SQLiteCollation_Invoke_m71D5C2408B823F159BD7D4991C66BC579930D961 (void);
-static Il2CppMethodPointer s_methodPointers[495] = 
+static Il2CppMethodPointer s_methodPointers[496] = 
 {
 	SQLite3__ctor_m0DEF179287A883545D2861E2D75018B873B00794,
 	SQLite3_Dispose_m2E4CF71BBF28DA9FF6CC6FBFD1C2E5D50F067479,
@@ -1291,6 +1293,7 @@ static Il2CppMethodPointer s_methodPointers[495] =
 	KeyQuery_Sync_mDC26353CACA8F5A31BB77E4DE114897524FE5BCC,
 	KeyQuery_Dispose_m3B917CD021934F6904B910A47131A30CE9688304,
 	SqliteParameterCollection__ctor_mA5CA30301D7D7CAA39D7B60F667647C8D8F1DD5F,
+	SqliteParameterCollection_get_IsSynchronized_m70D67689E33B560092AC18E635B460E8943A795F,
 	SqliteParameterCollection_get_IsFixedSize_m13338BE24879824DA810D3E0EC428BC6690A46B8,
 	SqliteParameterCollection_get_IsReadOnly_mE2A5C8494B40EA6957B8A4F6B4346689FF42B917,
 	SqliteParameterCollection_get_SyncRoot_m74B703D8AF9423FCB742E8AD3E0245410BBCBB4A,
@@ -1449,509 +1452,510 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] =
 {
 	{ 0x06000105, SQLiteTypeNames__ctor_mD72CED1DB9D7C5C65185D5A6C8FE762051A98FBD_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[495] = 
+static const int32_t s_InvokerIndices[496] = 
 {
-	5603,
-	5540,
-	7037,
-	6902,
-	10746,
-	6869,
-	1343,
-	5603,
-	4106,
-	4757,
-	6902,
-	604,
-	1871,
-	1873,
-	1874,
-	1876,
-	1870,
-	1876,
-	3313,
-	4757,
-	2624,
-	4757,
-	2624,
-	2395,
-	1651,
-	2624,
-	2624,
-	2624,
-	118,
-	2293,
-	2395,
-	2574,
-	2624,
-	2292,
-	259,
-	2110,
-	340,
-	1895,
-	558,
-	4439,
-	5003,
-	5065,
-	4734,
-	3290,
-	3286,
-	3290,
-	3288,
-	5605,
-	3290,
-	5006,
-	5635,
-	5635,
-	5635,
-	5635,
-	1655,
-	1580,
-	2574,
-	356,
-	5603,
-	2613,
-	9534,
-	1343,
-	1870,
-	1876,
-	2292,
-	2624,
-	2624,
-	2624,
-	2624,
-	2624,
-	5065,
-	3290,
-	3290,
-	5603,
-	10778,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	5540,
-	7037,
-	10333,
-	10591,
-	10591,
-	10591,
-	0,
-	7037,
-	5635,
-	1368,
-	5068,
-	5063,
-	5063,
-	5635,
-	3318,
-	5635,
-	6869,
-	6902,
-	6902,
-	5635,
-	6902,
-	5635,
-	5068,
-	5068,
-	6902,
-	5068,
-	4106,
-	5635,
-	3318,
-	5635,
-	5635,
-	1895,
-	5540,
-	7037,
-	6902,
-	5063,
-	6902,
-	5635,
-	6869,
-	5603,
-	5603,
-	6902,
-	6902,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	6902,
-	6902,
-	5635,
-	6902,
-	5635,
-	7037,
-	5063,
-	5063,
-	6902,
-	7037,
-	6869,
-	6869,
-	5603,
-	6811,
-	5540,
-	6902,
-	7037,
-	5635,
-	5635,
-	6902,
-	5540,
-	5603,
-	6902,
-	5063,
-	7037,
-	6902,
-	5635,
-	6902,
-	6902,
-	9882,
-	10333,
-	10333,
-	10333,
-	5635,
-	8832,
-	7037,
-	6869,
-	6869,
-	5068,
-	5068,
-	2625,
-	10746,
-	10746,
-	6902,
-	1660,
-	1660,
-	1660,
-	1660,
-	2625,
-	5068,
-	6902,
-	1176,
-	1660,
-	1660,
-	10778,
-	8823,
-	9145,
-	9871,
-	3011,
-	5603,
-	10778,
-	10333,
-	5057,
-	2613,
-	9534,
-	4425,
-	4422,
-	4436,
-	5057,
-	2291,
-	9555,
-	10116,
-	10333,
-	10224,
-	10220,
-	10330,
-	10330,
-	10330,
-	10330,
-	10224,
-	10224,
-	7037,
-	3313,
-	10778,
-	5635,
-	5635,
-	10333,
-	3313,
-	7037,
-	7037,
-	7037,
-	6902,
-	6869,
-	6869,
-	2368,
-	4076,
-	5063,
-	5063,
-	4732,
-	5001,
-	5063,
-	6902,
-	2594,
-	5063,
-	5063,
-	4757,
-	4076,
-	6811,
-	5063,
-	6811,
-	6869,
-	5063,
-	7037,
-	3318,
-	5635,
-	5635,
-	3324,
-	3036,
-	7037,
-	10778,
-	9532,
-	7037,
-	10778,
-	5068,
-	6902,
-	6902,
-	6869,
-	6869,
-	10778,
-	5068,
-	1865,
-	5068,
-	2397,
-	2608,
-	3290,
-	1848,
-	421,
-	421,
-	1848,
-	5605,
-	5540,
-	7037,
-	10333,
-	7037,
-	1895,
-	6869,
-	5603,
-	7037,
-	7037,
-	7037,
-	5063,
-	5063,
-	5063,
-	4076,
-	4732,
-	5001,
-	5063,
-	5063,
-	4076,
-	5635,
-	1376,
-	5540,
-	5604,
-	7037,
-	5635,
-	6811,
-	6811,
-	6902,
-	6902,
-	4757,
-	4757,
-	2625,
-	7037,
-	4106,
-	3313,
-	6869,
-	5063,
-	5063,
-	4757,
-	4757,
-	3036,
-	5635,
-	5603,
-	3036,
-	7037,
-	5635,
-	7037,
-	3318,
-	691,
-	5635,
-	21,
-	6811,
-	5540,
-	6869,
-	5603,
-	6869,
-	5603,
-	6902,
-	5635,
-	5603,
-	6902,
-	5635,
-	5540,
-	6869,
-	5603,
-	6902,
-	5635,
-	6902,
-	1376,
-	2112,
-	7037,
-	7037,
-	3036,
-	6902,
-	5635,
-	3304,
-	6902,
-	5540,
-	7037,
-	10591,
-	4021,
-	10746,
-	10746,
-	10746,
-	10746,
-	10222,
-	7331,
-	10222,
-	8163,
-	9452,
-	9452,
-	10222,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	9488,
-	10255,
-	7637,
-	7298,
-	10255,
-	10255,
-	10740,
-	10222,
-	9445,
-	7635,
-	8706,
-	8707,
-	8708,
-	9445,
-	7635,
-	10222,
-	10222,
-	10222,
-	9397,
-	9445,
-	9478,
-	9488,
-	9445,
-	9445,
-	7639,
-	10255,
-	10222,
-	10178,
-	10243,
-	10222,
-	8458,
-	9813,
-	9111,
-	9815,
-	10589,
-	8458,
-	9488,
-	7635,
-	9111,
-	8458,
-	8712,
-	8771,
-	8771,
-	8771,
-	9489,
-	7640,
-	5605,
-	7037,
-	6811,
-	6811,
-	10256,
-	10332,
-	5605,
-	7037,
-	6811,
-	6811,
-	10256,
-	10332,
-	3315,
+	6567,
+	6501,
+	8285,
+	8133,
+	12444,
+	8100,
+	1533,
+	6567,
+	4804,
+	5565,
+	8133,
 	675,
-	3315,
-	4734,
-	3315,
-	5605,
-	3315,
-	3318,
-	3315,
-	3318,
-	3315,
-	1848,
-	3315,
-	5605,
-	3315,
-	421,
+	2147,
+	2149,
+	2150,
+	2152,
+	2146,
+	2152,
+	3851,
+	5565,
+	3041,
+	5565,
+	3041,
+	2771,
+	1901,
+	3041,
+	3041,
+	3041,
+	129,
+	2656,
+	2771,
+	2984,
+	3041,
+	2655,
+	281,
+	2433,
+	366,
+	2174,
+	625,
+	5188,
+	5853,
+	5918,
+	5541,
+	3825,
+	3821,
+	3825,
+	3823,
+	6569,
+	3825,
+	5857,
+	6599,
+	6599,
+	6599,
+	6599,
+	1905,
+	1821,
+	2984,
+	387,
+	6567,
+	3028,
+	11121,
+	1533,
+	2146,
+	2152,
+	2655,
+	3041,
+	3041,
+	3041,
+	3041,
+	3041,
+	5918,
+	3825,
+	3825,
+	6567,
+	12484,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	6501,
+	8285,
+	11992,
+	12266,
+	12266,
+	12266,
+	0,
+	8285,
+	6599,
+	1561,
+	5922,
+	5916,
+	5916,
+	6599,
+	3857,
+	6599,
+	8100,
+	8133,
+	8133,
+	6599,
+	8133,
+	6599,
+	5922,
+	5922,
+	8133,
+	5922,
+	4804,
+	6599,
+	3857,
+	6599,
+	6599,
+	2174,
+	6501,
+	8285,
+	8133,
+	5916,
+	8133,
+	6599,
+	8100,
+	6567,
+	6567,
+	8133,
+	8133,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	8133,
+	8133,
+	6599,
+	8133,
+	6599,
+	8285,
+	5916,
+	5916,
+	8133,
+	8285,
+	8100,
+	8100,
+	6567,
+	8037,
+	6501,
+	8133,
+	8285,
+	6599,
+	6599,
+	8133,
+	6501,
+	6567,
+	8133,
+	5916,
+	8285,
+	8133,
+	6599,
+	8133,
+	8133,
+	11482,
+	11992,
+	11992,
+	11992,
+	6599,
+	10301,
+	8285,
+	8100,
+	8100,
+	5922,
+	5922,
+	3042,
+	12444,
+	12444,
+	8133,
+	1910,
+	1910,
+	1910,
+	1910,
+	3042,
+	5922,
+	8133,
+	1349,
+	1910,
+	1910,
+	12484,
+	10292,
+	10680,
+	11471,
+	3503,
+	6567,
+	12484,
+	11992,
+	5910,
+	3028,
+	11121,
+	5174,
+	5171,
+	5185,
+	5910,
+	2654,
+	11142,
+	11755,
+	11992,
+	11870,
+	11866,
+	11989,
+	11989,
+	11989,
+	11989,
+	11870,
+	11870,
+	8285,
+	3851,
+	12484,
+	6599,
+	6599,
+	11992,
+	3851,
+	8285,
+	8285,
+	8285,
+	8133,
+	8100,
+	8100,
+	2741,
+	4773,
+	5916,
+	5916,
+	5539,
+	5851,
+	5916,
+	8133,
+	3008,
+	5916,
+	5916,
+	5565,
+	4773,
+	8037,
+	5916,
+	8037,
+	8100,
+	5916,
+	8285,
+	3857,
+	6599,
+	6599,
+	3866,
+	3529,
+	8285,
+	12484,
+	11117,
+	8285,
+	12484,
+	5922,
+	8133,
+	8133,
+	8100,
+	8100,
+	12484,
+	5922,
+	2141,
+	5922,
+	2773,
+	3023,
+	3825,
+	2115,
+	468,
+	468,
+	2115,
+	6569,
+	6501,
+	8285,
+	11992,
+	8285,
+	2174,
+	8100,
+	6567,
+	8285,
+	8285,
+	8285,
+	5916,
+	5916,
+	5916,
+	4773,
+	5539,
+	5851,
+	5916,
+	5916,
+	4773,
+	6599,
+	1570,
+	6501,
+	6568,
+	8285,
+	6599,
+	8037,
+	8037,
+	8037,
+	8133,
+	8133,
+	5565,
+	5565,
+	3042,
+	8285,
+	4804,
+	3851,
+	8100,
+	5916,
+	5916,
+	5565,
+	5565,
+	3529,
+	6599,
+	6567,
+	3529,
+	8285,
+	6599,
+	8285,
+	3857,
+	774,
+	6599,
+	25,
+	8037,
+	6501,
+	8100,
+	6567,
+	8100,
+	6567,
+	8133,
+	6599,
+	6567,
+	8133,
+	6599,
+	6501,
+	8100,
+	6567,
+	8133,
+	6599,
+	8133,
+	1570,
+	2435,
+	8285,
+	8285,
+	3529,
+	8133,
+	6599,
+	3842,
+	8133,
+	6501,
+	8285,
+	12266,
+	4712,
+	12444,
+	12444,
+	12444,
+	12444,
+	11868,
+	8628,
+	11868,
+	9563,
+	11034,
+	11034,
+	11868,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11071,
+	11904,
+	8982,
+	8589,
+	11904,
+	11904,
+	12438,
+	11868,
+	11027,
+	8980,
+	10170,
+	10171,
+	10172,
+	11027,
+	8980,
+	11868,
+	11868,
+	11868,
+	10977,
+	11027,
+	11061,
+	11071,
+	11027,
+	11027,
+	8984,
+	11904,
+	11868,
+	11821,
+	11891,
+	11868,
+	9897,
+	11413,
+	10642,
+	11415,
+	12264,
+	9897,
+	11071,
+	8980,
+	10642,
+	9897,
+	10176,
+	10236,
+	10236,
+	10236,
+	11072,
+	8985,
+	6569,
+	8285,
+	8037,
+	8037,
+	11905,
+	11991,
+	6569,
+	8285,
+	8037,
+	8037,
+	11905,
+	11991,
+	3853,
+	757,
+	3853,
+	5541,
+	3853,
+	6569,
+	3853,
+	3857,
+	3853,
+	3857,
+	3853,
+	2115,
+	3853,
+	6569,
+	3853,
+	468,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Mono_Data_Sqlite_CodeGenModule;
 const Il2CppCodeGenModule g_Mono_Data_Sqlite_CodeGenModule = 
 {
 	"Mono.Data.Sqlite.dll",
-	495,
+	496,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,

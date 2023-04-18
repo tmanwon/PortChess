@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - Anchor
   - Start Button
+  - Piece
   layers:
   - Default
   - TransparentFX

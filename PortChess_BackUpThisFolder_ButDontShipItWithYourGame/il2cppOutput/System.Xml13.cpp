@@ -22860,7 +22860,7 @@ IL_0125:
 	{
 		String_t* L_58 = ___value3;
 		NullCheck(G_B16_1);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(18 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, G_B16_1, G_B16_0, L_58);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(23 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, G_B16_1, G_B16_0, L_58);
 		return;
 	}
 
@@ -22885,7 +22885,7 @@ IL_012d:
 		XmlAttribute_t4B6CC461196FBF5CC9F777E74CC82C98E0CA9D18* L_68 = V_4;
 		NullCheck(L_67);
 		int32_t L_69;
-		L_69 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_67, L_68);
+		L_69 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_67, L_68);
 		return;
 	}
 
@@ -22963,7 +22963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XsdBuilder_StartChildren_mFFB54ACD171F51
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_2 = __this->___namespaces_110;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_2);
 		if ((((int32_t)L_3) <= ((int32_t)0)))
 		{
 			goto IL_003b;
@@ -22986,7 +22986,7 @@ IL_003b:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_7 = __this->___unhandledAttributes_109;
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_7);
 		if (!L_8)
 		{
 			goto IL_0078;
@@ -23001,12 +23001,12 @@ IL_003b:
 		L_12 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_11, NULL);
 		NullCheck(L_10);
 		RuntimeArray* L_13;
-		L_13 = VirtualFuncInvoker1< RuntimeArray*, Type_t* >::Invoke(45 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_10, L_12);
+		L_13 = VirtualFuncInvoker1< RuntimeArray*, Type_t* >::Invoke(47 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_10, L_12);
 		NullCheck(L_9);
 		VirtualActionInvoker1< XmlAttributeU5BU5D_tFC0CF817A6D2131D94AB6387E4EAE7D97B3FFC40* >::Invoke(9 /* System.Void System.Xml.Schema.XmlSchemaObject::SetUnhandledAttributes(System.Xml.XmlAttribute[]) */, L_9, ((XmlAttributeU5BU5D_tFC0CF817A6D2131D94AB6387E4EAE7D97B3FFC40*)Castclass((RuntimeObject*)L_13, XmlAttributeU5BU5D_tFC0CF817A6D2131D94AB6387E4EAE7D97B3FFC40_il2cpp_TypeInfo_var)));
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_14 = __this->___unhandledAttributes_109;
 		NullCheck(L_14);
-		VirtualActionInvoker0::Invoke(29 /* System.Void System.Collections.ArrayList::Clear() */, L_14);
+		VirtualActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_14);
 	}
 
 IL_0078:
@@ -23063,7 +23063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XsdBuilder_Push_mC283038B7318DC9C21F051E
 		XmlSchemaObject_t82CCD87AADB4BEF4E9DFE4C501F09EDA372AA19D* L_9;
 		L_9 = XsdBuilder_GetContainer_mB3922475B2015775B38748C059984C5381A273BB(__this, L_8, NULL);
 		NullCheck(L_6);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_6, L_9);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_6, L_9);
 		XsdEntry_tC0DD15F9C1789C068CD2C6D3212760F7FD5B3CD3* L_10 = __this->___nextEntry_64;
 		__this->___currentEntry_63 = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentEntry_63), (void*)L_10);
@@ -23106,7 +23106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XsdBuilder_Pop_m1447B72FDD5789C47D7166AE
 		Stack_tBD60B0E3125691193FBFC8DA8FFDD6630CB2CB47* L_4 = __this->___containerStack_67;
 		NullCheck(L_4);
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(16 /* System.Object System.Collections.Stack::Pop() */, L_4);
+		L_5 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(18 /* System.Object System.Collections.Stack::Pop() */, L_4);
 		XsdBuilder_SetContainer_mD7D25835D326D7EF12704A98D1543D1FBBA1B787(__this, L_3, L_5, NULL);
 		__this->___hasChild_65 = (bool)1;
 		return;
@@ -23158,7 +23158,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlSchemaObject_t82CCD87AADB4BEF4E9DFE4C501F0
 		Stack_tBD60B0E3125691193FBFC8DA8FFDD6630CB2CB47* L_0 = __this->___containerStack_67;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(15 /* System.Object System.Collections.Stack::Peek() */, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(17 /* System.Object System.Collections.Stack::Peek() */, L_0);
 		return ((XmlSchemaObject_t82CCD87AADB4BEF4E9DFE4C501F09EDA372AA19D*)CastclassClass((RuntimeObject*)L_1, XmlSchemaObject_t82CCD87AADB4BEF4E9DFE4C501F09EDA372AA19D_il2cpp_TypeInfo_var));
 	}
 }

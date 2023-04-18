@@ -3282,1737 +3282,1749 @@ extern void OvrAvatarEntity_debugPrimitiveRenderFlagsString_m127F8142E5AFA6AFE31
 extern void OvrAvatarEntity_debugJointNamesForTypes_m76F715A775F9BD9A6C9421F9BE9A4731B78AEA06 (void);
 // 0x000006AB System.Boolean Oculus.Avatar2.OvrAvatarEntity::StressReloading_LoadUri(System.String)
 extern void OvrAvatarEntity_StressReloading_LoadUri_mF44B11DA1E9B389BFA626B8AAB15D191DCFEA732 (void);
-// 0x000006AC System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomWristOffset(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x000006AC UnityEngine.Material Oculus.Avatar2.OvrAvatarEntity::get_DebugLineMat()
+extern void OvrAvatarEntity_get_DebugLineMat_m7E482684F082625F207A97376112EAE8C5CBA453 (void);
+// 0x000006AD System.Void Oculus.Avatar2.OvrAvatarEntity::OnCameraPostRender(UnityEngine.Camera)
+extern void OvrAvatarEntity_OnCameraPostRender_m8DE863B5B470DDB696C7DBF554F5844DC4A08658 (void);
+// 0x000006AE System.Void Oculus.Avatar2.OvrAvatarEntity::GameDebugDrawSkelHierarchyInGame()
+extern void OvrAvatarEntity_GameDebugDrawSkelHierarchyInGame_mC5F0BC781579228FFF02C1FF093500F1307B5841 (void);
+// 0x000006AF System.Void Oculus.Avatar2.OvrAvatarEntity::GameDebugDrawSkinTransforms(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData,System.Single)
+extern void OvrAvatarEntity_GameDebugDrawSkinTransforms_m2737FC5DE7F0A39F2F5C4775CAA9CE75DB16866F (void);
+// 0x000006B0 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomWristOffset(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarEntity_SetCustomWristOffset_mD4006940B1294651F51470DC503E86D7CD09FA72 (void);
-// 0x000006AD System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomHandSkeleton(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
+// 0x000006B1 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomHandSkeleton(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
 extern void OvrAvatarEntity_SetCustomHandSkeleton_mD16DD6300BAFB09B432EA17B44383258E911EE8D (void);
-// 0x000006AE System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomHandPose(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
+// 0x000006B2 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetCustomHandPose(Oculus.Avatar2.CAPI/ovrAvatar2Side,Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
 extern void OvrAvatarEntity_SetCustomHandPose_m9B98F5DE4FBBE4117FEC1472AC5F28F65C8F16D3 (void);
-// 0x000006AF System.Boolean Oculus.Avatar2.OvrAvatarEntity::ClearCustomHandPose(Oculus.Avatar2.CAPI/ovrAvatar2Side)
+// 0x000006B3 System.Boolean Oculus.Avatar2.OvrAvatarEntity::ClearCustomHandPose(Oculus.Avatar2.CAPI/ovrAvatar2Side)
 extern void OvrAvatarEntity_ClearCustomHandPose_m39661AAECB60F65A04634D2E21FBF41694B584C0 (void);
-// 0x000006B0 System.Boolean Oculus.Avatar2.OvrAvatarEntity::IsJointTypeLoaded(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000006B4 System.Boolean Oculus.Avatar2.OvrAvatarEntity::IsJointTypeLoaded(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntity_IsJointTypeLoaded_m54257D9AD1AAF5B6E9A22535289D294CDEF4228D (void);
-// 0x000006B1 System.Boolean Oculus.Avatar2.OvrAvatarEntity::AddMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000006B5 System.Boolean Oculus.Avatar2.OvrAvatarEntity::AddMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntity_AddMonitoredJoint_m9886798057E881215F9C158DA7912D278D0DD3A5 (void);
-// 0x000006B2 System.Boolean Oculus.Avatar2.OvrAvatarEntity::RemoveMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000006B6 System.Boolean Oculus.Avatar2.OvrAvatarEntity::RemoveMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntity_RemoveMonitoredJoint_m753A8709586D617AE9F641FB0420BE676106EE07 (void);
-// 0x000006B3 System.Void Oculus.Avatar2.OvrAvatarEntity::MonitorJoints(Oculus.Avatar2.CAPI/ovrAvatar2Pose&)
+// 0x000006B7 System.Void Oculus.Avatar2.OvrAvatarEntity::MonitorJoints(Oculus.Avatar2.CAPI/ovrAvatar2Pose&)
 extern void OvrAvatarEntity_MonitorJoints_m876EB2F002C01742E14AF0076FD9C478308BDF9A (void);
-// 0x000006B4 Oculus.Avatar2.CAPI/ovrAvatar2EntityId Oculus.Avatar2.OvrAvatarEntity::CreateNativeEntity(Oculus.Avatar2.CAPI/ovrAvatar2EntityCreateInfo&)
+// 0x000006B8 Oculus.Avatar2.CAPI/ovrAvatar2EntityId Oculus.Avatar2.OvrAvatarEntity::CreateNativeEntity(Oculus.Avatar2.CAPI/ovrAvatar2EntityCreateInfo&)
 extern void OvrAvatarEntity_CreateNativeEntity_mC95237FC2899DBB22CC0F4659AE5202DA6B3B650 (void);
-// 0x000006B5 System.Boolean Oculus.Avatar2.OvrAvatarEntity::DestroyNativeEntity()
+// 0x000006B9 System.Boolean Oculus.Avatar2.OvrAvatarEntity::DestroyNativeEntity()
 extern void OvrAvatarEntity_DestroyNativeEntity_m93AD0B0CB564A605DB441A70BA893A69FA3B6151 (void);
-// 0x000006B6 Oculus.Avatar2.OvrAvatarEntity/LoadingState Oculus.Avatar2.OvrAvatarEntity::get_LoadState()
+// 0x000006BA Oculus.Avatar2.OvrAvatarEntity/LoadingState Oculus.Avatar2.OvrAvatarEntity::get_LoadState()
 extern void OvrAvatarEntity_get_LoadState_m71904272B913CB56EE3065B6E14B6256956B18B3 (void);
-// 0x000006B7 System.Void Oculus.Avatar2.OvrAvatarEntity::set_LoadState(Oculus.Avatar2.OvrAvatarEntity/LoadingState)
+// 0x000006BB System.Void Oculus.Avatar2.OvrAvatarEntity::set_LoadState(Oculus.Avatar2.OvrAvatarEntity/LoadingState)
 extern void OvrAvatarEntity_set_LoadState_m496DD05DC2360526165D1EE0CF923AF3DE09D78B (void);
-// 0x000006B8 Oculus.Avatar2.OvrAvatarEntity/AvatarState Oculus.Avatar2.OvrAvatarEntity::get_CurrentState()
+// 0x000006BC Oculus.Avatar2.OvrAvatarEntity/AvatarState Oculus.Avatar2.OvrAvatarEntity::get_CurrentState()
 extern void OvrAvatarEntity_get_CurrentState_mDBAF995A2038BA8C77CB91A317799064C8AE75D1 (void);
-// 0x000006B9 System.Void Oculus.Avatar2.OvrAvatarEntity::set_CurrentState(Oculus.Avatar2.OvrAvatarEntity/AvatarState)
+// 0x000006BD System.Void Oculus.Avatar2.OvrAvatarEntity::set_CurrentState(Oculus.Avatar2.OvrAvatarEntity/AvatarState)
 extern void OvrAvatarEntity_set_CurrentState_m4421FFA88D2148EA720135974E4672E9C834CF45 (void);
-// 0x000006BA System.UInt32 Oculus.Avatar2.OvrAvatarEntity::get_primitiveRenderCount()
+// 0x000006BE System.UInt32 Oculus.Avatar2.OvrAvatarEntity::get_primitiveRenderCount()
 extern void OvrAvatarEntity_get_primitiveRenderCount_m5DD26C776F632418F5FEAC3AA33C7E1C721B8634 (void);
-// 0x000006BB System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnitySynced()
+// 0x000006BF System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnitySynced()
 extern void OvrAvatarEntity_get_IsUnitySynced_m722D12593E617B08E73956C9C1F3D96F277933E2 (void);
-// 0x000006BC System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnityHierarchySynced()
+// 0x000006C0 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnityHierarchySynced()
 extern void OvrAvatarEntity_get_IsUnityHierarchySynced_m385A361D73EC940CBBCD565A0D42A826CEB1F716 (void);
-// 0x000006BD System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_AreUnityNodesSynced()
+// 0x000006C1 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_AreUnityNodesSynced()
 extern void OvrAvatarEntity_get_AreUnityNodesSynced_m96BB5B35057CE24979B7102E2A754010A238E588 (void);
-// 0x000006BE System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnityVisibiltySynced()
+// 0x000006C2 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsUnityVisibiltySynced()
 extern void OvrAvatarEntity_get_IsUnityVisibiltySynced_m39D0D3A0CF2D32CC2983A83441192BED2FC2984C (void);
-// 0x000006BF Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.OvrAvatarEntity::get_entityStatus()
+// 0x000006C3 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.OvrAvatarEntity::get_entityStatus()
 extern void OvrAvatarEntity_get_entityStatus_m7220957840958B409D6A3200F91E43BD292F1C64 (void);
-// 0x000006C0 System.Void Oculus.Avatar2.OvrAvatarEntity::OnCreated()
+// 0x000006C4 System.Void Oculus.Avatar2.OvrAvatarEntity::OnCreated()
 extern void OvrAvatarEntity_OnCreated_m6742FACD30E0F2E5F3E7AF3ABF46455CE97C3E99 (void);
-// 0x000006C1 System.Void Oculus.Avatar2.OvrAvatarEntity::OnSkeletonLoaded()
+// 0x000006C5 System.Void Oculus.Avatar2.OvrAvatarEntity::OnSkeletonLoaded()
 extern void OvrAvatarEntity_OnSkeletonLoaded_m4E49F1705035986CDE83C3A2CFF31A33D552445C (void);
-// 0x000006C2 System.Void Oculus.Avatar2.OvrAvatarEntity::OnDefaultAvatarLoaded()
+// 0x000006C6 System.Void Oculus.Avatar2.OvrAvatarEntity::OnDefaultAvatarLoaded()
 extern void OvrAvatarEntity_OnDefaultAvatarLoaded_mA8FDE91CC63907CAA9613C20A9A299A96BA958A7 (void);
-// 0x000006C3 System.Void Oculus.Avatar2.OvrAvatarEntity::OnFastLoadAvatarLoaded()
+// 0x000006C7 System.Void Oculus.Avatar2.OvrAvatarEntity::OnFastLoadAvatarLoaded()
 extern void OvrAvatarEntity_OnFastLoadAvatarLoaded_mB72834EF957F038379AA528537D05EA69C1D7E87 (void);
-// 0x000006C4 System.Void Oculus.Avatar2.OvrAvatarEntity::OnUserAvatarLoaded()
+// 0x000006C8 System.Void Oculus.Avatar2.OvrAvatarEntity::OnUserAvatarLoaded()
 extern void OvrAvatarEntity_OnUserAvatarLoaded_mD53639A2943EFFA577A25798A59704106C3F753B (void);
-// 0x000006C5 System.Void Oculus.Avatar2.OvrAvatarEntity::PreTeardown()
+// 0x000006C9 System.Void Oculus.Avatar2.OvrAvatarEntity::PreTeardown()
 extern void OvrAvatarEntity_PreTeardown_mF23E48679457BC0C0C3CD91289838EE80AE03DB5 (void);
-// 0x000006C6 System.Void Oculus.Avatar2.OvrAvatarEntity::OnLoadFailed(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
+// 0x000006CA System.Void Oculus.Avatar2.OvrAvatarEntity::OnLoadFailed(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
 extern void OvrAvatarEntity_OnLoadFailed_m53C10CF4AADEEE0CD0AFC6AC3C7F0631F1B879D8 (void);
-// 0x000006C7 System.Void Oculus.Avatar2.OvrAvatarEntity::OnLoadRequestStateChanged(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
+// 0x000006CB System.Void Oculus.Avatar2.OvrAvatarEntity::OnLoadRequestStateChanged(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
 extern void OvrAvatarEntity_OnLoadRequestStateChanged_m40FA51BE2BEFD5F07EB3C5B40D207BB443AC3C83 (void);
-// 0x000006C8 System.Void Oculus.Avatar2.OvrAvatarEntity::OnRenderableCreated(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x000006CC System.Void Oculus.Avatar2.OvrAvatarEntity::OnRenderableCreated(Oculus.Avatar2.OvrAvatarRenderable)
 extern void OvrAvatarEntity_OnRenderableCreated_mDF93227AF9469A11556C9D3B2AC390064CC146BF (void);
-// 0x000006C9 System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarChangedRequestResultCode> Oculus.Avatar2.OvrAvatarEntity::HasAvatarChangedAsync()
+// 0x000006CD System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarChangedRequestResultCode> Oculus.Avatar2.OvrAvatarEntity::HasAvatarChangedAsync()
 extern void OvrAvatarEntity_HasAvatarChangedAsync_mC903C739DCF19FE8711008DA654D18AE5E414CEA (void);
-// 0x000006CA System.Boolean Oculus.Avatar2.OvrAvatarEntity::ShouldFastLoad()
+// 0x000006CE System.Boolean Oculus.Avatar2.OvrAvatarEntity::ShouldFastLoad()
 extern void OvrAvatarEntity_ShouldFastLoad_m631CC27AD3D9220ADB15D0B9AB9FC634DE9A6FC0 (void);
-// 0x000006CB System.Void Oculus.Avatar2.OvrAvatarEntity::LoadUser()
+// 0x000006CF System.Void Oculus.Avatar2.OvrAvatarEntity::LoadUser()
 extern void OvrAvatarEntity_LoadUser_m9B43E305E19C855D58EEB924910DF72081A2F046 (void);
-// 0x000006CC System.Void Oculus.Avatar2.OvrAvatarEntity::LoadUserWithFilters(Oculus.Avatar2.CAPI/ovrAvatar2EntityFilters&)
+// 0x000006D0 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadUserWithFilters(Oculus.Avatar2.CAPI/ovrAvatar2EntityFilters&)
 extern void OvrAvatarEntity_LoadUserWithFilters_m191B90B5B6E496ABE23831CED7F4A42E43AEA0A2 (void);
-// 0x000006CD System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromZipSource(System.String[])
+// 0x000006D1 System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromZipSource(System.String[])
 extern void OvrAvatarEntity_LoadAssetsFromZipSource_mE19B82494826D8B63048710CA345C4E7CEB4F6B3 (void);
-// 0x000006CE System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromZipSource(System.String[],Oculus.Avatar2.CAPI/ovrAvatar2EntityLODFlags)
+// 0x000006D2 System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromZipSource(System.String[],Oculus.Avatar2.CAPI/ovrAvatar2EntityLODFlags)
 extern void OvrAvatarEntity_LoadAssetsFromZipSource_m564871769F82AC030EDD1940AD2EF44F3B033EAC (void);
-// 0x000006CF System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromStreamingAssets(System.String[])
+// 0x000006D3 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAssetsFromStreamingAssets(System.String[])
 extern void OvrAvatarEntity_LoadAssetsFromStreamingAssets_m12F60DFEBF0658E3D8DD4D4C7C5C0D9F1306714B (void);
-// 0x000006D0 System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildSkeletonAndPrimitives()
+// 0x000006D4 System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildSkeletonAndPrimitives()
 extern void OvrAvatarEntity_LoadAsync_BuildSkeletonAndPrimitives_m042F7942EF6496D66810327308CE7D72682A6318 (void);
-// 0x000006D1 System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildPrimitives()
+// 0x000006D5 System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildPrimitives()
 extern void OvrAvatarEntity_LoadAsync_BuildPrimitives_m1A9D1DB60080CE19EB7D505F6E8E59415EAA5070 (void);
-// 0x000006D2 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadSync_BuildSkeleton(Oculus.Avatar2.CAPI/ovrAvatar2Pose&,Oculus.Avatar2.CAPI/ovrAvatar2HierarchyVersion)
+// 0x000006D6 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadSync_BuildSkeleton(Oculus.Avatar2.CAPI/ovrAvatar2Pose&,Oculus.Avatar2.CAPI/ovrAvatar2HierarchyVersion)
 extern void OvrAvatarEntity_LoadSync_BuildSkeleton_mD53D83D6E01BE56673C105E29E06D55C9FCBC773 (void);
-// 0x000006D3 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateMonitoredJoints()
+// 0x000006D7 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateMonitoredJoints()
 extern void OvrAvatarEntity_UpdateMonitoredJoints_m4992E40104806C74CA75D077DA0E47F62DC95589 (void);
-// 0x000006D4 System.UInt32[] Oculus.Avatar2.OvrAvatarEntity::UpdateCriticalJoints()
+// 0x000006D8 System.UInt32[] Oculus.Avatar2.OvrAvatarEntity::UpdateCriticalJoints()
 extern void OvrAvatarEntity_UpdateCriticalJoints_mD94D96CA7C62E3BC851A26B303CB6916C5F2AD8E (void);
-// 0x000006D5 System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyJoint(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&)
+// 0x000006D9 System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyJoint(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&)
 extern void OvrAvatarEntity_DestroyJoint_m878CA180934D62C4F5613E1E602539F5C33F47EF (void);
-// 0x000006D6 System.Void Oculus.Avatar2.OvrAvatarEntity::_SetupInitialJointTransform(Oculus.Avatar2.CAPI/ovrAvatar2Pose&,Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&,System.UInt32)
+// 0x000006DA System.Void Oculus.Avatar2.OvrAvatarEntity::_SetupInitialJointTransform(Oculus.Avatar2.CAPI/ovrAvatar2Pose&,Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&,System.UInt32)
 extern void OvrAvatarEntity__SetupInitialJointTransform_m4282114A0C494082A6237B9667F7E228A06983EC (void);
-// 0x000006D7 Oculus.Avatar2.OvrTime/SliceStep Oculus.Avatar2.OvrAvatarEntity::WaitForLoad(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&,System.Int32)
+// 0x000006DB Oculus.Avatar2.OvrTime/SliceStep Oculus.Avatar2.OvrAvatarEntity::WaitForLoad(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&,System.Int32)
 extern void OvrAvatarEntity_WaitForLoad_m708B17139FF221524093B0B39761BE951D2EFDD4 (void);
-// 0x000006D8 System.Boolean Oculus.Avatar2.OvrAvatarEntity::BuildNewPrimitiveRenderables(Unity.Collections.NativeArray`1<System.UInt32>&)
+// 0x000006DC System.Boolean Oculus.Avatar2.OvrAvatarEntity::BuildNewPrimitiveRenderables(Unity.Collections.NativeArray`1<System.UInt32>&)
 extern void OvrAvatarEntity_BuildNewPrimitiveRenderables_mD3720571EB04678131AFB1DB64989B0127C0E860 (void);
-// 0x000006D9 Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData Oculus.Avatar2.OvrAvatarEntity::BuildPrimitiveRenderable(System.UInt32)
+// 0x000006DD Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData Oculus.Avatar2.OvrAvatarEntity::BuildPrimitiveRenderable(System.UInt32)
 extern void OvrAvatarEntity_BuildPrimitiveRenderable_m431BDEFD03F55C368A12817CA5149643D6ECB5AD (void);
-// 0x000006DA System.Void Oculus.Avatar2.OvrAvatarEntity::LoadSync_CheckForNewRenderables_Internal(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
+// 0x000006DE System.Void Oculus.Avatar2.OvrAvatarEntity::LoadSync_CheckForNewRenderables_Internal(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
 extern void OvrAvatarEntity_LoadSync_CheckForNewRenderables_Internal_m19821E991BD97A2759A2D6C7CE1FFD1421C03DB6 (void);
-// 0x000006DB System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsyncCoroutine_BuildPrimitives_Internal()
+// 0x000006DF System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarEntity::LoadAsyncCoroutine_BuildPrimitives_Internal()
 extern void OvrAvatarEntity_LoadAsyncCoroutine_BuildPrimitives_Internal_m563DB869CA501C93B443D2134C9206547866840C (void);
-// 0x000006DC Oculus.Avatar2.OvrTime/SliceStep Oculus.Avatar2.OvrAvatarEntity::LoadSync_CheckPrimitivesLoaded_Internal(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
+// 0x000006E0 Oculus.Avatar2.OvrTime/SliceStep Oculus.Avatar2.OvrAvatarEntity::LoadSync_CheckPrimitivesLoaded_Internal(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
 extern void OvrAvatarEntity_LoadSync_CheckPrimitivesLoaded_Internal_mC571A3F5D4C1230E69003A95C71D3D32BBE12E2F (void);
-// 0x000006DD System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildPrimitives_Internal(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
+// 0x000006E1 System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadAsync_BuildPrimitives_Internal(Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult&)
 extern void OvrAvatarEntity_LoadAsync_BuildPrimitives_Internal_mE8010E931F00AA1E73732A53DD06E58834BCAD88 (void);
-// 0x000006DE System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadSync_BuildPrimitives_Internal(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,Unity.Collections.NativeArray`1<System.UInt32>&,Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion)
+// 0x000006E2 System.Boolean Oculus.Avatar2.OvrAvatarEntity::LoadSync_BuildPrimitives_Internal(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,Unity.Collections.NativeArray`1<System.UInt32>&,Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion)
 extern void OvrAvatarEntity_LoadSync_BuildPrimitives_Internal_m764AA7F694A81FE1089679968F842F5DCA6959A7 (void);
-// 0x000006DF System.Void Oculus.Avatar2.OvrAvatarEntity::CheckLoadedAssets()
+// 0x000006E3 System.Void Oculus.Avatar2.OvrAvatarEntity::CheckLoadedAssets()
 extern void OvrAvatarEntity_CheckLoadedAssets_mC2A1442CE42A101EA756CABAE15331DD530AEF7E (void);
-// 0x000006E0 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAsync_Finalize_Internal()
+// 0x000006E4 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAsync_Finalize_Internal()
 extern void OvrAvatarEntity_LoadAsync_Finalize_Internal_mF5EA9FD7360A98E56CC07B1CDDE33790DDB2E98A (void);
-// 0x000006E1 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAsync_Finalize()
+// 0x000006E5 System.Void Oculus.Avatar2.OvrAvatarEntity::LoadAsync_Finalize()
 extern void OvrAvatarEntity_LoadAsync_Finalize_m0C1BDC7E02B1BF92EE6B55D5997D82C8276F15D7 (void);
-// 0x000006E2 System.Void Oculus.Avatar2.OvrAvatarEntity::ReparentSkeletonJoints(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint[],UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Pose&)
+// 0x000006E6 System.Void Oculus.Avatar2.OvrAvatarEntity::ReparentSkeletonJoints(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint[],UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Pose&)
 extern void OvrAvatarEntity_ReparentSkeletonJoints_m5DD7F3AF3506CF04F956529F7B089C52CFF9D6F2 (void);
-// 0x000006E3 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateVisibility(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&)
+// 0x000006E7 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateVisibility(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&)
 extern void OvrAvatarEntity_UpdateVisibility_m2D3DB90114AEECB032F03AF3E4B2423F012AE635 (void);
-// 0x000006E4 Oculus.Avatar2.CAPI/ovrAvatar2NodeId Oculus.Avatar2.OvrAvatarEntity::_CheckNextVisibleNodeId(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,System.UInt32&)
+// 0x000006E8 Oculus.Avatar2.CAPI/ovrAvatar2NodeId Oculus.Avatar2.OvrAvatarEntity::_CheckNextVisibleNodeId(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&,System.UInt32&)
 extern void OvrAvatarEntity__CheckNextVisibleNodeId_m66B282E5F770DAAC74142D40C27B23402B48995D (void);
-// 0x000006E5 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAllNodes(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&)
+// 0x000006E9 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAllNodes(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState&)
 extern void OvrAvatarEntity_UpdateAllNodes_m1F578D75E3EF791E1A16F0AA81DF03B28E77F6E3 (void);
-// 0x000006E6 System.Void Oculus.Avatar2.OvrAvatarEntity::DestroySkeleton()
+// 0x000006EA System.Void Oculus.Avatar2.OvrAvatarEntity::DestroySkeleton()
 extern void OvrAvatarEntity_DestroySkeleton_m557B78F74082226B1AED2CE28C76E2890AA4065B (void);
-// 0x000006E7 Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::CreateRenderable(Oculus.Avatar2.OvrAvatarPrimitive)
+// 0x000006EB Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::CreateRenderable(Oculus.Avatar2.OvrAvatarPrimitive)
 extern void OvrAvatarEntity_CreateRenderable_mAFC10E070540AA384EFFF0266F0E2A45607F980D (void);
-// 0x000006E8 System.Void Oculus.Avatar2.OvrAvatarEntity::AddVisibleLodCost(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
+// 0x000006EC System.Void Oculus.Avatar2.OvrAvatarEntity::AddVisibleLodCost(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
 extern void OvrAvatarEntity_AddVisibleLodCost_m7D9BA90771B21B1AE54C13BD847225EDAE9D86FF (void);
-// 0x000006E9 System.Void Oculus.Avatar2.OvrAvatarEntity::RemoveVisibleLodCost(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
+// 0x000006ED System.Void Oculus.Avatar2.OvrAvatarEntity::RemoveVisibleLodCost(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
 extern void OvrAvatarEntity_RemoveVisibleLodCost_m714E15FEA916AFAF578A155AD0BE295C3591C904 (void);
-// 0x000006EA System.Void Oculus.Avatar2.OvrAvatarEntity::RemoveNodeRenderables(Oculus.Avatar2.CAPI/ovrAvatar2NodeId)
+// 0x000006EE System.Void Oculus.Avatar2.OvrAvatarEntity::RemoveNodeRenderables(Oculus.Avatar2.CAPI/ovrAvatar2NodeId)
 extern void OvrAvatarEntity_RemoveNodeRenderables_m4A351D5E8CB5A0347D1EE374B5E5F15217337ADB (void);
-// 0x000006EB System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyRenderable(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
+// 0x000006EF System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyRenderable(Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData&)
 extern void OvrAvatarEntity_DestroyRenderable_m4B57EE2E0430767315245EC7DC03310913AAB634 (void);
-// 0x000006EC System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyLODObject(Oculus.Avatar2.OvrAvatarEntity/LodData&)
+// 0x000006F0 System.Void Oculus.Avatar2.OvrAvatarEntity::DestroyLODObject(Oculus.Avatar2.OvrAvatarEntity/LodData&)
 extern void OvrAvatarEntity_DestroyLODObject_mABF8764D172F709CCBB928F59671EC128A778BBA (void);
-// 0x000006ED System.Void Oculus.Avatar2.OvrAvatarEntity::SetRequiredFeatures()
+// 0x000006F1 System.Void Oculus.Avatar2.OvrAvatarEntity::SetRequiredFeatures()
 extern void OvrAvatarEntity_SetRequiredFeatures_m58DA2167E183D184E16507D85A34A15BB57D2139 (void);
-// 0x000006EE System.Void Oculus.Avatar2.OvrAvatarEntity::ClearFailedLoadState()
+// 0x000006F2 System.Void Oculus.Avatar2.OvrAvatarEntity::ClearFailedLoadState()
 extern void OvrAvatarEntity_ClearFailedLoadState_m776214362B71F2744986ADC4D9915F38C93C0379 (void);
-// 0x000006EF System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnCreated()
+// 0x000006F3 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnCreated()
 extern void OvrAvatarEntity_InvokeOnCreated_m623D45D5951658878896E5C3BE4DF21C45528ABA (void);
-// 0x000006F0 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnSkeletonLoaded()
+// 0x000006F4 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnSkeletonLoaded()
 extern void OvrAvatarEntity_InvokeOnSkeletonLoaded_m8FD9733D9C9A632835C433B76324BDBAA7E1A353 (void);
-// 0x000006F1 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnDefaultAvatarLoaded()
+// 0x000006F5 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnDefaultAvatarLoaded()
 extern void OvrAvatarEntity_InvokeOnDefaultAvatarLoaded_mA67C81D2E29AA271C7968CFFFAF59B373808A80A (void);
-// 0x000006F2 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnFastLoadAvatarLoaded()
+// 0x000006F6 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnFastLoadAvatarLoaded()
 extern void OvrAvatarEntity_InvokeOnFastLoadAvatarLoaded_m28A4C0F1F62D0CC685DC3D0D15806B885C1B0666 (void);
-// 0x000006F3 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnUserAvatarLoaded()
+// 0x000006F7 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnUserAvatarLoaded()
 extern void OvrAvatarEntity_InvokeOnUserAvatarLoaded_mBC90F21D68C3FC8D490FB6CB4498504EA99638AE (void);
-// 0x000006F4 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokePreTeardown()
+// 0x000006F8 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokePreTeardown()
 extern void OvrAvatarEntity_InvokePreTeardown_mB0C9EB1B28BB8683ED01EE8AD1D3AC4833317F11 (void);
-// 0x000006F5 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnLoadRequestStateChanged(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
+// 0x000006F9 System.Void Oculus.Avatar2.OvrAvatarEntity::InvokeOnLoadRequestStateChanged(Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestInfo)
 extern void OvrAvatarEntity_InvokeOnLoadRequestStateChanged_m5CA99A740E15B166953FD5965B3CB56DCE3D0E52 (void);
-// 0x000006F6 System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_lodObjectCount()
+// 0x000006FA System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_lodObjectCount()
 extern void OvrAvatarEntity_get_lodObjectCount_m2566868DD6B859CB6B8ED063409289BAD265B5FE (void);
-// 0x000006F7 System.Void Oculus.Avatar2.OvrAvatarEntity::set_lodObjectCount(System.Int32)
+// 0x000006FB System.Void Oculus.Avatar2.OvrAvatarEntity::set_lodObjectCount(System.Int32)
 extern void OvrAvatarEntity_set_lodObjectCount_mAEDA2ADD4AD946D29DF1B9383750B8244B1DFC28 (void);
-// 0x000006F8 System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_LowestQualityLODIndex()
+// 0x000006FC System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_LowestQualityLODIndex()
 extern void OvrAvatarEntity_get_LowestQualityLODIndex_m3DBB5601683483EBA18951FEECF1B7D2785B6C5E (void);
-// 0x000006F9 System.Void Oculus.Avatar2.OvrAvatarEntity::set_LowestQualityLODIndex(System.Int32)
+// 0x000006FD System.Void Oculus.Avatar2.OvrAvatarEntity::set_LowestQualityLODIndex(System.Int32)
 extern void OvrAvatarEntity_set_LowestQualityLODIndex_m4B3DB50F95E4A39659AEF5FB598A008192069DEB (void);
-// 0x000006FA System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_HighestQualityLODIndex()
+// 0x000006FE System.Int32 Oculus.Avatar2.OvrAvatarEntity::get_HighestQualityLODIndex()
 extern void OvrAvatarEntity_get_HighestQualityLODIndex_m58F62A99390FE52FB4C6A3A2D36AECB829D63B82 (void);
-// 0x000006FB System.Void Oculus.Avatar2.OvrAvatarEntity::set_HighestQualityLODIndex(System.Int32)
+// 0x000006FF System.Void Oculus.Avatar2.OvrAvatarEntity::set_HighestQualityLODIndex(System.Int32)
 extern void OvrAvatarEntity_set_HighestQualityLODIndex_m1D1DF533D9F7C81AA11903E1FFCAA758C3C62F14 (void);
-// 0x000006FC System.Collections.Generic.IReadOnlyList`1<Oculus.Avatar2.AvatarLODCostData> Oculus.Avatar2.OvrAvatarEntity::CopyVisibleLODCostData()
+// 0x00000700 System.Collections.Generic.IReadOnlyList`1<Oculus.Avatar2.AvatarLODCostData> Oculus.Avatar2.OvrAvatarEntity::CopyVisibleLODCostData()
 extern void OvrAvatarEntity_CopyVisibleLODCostData_m9A3B206CC5C94D78A35D02B2379450789D7AD4B4 (void);
-// 0x000006FD System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Avatar2.OvrAvatarEntity/LodData> Oculus.Avatar2.OvrAvatarEntity::CopyVisibleLODData()
+// 0x00000701 System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Avatar2.OvrAvatarEntity/LodData> Oculus.Avatar2.OvrAvatarEntity::CopyVisibleLODData()
 extern void OvrAvatarEntity_CopyVisibleLODData_mF47F4C1A12A3C8C4DC567ED641E3F540BE7D8A66 (void);
-// 0x000006FE Oculus.Avatar2.AvatarLOD Oculus.Avatar2.OvrAvatarEntity::get_AvatarLOD()
+// 0x00000702 Oculus.Avatar2.AvatarLOD Oculus.Avatar2.OvrAvatarEntity::get_AvatarLOD()
 extern void OvrAvatarEntity_get_AvatarLOD_m86B049011262EC1DB819E7296E2E8FA65DEEB6FE (void);
-// 0x000006FF System.Void Oculus.Avatar2.OvrAvatarEntity::InitAvatarLOD()
+// 0x00000703 System.Void Oculus.Avatar2.OvrAvatarEntity::InitAvatarLOD()
 extern void OvrAvatarEntity_InitAvatarLOD_m5C86E741B58E91CB97DEA03C561D8540BC54B3C3 (void);
-// 0x00000700 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAvatarLODOverride()
+// 0x00000704 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAvatarLODOverride()
 extern void OvrAvatarEntity_UpdateAvatarLODOverride_m06C75E8D3767E9341DCC57E10C946F0E3D7CFC98 (void);
-// 0x00000701 System.Void Oculus.Avatar2.OvrAvatarEntity::ShutdownAvatarLOD()
+// 0x00000705 System.Void Oculus.Avatar2.OvrAvatarEntity::ShutdownAvatarLOD()
 extern void OvrAvatarEntity_ShutdownAvatarLOD_m56379AF303B8053292FC908F4DC36068DD45B1CC (void);
-// 0x00000702 System.Void Oculus.Avatar2.OvrAvatarEntity::ComputeImportanceAndCost(System.Single&,System.UInt32&)
+// 0x00000706 System.Void Oculus.Avatar2.OvrAvatarEntity::ComputeImportanceAndCost(System.Single&,System.UInt32&)
 extern void OvrAvatarEntity_ComputeImportanceAndCost_m4252D8619615076818F5570F9EC6B83750CDFD93 (void);
-// 0x00000703 System.Void Oculus.Avatar2.OvrAvatarEntity::SendImportanceAndCost()
+// 0x00000707 System.Void Oculus.Avatar2.OvrAvatarEntity::SendImportanceAndCost()
 extern void OvrAvatarEntity_SendImportanceAndCost_m49C125F13C280298E4C70A52A9AB4F0F8A96D25D (void);
-// 0x00000704 System.Void Oculus.Avatar2.OvrAvatarEntity::TrackUpdateAge()
+// 0x00000708 System.Void Oculus.Avatar2.OvrAvatarEntity::TrackUpdateAge()
 extern void OvrAvatarEntity_TrackUpdateAge_mF12D00750EF615AD4F721F9B9736796212AECD1D (void);
-// 0x00000705 System.Void Oculus.Avatar2.OvrAvatarEntity::OnCullChangedEvent(System.Boolean)
+// 0x00000709 System.Void Oculus.Avatar2.OvrAvatarEntity::OnCullChangedEvent(System.Boolean)
 extern void OvrAvatarEntity_OnCullChangedEvent_mF6D2E6A1431DACEC4A8A4E83E55D85979EEB2369 (void);
-// 0x00000706 System.Void Oculus.Avatar2.OvrAvatarEntity::SetupLodGroups()
+// 0x0000070A System.Void Oculus.Avatar2.OvrAvatarEntity::SetupLodGroups()
 extern void OvrAvatarEntity_SetupLodGroups_m84801B30C639E2FD81A147005FD853317B1AD71B (void);
-// 0x00000707 System.Void Oculus.Avatar2.OvrAvatarEntity::ResetLodCullingPoints()
+// 0x0000070B System.Void Oculus.Avatar2.OvrAvatarEntity::ResetLodCullingPoints()
 extern void OvrAvatarEntity_ResetLodCullingPoints_m574465242107DB0EEFC56215B61C71924C63B118 (void);
-// 0x00000708 System.Void Oculus.Avatar2.OvrAvatarEntity::SetupLodCullingPoints()
+// 0x0000070C System.Void Oculus.Avatar2.OvrAvatarEntity::SetupLodCullingPoints()
 extern void OvrAvatarEntity_SetupLodCullingPoints_mC5179D2150872B2D9D72954C87B999805D140BB8 (void);
-// 0x00000709 System.Void Oculus.Avatar2.OvrAvatarEntity::TeardownLodCullingPoints()
+// 0x0000070D System.Void Oculus.Avatar2.OvrAvatarEntity::TeardownLodCullingPoints()
 extern void OvrAvatarEntity_TeardownLodCullingPoints_m9E21DE6E7F505381E83E28E64DF76FF94B1FB0C7 (void);
-// 0x0000070A System.Void Oculus.Avatar2.OvrAvatarEntity::ResetLODRange()
+// 0x0000070E System.Void Oculus.Avatar2.OvrAvatarEntity::ResetLODRange()
 extern void OvrAvatarEntity_ResetLODRange_m308C26D2B16221D4FB8CE011D557A0A5D4443717 (void);
-// 0x0000070B System.Void Oculus.Avatar2.OvrAvatarEntity::ExpandLODRange(System.UInt32)
+// 0x0000070F System.Void Oculus.Avatar2.OvrAvatarEntity::ExpandLODRange(System.UInt32)
 extern void OvrAvatarEntity_ExpandLODRange_m5508F8E1FAC5573A4B708294E658C31D27E8A773 (void);
-// 0x0000070C System.Void Oculus.Avatar2.OvrAvatarEntity::RefreshLODRange()
+// 0x00000710 System.Void Oculus.Avatar2.OvrAvatarEntity::RefreshLODRange()
 extern void OvrAvatarEntity_RefreshLODRange_mA80190F353359775686C25A2A8036B4C6277BF53 (void);
-// 0x0000070D System.Void Oculus.Avatar2.OvrAvatarEntity::ConfigureLocalAvatarSettings()
+// 0x00000711 System.Void Oculus.Avatar2.OvrAvatarEntity::ConfigureLocalAvatarSettings()
 extern void OvrAvatarEntity_ConfigureLocalAvatarSettings_mE4E037E39FDA970A35CF27F317EFDE241F97ACF0 (void);
-// 0x0000070E System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetAvailableManifestationFlags(System.UInt32&)
+// 0x00000712 System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetAvailableManifestationFlags(System.UInt32&)
 extern void OvrAvatarEntity_GetAvailableManifestationFlags_mEF0F2281D0A40E58E220C750AE2007450B615505 (void);
-// 0x0000070F System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetManifestationFlags(Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags&)
+// 0x00000713 System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetManifestationFlags(Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags&)
 extern void OvrAvatarEntity_GetManifestationFlags_m58BF235FF7E8413B1CC88D9FC64C466BFE53C5EF (void);
-// 0x00000710 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetManifestationFlags(Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags)
+// 0x00000714 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetManifestationFlags(Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags)
 extern void OvrAvatarEntity_SetManifestationFlags_m289D916B5E56DDE067EFE73F1B5BAEED1D513F62 (void);
-// 0x00000711 System.Void Oculus.Avatar2.OvrAvatarEntity::InitializeMaterialPropertyBlock()
+// 0x00000715 System.Void Oculus.Avatar2.OvrAvatarEntity::InitializeMaterialPropertyBlock()
 extern void OvrAvatarEntity_InitializeMaterialPropertyBlock_mED3594B80EC94A7A6223ABEB356931FCC7570273 (void);
-// 0x00000712 Oculus.Avatar2.OvrAvatarMaterial Oculus.Avatar2.OvrAvatarEntity::get_Material()
+// 0x00000716 Oculus.Avatar2.OvrAvatarMaterial Oculus.Avatar2.OvrAvatarEntity::get_Material()
 extern void OvrAvatarEntity_get_Material_mDC3DE08791E734FDD588764216DD4FE760F1F9A4 (void);
-// 0x00000713 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialKeyword(System.String,System.Boolean)
+// 0x00000717 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialKeyword(System.String,System.Boolean)
 extern void OvrAvatarEntity_SetMaterialKeyword_m40823C7C74E721C758B98696C36CC58BDFA85633 (void);
-// 0x00000714 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialShader(UnityEngine.Shader)
+// 0x00000718 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialShader(UnityEngine.Shader)
 extern void OvrAvatarEntity_SetMaterialShader_mCB5718C54E343506DFF0AC4C867FF57A7AD68727 (void);
-// 0x00000715 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialProperties(System.Action`1<Oculus.Avatar2.OvrAvatarMaterial>)
+// 0x00000719 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialProperties(System.Action`1<Oculus.Avatar2.OvrAvatarMaterial>)
 extern void OvrAvatarEntity_SetMaterialProperties_mFE1A57CBD961303DEB18D4024A3336B879CFC6DB (void);
-// 0x00000716 System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialProperties(System.Action`2<Oculus.Avatar2.OvrAvatarMaterial,TParam>,TParam)
-// 0x00000717 System.Void Oculus.Avatar2.OvrAvatarEntity::ApplyMaterial()
+// 0x0000071A System.Void Oculus.Avatar2.OvrAvatarEntity::SetMaterialProperties(System.Action`2<Oculus.Avatar2.OvrAvatarMaterial,TParam>,TParam)
+// 0x0000071B System.Void Oculus.Avatar2.OvrAvatarEntity::ApplyMaterial()
 extern void OvrAvatarEntity_ApplyMaterial_m9D281B7E6AB21AC16F3A7E97EB3514E9F7A7DF3E (void);
-// 0x00000718 System.Void Oculus.Avatar2.OvrAvatarEntity::SetSharedMaterialProperties(System.Action`1<UnityEngine.Material>)
+// 0x0000071C System.Void Oculus.Avatar2.OvrAvatarEntity::SetSharedMaterialProperties(System.Action`1<UnityEngine.Material>)
 extern void OvrAvatarEntity_SetSharedMaterialProperties_m397C99D82CB3AFB526F7F98E6CE63DFFFB7FB6C3 (void);
-// 0x00000719 System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAvatarLodColor()
+// 0x0000071D System.Void Oculus.Avatar2.OvrAvatarEntity::UpdateAvatarLodColor()
 extern void OvrAvatarEntity_UpdateAvatarLodColor_m5F2F2F0654BA6DCEDF8CAC93E3AFA6B4957CAE96 (void);
-// 0x0000071A System.Void Oculus.Avatar2.OvrAvatarEntity::ConfigureRenderableMaterial(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x0000071E System.Void Oculus.Avatar2.OvrAvatarEntity::ConfigureRenderableMaterial(Oculus.Avatar2.OvrAvatarRenderable)
 extern void OvrAvatarEntity_ConfigureRenderableMaterial_m8EAC1DB80A408C924A1065365C23436E5F81E0CD (void);
-// 0x0000071B System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_isStaticMesh()
+// 0x0000071F System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_isStaticMesh()
 extern void OvrAvatarEntity_get_isStaticMesh_m5236D3BFD6FE015C1341CB3B1739188DCE9B68C7 (void);
-// 0x0000071C System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseGpuSkinning()
+// 0x00000720 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseGpuSkinning()
 extern void OvrAvatarEntity_get_UseGpuSkinning_m5C75D6EC4413D908C08C78700D4015C2E14370DF (void);
-// 0x0000071D System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseGpuMorphTargets()
+// 0x00000721 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseGpuMorphTargets()
 extern void OvrAvatarEntity_get_UseGpuMorphTargets_m3A86A92CA818E9EDBFDD04FD91C3D165825B80D9 (void);
-// 0x0000071E System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseMotionSmoothingRenderer()
+// 0x00000722 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseMotionSmoothingRenderer()
 extern void OvrAvatarEntity_get_UseMotionSmoothingRenderer_m4C68EFEEE00C03FBF47997A7B0301899789A08A4 (void);
-// 0x0000071F System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseAppSwRenderer()
+// 0x00000723 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_UseAppSwRenderer()
 extern void OvrAvatarEntity_get_UseAppSwRenderer_mF9FA4B3972150EF9C0ED9F5E91A5733164035126 (void);
-// 0x00000720 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_Hidden()
+// 0x00000724 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_Hidden()
 extern void OvrAvatarEntity_get_Hidden_mD321E3949EFBAD40318F0A209A61CC3A94078765 (void);
-// 0x00000721 System.Void Oculus.Avatar2.OvrAvatarEntity::set_Hidden(System.Boolean)
+// 0x00000725 System.Void Oculus.Avatar2.OvrAvatarEntity::set_Hidden(System.Boolean)
 extern void OvrAvatarEntity_set_Hidden_mE1F1D61E1622368AFC19E9E39B1E5BA0F76F03DF (void);
-// 0x00000722 Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::AddRenderableComponent(UnityEngine.GameObject,Oculus.Avatar2.OvrAvatarPrimitive)
+// 0x00000726 Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::AddRenderableComponent(UnityEngine.GameObject,Oculus.Avatar2.OvrAvatarPrimitive)
 extern void OvrAvatarEntity_AddRenderableComponent_mDC6A5829873F441774350164D9A822096104100C (void);
-// 0x00000723 Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::AddRenderableComponent(UnityEngine.GameObject)
+// 0x00000727 Oculus.Avatar2.OvrAvatarRenderable Oculus.Avatar2.OvrAvatarEntity::AddRenderableComponent(UnityEngine.GameObject)
 extern void OvrAvatarEntity_AddRenderableComponent_m7439D94290858E5262703D0513188AD73D574D2D (void);
-// 0x00000724 System.Void Oculus.Avatar2.OvrAvatarEntity::ValidateSkinningType()
+// 0x00000728 System.Void Oculus.Avatar2.OvrAvatarEntity::ValidateSkinningType()
 extern void OvrAvatarEntity_ValidateSkinningType_m0868E1807471FDED8B2ADE12D96355156B955B18 (void);
-// 0x00000725 System.Void Oculus.Avatar2.OvrAvatarEntity::SetProbeAnchor(UnityEngine.Transform)
+// 0x00000729 System.Void Oculus.Avatar2.OvrAvatarEntity::SetProbeAnchor(UnityEngine.Transform)
 extern void OvrAvatarEntity_SetProbeAnchor_mCE7DB27F14E8B5D724149BB624796FB68E6BAE8A (void);
-// 0x00000726 System.Void Oculus.Avatar2.OvrAvatarEntity::InitializeRenderable(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x0000072A System.Void Oculus.Avatar2.OvrAvatarEntity::InitializeRenderable(Oculus.Avatar2.OvrAvatarRenderable)
 extern void OvrAvatarEntity_InitializeRenderable_m4A9DD948BC335E819D965E92C196CF8E776A6CF3 (void);
-// 0x00000727 System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsLocal()
+// 0x0000072B System.Boolean Oculus.Avatar2.OvrAvatarEntity::get_IsLocal()
 extern void OvrAvatarEntity_get_IsLocal_m05D4F9E1C3968C69755219803C6B153230D02B63 (void);
-// 0x00000728 Oculus.Avatar2.OvrAvatarEntity/StreamLOD Oculus.Avatar2.OvrAvatarEntity::get_activeStreamLod()
+// 0x0000072C Oculus.Avatar2.OvrAvatarEntity/StreamLOD Oculus.Avatar2.OvrAvatarEntity::get_activeStreamLod()
 extern void OvrAvatarEntity_get_activeStreamLod_mBDCF2D8BFEA68B9B7E9AEC5BF707ECD370EF1978 (void);
-// 0x00000729 System.Collections.Generic.IReadOnlyCollection`1<System.Int64> Oculus.Avatar2.OvrAvatarEntity::get_StreamLodBytes()
+// 0x0000072D System.Collections.Generic.IReadOnlyCollection`1<System.Int64> Oculus.Avatar2.OvrAvatarEntity::get_StreamLodBytes()
 extern void OvrAvatarEntity_get_StreamLodBytes_m2C55A92A4DF1623F6FCD87B9EFFB106765AC10E4 (void);
-// 0x0000072A System.Int64 Oculus.Avatar2.OvrAvatarEntity::GetLastByteSizeForStreamLod(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
+// 0x0000072E System.Int64 Oculus.Avatar2.OvrAvatarEntity::GetLastByteSizeForStreamLod(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
 extern void OvrAvatarEntity_GetLastByteSizeForStreamLod_m139783BC5DE565BD5E3B0D76115645934EEB3857 (void);
-// 0x0000072B System.Int64 Oculus.Avatar2.OvrAvatarEntity::GetLastByteSizeForLodIndex(System.Int32)
+// 0x0000072F System.Int64 Oculus.Avatar2.OvrAvatarEntity::GetLastByteSizeForLodIndex(System.Int32)
 extern void OvrAvatarEntity_GetLastByteSizeForLodIndex_m73EB05473AE439C590D00F7132F4BC0C0ABD655B (void);
-// 0x0000072C System.Boolean Oculus.Avatar2.OvrAvatarEntity::RecordStart()
+// 0x00000730 System.Boolean Oculus.Avatar2.OvrAvatarEntity::RecordStart()
 extern void OvrAvatarEntity_RecordStart_mED3FC027B469B72707FA73F88135060AE42807DB (void);
-// 0x0000072D System.Boolean Oculus.Avatar2.OvrAvatarEntity::RecordStop()
+// 0x00000731 System.Boolean Oculus.Avatar2.OvrAvatarEntity::RecordStop()
 extern void OvrAvatarEntity_RecordStop_mA8D52D289A442969C78A7F3B5D00066504259DD9 (void);
-// 0x0000072E System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetRecordingSize(Oculus.Avatar2.CAPI/ovrAvatar2StreamLOD,System.UInt64&)
+// 0x00000732 System.Boolean Oculus.Avatar2.OvrAvatarEntity::GetRecordingSize(Oculus.Avatar2.CAPI/ovrAvatar2StreamLOD,System.UInt64&)
 extern void OvrAvatarEntity_GetRecordingSize_mF640A6B02E477221D5026F505933DD8549E9A6C1 (void);
-// 0x0000072F System.Void Oculus.Avatar2.OvrAvatarEntity::SetIsLocal(System.Boolean)
+// 0x00000733 System.Void Oculus.Avatar2.OvrAvatarEntity::SetIsLocal(System.Boolean)
 extern void OvrAvatarEntity_SetIsLocal_m8520FC4D2A8FEBCB513C502CFA42FA98F671D384 (void);
-// 0x00000730 System.UInt64 Oculus.Avatar2.OvrAvatarEntity::GetRecordingSize(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
+// 0x00000734 System.UInt64 Oculus.Avatar2.OvrAvatarEntity::GetRecordingSize(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
 extern void OvrAvatarEntity_GetRecordingSize_m4A40E15FCABED2698C49009082D1AFE1DC06A0FC (void);
-// 0x00000731 System.Void Oculus.Avatar2.OvrAvatarEntity::SetPlaybackTimeDelay(System.Single)
+// 0x00000735 System.Void Oculus.Avatar2.OvrAvatarEntity::SetPlaybackTimeDelay(System.Single)
 extern void OvrAvatarEntity_SetPlaybackTimeDelay_m46FB90C9732B50404DC038E1ECAC6275A9238574 (void);
-// 0x00000732 System.Byte[] Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
+// 0x00000736 System.Byte[] Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
 extern void OvrAvatarEntity_RecordStreamData_mF328583233A7D218F6369C5F0CF36D173B383FC8 (void);
-// 0x00000733 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,Unity.Collections.NativeArray`1<System.Byte>&)
+// 0x00000737 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,Unity.Collections.NativeArray`1<System.Byte>&)
 extern void OvrAvatarEntity_RecordStreamData_mEA0E355B72DCB88B74E2E82CEF002D4A92E684EB (void);
-// 0x00000734 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData_AutoBuffer(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,Unity.Collections.NativeArray`1<System.Byte>&)
+// 0x00000738 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData_AutoBuffer(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,Unity.Collections.NativeArray`1<System.Byte>&)
 extern void OvrAvatarEntity_RecordStreamData_AutoBuffer_m289CFBDA3AA889D962844FB6BC74C0A7B0A4979F (void);
-// 0x00000735 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData_AutoBuffer(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.Byte[]&)
+// 0x00000739 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData_AutoBuffer(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.Byte[]&)
 extern void OvrAvatarEntity_RecordStreamData_AutoBuffer_m9705A9601C497B4535880ED774FDED72E2682CC1 (void);
-// 0x00000736 System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.IntPtr,System.UInt32)
+// 0x0000073A System.UInt32 Oculus.Avatar2.OvrAvatarEntity::RecordStreamData(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.IntPtr,System.UInt32)
 extern void OvrAvatarEntity_RecordStreamData_mDB9DF2FC39722CAF96A673B0D2F29C1877D65E1C (void);
-// 0x00000737 System.Void Oculus.Avatar2.OvrAvatarEntity::ForceStreamLod(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
+// 0x0000073B System.Void Oculus.Avatar2.OvrAvatarEntity::ForceStreamLod(Oculus.Avatar2.OvrAvatarEntity/StreamLOD)
 extern void OvrAvatarEntity_ForceStreamLod_mB7CF7F2AE3424FC45A07D7BA159B5E7A5AA761D0 (void);
-// 0x00000738 System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(System.Byte[])
+// 0x0000073C System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(System.Byte[])
 extern void OvrAvatarEntity_ApplyStreamData_m2D90A10AAD07F8D35524D5A94CEEFFA734FD31C7 (void);
-// 0x00000739 System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(Unity.Collections.NativeArray`1<System.Byte>&)
+// 0x0000073D System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(Unity.Collections.NativeArray`1<System.Byte>&)
 extern void OvrAvatarEntity_ApplyStreamData_m536DAF67B2132AB046D2AD41C6DCEE354D743FAE (void);
-// 0x0000073A System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(Unity.Collections.NativeSlice`1<System.Byte>&)
+// 0x0000073E System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(Unity.Collections.NativeSlice`1<System.Byte>&)
 extern void OvrAvatarEntity_ApplyStreamData_m37CF0C88E8B5E950C2294250AA6FE9EB955CE09E (void);
-// 0x0000073B System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(System.IntPtr,System.UInt32)
+// 0x0000073F System.Boolean Oculus.Avatar2.OvrAvatarEntity::ApplyStreamData(System.IntPtr,System.UInt32)
 extern void OvrAvatarEntity_ApplyStreamData_m63CA9BF9ED0D2D77B4714944C331777CF9E357DF (void);
-// 0x0000073C System.Boolean Oculus.Avatar2.OvrAvatarEntity::_VerifyCanApplyStreaming()
+// 0x00000740 System.Boolean Oculus.Avatar2.OvrAvatarEntity::_VerifyCanApplyStreaming()
 extern void OvrAvatarEntity__VerifyCanApplyStreaming_m3F8FAEEDC5DDCEF073746812D04C37F431FB3844 (void);
-// 0x0000073D System.Boolean Oculus.Avatar2.OvrAvatarEntity::_ExecuteApplyStreamData(System.Byte*,System.UInt32)
+// 0x00000741 System.Boolean Oculus.Avatar2.OvrAvatarEntity::_ExecuteApplyStreamData(System.Byte*,System.UInt32)
 extern void OvrAvatarEntity__ExecuteApplyStreamData_mF6D0DB98EDA9A8E84642E7C6528FC53FBB16A861 (void);
-// 0x0000073E System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2StreamingPlaybackState> Oculus.Avatar2.OvrAvatarEntity::GetStreamingPlaybackState()
+// 0x00000742 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2StreamingPlaybackState> Oculus.Avatar2.OvrAvatarEntity::GetStreamingPlaybackState()
 extern void OvrAvatarEntity_GetStreamingPlaybackState_m3726B24CD731A565A54002F3336713627D159C20 (void);
-// 0x0000073F System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetStreamingPlayback(System.Boolean)
+// 0x00000743 System.Boolean Oculus.Avatar2.OvrAvatarEntity::SetStreamingPlayback(System.Boolean)
 extern void OvrAvatarEntity_SetStreamingPlayback_m179065E453F69F2077AC1E4A4686482EAC65FC2D (void);
-// 0x00000740 System.Void Oculus.Avatar2.OvrAvatarEntity::ComputeNetworkLod()
+// 0x00000744 System.Void Oculus.Avatar2.OvrAvatarEntity::ComputeNetworkLod()
 extern void OvrAvatarEntity_ComputeNetworkLod_mC7876EBAD1B4CAE692A79F32919193124D4976AB (void);
-// 0x00000741 System.Boolean Oculus.Avatar2.OvrAvatarEntity::TryRecordSnapshot(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.UInt64&)
+// 0x00000745 System.Boolean Oculus.Avatar2.OvrAvatarEntity::TryRecordSnapshot(Oculus.Avatar2.OvrAvatarEntity/StreamLOD,System.UInt64&)
 extern void OvrAvatarEntity_TryRecordSnapshot_m2A285BA6DDFA4D30DB603A87C6982DE02BE02B00 (void);
-// 0x00000742 System.Void Oculus.Avatar2.OvrAvatarEntity::.ctor()
+// 0x00000746 System.Void Oculus.Avatar2.OvrAvatarEntity::.ctor()
 extern void OvrAvatarEntity__ctor_mCF29C657B1199C4D2198A81835532F4A6A802E9C (void);
-// 0x00000743 System.Void Oculus.Avatar2.OvrAvatarEntity::.cctor()
+// 0x00000747 System.Void Oculus.Avatar2.OvrAvatarEntity::.cctor()
 extern void OvrAvatarEntity__cctor_mF5C1C790783FBD3A420992036DC5AF71566B39D2 (void);
-// 0x00000744 System.Void Oculus.Avatar2.OvrAvatarEntity::<QueueUpdateSkeleton>b__107_0()
+// 0x00000748 System.Void Oculus.Avatar2.OvrAvatarEntity::<QueueUpdateSkeleton>b__107_0()
 extern void OvrAvatarEntity_U3CQueueUpdateSkeletonU3Eb__107_0_mEB34EDC3D6D321F736E0DBBFD2074C7010D5C6B3 (void);
-// 0x00000745 System.Void Oculus.Avatar2.OvrAvatarEntity::<QueueBuildPrimitives>b__108_0()
+// 0x00000749 System.Void Oculus.Avatar2.OvrAvatarEntity::<QueueBuildPrimitives>b__108_0()
 extern void OvrAvatarEntity_U3CQueueBuildPrimitivesU3Eb__108_0_m3F96548B410128DD00862DB0A6CDBECDEEAD9425 (void);
-// 0x00000746 System.Void Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::.ctor(System.String,UnityEngine.Transform,System.Int32,Oculus.Avatar2.CAPI/ovrAvatar2NodeId)
+// 0x0000074A System.Void Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::.ctor(System.String,UnityEngine.Transform,System.Int32,Oculus.Avatar2.CAPI/ovrAvatar2NodeId)
 extern void SkeletonJoint__ctor_m11478FE321B5BEB323DEB6A9EF6DFD12D3931F56 (void);
-// 0x00000747 System.Void Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::.ctor(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&,System.String,System.Int32)
+// 0x0000074B System.Void Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::.ctor(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint&,System.String,System.Int32)
 extern void SkeletonJoint__ctor_mE74722EF5BE65799EA75B5F2964DF6B50E11D8A1 (void);
-// 0x00000748 System.Int32 Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::CompareTo(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint)
+// 0x0000074C System.Int32 Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint::CompareTo(Oculus.Avatar2.OvrAvatarEntity/SkeletonJoint)
 extern void SkeletonJoint_CompareTo_m0C44CD40BF919ECD0338C251C34A54C850CE3A57 (void);
-// 0x00000749 System.Void Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2NodeId,Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.CAPI/ovrAvatar2PrimitiveRenderInstanceID,Oculus.Avatar2.OvrAvatarRenderable,Oculus.Avatar2.OvrAvatarPrimitive)
+// 0x0000074D System.Void Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2NodeId,Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.CAPI/ovrAvatar2PrimitiveRenderInstanceID,Oculus.Avatar2.OvrAvatarRenderable,Oculus.Avatar2.OvrAvatarPrimitive)
 extern void PrimitiveRenderData__ctor_m79F23486070C763A11C9BD6FF5C5EF296D82B988 (void);
-// 0x0000074A System.Boolean Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::get_IsValid()
+// 0x0000074E System.Boolean Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::get_IsValid()
 extern void PrimitiveRenderData_get_IsValid_m2BB39FF77FEE81B3B82B84E501C7B6867929012D (void);
-// 0x0000074B System.Void Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::Dispose()
+// 0x0000074F System.Void Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::Dispose()
 extern void PrimitiveRenderData_Dispose_m402D45DF7120C70E076DC4A16ECC639783B4DA01 (void);
-// 0x0000074C System.String Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::ToString()
+// 0x00000750 System.String Oculus.Avatar2.OvrAvatarEntity/PrimitiveRenderData::ToString()
 extern void PrimitiveRenderData_ToString_m01D4BAEBBCFDA0EA3390C7589D55B55BC61DCABF (void);
-// 0x0000074D System.Void Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::SetTransform(UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x00000751 System.Void Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::SetTransform(UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void GPUInstancedAvatar_SetTransform_m9E21BE0C667D21A31E015AA8C3687C8B80810E2C (void);
-// 0x0000074E UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::GetTransform()
+// 0x00000752 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::GetTransform()
 extern void GPUInstancedAvatar_GetTransform_m382D1EDB6D17859F1308F3EBC2E9AEADD8C8146D (void);
-// 0x0000074F System.Void Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::.ctor()
+// 0x00000753 System.Void Oculus.Avatar2.OvrAvatarEntity/GPUInstancedAvatar::.ctor()
 extern void GPUInstancedAvatar__ctor_mD2CCDA228933D7C21F939312B4455B7078B668AD (void);
-// 0x00000750 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::.ctor(Oculus.Avatar2.OvrAvatarEntity)
+// 0x00000754 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::.ctor(Oculus.Avatar2.OvrAvatarEntity)
 extern void EntityAnimatorBase__ctor_m1202CD42114AE0ADEF04741821828825811B5147 (void);
-// 0x00000751 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::AddNewAnimationFrame(System.Single,System.Single,Oculus.Avatar2.CAPI/ovrAvatar2Pose& modreq(System.Runtime.InteropServices.InAttribute),Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x00000755 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::AddNewAnimationFrame(System.Single,System.Single,Oculus.Avatar2.CAPI/ovrAvatar2Pose& modreq(System.Runtime.InteropServices.InAttribute),Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState& modreq(System.Runtime.InteropServices.InAttribute))
 extern void EntityAnimatorBase_AddNewAnimationFrame_mF585BA622274F277A1AFFE9BE9B1A58ACAF050D1 (void);
-// 0x00000752 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::UpdateAnimationTime(System.Single,System.Boolean)
-// 0x00000753 System.Int32 Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::get_EarliestAnimationFrameIndex()
+// 0x00000756 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorBase::UpdateAnimationTime(System.Single,System.Boolean)
+// 0x00000757 System.Int32 Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::get_EarliestAnimationFrameIndex()
 extern void EntityAnimatorMotionSmoothing_get_EarliestAnimationFrameIndex_mC5698A1D2B237D4906E09F01D7AC237708843F49 (void);
-// 0x00000754 System.Int32 Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::get_LatestAnimationFrameIndex()
+// 0x00000758 System.Int32 Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::get_LatestAnimationFrameIndex()
 extern void EntityAnimatorMotionSmoothing_get_LatestAnimationFrameIndex_m090A07C941B487AB24C5E0D3FDAF4F908E08CDD3 (void);
-// 0x00000755 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::.ctor(Oculus.Avatar2.OvrAvatarEntity)
+// 0x00000759 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::.ctor(Oculus.Avatar2.OvrAvatarEntity)
 extern void EntityAnimatorMotionSmoothing__ctor_m864EF11651AD82E69C51931AC5BD20FE4F117692 (void);
-// 0x00000756 System.Single Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::GetRenderInterpolationValue()
+// 0x0000075A System.Single Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::GetRenderInterpolationValue()
 extern void EntityAnimatorMotionSmoothing_GetRenderInterpolationValue_mAA4843D31BA43DC7D77DF73D5083D8D7E39B20F9 (void);
-// 0x00000757 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::AddNewAnimationFrame(System.Single,System.Single,Oculus.Avatar2.CAPI/ovrAvatar2Pose& modreq(System.Runtime.InteropServices.InAttribute),Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x0000075B System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::AddNewAnimationFrame(System.Single,System.Single,Oculus.Avatar2.CAPI/ovrAvatar2Pose& modreq(System.Runtime.InteropServices.InAttribute),Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderState& modreq(System.Runtime.InteropServices.InAttribute))
 extern void EntityAnimatorMotionSmoothing_AddNewAnimationFrame_mA5C6E10C24FDC876530A9B5D2B6BF85A06919575 (void);
-// 0x00000758 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::UpdateAnimationTime(System.Single,System.Boolean)
+// 0x0000075C System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::UpdateAnimationTime(System.Single,System.Boolean)
 extern void EntityAnimatorMotionSmoothing_UpdateAnimationTime_m97FA0A0B20033AC82E6CE8EDCF4B87F19038CFDB (void);
-// 0x00000759 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::AddNewAnimationFrameTime(System.Single,System.Single)
+// 0x0000075D System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::AddNewAnimationFrameTime(System.Single,System.Single)
 extern void EntityAnimatorMotionSmoothing_AddNewAnimationFrameTime_mA531C6862E286EB6B36F586F430946FA48336BDB (void);
-// 0x0000075A System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::CalculateInterpolationValue(System.Single,System.Boolean)
+// 0x0000075E System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::CalculateInterpolationValue(System.Single,System.Boolean)
 extern void EntityAnimatorMotionSmoothing_CalculateInterpolationValue_m9753BC9C8783E1F65040A67DEC510890E796807A (void);
-// 0x0000075B System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::.cctor()
+// 0x0000075F System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing::.cctor()
 extern void EntityAnimatorMotionSmoothing__cctor_m42C4096363D2EFF026D3E9659CE1809BC0A7C853 (void);
-// 0x0000075C System.Single Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::get_Timestamp()
+// 0x00000760 System.Single Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::get_Timestamp()
 extern void AnimationFrameInfo_get_Timestamp_m51B8C6205BCDDBA0EEA4D1F8FB342A9A87E11EFE (void);
-// 0x0000075D System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::set_Timestamp(System.Single)
+// 0x00000761 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::set_Timestamp(System.Single)
 extern void AnimationFrameInfo_set_Timestamp_mD947071A97FBD3EFA537B53E267C15CCBFD6F10F (void);
-// 0x0000075E System.Boolean Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::get_IsValid()
+// 0x00000762 System.Boolean Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::get_IsValid()
 extern void AnimationFrameInfo_get_IsValid_m5AF843C407397608EE2223C0420BF6F10200D953 (void);
-// 0x0000075F System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::set_IsValid(System.Boolean)
+// 0x00000763 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::set_IsValid(System.Boolean)
 extern void AnimationFrameInfo_set_IsValid_mD3EF4114D777B5CEB6CF63F67AABBE14D3292665 (void);
-// 0x00000760 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::UpdateValues(System.Single)
+// 0x00000764 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::UpdateValues(System.Single)
 extern void AnimationFrameInfo_UpdateValues_m22966A5120352E2A97B4F6CE0E52A342ECA5E113 (void);
-// 0x00000761 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::.ctor()
+// 0x00000765 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorMotionSmoothing/AnimationFrameInfo::.ctor()
 extern void AnimationFrameInfo__ctor_m5FA26AFFB864E064753CF29A402969FADE683915 (void);
-// 0x00000762 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorDefault::.ctor(Oculus.Avatar2.OvrAvatarEntity)
+// 0x00000766 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorDefault::.ctor(Oculus.Avatar2.OvrAvatarEntity)
 extern void EntityAnimatorDefault__ctor_mDDD498112925304388E91C950E5E60CB5DD48359 (void);
-// 0x00000763 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorDefault::UpdateAnimationTime(System.Single,System.Boolean)
+// 0x00000767 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityAnimatorDefault::UpdateAnimationTime(System.Single,System.Boolean)
 extern void EntityAnimatorDefault_UpdateAnimationTime_m87DF14DFCD1221F83CD1B420EDC665B5999A8B1E (void);
-// 0x00000764 System.Void Oculus.Avatar2.OvrAvatarEntity/LoadingStateEvent::.ctor()
+// 0x00000768 System.Void Oculus.Avatar2.OvrAvatarEntity/LoadingStateEvent::.ctor()
 extern void LoadingStateEvent__ctor_m9B985D483521C765C8D9FCD0720591D2CF5AF8D3 (void);
-// 0x00000765 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityLoadingStateEvent::.ctor()
+// 0x00000769 System.Void Oculus.Avatar2.OvrAvatarEntity/EntityLoadingStateEvent::.ctor()
 extern void EntityLoadingStateEvent__ctor_m38D1F7326DC76906BC4D393DE768339986176B73 (void);
-// 0x00000766 System.Void Oculus.Avatar2.OvrAvatarEntity/AvatarStateEvent::.ctor()
+// 0x0000076A System.Void Oculus.Avatar2.OvrAvatarEntity/AvatarStateEvent::.ctor()
 extern void AvatarStateEvent__ctor_m891460FE4C3856092B482BA0416CE032DE95B973 (void);
-// 0x00000767 System.Void Oculus.Avatar2.OvrAvatarEntity/AvatarLoadFailedEvent::.ctor()
+// 0x0000076B System.Void Oculus.Avatar2.OvrAvatarEntity/AvatarLoadFailedEvent::.ctor()
 extern void AvatarLoadFailedEvent__ctor_m5C6859D68D6503FD8AAE4013B10E467003AB2888 (void);
-// 0x00000768 System.Void Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion,Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion)
+// 0x0000076C System.Void Oculus.Avatar2.OvrAvatarEntity/CheckPrimitivesResult::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion,Oculus.Avatar2.CAPI/ovrAvatar2EntityRenderStateVersion)
 extern void CheckPrimitivesResult__ctor_m371E40EFB6AB8441F634FBC9076CB9EE0DBB7F1A (void);
-// 0x00000769 System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::.ctor(UnityEngine.GameObject)
+// 0x0000076D System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::.ctor(UnityEngine.GameObject)
 extern void LodData__ctor_m61F087E0434FC66664CA791CDF0F2B3BCE88FCB0 (void);
-// 0x0000076A System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::get_IsValid()
+// 0x0000076E System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::get_IsValid()
 extern void LodData_get_IsValid_m4FBC63ECF94A2B623575DBEC6020DE2CA119802E (void);
-// 0x0000076B System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::get_HasInstances()
+// 0x0000076F System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::get_HasInstances()
 extern void LodData_get_HasInstances_mFFACE19CAD8C0F8E0A6357EE5F86A4FC46B3DFAF (void);
-// 0x0000076C System.Int32 Oculus.Avatar2.OvrAvatarEntity/LodData::get_vertexCount()
+// 0x00000770 System.Int32 Oculus.Avatar2.OvrAvatarEntity/LodData::get_vertexCount()
 extern void LodData_get_vertexCount_m35C03867392EC15CA560CDCF2FE42133DA61B4D3 (void);
-// 0x0000076D System.Int32 Oculus.Avatar2.OvrAvatarEntity/LodData::get_triangleCount()
+// 0x00000771 System.Int32 Oculus.Avatar2.OvrAvatarEntity/LodData::get_triangleCount()
 extern void LodData_get_triangleCount_m75BA25701EC3F8A398FC8D9DEE36F97A10400BAE (void);
-// 0x0000076E System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::AddInstance(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x00000772 System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::AddInstance(Oculus.Avatar2.OvrAvatarRenderable)
 extern void LodData_AddInstance_m4A8677E29995670CDE604545586F08944F172ADB (void);
-// 0x0000076F System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::RemoveInstance(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x00000773 System.Boolean Oculus.Avatar2.OvrAvatarEntity/LodData::RemoveInstance(Oculus.Avatar2.OvrAvatarRenderable)
 extern void LodData_RemoveInstance_m2FBFB73DA17C22D6C3915F0294B7A3B8D0C2BC74 (void);
-// 0x00000770 System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::Clear()
+// 0x00000774 System.Void Oculus.Avatar2.OvrAvatarEntity/LodData::Clear()
 extern void LodData_Clear_m26D06EB1DC607763883B616095069372F4E4BE7C (void);
-// 0x00000771 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c::.cctor()
+// 0x00000775 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c::.cctor()
 extern void U3CU3Ec__cctor_m3E369520D875280C9888F8AD87DA94FE03456638 (void);
-// 0x00000772 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c::.ctor()
+// 0x00000776 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c::.ctor()
 extern void U3CU3Ec__ctor_mB1751DABD39682217ED1A73E1CD5CD47DD4C2210 (void);
-// 0x00000773 System.UInt16 Oculus.Avatar2.OvrAvatarEntity/<>c::<SetActiveSubMeshInclusion>b__118_0(System.Int32)
+// 0x00000777 System.UInt16 Oculus.Avatar2.OvrAvatarEntity/<>c::<SetActiveSubMeshInclusion>b__118_0(System.Int32)
 extern void U3CU3Ec_U3CSetActiveSubMeshInclusionU3Eb__118_0_mA2002F76CBEE6D11C823CCCCC7B7F0965B5DF3C7 (void);
-// 0x00000774 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c__DisplayClass179_0::.ctor()
-extern void U3CU3Ec__DisplayClass179_0__ctor_m8F48AFC2494522AD0850649421BBB4BB19D33452 (void);
-// 0x00000775 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<>c__DisplayClass179_0::<RemoveMonitoredJoint>b__0(Oculus.Avatar2.OvrAvatarJointPose)
-extern void U3CU3Ec__DisplayClass179_0_U3CRemoveMonitoredJointU3Eb__0_m484AF08D4DC2FF77952B20468AC181EED96D3218 (void);
-// 0x00000776 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::.ctor(System.Int32)
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245__ctor_m3B94B8AA73F01694C6A0C7761DA08D6E891DB6CD (void);
-// 0x00000777 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::System.IDisposable.Dispose()
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_IDisposable_Dispose_m5348E7A895E640E731B05376901581E590AA2D38 (void);
-// 0x00000778 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::MoveNext()
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_MoveNext_m9F3FE1E59EF0B601B1C82F7D36D007AD8FDB4834 (void);
-// 0x00000779 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m629BB0950DBCCEE4DF5095399D14549A148D8C63 (void);
-// 0x0000077A System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::System.Collections.IEnumerator.Reset()
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_IEnumerator_Reset_mCC8592C79EBEB44C239B10CD99F79AC823205375 (void);
-// 0x0000077B System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__245::System.Collections.IEnumerator.get_Current()
-extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_IEnumerator_get_Current_m720ED7417FE531DF57FDBE7116C5A5C9585EB67D (void);
-// 0x0000077C System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::.ctor(System.Int32)
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246__ctor_m579A7B657BF2FB099C57A73FD26F447CF84CB90F (void);
-// 0x0000077D System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::System.IDisposable.Dispose()
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246_System_IDisposable_Dispose_mD7B6CC6DDC0B4327211C60A1F7AC538C44E12017 (void);
-// 0x0000077E System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::MoveNext()
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246_MoveNext_m907237A8690AE0CD7D878AAC6DB5DDB146919AB2 (void);
-// 0x0000077F System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE196182E4603B5C20559DA5BBBFCE108B8547F2D (void);
-// 0x00000780 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::System.Collections.IEnumerator.Reset()
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_IEnumerator_Reset_mF61F7FCB1B4D1904CA45363ACFEDE01C4BC10A10 (void);
-// 0x00000781 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__246::System.Collections.IEnumerator.get_Current()
-extern void U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_IEnumerator_get_Current_m4E5F161ADC52103605BC9F3C24593B51EE4FFB65 (void);
-// 0x00000782 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::.ctor(System.Int32)
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257__ctor_m23BF5F4B59AE1E8B86716FDBABF903C41F7B6C1F (void);
-// 0x00000783 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::System.IDisposable.Dispose()
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_IDisposable_Dispose_m1046E2E92379BDE56003BFBB152962FF3EE2FBF7 (void);
-// 0x00000784 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::MoveNext()
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_MoveNext_mF147D55D5293EA15A44BB6EC3A488FA7C9E79A15 (void);
-// 0x00000785 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD53F95817A46D6E72B9D73F2EC27DD2D7FAB60F7 (void);
-// 0x00000786 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::System.Collections.IEnumerator.Reset()
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_IEnumerator_Reset_mEED2C3DAF293DDC48B05CF138CB51EAFDA78D370 (void);
-// 0x00000787 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__257::System.Collections.IEnumerator.get_Current()
-extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_IEnumerator_get_Current_m05CFFB332A9F0855FB266F3F19A29D2020656CB7 (void);
-// 0x00000788 UnityEngine.Transform Oculus.Avatar2.IJointData::get_JointTransform()
-// 0x00000789 System.Boolean Oculus.Avatar2.IJointData::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
-// 0x0000078A System.Void Oculus.Avatar2.IJointData::Dispose()
-// 0x0000078B System.String Oculus.Avatar2.EntityJointMonitorBase`1::get_LogScope()
-// 0x0000078C System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,T&)
-// 0x0000078D System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Transform&)
-// 0x0000078E System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetPositionAndOrientation(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-// 0x0000078F System.Void Oculus.Avatar2.EntityJointMonitorBase`1::.ctor(Oculus.Avatar2.OvrAvatarEntity)
-// 0x00000790 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Dispose()
-// 0x00000791 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Finalize()
-// 0x00000792 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Dispose(System.Boolean)
-// 0x00000793 T Oculus.Avatar2.EntityJointMonitorBase`1::AddMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
-// 0x00000794 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Oculus.Avatar2.IJointMonitor.OnJointPosesUpdated(System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarJointPose>)
-// 0x00000795 UnityEngine.Transform Oculus.Avatar2.EntityJointMonitorBase`1::CreateNewTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
-// 0x00000796 System.Collections.Generic.Dictionary`2/ValueCollection<Oculus.Avatar2.CAPI/ovrAvatar2JointType,T> Oculus.Avatar2.EntityJointMonitorBase`1::GetAllJointData()
-// 0x00000797 System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::IsJointDataValid(T)
-// 0x00000798 T Oculus.Avatar2.EntityJointMonitorBase`1::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
-// 0x00000799 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::DisposeJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,T)
-// 0x0000079A System.Void Oculus.Avatar2.EntityJointMonitorBase`1::AddNewAnimationFrameForJoint(T,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
-// 0x0000079B System.Void Oculus.Avatar2.EntityJointMonitorBase`1::UpdateJoints(System.Single)
-// 0x0000079C UnityEngine.Transform Oculus.Avatar2.TransformHolder::get_JointTransform()
+// 0x00000778 System.Void Oculus.Avatar2.OvrAvatarEntity/<>c__DisplayClass185_0::.ctor()
+extern void U3CU3Ec__DisplayClass185_0__ctor_m1342DF21CA0B6E7760A0B5CB9843E4593C7F640E (void);
+// 0x00000779 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<>c__DisplayClass185_0::<RemoveMonitoredJoint>b__0(Oculus.Avatar2.OvrAvatarJointPose)
+extern void U3CU3Ec__DisplayClass185_0_U3CRemoveMonitoredJointU3Eb__0_m8B858C03830335DF85D0768AF025DD2AFF59BA12 (void);
+// 0x0000077A System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::.ctor(System.Int32)
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251__ctor_m62B38CF92F3EA05F1E2CB6D473C2B7A85799CFBD (void);
+// 0x0000077B System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::System.IDisposable.Dispose()
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_IDisposable_Dispose_mEE664AD81AA254AE1D7B649DED03F743B3D5B31D (void);
+// 0x0000077C System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::MoveNext()
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_MoveNext_m117542919A23DE1986933B4DF8BF9BD8E18AC7DC (void);
+// 0x0000077D System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8A005650332A3EDC9A8229AEF66B0F2BD50A9D36 (void);
+// 0x0000077E System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::System.Collections.IEnumerator.Reset()
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_IEnumerator_Reset_mC07FC9FE6F8880CD66DB6B090C30A8DA0B904FE0 (void);
+// 0x0000077F System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildSkeletonAndPrimitives>d__251::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_IEnumerator_get_Current_m17FDB31A70FFE6D60BEA87531090C05E274C0AD5 (void);
+// 0x00000780 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::.ctor(System.Int32)
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252__ctor_m5128C2D54EB97B5C74B465DB14B1A11F6F744172 (void);
+// 0x00000781 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::System.IDisposable.Dispose()
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252_System_IDisposable_Dispose_m28724E0FF2CF15302D6C3D139A147842D4A69945 (void);
+// 0x00000782 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::MoveNext()
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252_MoveNext_m6A15E3004DCCA1A9969E016988D53079822151FF (void);
+// 0x00000783 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA1E59C387F15FBCD79913556404F8192F7FF6910 (void);
+// 0x00000784 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::System.Collections.IEnumerator.Reset()
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_IEnumerator_Reset_m2C5830F3149995579863A86AF0ECC5425127D1D1 (void);
+// 0x00000785 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsync_BuildPrimitives>d__252::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_IEnumerator_get_Current_mFC55C2FF1A6429A1136C4882D3E1998DE25B77C1 (void);
+// 0x00000786 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::.ctor(System.Int32)
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263__ctor_m094EF87EB3551212A54B745DBB82A6355E9D7B21 (void);
+// 0x00000787 System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::System.IDisposable.Dispose()
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_IDisposable_Dispose_mCEA7302529D2A675ED358DE0D5E3DE9C48B17D9D (void);
+// 0x00000788 System.Boolean Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::MoveNext()
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_MoveNext_m594ADD33EA6B644791A1AAE87A64F921B3874DC1 (void);
+// 0x00000789 System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFACCA9FF2EF5FEC4B1849078F8A865C1B7624877 (void);
+// 0x0000078A System.Void Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::System.Collections.IEnumerator.Reset()
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_IEnumerator_Reset_m0B4E59A607B3D39B46353286A526FC7546879FAF (void);
+// 0x0000078B System.Object Oculus.Avatar2.OvrAvatarEntity/<LoadAsyncCoroutine_BuildPrimitives_Internal>d__263::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_IEnumerator_get_Current_m500507B108D6C4BC2D4393B2A8A183CD6607EFBC (void);
+// 0x0000078C UnityEngine.Transform Oculus.Avatar2.IJointData::get_JointTransform()
+// 0x0000078D System.Boolean Oculus.Avatar2.IJointData::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x0000078E System.Void Oculus.Avatar2.IJointData::Dispose()
+// 0x0000078F System.String Oculus.Avatar2.EntityJointMonitorBase`1::get_LogScope()
+// 0x00000790 System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,T&)
+// 0x00000791 System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Transform&)
+// 0x00000792 System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::TryGetPositionAndOrientation(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x00000793 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::.ctor(Oculus.Avatar2.OvrAvatarEntity)
+// 0x00000794 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Dispose()
+// 0x00000795 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Finalize()
+// 0x00000796 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Dispose(System.Boolean)
+// 0x00000797 T Oculus.Avatar2.EntityJointMonitorBase`1::AddMonitoredJoint(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x00000798 System.Void Oculus.Avatar2.EntityJointMonitorBase`1::Oculus.Avatar2.IJointMonitor.OnJointPosesUpdated(System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarJointPose>)
+// 0x00000799 UnityEngine.Transform Oculus.Avatar2.EntityJointMonitorBase`1::CreateNewTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x0000079A System.Collections.Generic.Dictionary`2/ValueCollection<Oculus.Avatar2.CAPI/ovrAvatar2JointType,T> Oculus.Avatar2.EntityJointMonitorBase`1::GetAllJointData()
+// 0x0000079B System.Boolean Oculus.Avatar2.EntityJointMonitorBase`1::IsJointDataValid(T)
+// 0x0000079C T Oculus.Avatar2.EntityJointMonitorBase`1::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x0000079D System.Void Oculus.Avatar2.EntityJointMonitorBase`1::DisposeJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,T)
+// 0x0000079E System.Void Oculus.Avatar2.EntityJointMonitorBase`1::AddNewAnimationFrameForJoint(T,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x0000079F System.Void Oculus.Avatar2.EntityJointMonitorBase`1::UpdateJoints(System.Single)
+// 0x000007A0 UnityEngine.Transform Oculus.Avatar2.TransformHolder::get_JointTransform()
 extern void TransformHolder_get_JointTransform_mBE4F0CCED89160EEE5F959247ED405BB0993D71C (void);
-// 0x0000079D System.Void Oculus.Avatar2.TransformHolder::.ctor(UnityEngine.Transform)
+// 0x000007A1 System.Void Oculus.Avatar2.TransformHolder::.ctor(UnityEngine.Transform)
 extern void TransformHolder__ctor_mBD67F010837FC250FE530F399CB4FBFB3C6F8B6E (void);
-// 0x0000079E System.Boolean Oculus.Avatar2.TransformHolder::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007A2 System.Boolean Oculus.Avatar2.TransformHolder::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void TransformHolder_TryGetPosAndOrientation_mA2BC951372ADDC6319103441C28A4B6C5ED2AAC2 (void);
-// 0x0000079F System.Void Oculus.Avatar2.TransformHolder::Dispose()
+// 0x000007A3 System.Void Oculus.Avatar2.TransformHolder::Dispose()
 extern void TransformHolder_Dispose_m6F7B830C3850422B8ABA1C686AF13DAC85311390 (void);
-// 0x000007A0 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity)
+// 0x000007A4 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity)
 extern void OvrAvatarEntityJointMonitor__ctor_m2D3640FDBEDF2C1D9E5A2E490598E805AFBC75C9 (void);
-// 0x000007A1 System.String Oculus.Avatar2.OvrAvatarEntityJointMonitor::get_LogScope()
+// 0x000007A5 System.String Oculus.Avatar2.OvrAvatarEntityJointMonitor::get_LogScope()
 extern void OvrAvatarEntityJointMonitor_get_LogScope_mBF48E4F6FE1F626004972CD472E05E26EEC4B8B0 (void);
-// 0x000007A2 Oculus.Avatar2.TransformHolder Oculus.Avatar2.OvrAvatarEntityJointMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000007A6 Oculus.Avatar2.TransformHolder Oculus.Avatar2.OvrAvatarEntityJointMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntityJointMonitor_CreateNewJointData_m2030A67B7259F135B19E3E3C030BF0408B3A6816 (void);
-// 0x000007A3 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::AddNewAnimationFrameForJoint(Oculus.Avatar2.TransformHolder,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x000007A7 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::AddNewAnimationFrameForJoint(Oculus.Avatar2.TransformHolder,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
 extern void OvrAvatarEntityJointMonitor_AddNewAnimationFrameForJoint_mCC152D964A032CEEB92C4B66DCF70C44E837F59B (void);
-// 0x000007A4 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::UpdateJoints(System.Single)
+// 0x000007A8 System.Void Oculus.Avatar2.OvrAvatarEntityJointMonitor::UpdateJoints(System.Single)
 extern void OvrAvatarEntityJointMonitor_UpdateJoints_m7F7D9C47A34A799441E7D64DCF54875707697F11 (void);
-// 0x000007A5 System.Void Oculus.Avatar2.InterpolatingJoint::.ctor(UnityEngine.Transform)
+// 0x000007A9 System.Void Oculus.Avatar2.InterpolatingJoint::.ctor(UnityEngine.Transform)
 extern void InterpolatingJoint__ctor_m302F62BAC525791F3EB46EBB318028CAA72D8CBA (void);
-// 0x000007A6 UnityEngine.Transform Oculus.Avatar2.InterpolatingJoint::get_JointTransform()
+// 0x000007AA UnityEngine.Transform Oculus.Avatar2.InterpolatingJoint::get_JointTransform()
 extern void InterpolatingJoint_get_JointTransform_m1872A5BDF9D94BB060D808C27091D6909762916C (void);
-// 0x000007A7 System.Void Oculus.Avatar2.InterpolatingJoint::set_JointTransform(UnityEngine.Transform)
+// 0x000007AB System.Void Oculus.Avatar2.InterpolatingJoint::set_JointTransform(UnityEngine.Transform)
 extern void InterpolatingJoint_set_JointTransform_mA63D55A543E9D5553C41047D07AA618A534722E7 (void);
-// 0x000007A8 System.Boolean Oculus.Avatar2.InterpolatingJoint::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007AC System.Boolean Oculus.Avatar2.InterpolatingJoint::TryGetPosAndOrientation(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void InterpolatingJoint_TryGetPosAndOrientation_m1CDBE4673001BD75D342B6759B65FE2D5CA1B2B0 (void);
-// 0x000007A9 System.Void Oculus.Avatar2.InterpolatingJoint::Dispose()
+// 0x000007AD System.Void Oculus.Avatar2.InterpolatingJoint::Dispose()
 extern void InterpolatingJoint_Dispose_m7AC54B7611B972CF52632C1F5ABE19D8230C4EF6 (void);
-// 0x000007AA System.Void Oculus.Avatar2.InterpolatingJoint::AddNewAnimationFrame(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007AE System.Void Oculus.Avatar2.InterpolatingJoint::AddNewAnimationFrame(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void InterpolatingJoint_AddNewAnimationFrame_m43CCDB923CCD20772C515C490DDEC8045D6E4DCA (void);
-// 0x000007AB System.Void Oculus.Avatar2.InterpolatingJoint::CalculateUpdate(System.Single,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007AF System.Void Oculus.Avatar2.InterpolatingJoint::CalculateUpdate(System.Single,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void InterpolatingJoint_CalculateUpdate_mB8BFA0927A94690E4B1711A6E51BDE164C26095E (void);
-// 0x000007AC System.Void Oculus.Avatar2.InterpolatingJoint::UpdateTransform(System.Single)
+// 0x000007B0 System.Void Oculus.Avatar2.InterpolatingJoint::UpdateTransform(System.Single)
 extern void InterpolatingJoint_UpdateTransform_mA5639184D31C69EEE9B95FFABEF959F60653F67E (void);
-// 0x000007AD System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.IInterpolationValueProvider)
+// 0x000007B1 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.IInterpolationValueProvider)
 extern void OvrAvatarEntitySmoothingJointMonitor__ctor_mDF691028FB37D0D7E289DB4D2C86E125D394D4B4 (void);
-// 0x000007AE System.String Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::get_LogScope()
+// 0x000007B2 System.String Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::get_LogScope()
 extern void OvrAvatarEntitySmoothingJointMonitor_get_LogScope_m1B402F22D0DC191E8F9565DC3CC8D35469C942AD (void);
-// 0x000007AF Oculus.Avatar2.InterpolatingJoint Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000007B3 Oculus.Avatar2.InterpolatingJoint Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntitySmoothingJointMonitor_CreateNewJointData_mEB530C0DF423B32D69E9A27FEA05A3AD2D390DF8 (void);
-// 0x000007B0 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::AddNewAnimationFrameForJoint(Oculus.Avatar2.InterpolatingJoint,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x000007B4 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::AddNewAnimationFrameForJoint(Oculus.Avatar2.InterpolatingJoint,UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Quaternion& modreq(System.Runtime.InteropServices.InAttribute))
 extern void OvrAvatarEntitySmoothingJointMonitor_AddNewAnimationFrameForJoint_mFD79E8B2CA5881615FB704DDA89DB3646C354FC4 (void);
-// 0x000007B1 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::UpdateJoints(System.Single)
+// 0x000007B5 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointMonitor::UpdateJoints(System.Single)
 extern void OvrAvatarEntitySmoothingJointMonitor_UpdateJoints_mFA1832CFD75011002C820BB30BDB2328D629837B (void);
-// 0x000007B2 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.IInterpolationValueProvider)
+// 0x000007B6 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::.ctor(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.IInterpolationValueProvider)
 extern void OvrAvatarEntitySmoothingJointJobMonitor__ctor_m3D6FC584C8D8BF7640AB6DF88109419DDA66FCC4 (void);
-// 0x000007B3 Oculus.Avatar2.InterpolatingJoint Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
+// 0x000007B7 Oculus.Avatar2.InterpolatingJoint Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::CreateNewJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType)
 extern void OvrAvatarEntitySmoothingJointJobMonitor_CreateNewJointData_mE52B73ADA7D9C313584C734ECEA05B09986C939B (void);
-// 0x000007B4 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::DisposeJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,Oculus.Avatar2.InterpolatingJoint)
+// 0x000007B8 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::DisposeJointData(Oculus.Avatar2.CAPI/ovrAvatar2JointType,Oculus.Avatar2.InterpolatingJoint)
 extern void OvrAvatarEntitySmoothingJointJobMonitor_DisposeJointData_m0F40A120B2F84D7792E3ECE0F63CB946BF8D1FE2 (void);
-// 0x000007B5 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::UpdateJoints(System.Single)
+// 0x000007B9 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::UpdateJoints(System.Single)
 extern void OvrAvatarEntitySmoothingJointJobMonitor_UpdateJoints_mABC48668A5878D632CA6AC50E916DC2D0644E63D (void);
-// 0x000007B6 Unity.Jobs.JobHandle Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::ScheduleUpdateTransformsJob(Unity.Collections.NativeArray`1<Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose>&,UnityEngine.Jobs.TransformAccessArray&)
+// 0x000007BA Unity.Jobs.JobHandle Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::ScheduleUpdateTransformsJob(Unity.Collections.NativeArray`1<Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose>&,UnityEngine.Jobs.TransformAccessArray&)
 extern void OvrAvatarEntitySmoothingJointJobMonitor_ScheduleUpdateTransformsJob_mBB498BEDAAD6B0D8D3AA87D4FF33FFEABC68084C (void);
-// 0x000007B7 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::Dispose(System.Boolean)
+// 0x000007BB System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor::Dispose(System.Boolean)
 extern void OvrAvatarEntitySmoothingJointJobMonitor_Dispose_mE6A9E058C01F4B4D02573E9CD6A36F4999A266FC (void);
-// 0x000007B8 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose::.ctor(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007BC System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose::.ctor(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void JointPose__ctor_m0BA07B3853C2D1F0476061E6E9BD578EB9DD883C (void);
-// 0x000007B9 System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/UpdateJointTransformsJob::.ctor(Unity.Collections.NativeArray`1<Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose>&)
+// 0x000007BD System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/UpdateJointTransformsJob::.ctor(Unity.Collections.NativeArray`1<Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/JointPose>&)
 extern void UpdateJointTransformsJob__ctor_m2881660AE394F4D61EF538FE8DBE683CE16E284F (void);
-// 0x000007BA System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/UpdateJointTransformsJob::UnityEngine.Jobs.IJobParallelForTransform.Execute(System.Int32,UnityEngine.Jobs.TransformAccess)
+// 0x000007BE System.Void Oculus.Avatar2.OvrAvatarEntitySmoothingJointJobMonitor/UpdateJointTransformsJob::UnityEngine.Jobs.IJobParallelForTransform.Execute(System.Int32,UnityEngine.Jobs.TransformAccess)
 extern void UpdateJointTransformsJob_UnityEngine_Jobs_IJobParallelForTransform_Execute_m95B896AF570E566061423532073F0E7287F4C773 (void);
-// 0x000007BB System.Single Oculus.Avatar2.IInterpolationValueProvider::GetRenderInterpolationValue()
-// 0x000007BC System.Void Oculus.Avatar2.IJointMonitor::OnJointPosesUpdated(System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarJointPose>)
-// 0x000007BD System.Boolean Oculus.Avatar2.IJointMonitor::TryGetTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Transform&)
-// 0x000007BE System.Boolean Oculus.Avatar2.IJointMonitor::TryGetPositionAndOrientation(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-// 0x000007BF System.Void Oculus.Avatar2.IJointMonitor::UpdateJoints(System.Single)
-// 0x000007C0 System.Void Oculus.Avatar2.OvrAvatarJointPose::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2JointType,System.UInt32)
+// 0x000007BF System.Single Oculus.Avatar2.IInterpolationValueProvider::GetRenderInterpolationValue()
+// 0x000007C0 System.Void Oculus.Avatar2.IJointMonitor::OnJointPosesUpdated(System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarJointPose>)
+// 0x000007C1 System.Boolean Oculus.Avatar2.IJointMonitor::TryGetTransform(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Transform&)
+// 0x000007C2 System.Boolean Oculus.Avatar2.IJointMonitor::TryGetPositionAndOrientation(Oculus.Avatar2.CAPI/ovrAvatar2JointType,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x000007C3 System.Void Oculus.Avatar2.IJointMonitor::UpdateJoints(System.Single)
+// 0x000007C4 System.Void Oculus.Avatar2.OvrAvatarJointPose::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2JointType,System.UInt32)
 extern void OvrAvatarJointPose__ctor_mB1C1C15E9E2E8A4ACA3F5A960C7B275F68C7BA45 (void);
-// 0x000007C1 System.Void Oculus.Avatar2.OvrAvatarJointPose::.ctor(Oculus.Avatar2.OvrAvatarJointPose&,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x000007C5 System.Void Oculus.Avatar2.OvrAvatarJointPose::.ctor(Oculus.Avatar2.OvrAvatarJointPose&,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarJointPose__ctor_m5E3227CAC6BD3E49A36CC31C98CB34382C064AA2 (void);
-// 0x000007C2 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarEyePoseBehavior::get_EyePoseProvider()
-// 0x000007C3 System.Void Oculus.Avatar2.OvrAvatarEyePoseBehavior::.ctor()
+// 0x000007C6 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarEyePoseBehavior::get_EyePoseProvider()
+// 0x000007C7 System.Void Oculus.Avatar2.OvrAvatarEyePoseBehavior::.ctor()
 extern void OvrAvatarEyePoseBehavior__ctor_m58008F1CE6D9048FE0B9F001D97F71E8550A3F3E (void);
-// 0x000007C4 Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider Oculus.Avatar2.OvrAvatarEyePoseProviderBase::get_Context()
+// 0x000007C8 Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider Oculus.Avatar2.OvrAvatarEyePoseProviderBase::get_Context()
 extern void OvrAvatarEyePoseProviderBase_get_Context_m700B9BDD13C998B7EC65855AB24B7E9A21F58C1E (void);
-// 0x000007C5 System.Void Oculus.Avatar2.OvrAvatarEyePoseProviderBase::.ctor()
+// 0x000007C9 System.Void Oculus.Avatar2.OvrAvatarEyePoseProviderBase::.ctor()
 extern void OvrAvatarEyePoseProviderBase__ctor_m811979C986CB0BAC8F4A2710E9F8DEB73676B65B (void);
-// 0x000007C6 System.Boolean Oculus.Avatar2.OvrAvatarEyePoseProviderBase::GetEyePose(Oculus.Avatar2.OvrAvatarEyesPose)
-// 0x000007C7 System.Boolean Oculus.Avatar2.OvrAvatarEyePoseProviderBase::EyePoseCallback(Oculus.Avatar2.CAPI/ovrAvatar2EyesPose&,System.IntPtr)
+// 0x000007CA System.Boolean Oculus.Avatar2.OvrAvatarEyePoseProviderBase::GetEyePose(Oculus.Avatar2.OvrAvatarEyesPose)
+// 0x000007CB System.Boolean Oculus.Avatar2.OvrAvatarEyePoseProviderBase::EyePoseCallback(Oculus.Avatar2.CAPI/ovrAvatar2EyesPose&,System.IntPtr)
 extern void OvrAvatarEyePoseProviderBase_EyePoseCallback_mDD8BA55CAD4DDEE2DA770E0B7CC3B589D756C402 (void);
-// 0x000007C8 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::get_EyePoseProvider()
+// 0x000007CC Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::get_EyePoseProvider()
 extern void OvrAvatarEyeTrackingBehaviorOvrPlugin_get_EyePoseProvider_mA5D3D9A2762099E9770949162D1FCBC6A63596AF (void);
-// 0x000007C9 System.Void Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::InitializeEyePoseProvider()
+// 0x000007CD System.Void Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::InitializeEyePoseProvider()
 extern void OvrAvatarEyeTrackingBehaviorOvrPlugin_InitializeEyePoseProvider_m9EF45556EF366078C7472E4B16A1B7FF69B1CD1E (void);
-// 0x000007CA System.Void Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::.ctor()
+// 0x000007CE System.Void Oculus.Avatar2.OvrAvatarEyeTrackingBehaviorOvrPlugin::.ctor()
 extern void OvrAvatarEyeTrackingBehaviorOvrPlugin__ctor_mF35DFDF678882CF22924F523FE7222285987110C (void);
-// 0x000007CB Oculus.Avatar2.CAPI/ovrAvatar2EyesPose Oculus.Avatar2.OvrAvatarEyesPose::ToNative()
+// 0x000007CF Oculus.Avatar2.CAPI/ovrAvatar2EyesPose Oculus.Avatar2.OvrAvatarEyesPose::ToNative()
 extern void OvrAvatarEyesPose_ToNative_mE3DEFA7B24FA12B7B813848BD08982E361B3B531 (void);
-// 0x000007CC System.Void Oculus.Avatar2.OvrAvatarEyesPose::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2EyesPose&)
+// 0x000007D0 System.Void Oculus.Avatar2.OvrAvatarEyesPose::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2EyesPose&)
 extern void OvrAvatarEyesPose_FromNative_m68D1D0C96428107AA9311C96D3582FC1C55D4CCB (void);
-// 0x000007CD System.Void Oculus.Avatar2.OvrAvatarEyesPose::.ctor()
+// 0x000007D1 System.Void Oculus.Avatar2.OvrAvatarEyesPose::.ctor()
 extern void OvrAvatarEyesPose__ctor_m437686FD3C893AC3C6E31967B466C2DB2F175FFC (void);
-// 0x000007CE Oculus.Avatar2.CAPI/ovrAvatar2FacePose Oculus.Avatar2.OvrAvatarFacePose::GenerateEmptyNativePose()
+// 0x000007D2 Oculus.Avatar2.CAPI/ovrAvatar2FacePose Oculus.Avatar2.OvrAvatarFacePose::GenerateEmptyNativePose()
 extern void OvrAvatarFacePose_GenerateEmptyNativePose_mAF58F0C7FC0D5612E2B5CA17DCE9E7088746C131 (void);
-// 0x000007CF Oculus.Avatar2.CAPI/ovrAvatar2FacePose Oculus.Avatar2.OvrAvatarFacePose::ToNative()
+// 0x000007D3 Oculus.Avatar2.CAPI/ovrAvatar2FacePose Oculus.Avatar2.OvrAvatarFacePose::ToNative()
 extern void OvrAvatarFacePose_ToNative_mAC7C99E51AE91A5D3886F0E24BA43FFFEBC7D0C9 (void);
-// 0x000007D0 System.Void Oculus.Avatar2.OvrAvatarFacePose::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2FacePose&)
+// 0x000007D4 System.Void Oculus.Avatar2.OvrAvatarFacePose::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2FacePose&)
 extern void OvrAvatarFacePose_FromNative_m7CC335227AFB0DAB33D4CBD26B6793D1E6072794 (void);
-// 0x000007D1 System.Void Oculus.Avatar2.OvrAvatarFacePose::.ctor()
+// 0x000007D5 System.Void Oculus.Avatar2.OvrAvatarFacePose::.ctor()
 extern void OvrAvatarFacePose__ctor_m035E0A85A66C02AB017E5A3EC29D1752DC573894 (void);
-// 0x000007D2 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarFacePoseBehavior::get_FacePoseProvider()
-// 0x000007D3 System.Void Oculus.Avatar2.OvrAvatarFacePoseBehavior::.ctor()
+// 0x000007D6 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarFacePoseBehavior::get_FacePoseProvider()
+// 0x000007D7 System.Void Oculus.Avatar2.OvrAvatarFacePoseBehavior::.ctor()
 extern void OvrAvatarFacePoseBehavior__ctor_mEE17CC66B4B5D7B96F79449DDE84A92E46F4C23A (void);
-// 0x000007D4 Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider Oculus.Avatar2.OvrAvatarFacePoseProviderBase::get_Provider()
+// 0x000007D8 Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider Oculus.Avatar2.OvrAvatarFacePoseProviderBase::get_Provider()
 extern void OvrAvatarFacePoseProviderBase_get_Provider_mFA5AF4EC66EDE987746961D3462A15E87E2A65E1 (void);
-// 0x000007D5 System.Void Oculus.Avatar2.OvrAvatarFacePoseProviderBase::.ctor()
+// 0x000007D9 System.Void Oculus.Avatar2.OvrAvatarFacePoseProviderBase::.ctor()
 extern void OvrAvatarFacePoseProviderBase__ctor_m5262E9D5AFF6F1F7EF11E92F8D43D51D4132314B (void);
-// 0x000007D6 System.Boolean Oculus.Avatar2.OvrAvatarFacePoseProviderBase::GetFacePose(Oculus.Avatar2.OvrAvatarFacePose)
-// 0x000007D7 System.Boolean Oculus.Avatar2.OvrAvatarFacePoseProviderBase::FacePoseCallback(Oculus.Avatar2.CAPI/ovrAvatar2FacePose&,System.IntPtr)
+// 0x000007DA System.Boolean Oculus.Avatar2.OvrAvatarFacePoseProviderBase::GetFacePose(Oculus.Avatar2.OvrAvatarFacePose)
+// 0x000007DB System.Boolean Oculus.Avatar2.OvrAvatarFacePoseProviderBase::FacePoseCallback(Oculus.Avatar2.CAPI/ovrAvatar2FacePose&,System.IntPtr)
 extern void OvrAvatarFacePoseProviderBase_FacePoseCallback_mD22F93FA190F519ABBE1BB864DA49115F21D49D9 (void);
-// 0x000007D8 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::get_FacePoseProvider()
+// 0x000007DC Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::get_FacePoseProvider()
 extern void OvrAvatarFaceTrackingBehaviorOvrPlugin_get_FacePoseProvider_m7D4656CB89B793F4B2C49C43887DA815777F6FE5 (void);
-// 0x000007D9 System.Void Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::InitializeFacePoseProvider()
+// 0x000007DD System.Void Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::InitializeFacePoseProvider()
 extern void OvrAvatarFaceTrackingBehaviorOvrPlugin_InitializeFacePoseProvider_m711E4A4097D7A21B0315CD9A95FA64BE3DCEC62D (void);
-// 0x000007DA System.Void Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::.ctor()
+// 0x000007DE System.Void Oculus.Avatar2.OvrAvatarFaceTrackingBehaviorOvrPlugin::.ctor()
 extern void OvrAvatarFaceTrackingBehaviorOvrPlugin__ctor_mD218A85C064464BE93A8EEF5542704E7F8D4D941 (void);
-// 0x000007DB System.Boolean Oculus.Avatar2.OvrAvatarGazeTarget::get_Dirty()
+// 0x000007DF System.Boolean Oculus.Avatar2.OvrAvatarGazeTarget::get_Dirty()
 extern void OvrAvatarGazeTarget_get_Dirty_mB554D1137F24A0AADFA48AF5AED524CE51F89630 (void);
-// 0x000007DC Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget Oculus.Avatar2.OvrAvatarGazeTarget::get_Target()
+// 0x000007E0 Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget Oculus.Avatar2.OvrAvatarGazeTarget::get_Target()
 extern void OvrAvatarGazeTarget_get_Target_m5F94AD86422972CDE4B54FDEABDA3D9E7CD5162E (void);
-// 0x000007DD System.Void Oculus.Avatar2.OvrAvatarGazeTarget::set_Target(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
+// 0x000007E1 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::set_Target(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
 extern void OvrAvatarGazeTarget_set_Target_m91F905BB334FC47733B6D7D617C2DD24EC456B13 (void);
-// 0x000007DE Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarGazeTarget::get_NativePosition()
+// 0x000007E2 Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarGazeTarget::get_NativePosition()
 extern void OvrAvatarGazeTarget_get_NativePosition_m61BCE8B4CB9DD62517A9581A126BAF8C9D1651FD (void);
-// 0x000007DF Oculus.Avatar2.CAPI/ovrAvatar2Id Oculus.Avatar2.OvrAvatarGazeTarget::get_Id()
+// 0x000007E3 Oculus.Avatar2.CAPI/ovrAvatar2Id Oculus.Avatar2.OvrAvatarGazeTarget::get_Id()
 extern void OvrAvatarGazeTarget_get_Id_mEC50059CF9B84EFC53FB593DD9C0C6287210CC41 (void);
-// 0x000007E0 UnityEngine.Vector3 Oculus.Avatar2.OvrAvatarGazeTarget::get_Position()
+// 0x000007E4 UnityEngine.Vector3 Oculus.Avatar2.OvrAvatarGazeTarget::get_Position()
 extern void OvrAvatarGazeTarget_get_Position_m852563BB71D7F192733A982765FCFCA8B2692235 (void);
-// 0x000007E1 Oculus.Avatar2.CAPI/ovrAvatar2GazeTargetType Oculus.Avatar2.OvrAvatarGazeTarget::get_TargetType()
+// 0x000007E5 Oculus.Avatar2.CAPI/ovrAvatar2GazeTargetType Oculus.Avatar2.OvrAvatarGazeTarget::get_TargetType()
 extern void OvrAvatarGazeTarget_get_TargetType_m03896A6F280BB8FEDD30B73F1DF1A2B650BB9DA8 (void);
-// 0x000007E2 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::set_TargetType(Oculus.Avatar2.CAPI/ovrAvatar2GazeTargetType)
+// 0x000007E6 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::set_TargetType(Oculus.Avatar2.CAPI/ovrAvatar2GazeTargetType)
 extern void OvrAvatarGazeTarget_set_TargetType_mD16826ED9C35F8AFB66ACF422139DAB25648DE50 (void);
-// 0x000007E3 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::Awake()
+// 0x000007E7 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::Awake()
 extern void OvrAvatarGazeTarget_Awake_m89D191A5F98D5E57CF471C69DCCE045D1F30D523 (void);
-// 0x000007E4 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnEnable()
+// 0x000007E8 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnEnable()
 extern void OvrAvatarGazeTarget_OnEnable_mD76B1ADA2F5E8C66541E985B131FD2A9F5FF2760 (void);
-// 0x000007E5 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnDisable()
+// 0x000007E9 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnDisable()
 extern void OvrAvatarGazeTarget_OnDisable_m6026BCA35BCF24E2520159C5CBBE7047E83D7C4E (void);
-// 0x000007E6 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnValidate()
+// 0x000007EA System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnValidate()
 extern void OvrAvatarGazeTarget_OnValidate_m18F46D6E4C69EE27E6C0F0B6FBCAA0F020FAA27B (void);
-// 0x000007E7 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::DestroyTarget()
+// 0x000007EB System.Void Oculus.Avatar2.OvrAvatarGazeTarget::DestroyTarget()
 extern void OvrAvatarGazeTarget_DestroyTarget_m3B4D067AED560213556619901326A18F32015F26 (void);
-// 0x000007E8 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::CreateTarget()
+// 0x000007EC System.Void Oculus.Avatar2.OvrAvatarGazeTarget::CreateTarget()
 extern void OvrAvatarGazeTarget_CreateTarget_m03FA2FD4018F8F7F7A6AC90C969E7EC69AE9B043 (void);
-// 0x000007E9 System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnTypeChanged()
+// 0x000007ED System.Void Oculus.Avatar2.OvrAvatarGazeTarget::OnTypeChanged()
 extern void OvrAvatarGazeTarget_OnTypeChanged_mDF0BED86E08549D261DE8C022A5D391AE299B7EE (void);
-// 0x000007EA System.Void Oculus.Avatar2.OvrAvatarGazeTarget::MarkClean()
+// 0x000007EE System.Void Oculus.Avatar2.OvrAvatarGazeTarget::MarkClean()
 extern void OvrAvatarGazeTarget_MarkClean_m89E499EE242D46BE2252FB05C84BA2AB75346435 (void);
-// 0x000007EB System.Void Oculus.Avatar2.OvrAvatarGazeTarget::.ctor()
+// 0x000007EF System.Void Oculus.Avatar2.OvrAvatarGazeTarget::.ctor()
 extern void OvrAvatarGazeTarget__ctor_m4D9E8CE24DBC4DA20912589032ECD8ED2E41E0B3 (void);
-// 0x000007EC System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::AddTarget(Oculus.Avatar2.OvrAvatarGazeTarget)
+// 0x000007F0 System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::AddTarget(Oculus.Avatar2.OvrAvatarGazeTarget)
 extern void OvrAvatarGazeTargetManager_AddTarget_m41B890097B326815E4BBA0F50D5F82CE886980BD (void);
-// 0x000007ED System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::RemoveTarget(Oculus.Avatar2.OvrAvatarGazeTarget)
+// 0x000007F1 System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::RemoveTarget(Oculus.Avatar2.OvrAvatarGazeTarget)
 extern void OvrAvatarGazeTargetManager_RemoveTarget_m3C644F1F254241DBE4BB35D9F2369C231DE59149 (void);
-// 0x000007EE System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::Update()
+// 0x000007F2 System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::Update()
 extern void OvrAvatarGazeTargetManager_Update_mFB014742F6A8A41D7915C9E2EF79E29CD6427C95 (void);
-// 0x000007EF System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::CreateGazeTarget(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
+// 0x000007F3 System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::CreateGazeTarget(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
 extern void OvrAvatarGazeTargetManager_CreateGazeTarget_m938CBFB730478DC27E033C05A208BE2DBEAD6D02 (void);
-// 0x000007F0 System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::DestroyGazeTarget(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
+// 0x000007F4 System.Boolean Oculus.Avatar2.OvrAvatarGazeTargetManager::DestroyGazeTarget(Oculus.Avatar2.CAPI/ovrAvatar2GazeTarget)
 extern void OvrAvatarGazeTargetManager_DestroyGazeTarget_mA1FEBF6ADE22BD725B98531FABE0A992B10C656F (void);
-// 0x000007F1 System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::.ctor()
+// 0x000007F5 System.Void Oculus.Avatar2.OvrAvatarGazeTargetManager::.ctor()
 extern void OvrAvatarGazeTargetManager__ctor_m988899A3B4C393DF68C69E64A43097FAD475AA0A (void);
-// 0x000007F2 System.Boolean Oculus.Avatar2.OvrAvatarInputControlDelegate::GetInputControlState(Oculus.Avatar2.OvrAvatarInputControlState&)
-// 0x000007F3 Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarInputControlDelegate::GetControllerType()
+// 0x000007F6 System.Boolean Oculus.Avatar2.OvrAvatarInputControlDelegate::GetInputControlState(Oculus.Avatar2.OvrAvatarInputControlState&)
+// 0x000007F7 Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarInputControlDelegate::GetControllerType()
 extern void OvrAvatarInputControlDelegate_GetControllerType_mCEACE8078286C2C41E4F83C1DBD6749B7518D082 (void);
-// 0x000007F4 System.Void Oculus.Avatar2.OvrAvatarInputControlDelegate::.ctor()
+// 0x000007F8 System.Void Oculus.Avatar2.OvrAvatarInputControlDelegate::.ctor()
 extern void OvrAvatarInputControlDelegate__ctor_mA89408920DF65521189990DF10B7BB8386B3FE8B (void);
-// 0x000007F5 Oculus.Avatar2.CAPI/ovrAvatar2ControllerState Oculus.Avatar2.OvrAvatarInputControlState::ToNative(Oculus.Avatar2.OvrAvatarControllerState&)
+// 0x000007F9 Oculus.Avatar2.CAPI/ovrAvatar2ControllerState Oculus.Avatar2.OvrAvatarInputControlState::ToNative(Oculus.Avatar2.OvrAvatarControllerState&)
 extern void OvrAvatarInputControlState_ToNative_mF588677EB7E741794BBD111C483A042A59A7A18B (void);
-// 0x000007F6 Oculus.Avatar2.CAPI/ovrAvatar2InputControlState Oculus.Avatar2.OvrAvatarInputControlState::ToNative()
+// 0x000007FA Oculus.Avatar2.CAPI/ovrAvatar2InputControlState Oculus.Avatar2.OvrAvatarInputControlState::ToNative()
 extern void OvrAvatarInputControlState_ToNative_m2307E7BABF7262EA42D2A9AB4B533921A439DD4B (void);
-// 0x000007F7 System.Void Oculus.Avatar2.OvrAvatarInputControlState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2ControllerState&,Oculus.Avatar2.OvrAvatarControllerState&)
+// 0x000007FB System.Void Oculus.Avatar2.OvrAvatarInputControlState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2ControllerState&,Oculus.Avatar2.OvrAvatarControllerState&)
 extern void OvrAvatarInputControlState_FromNative_m184409E8A671B65CAB64E30F2870BE4AA4420876 (void);
-// 0x000007F8 System.Void Oculus.Avatar2.OvrAvatarInputControlState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2InputControlState&)
+// 0x000007FC System.Void Oculus.Avatar2.OvrAvatarInputControlState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2InputControlState&)
 extern void OvrAvatarInputControlState_FromNative_m76613578DC582A7B07808788737D4A275ACBC26C (void);
-// 0x000007F9 System.Void Oculus.Avatar2.OvrAvatarInputManager::set_BodyTracking(Oculus.Avatar2.OvrAvatarBodyTrackingContext)
+// 0x000007FD System.Void Oculus.Avatar2.OvrAvatarInputManager::set_BodyTracking(Oculus.Avatar2.OvrAvatarBodyTrackingContext)
 extern void OvrAvatarInputManager_set_BodyTracking_m7D67B4748DA78B3D53B24C65309E30A9D32B6A63 (void);
-// 0x000007FA Oculus.Avatar2.OvrAvatarBodyTrackingContext Oculus.Avatar2.OvrAvatarInputManager::get_BodyTracking()
+// 0x000007FE Oculus.Avatar2.OvrAvatarBodyTrackingContext Oculus.Avatar2.OvrAvatarInputManager::get_BodyTracking()
 extern void OvrAvatarInputManager_get_BodyTracking_m9F36F1C1275DB39E59B770A338937FC1D3BF08B6 (void);
-// 0x000007FB Oculus.Avatar2.OvrAvatarBodyTrackingContextBase Oculus.Avatar2.OvrAvatarInputManager::get_TrackingContext()
+// 0x000007FF Oculus.Avatar2.OvrAvatarBodyTrackingContextBase Oculus.Avatar2.OvrAvatarInputManager::get_TrackingContext()
 extern void OvrAvatarInputManager_get_TrackingContext_m106F3A82ABEA3F6BD829EAC1C02E8CFCA049527C (void);
-// 0x000007FC System.Void Oculus.Avatar2.OvrAvatarInputManager::InitializeTracking()
+// 0x00000800 System.Void Oculus.Avatar2.OvrAvatarInputManager::InitializeTracking()
 extern void OvrAvatarInputManager_InitializeTracking_m0B1B31B58C65B137526C34B5533C536358B4B862 (void);
-// 0x000007FD System.Void Oculus.Avatar2.OvrAvatarInputManager::OnDestroy()
+// 0x00000801 System.Void Oculus.Avatar2.OvrAvatarInputManager::OnDestroy()
 extern void OvrAvatarInputManager_OnDestroy_m98FAF860DFC6EE6ACAD9A8E2FC71500462166A00 (void);
-// 0x000007FE System.Void Oculus.Avatar2.OvrAvatarInputManager::OnDestroyCalled()
+// 0x00000802 System.Void Oculus.Avatar2.OvrAvatarInputManager::OnDestroyCalled()
 extern void OvrAvatarInputManager_OnDestroyCalled_mD08FBE363F1B24711595C7C729A2E4327FD56705 (void);
-// 0x000007FF Oculus.Avatar2.OvrAvatarInputTrackingState Oculus.Avatar2.OvrAvatarInputManager::GetTPose()
+// 0x00000803 Oculus.Avatar2.OvrAvatarInputTrackingState Oculus.Avatar2.OvrAvatarInputManager::GetTPose()
 extern void OvrAvatarInputManager_GetTPose_m39B70551860D6163DA2047557FA9A31B01D0EEAE (void);
-// 0x00000800 System.Void Oculus.Avatar2.OvrAvatarInputManager::.ctor()
+// 0x00000804 System.Void Oculus.Avatar2.OvrAvatarInputManager::.ctor()
 extern void OvrAvatarInputManager__ctor_mE1509B24E406CF205151DA0BBE59BAB3913574E9 (void);
-// 0x00000801 Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingContext Oculus.Avatar2.OvrAvatarInputTrackingContextBase::get_Context()
+// 0x00000805 Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingContext Oculus.Avatar2.OvrAvatarInputTrackingContextBase::get_Context()
 extern void OvrAvatarInputTrackingContextBase_get_Context_m530B19B80A17D362775912CB108243D2C53CCCEB (void);
-// 0x00000802 System.Void Oculus.Avatar2.OvrAvatarInputTrackingContextBase::.ctor()
+// 0x00000806 System.Void Oculus.Avatar2.OvrAvatarInputTrackingContextBase::.ctor()
 extern void OvrAvatarInputTrackingContextBase__ctor_m87B94943C5FB09AC300066373D44A54603AE59F8 (void);
-// 0x00000803 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingContextBase::GetInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
-// 0x00000804 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingContextBase::InputTrackingCallback(Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState&,System.IntPtr)
+// 0x00000807 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingContextBase::GetInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
+// 0x00000808 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingContextBase::InputTrackingCallback(Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState&,System.IntPtr)
 extern void OvrAvatarInputTrackingContextBase_InputTrackingCallback_m4723F86EF45F4A780A7BEAA1F33A1BD8D0D3DCA6 (void);
-// 0x00000805 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingDelegate::GetRawInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
-// 0x00000806 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingDelegate::GetInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
+// 0x00000809 System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingDelegate::GetRawInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
+// 0x0000080A System.Boolean Oculus.Avatar2.OvrAvatarInputTrackingDelegate::GetInputTrackingState(Oculus.Avatar2.OvrAvatarInputTrackingState&)
 extern void OvrAvatarInputTrackingDelegate_GetInputTrackingState_m9207D3DB748623D83E81D1B3172C70902F3881B8 (void);
-// 0x00000807 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ConvertTransform(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x0000080B System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ConvertTransform(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarInputTrackingDelegate_ConvertTransform_m1C8C105F7E690EC5D83A327CD1D3F390DE16779A (void);
-// 0x00000808 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::FilterInput(Oculus.Avatar2.OvrAvatarInputTrackingState&)
+// 0x0000080C System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::FilterInput(Oculus.Avatar2.OvrAvatarInputTrackingState&)
 extern void OvrAvatarInputTrackingDelegate_FilterInput_mFF54D9305B4C3738C9B598BEED131E858C9356AC (void);
-// 0x00000809 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ClampHandPositions(Oculus.Avatar2.OvrAvatarInputTrackingState&,Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances&,System.Single)
+// 0x0000080D System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ClampHandPositions(Oculus.Avatar2.OvrAvatarInputTrackingState&,Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances&,System.Single)
 extern void OvrAvatarInputTrackingDelegate_ClampHandPositions_mA6FEB004ED471A4D5435C8916069AD93A9C0FDD0 (void);
-// 0x0000080A System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::DisableDistantControllers(Oculus.Avatar2.OvrAvatarInputTrackingState&,Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances&,System.Single)
+// 0x0000080E System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::DisableDistantControllers(Oculus.Avatar2.OvrAvatarInputTrackingState&,Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances&,System.Single)
 extern void OvrAvatarInputTrackingDelegate_DisableDistantControllers_m118C5F0D2B3FCEBEFCE922CF2BFCF5DF7E6E06A2 (void);
-// 0x0000080B System.Single Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ClampHand(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&,Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&,System.Single)
+// 0x0000080F System.Single Oculus.Avatar2.OvrAvatarInputTrackingDelegate::ClampHand(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&,Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&,System.Single)
 extern void OvrAvatarInputTrackingDelegate_ClampHand_m50C01881F8C76373199A091D13ACF564BAB5066B (void);
-// 0x0000080C System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::DisableDistantController(System.Boolean&,System.Single,System.Single)
+// 0x00000810 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::DisableDistantController(System.Boolean&,System.Single,System.Single)
 extern void OvrAvatarInputTrackingDelegate_DisableDistantController_m88400F361EC45B96FEE86CA0900806C3708E4E37 (void);
-// 0x0000080D System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::HideInactiveControllers(Oculus.Avatar2.OvrAvatarInputTrackingState&)
+// 0x00000811 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::HideInactiveControllers(Oculus.Avatar2.OvrAvatarInputTrackingState&)
 extern void OvrAvatarInputTrackingDelegate_HideInactiveControllers_mFC1CBA534263039B2DF13218CCFF90CC079C8B53 (void);
-// 0x0000080E System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::.ctor()
+// 0x00000812 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate::.ctor()
 extern void OvrAvatarInputTrackingDelegate__ctor_m7C66C85C6362B775E880C0C2C8CDD725F9EF4215 (void);
-// 0x0000080F System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances::.ctor(System.Single,System.Single)
+// 0x00000813 System.Void Oculus.Avatar2.OvrAvatarInputTrackingDelegate/InputHandDistances::.ctor(System.Single,System.Single)
 extern void InputHandDistances__ctor_mCAA69E309A8FD061CB29EE667B7EC2690D68E66A (void);
-// 0x00000810 Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState Oculus.Avatar2.OvrAvatarInputTrackingState::ToNative()
+// 0x00000814 Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState Oculus.Avatar2.OvrAvatarInputTrackingState::ToNative()
 extern void OvrAvatarInputTrackingState_ToNative_mB2A9C241AE67E5F2FC838373CB6D3D400842CE55 (void);
-// 0x00000811 System.Void Oculus.Avatar2.OvrAvatarInputTrackingState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState&)
+// 0x00000815 System.Void Oculus.Avatar2.OvrAvatarInputTrackingState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2InputTrackingState&)
 extern void OvrAvatarInputTrackingState_FromNative_mBB24C498D01D41E25392602A296C81D9F5E22EDD (void);
-// 0x00000812 Oculus.Avatar2.OvrAvatarLipSyncContextBase Oculus.Avatar2.OvrAvatarLipSyncBehavior::get_LipSyncContext()
-// 0x00000813 System.Void Oculus.Avatar2.OvrAvatarLipSyncBehavior::.ctor()
+// 0x00000816 Oculus.Avatar2.OvrAvatarLipSyncContextBase Oculus.Avatar2.OvrAvatarLipSyncBehavior::get_LipSyncContext()
+// 0x00000817 System.Void Oculus.Avatar2.OvrAvatarLipSyncBehavior::.ctor()
 extern void OvrAvatarLipSyncBehavior__ctor_m8792E6DFA3924E088A327252EF4990B5099257E4 (void);
-// 0x00000814 System.Int32 Oculus.Avatar2.OvrAvatarLipSyncContext::get_AudioSampleRate()
+// 0x00000818 System.Int32 Oculus.Avatar2.OvrAvatarLipSyncContext::get_AudioSampleRate()
 extern void OvrAvatarLipSyncContext_get_AudioSampleRate_mAE7ADDDB7F55E5522E0FA2AE945C99B02FB669DC (void);
-// 0x00000815 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::set_AudioSampleRate(System.Int32)
+// 0x00000819 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::set_AudioSampleRate(System.Int32)
 extern void OvrAvatarLipSyncContext_set_AudioSampleRate_m746817BBCDC88EC19CB14FA458C046392982A77A (void);
-// 0x00000816 Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode Oculus.Avatar2.OvrAvatarLipSyncContext::get_Mode()
+// 0x0000081A Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode Oculus.Avatar2.OvrAvatarLipSyncContext::get_Mode()
 extern void OvrAvatarLipSyncContext_get_Mode_mD5E7B706228A693AE445305ED1AE7CF365D97703 (void);
-// 0x00000817 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::set_Mode(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode)
+// 0x0000081B System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::set_Mode(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode)
 extern void OvrAvatarLipSyncContext_set_Mode_m97B18F37CCDE928B64ACA648D50F122BA02BDD5F (void);
-// 0x00000818 Oculus.Avatar2.OvrAvatarLipSyncContextBase Oculus.Avatar2.OvrAvatarLipSyncContext::get_LipSyncContext()
+// 0x0000081C Oculus.Avatar2.OvrAvatarLipSyncContextBase Oculus.Avatar2.OvrAvatarLipSyncContext::get_LipSyncContext()
 extern void OvrAvatarLipSyncContext_get_LipSyncContext_m2CA669D68E12C06DAA9456157A64474C3E67E268 (void);
-// 0x00000819 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::Start()
+// 0x0000081D System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::Start()
 extern void OvrAvatarLipSyncContext_Start_m6FF65EDCF3E49FE579BD7E3C9A87CBFEEDBB6DC4 (void);
-// 0x0000081A System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnAudioFilterRead(System.Single[],System.Int32)
+// 0x0000081E System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnAudioFilterRead(System.Single[],System.Int32)
 extern void OvrAvatarLipSyncContext_OnAudioFilterRead_m91B4FAF11A37EFEEAA04BF17156468A00E57B8EC (void);
-// 0x0000081B System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnEnable()
+// 0x0000081F System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnEnable()
 extern void OvrAvatarLipSyncContext_OnEnable_m324B3994E83845009F00D01D1F8E7D012DC1FE71 (void);
-// 0x0000081C System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnDisable()
+// 0x00000820 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnDisable()
 extern void OvrAvatarLipSyncContext_OnDisable_m5999FA2066D9E776AD8EC9C814A9A24A46E71696 (void);
-// 0x0000081D System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnDestroy()
+// 0x00000821 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnDestroy()
 extern void OvrAvatarLipSyncContext_OnDestroy_m6FE4011E66F9AEF6A536226C8A75C4D713ECDCD4 (void);
-// 0x0000081E System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnValidate()
+// 0x00000822 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::OnValidate()
 extern void OvrAvatarLipSyncContext_OnValidate_m07EF56FC469C4A2BEDC0ED11C3DF5B5523F6486C (void);
-// 0x0000081F System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::SetSmoothing(System.Int32)
+// 0x00000823 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::SetSmoothing(System.Int32)
 extern void OvrAvatarLipSyncContext_SetSmoothing_mCF54FB66049F4862D87C3561DA5B20CE8C8BAA64 (void);
-// 0x00000820 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::SetAudioSourceType(Oculus.Avatar2.LipSyncAudioSourceType)
+// 0x00000824 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::SetAudioSourceType(Oculus.Avatar2.LipSyncAudioSourceType)
 extern void OvrAvatarLipSyncContext_SetAudioSourceType_m44CE33E512065EA3DB818D428BE13FCF877D675C (void);
-// 0x00000821 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::ProcessAudioSamples(System.Single[],System.Int32)
+// 0x00000825 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::ProcessAudioSamples(System.Single[],System.Int32)
 extern void OvrAvatarLipSyncContext_ProcessAudioSamples_m61A09B8882519B1EAB793AE779242CBD7975941F (void);
-// 0x00000822 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::ProcessAudioSamples(System.Int16[],System.Int32)
+// 0x00000826 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::ProcessAudioSamples(System.Int16[],System.Int32)
 extern void OvrAvatarLipSyncContext_ProcessAudioSamples_m2BA75E0E6F5A031FEEEB03A996C3F969DD239AF2 (void);
-// 0x00000823 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::CreateVisemeContext()
+// 0x00000827 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::CreateVisemeContext()
 extern void OvrAvatarLipSyncContext_CreateVisemeContext_mDE97A16E005C58BF5602C2E0360E555513E95176 (void);
-// 0x00000824 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::.ctor()
+// 0x00000828 System.Void Oculus.Avatar2.OvrAvatarLipSyncContext::.ctor()
 extern void OvrAvatarLipSyncContext__ctor_mABEA016490E022324D6E8EEB67DA961F66CBDD6D (void);
-// 0x00000825 Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContext Oculus.Avatar2.OvrAvatarLipSyncContextBase::get_DataContext()
+// 0x00000829 Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContext Oculus.Avatar2.OvrAvatarLipSyncContextBase::get_DataContext()
 extern void OvrAvatarLipSyncContextBase_get_DataContext_mF083E510A0302F2669A035A3E353B69CDB77F1F8 (void);
-// 0x00000826 System.Void Oculus.Avatar2.OvrAvatarLipSyncContextBase::.ctor()
+// 0x0000082A System.Void Oculus.Avatar2.OvrAvatarLipSyncContextBase::.ctor()
 extern void OvrAvatarLipSyncContextBase__ctor_mE5E5E007B2A48F78602118B108AD6EDEFF12B409 (void);
-// 0x00000827 System.Boolean Oculus.Avatar2.OvrAvatarLipSyncContextBase::GetLipSyncState(Oculus.Avatar2.OvrAvatarLipSyncState)
-// 0x00000828 System.Boolean Oculus.Avatar2.OvrAvatarLipSyncContextBase::LipSyncCallback(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState&,System.IntPtr)
+// 0x0000082B System.Boolean Oculus.Avatar2.OvrAvatarLipSyncContextBase::GetLipSyncState(Oculus.Avatar2.OvrAvatarLipSyncState)
+// 0x0000082C System.Boolean Oculus.Avatar2.OvrAvatarLipSyncContextBase::LipSyncCallback(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState&,System.IntPtr)
 extern void OvrAvatarLipSyncContextBase_LipSyncCallback_mC6A55084FD73F7BCA793A12CF19D07B578403DE4 (void);
-// 0x00000829 Oculus.Avatar2.OvrAvatarLipSyncState Oculus.Avatar2.OvrAvatarLipSyncContextBase::DebugQueryLipSyncState()
+// 0x0000082D Oculus.Avatar2.OvrAvatarLipSyncState Oculus.Avatar2.OvrAvatarLipSyncContextBase::DebugQueryLipSyncState()
 extern void OvrAvatarLipSyncContextBase_DebugQueryLipSyncState_m36A8505908D90366D891AFE06429CFEBE740CCEF (void);
-// 0x0000082A Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState Oculus.Avatar2.OvrAvatarLipSyncState::ToNative()
+// 0x0000082E Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState Oculus.Avatar2.OvrAvatarLipSyncState::ToNative()
 extern void OvrAvatarLipSyncState_ToNative_mA40A22B26BEBBE7FAB7C0A293615397921F4CBAF (void);
-// 0x0000082B System.Void Oculus.Avatar2.OvrAvatarLipSyncState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState&)
+// 0x0000082F System.Void Oculus.Avatar2.OvrAvatarLipSyncState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncState&)
 extern void OvrAvatarLipSyncState_FromNative_mB4E59F6282DA619F5FEE9E99195D3781D181AD73 (void);
-// 0x0000082C System.Void Oculus.Avatar2.OvrAvatarLipSyncState::.ctor()
+// 0x00000830 System.Void Oculus.Avatar2.OvrAvatarLipSyncState::.ctor()
 extern void OvrAvatarLipSyncState__ctor_m7CE31A1F18C22F59874FDC5F7904D64E2EE833F5 (void);
-// 0x0000082D System.Void Oculus.Avatar2.OvrAvatarLog::add_CustomLogger(Oculus.Avatar2.OvrAvatarLog/LogDelegate)
+// 0x00000831 System.Void Oculus.Avatar2.OvrAvatarLog::add_CustomLogger(Oculus.Avatar2.OvrAvatarLog/LogDelegate)
 extern void OvrAvatarLog_add_CustomLogger_mA8C9F6DA9746FFEA2ACC1C50439F7D312D66AE98 (void);
-// 0x0000082E System.Void Oculus.Avatar2.OvrAvatarLog::remove_CustomLogger(Oculus.Avatar2.OvrAvatarLog/LogDelegate)
+// 0x00000832 System.Void Oculus.Avatar2.OvrAvatarLog::remove_CustomLogger(Oculus.Avatar2.OvrAvatarLog/LogDelegate)
 extern void OvrAvatarLog_remove_CustomLogger_mB60C6AF53B5103D674F7830D3DD2CA734CEAA5D6 (void);
-// 0x0000082F Oculus.Avatar2.OvrAvatarLog/ELogLevel Oculus.Avatar2.OvrAvatarLog::GetLogLevel(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel)
+// 0x00000833 Oculus.Avatar2.OvrAvatarLog/ELogLevel Oculus.Avatar2.OvrAvatarLog::GetLogLevel(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel)
 extern void OvrAvatarLog_GetLogLevel_mFE61CA7C77459596E69932B764EE47FF3F481E34 (void);
-// 0x00000830 System.Void Oculus.Avatar2.OvrAvatarLog::LogCallBack(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel,System.String,System.IntPtr)
+// 0x00000834 System.Void Oculus.Avatar2.OvrAvatarLog::LogCallBack(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel,System.String,System.IntPtr)
 extern void OvrAvatarLog_LogCallBack_mE2FAF4BE65847A41AA4124A8124DE2F292F1E782 (void);
-// 0x00000831 System.String Oculus.Avatar2.OvrAvatarLog::GetScopePrefix(System.String)
+// 0x00000835 System.String Oculus.Avatar2.OvrAvatarLog::GetScopePrefix(System.String)
 extern void OvrAvatarLog_GetScopePrefix_mAF3E2F046C035108D2FEDAC86BBE9D8EEE985F4A (void);
-// 0x00000832 System.Void Oculus.Avatar2.OvrAvatarLog::Log(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String,UnityEngine.Object)
+// 0x00000836 System.Void Oculus.Avatar2.OvrAvatarLog::Log(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_Log_mA3FE87DCFEAA2A9997B6543B239BAFBAAAE9CAAF (void);
-// 0x00000833 System.Void Oculus.Avatar2.OvrAvatarLog::LogVerbose(System.String,System.String,UnityEngine.Object)
+// 0x00000837 System.Void Oculus.Avatar2.OvrAvatarLog::LogVerbose(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogVerbose_m0DB3AC5B5FC882B4527769D6048A1F6D8A64E9A1 (void);
-// 0x00000834 System.Void Oculus.Avatar2.OvrAvatarLog::LogDebug(System.String,System.String,UnityEngine.Object)
+// 0x00000838 System.Void Oculus.Avatar2.OvrAvatarLog::LogDebug(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogDebug_mCB3C8D548A83630CFEF7A7934345E25AC04BF00D (void);
-// 0x00000835 System.Void Oculus.Avatar2.OvrAvatarLog::LogInfo(System.String,System.String,UnityEngine.Object)
+// 0x00000839 System.Void Oculus.Avatar2.OvrAvatarLog::LogInfo(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogInfo_mE2B728D84F84D283ED2CE49A60229E85666D339F (void);
-// 0x00000836 System.Void Oculus.Avatar2.OvrAvatarLog::LogWarning(System.String,System.String,UnityEngine.Object)
+// 0x0000083A System.Void Oculus.Avatar2.OvrAvatarLog::LogWarning(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogWarning_mB4F2526B60482139DB8CAC344DEAFA92040AAFA5 (void);
-// 0x00000837 System.Void Oculus.Avatar2.OvrAvatarLog::LogError(System.String,System.String,UnityEngine.Object)
+// 0x0000083B System.Void Oculus.Avatar2.OvrAvatarLog::LogError(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogError_m9BE615217156816F14E948BC84FFEB88A52C3567 (void);
-// 0x00000838 System.Void Oculus.Avatar2.OvrAvatarLog::LogException(System.String,System.Exception,System.String,UnityEngine.Object)
+// 0x0000083C System.Void Oculus.Avatar2.OvrAvatarLog::LogException(System.String,System.Exception,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogException_m8D351920B4DD1FB833FB65857850CC8D3192F44D (void);
-// 0x00000839 System.Void Oculus.Avatar2.OvrAvatarLog::LogAssert(System.String,System.String,UnityEngine.Object)
+// 0x0000083D System.Void Oculus.Avatar2.OvrAvatarLog::LogAssert(System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_LogAssert_mE8CA9B35F4BC760C5733C7F9543D8FC011B72CB3 (void);
-// 0x0000083A System.Void Oculus.Avatar2.OvrAvatarLog::Assert(System.Boolean,System.String,UnityEngine.Object)
+// 0x0000083E System.Void Oculus.Avatar2.OvrAvatarLog::Assert(System.Boolean,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_Assert_m5E3C112EC854B77DE524FE6781086E3E183D699C (void);
-// 0x0000083B System.Void Oculus.Avatar2.OvrAvatarLog::AssertConstMessage(System.Boolean,System.String,System.String,UnityEngine.Object)
+// 0x0000083F System.Void Oculus.Avatar2.OvrAvatarLog::AssertConstMessage(System.Boolean,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_AssertConstMessage_m490EAC60ED354382DA6208484EF685BBE30D7C0A (void);
-// 0x0000083C System.Void Oculus.Avatar2.OvrAvatarLog::AssertStaticBuilder(System.Boolean,Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder,System.String,UnityEngine.Object)
+// 0x00000840 System.Void Oculus.Avatar2.OvrAvatarLog::AssertStaticBuilder(System.Boolean,Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_AssertStaticBuilder_m5A791DB59D04E1554E6D7A43BE492580A7A7B225 (void);
-// 0x0000083D System.Void Oculus.Avatar2.OvrAvatarLog::AssertParam(System.Boolean,T&,Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1<T>,System.String,UnityEngine.Object)
-// 0x0000083E System.Void Oculus.Avatar2.OvrAvatarLog::AssertTwoParams(System.Boolean,T0&,T1&,Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2<T0,T1>,System.String,UnityEngine.Object)
-// 0x0000083F System.Void Oculus.Avatar2.OvrAvatarLog::AssertLessThan(System.Int32,System.Int32,Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1<System.Int32>,System.String,UnityEngine.Object)
+// 0x00000841 System.Void Oculus.Avatar2.OvrAvatarLog::AssertParam(System.Boolean,T&,Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1<T>,System.String,UnityEngine.Object)
+// 0x00000842 System.Void Oculus.Avatar2.OvrAvatarLog::AssertTwoParams(System.Boolean,T0&,T1&,Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2<T0,T1>,System.String,UnityEngine.Object)
+// 0x00000843 System.Void Oculus.Avatar2.OvrAvatarLog::AssertLessThan(System.Int32,System.Int32,Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1<System.Int32>,System.String,UnityEngine.Object)
 extern void OvrAvatarLog_AssertLessThan_m9F02F8359CE1463B75D98B2B48C3D0BEFBEE6DA5 (void);
-// 0x00000840 System.Void Oculus.Avatar2.OvrAvatarLog::HandleSpecialCaseLogs(System.String,System.Boolean&)
+// 0x00000844 System.Void Oculus.Avatar2.OvrAvatarLog::HandleSpecialCaseLogs(System.String,System.Boolean&)
 extern void OvrAvatarLog_HandleSpecialCaseLogs_m7DF6C157B487DA02349C5D4C23CED3A1861EAC09 (void);
-// 0x00000841 System.Void Oculus.Avatar2.OvrAvatarLog::.cctor()
+// 0x00000845 System.Void Oculus.Avatar2.OvrAvatarLog::.cctor()
 extern void OvrAvatarLog__cctor_mEBC003F1F03C0F83AF8CB77B5A23CAE2663AF192 (void);
-// 0x00000842 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000846 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::.ctor(System.Object,System.IntPtr)
 extern void LogDelegate__ctor_mC07F6B52D77D5CA6F0CC06C3012B890A20A9D4D2 (void);
-// 0x00000843 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::Invoke(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String)
+// 0x00000847 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::Invoke(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String)
 extern void LogDelegate_Invoke_mDEA9895AA208F85C8FBF2763084A267F1376A820 (void);
-// 0x00000844 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/LogDelegate::BeginInvoke(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String,System.AsyncCallback,System.Object)
+// 0x00000848 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/LogDelegate::BeginInvoke(Oculus.Avatar2.OvrAvatarLog/ELogLevel,System.String,System.String,System.AsyncCallback,System.Object)
 extern void LogDelegate_BeginInvoke_m26CD5D4C1F70A106EE2244D827A5760A8C27218C (void);
-// 0x00000845 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000849 System.Void Oculus.Avatar2.OvrAvatarLog/LogDelegate::EndInvoke(System.IAsyncResult)
 extern void LogDelegate_EndInvoke_mD860FDD03B942C7424B4951EF030E3F328E7C2FB (void);
-// 0x00000846 System.Void Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::.ctor(System.Object,System.IntPtr)
+// 0x0000084A System.Void Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::.ctor(System.Object,System.IntPtr)
 extern void AssertStaticMessageBuilder__ctor_m877588138C5FD9F8F1DA8C8AA54F12D628ADEB0D (void);
-// 0x00000847 System.String Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::Invoke()
+// 0x0000084B System.String Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::Invoke()
 extern void AssertStaticMessageBuilder_Invoke_m30E60C46AE5C3936B7508A0B612F0EF867CB75FD (void);
-// 0x00000848 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x0000084C System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::BeginInvoke(System.AsyncCallback,System.Object)
 extern void AssertStaticMessageBuilder_BeginInvoke_m450CB55FBD4F26AEA9D75DDCA0966029882D28D5 (void);
-// 0x00000849 System.String Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::EndInvoke(System.IAsyncResult)
+// 0x0000084D System.String Oculus.Avatar2.OvrAvatarLog/AssertStaticMessageBuilder::EndInvoke(System.IAsyncResult)
 extern void AssertStaticMessageBuilder_EndInvoke_m6A1166F5BF6F9088BBBFF30845714C184DC8CEC3 (void);
-// 0x0000084A System.Void Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::.ctor(System.Object,System.IntPtr)
-// 0x0000084B System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::Invoke(T& modreq(System.Runtime.InteropServices.InAttribute))
-// 0x0000084C System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::BeginInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
-// 0x0000084D System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::EndInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
-// 0x0000084E System.Void Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::.ctor(System.Object,System.IntPtr)
-// 0x0000084F System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::Invoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute))
-// 0x00000850 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::BeginInvoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
-// 0x00000851 System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::EndInvoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
-// 0x00000852 System.Void Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::.ctor(System.Object,System.IntPtr)
-// 0x00000853 System.String Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::Invoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute))
-// 0x00000854 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::BeginInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
-// 0x00000855 System.String Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::EndInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
-// 0x00000856 Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::get_Platform()
+// 0x0000084E System.Void Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::.ctor(System.Object,System.IntPtr)
+// 0x0000084F System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::Invoke(T& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x00000850 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::BeginInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
+// 0x00000851 System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`1::EndInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
+// 0x00000852 System.Void Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::.ctor(System.Object,System.IntPtr)
+// 0x00000853 System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::Invoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x00000854 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::BeginInvoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
+// 0x00000855 System.String Oculus.Avatar2.OvrAvatarLog/AssertMessageBuilder`2::EndInvoke(T0& modreq(System.Runtime.InteropServices.InAttribute),T1& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
+// 0x00000856 System.Void Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::.ctor(System.Object,System.IntPtr)
+// 0x00000857 System.String Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::Invoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute))
+// 0x00000858 System.IAsyncResult Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::BeginInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute),System.AsyncCallback,System.Object)
+// 0x00000859 System.String Oculus.Avatar2.OvrAvatarLog/AssertLessThanMessageBuilder`1::EndInvoke(T& modreq(System.Runtime.InteropServices.InAttribute),T& modreq(System.Runtime.InteropServices.InAttribute),System.IAsyncResult)
+// 0x0000085A Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::get_Platform()
 extern void OvrAvatarManager_get_Platform_m5C49900E7E2EC35E1833628AEF771B965EA0DE67 (void);
-// 0x00000857 System.Void Oculus.Avatar2.OvrAvatarManager::set_Platform(Oculus.Avatar2.CAPI/ovrAvatar2Platform)
+// 0x0000085B System.Void Oculus.Avatar2.OvrAvatarManager::set_Platform(Oculus.Avatar2.CAPI/ovrAvatar2Platform)
 extern void OvrAvatarManager_set_Platform_m65D0A838A7028F57962959F0CDC0DE91DC298D3B (void);
-// 0x00000858 Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarManager::get_ControllerType()
+// 0x0000085C Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarManager::get_ControllerType()
 extern void OvrAvatarManager_get_ControllerType_mB94144E4DE8EE7062E6C81D6C74A9C8BC29A670B (void);
-// 0x00000859 System.Void Oculus.Avatar2.OvrAvatarManager::set_ControllerType(Oculus.Avatar2.CAPI/ovrAvatar2ControllerType)
+// 0x0000085D System.Void Oculus.Avatar2.OvrAvatarManager::set_ControllerType(Oculus.Avatar2.CAPI/ovrAvatar2ControllerType)
 extern void OvrAvatarManager_set_ControllerType_m56C29D0D98AFCAEDCFEFBE3C4ED5F05604C13609 (void);
-// 0x0000085A System.Boolean Oculus.Avatar2.OvrAvatarManager::get_initialized()
+// 0x0000085E System.Boolean Oculus.Avatar2.OvrAvatarManager::get_initialized()
 extern void OvrAvatarManager_get_initialized_mBF0C610C9845F23495E75F6864D0800F04898D56 (void);
-// 0x0000085B System.Void Oculus.Avatar2.OvrAvatarManager::set_initialized(System.Boolean)
+// 0x0000085F System.Void Oculus.Avatar2.OvrAvatarManager::set_initialized(System.Boolean)
 extern void OvrAvatarManager_set_initialized_mFDD4F0D41EB814A04D1928C03D2902869BEB799C (void);
-// 0x0000085C System.UInt16 Oculus.Avatar2.OvrAvatarManager::get_MinSliceWorkPerFrameMS()
+// 0x00000860 System.UInt16 Oculus.Avatar2.OvrAvatarManager::get_MinSliceWorkPerFrameMS()
 extern void OvrAvatarManager_get_MinSliceWorkPerFrameMS_mD8E6B88FDB56BD10176A9862DFC100A0EB9D442A (void);
-// 0x0000085D System.Void Oculus.Avatar2.OvrAvatarManager::set_MinSliceWorkPerFrameMS(System.UInt16)
+// 0x00000861 System.Void Oculus.Avatar2.OvrAvatarManager::set_MinSliceWorkPerFrameMS(System.UInt16)
 extern void OvrAvatarManager_set_MinSliceWorkPerFrameMS_m156C6827FCB83DDD7A7FD39B056E7873B32ABD5E (void);
-// 0x0000085E Oculus.Avatar2.CAPI/ovrAvatar2LogLevel Oculus.Avatar2.OvrAvatarManager::get_ovrLogLevel()
+// 0x00000862 Oculus.Avatar2.CAPI/ovrAvatar2LogLevel Oculus.Avatar2.OvrAvatarManager::get_ovrLogLevel()
 extern void OvrAvatarManager_get_ovrLogLevel_m4815E6F23E87D5489D8DB0D311A707C3901D0E3B (void);
-// 0x0000085F System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UseExperimentalSystems()
+// 0x00000863 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UseExperimentalSystems()
 extern void OvrAvatarManager_get_UseExperimentalSystems_m5B5F0953F9F0F64A73FFA11AC2A3E0DF18FE5A1A (void);
-// 0x00000860 System.Void Oculus.Avatar2.OvrAvatarManager::SetLogLevel(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel)
+// 0x00000864 System.Void Oculus.Avatar2.OvrAvatarManager::SetLogLevel(Oculus.Avatar2.CAPI/ovrAvatar2LogLevel)
 extern void OvrAvatarManager_SetLogLevel_m95FF6FABAAFAC74428AA8E8C263FBC33C3BDC6C6 (void);
-// 0x00000861 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxRequests()
+// 0x00000865 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxRequests()
 extern void OvrAvatarManager_get_MaxRequests_m8BE835089610FC1898DBF0FBB2A6C53E7A5E8DCE (void);
-// 0x00000862 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxSendBytesPerSecond()
+// 0x00000866 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxSendBytesPerSecond()
 extern void OvrAvatarManager_get_MaxSendBytesPerSecond_m86435D40F924691BA59E359121DA75272ACC816D (void);
-// 0x00000863 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxReceiveBytesPerSecond()
+// 0x00000867 System.Int64 Oculus.Avatar2.OvrAvatarManager::get_MaxReceiveBytesPerSecond()
 extern void OvrAvatarManager_get_MaxReceiveBytesPerSecond_m57CC77D9E0A6F295CD366520BE219815992EE31E (void);
-// 0x00000864 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UseCriticalJointJobs()
+// 0x00000868 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UseCriticalJointJobs()
 extern void OvrAvatarManager_get_UseCriticalJointJobs_m8E23E992FE6538E4FDB2B2019A6C4C1DDCCBB377 (void);
-// 0x00000865 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_EnableDevTools()
+// 0x00000869 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_EnableDevTools()
 extern void OvrAvatarManager_get_EnableDevTools_m4F402B45AEEC10F01FF4369A2617A9DFC603A227 (void);
-// 0x00000866 Oculus.Avatar2.IOvrAvatarHandTrackingDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultHandTrackingDelegate()
+// 0x0000086A Oculus.Avatar2.IOvrAvatarHandTrackingDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultHandTrackingDelegate()
 extern void OvrAvatarManager_get_DefaultHandTrackingDelegate_m0CCA78CF7ED310E718EB4C6DB70E8C51C9C85B98 (void);
-// 0x00000867 System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultHandTrackingDelegate(Oculus.Avatar2.IOvrAvatarHandTrackingDelegate)
+// 0x0000086B System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultHandTrackingDelegate(Oculus.Avatar2.IOvrAvatarHandTrackingDelegate)
 extern void OvrAvatarManager_set_DefaultHandTrackingDelegate_m16162E882D43DED34749BC93E49AE4F4C2B1F663 (void);
-// 0x00000868 Oculus.Avatar2.IOvrAvatarInputTrackingDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultInputTrackingDelegate()
+// 0x0000086C Oculus.Avatar2.IOvrAvatarInputTrackingDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultInputTrackingDelegate()
 extern void OvrAvatarManager_get_DefaultInputTrackingDelegate_mB466034036AC7673ACF0EC2E83FDD647243B32B8 (void);
-// 0x00000869 System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultInputTrackingDelegate(Oculus.Avatar2.IOvrAvatarInputTrackingDelegate)
+// 0x0000086D System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultInputTrackingDelegate(Oculus.Avatar2.IOvrAvatarInputTrackingDelegate)
 extern void OvrAvatarManager_set_DefaultInputTrackingDelegate_mE4AED3DD807A74FFA329D0D1E400E7FE4BD39672 (void);
-// 0x0000086A Oculus.Avatar2.IOvrAvatarInputControlDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultInputControlDelegate()
+// 0x0000086E Oculus.Avatar2.IOvrAvatarInputControlDelegate Oculus.Avatar2.OvrAvatarManager::get_DefaultInputControlDelegate()
 extern void OvrAvatarManager_get_DefaultInputControlDelegate_m798CB24E145E3B8C308A4DCBDAF3206293BF1414 (void);
-// 0x0000086B System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultInputControlDelegate(Oculus.Avatar2.IOvrAvatarInputControlDelegate)
+// 0x0000086F System.Void Oculus.Avatar2.OvrAvatarManager::set_DefaultInputControlDelegate(Oculus.Avatar2.IOvrAvatarInputControlDelegate)
 extern void OvrAvatarManager_set_DefaultInputControlDelegate_m4D39091D28CEDFEAF0BBABC4AE5AA9AEDEA2DB87 (void);
-// 0x0000086C Oculus.Avatar2.OvrAvatarGpuSkinningController Oculus.Avatar2.OvrAvatarManager::get_GpuSkinningController()
+// 0x00000870 Oculus.Avatar2.OvrAvatarGpuSkinningController Oculus.Avatar2.OvrAvatarManager::get_GpuSkinningController()
 extern void OvrAvatarManager_get_GpuSkinningController_m9CEFA970B72BCB1AB8C32DA4429EF4E29E7CF70E (void);
-// 0x0000086D System.Void Oculus.Avatar2.OvrAvatarManager::set_GpuSkinningController(Oculus.Avatar2.OvrAvatarGpuSkinningController)
+// 0x00000871 System.Void Oculus.Avatar2.OvrAvatarManager::set_GpuSkinningController(Oculus.Avatar2.OvrAvatarGpuSkinningController)
 extern void OvrAvatarManager_set_GpuSkinningController_mCCA045A780D62D08937AFD6367101954BC55CDFA (void);
-// 0x0000086E Oculus.Avatar2.OvrAvatarGazeTargetManager Oculus.Avatar2.OvrAvatarManager::get_GazeTargetManager()
+// 0x00000872 Oculus.Avatar2.OvrAvatarGazeTargetManager Oculus.Avatar2.OvrAvatarManager::get_GazeTargetManager()
 extern void OvrAvatarManager_get_GazeTargetManager_mEF4DFEC9E4C4E88EEE45343CC060983400B91D73 (void);
-// 0x0000086F System.Void Oculus.Avatar2.OvrAvatarManager::set_GazeTargetManager(Oculus.Avatar2.OvrAvatarGazeTargetManager)
+// 0x00000873 System.Void Oculus.Avatar2.OvrAvatarManager::set_GazeTargetManager(Oculus.Avatar2.OvrAvatarGazeTargetManager)
 extern void OvrAvatarManager_set_GazeTargetManager_m5E3131C385410768C9FC7497DB0C93EDA6C1DA91 (void);
-// 0x00000870 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarManager::get_OvrPluginFacePoseProvider()
+// 0x00000874 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrAvatarManager::get_OvrPluginFacePoseProvider()
 extern void OvrAvatarManager_get_OvrPluginFacePoseProvider_m25317428CE0CBCD9F689D2D85F9F560FD0BFD757 (void);
-// 0x00000871 System.Void Oculus.Avatar2.OvrAvatarManager::set_OvrPluginFacePoseProvider(Oculus.Avatar2.OvrAvatarFacePoseProviderBase)
+// 0x00000875 System.Void Oculus.Avatar2.OvrAvatarManager::set_OvrPluginFacePoseProvider(Oculus.Avatar2.OvrAvatarFacePoseProviderBase)
 extern void OvrAvatarManager_set_OvrPluginFacePoseProvider_m5F99A7B8DB1DAECFAD63E672DA8A10FC94C8D453 (void);
-// 0x00000872 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarManager::get_OvrPluginEyePoseProvider()
+// 0x00000876 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrAvatarManager::get_OvrPluginEyePoseProvider()
 extern void OvrAvatarManager_get_OvrPluginEyePoseProvider_m0FAE02F7F2164599EED7A8A35EDED555A90CF212 (void);
-// 0x00000873 System.Void Oculus.Avatar2.OvrAvatarManager::set_OvrPluginEyePoseProvider(Oculus.Avatar2.OvrAvatarEyePoseProviderBase)
+// 0x00000877 System.Void Oculus.Avatar2.OvrAvatarManager::set_OvrPluginEyePoseProvider(Oculus.Avatar2.OvrAvatarEyePoseProviderBase)
 extern void OvrAvatarManager_set_OvrPluginEyePoseProvider_mCB7BF7D7290A3F944D242D81A5E73220BB98C437 (void);
-// 0x00000874 System.Void Oculus.Avatar2.OvrAvatarManager::Initialize()
+// 0x00000878 System.Void Oculus.Avatar2.OvrAvatarManager::Initialize()
 extern void OvrAvatarManager_Initialize_m0EB318F5D35FD572DFDBED64D41028DBCEF68E6A (void);
-// 0x00000875 System.Void Oculus.Avatar2.OvrAvatarManager::UpdateNetworkSetting(System.UInt32&,System.Int32)
+// 0x00000879 System.Void Oculus.Avatar2.OvrAvatarManager::UpdateNetworkSetting(System.UInt32&,System.Int32)
 extern void OvrAvatarManager_UpdateNetworkSetting_m457C453766DD1CE756745E364556B3B09BBE73A5 (void);
-// 0x00000876 System.Void Oculus.Avatar2.OvrAvatarManager::Update()
+// 0x0000087A System.Void Oculus.Avatar2.OvrAvatarManager::Update()
 extern void OvrAvatarManager_Update_m27FDF11841B766A64FAB4B20AA973626E18989C0 (void);
-// 0x00000877 System.Void Oculus.Avatar2.OvrAvatarManager::Step(System.Single)
+// 0x0000087B System.Void Oculus.Avatar2.OvrAvatarManager::Step(System.Single)
 extern void OvrAvatarManager_Step_m1F00D5F0F22D31CF14FE348105F9C3C3DB0DEC6F (void);
-// 0x00000878 System.Boolean Oculus.Avatar2.OvrAvatarManager::GetActives(Unity.Collections.NativeArray`1<Oculus.Avatar2.CAPI/ovrAvatar2EntityId>&,Unity.Collections.NativeArray`1<System.Boolean>&)
+// 0x0000087C System.Boolean Oculus.Avatar2.OvrAvatarManager::GetActives(Unity.Collections.NativeArray`1<Oculus.Avatar2.CAPI/ovrAvatar2EntityId>&,Unity.Collections.NativeArray`1<System.Boolean>&)
 extern void OvrAvatarManager_GetActives_m262A6065B51C94D9B45FA129C825FCA870E06C73 (void);
-// 0x00000879 System.Void Oculus.Avatar2.OvrAvatarManager::UpdateInternal(System.Single)
+// 0x0000087D System.Void Oculus.Avatar2.OvrAvatarManager::UpdateInternal(System.Single)
 extern void OvrAvatarManager_UpdateInternal_mFA8F8C65935CE58EA75F10255EA006D231FE8190 (void);
-// 0x0000087A System.Void Oculus.Avatar2.OvrAvatarManager::Shutdown()
+// 0x0000087E System.Void Oculus.Avatar2.OvrAvatarManager::Shutdown()
 extern void OvrAvatarManager_Shutdown_m61FA7FB70644058106B0F829ADDE5B350DCBCD90 (void);
-// 0x0000087B System.Void Oculus.Avatar2.OvrAvatarManager::AddTrackedEntity(Oculus.Avatar2.OvrAvatarEntity)
+// 0x0000087F System.Void Oculus.Avatar2.OvrAvatarManager::AddTrackedEntity(Oculus.Avatar2.OvrAvatarEntity)
 extern void OvrAvatarManager_AddTrackedEntity_m9F067ED861AD701CFD272C655B1998B625D0BE13 (void);
-// 0x0000087C System.Void Oculus.Avatar2.OvrAvatarManager::RemoveTrackedEntity(Oculus.Avatar2.OvrAvatarEntity)
+// 0x00000880 System.Void Oculus.Avatar2.OvrAvatarManager::RemoveTrackedEntity(Oculus.Avatar2.OvrAvatarEntity)
 extern void OvrAvatarManager_RemoveTrackedEntity_m5FEC7A8AD2AA81BD19D40AABFE6BE3577A1BA609 (void);
-// 0x0000087D System.Void Oculus.Avatar2.OvrAvatarManager::AddZipSource(System.String)
+// 0x00000881 System.Void Oculus.Avatar2.OvrAvatarManager::AddZipSource(System.String)
 extern void OvrAvatarManager_AddZipSource_m656268434BC735FC900C62790DE0A165496C4E73 (void);
-// 0x0000087E System.Void Oculus.Avatar2.OvrAvatarManager::AddUniversalZipSource(System.String)
+// 0x00000882 System.Void Oculus.Avatar2.OvrAvatarManager::AddUniversalZipSource(System.String)
 extern void OvrAvatarManager_AddUniversalZipSource_mBEA92CDB2DDB14ED00F4300933E00E6CACF613A8 (void);
-// 0x0000087F System.Void Oculus.Avatar2.OvrAvatarManager::AddRawZipSource(System.String)
+// 0x00000883 System.Void Oculus.Avatar2.OvrAvatarManager::AddRawZipSource(System.String)
 extern void OvrAvatarManager_AddRawZipSource_mDDD55C747049040C39FE9C32FB4AF08F96068364 (void);
-// 0x00000880 System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarRequestResultCode> Oculus.Avatar2.OvrAvatarManager::UserHasAvatarAsync(System.UInt64)
+// 0x00000884 System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarRequestResultCode> Oculus.Avatar2.OvrAvatarManager::UserHasAvatarAsync(System.UInt64)
 extern void OvrAvatarManager_UserHasAvatarAsync_m08DEB7FF8EC25E5A9FF0168021C7BF5E2D2AFF4F (void);
-// 0x00000881 System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarChangedRequestResultCode> Oculus.Avatar2.OvrAvatarManager::SendHasAvatarChangedRequestAsync(Oculus.Avatar2.CAPI/ovrAvatar2EntityId)
+// 0x00000885 System.Threading.Tasks.Task`1<Oculus.Avatar2.OvrAvatarManager/HasAvatarChangedRequestResultCode> Oculus.Avatar2.OvrAvatarManager::SendHasAvatarChangedRequestAsync(Oculus.Avatar2.CAPI/ovrAvatar2EntityId)
 extern void OvrAvatarManager_SendHasAvatarChangedRequestAsync_m81688745683DFBA749250B532F9DFC824802A4B2 (void);
-// 0x00000882 System.Threading.Tasks.TaskCompletionSource`1<Oculus.Avatar2.OvrAvatarManager/AvatarRequestBoolResults> Oculus.Avatar2.OvrAvatarManager::_RegisterBoolRequestHandler(Oculus.Avatar2.CAPI/ovrAvatar2RequestId)
+// 0x00000886 System.Threading.Tasks.TaskCompletionSource`1<Oculus.Avatar2.OvrAvatarManager/AvatarRequestBoolResults> Oculus.Avatar2.OvrAvatarManager::_RegisterBoolRequestHandler(Oculus.Avatar2.CAPI/ovrAvatar2RequestId)
 extern void OvrAvatarManager__RegisterBoolRequestHandler_mA3F56721DEE69F6D29176EB806570C716D636C4E (void);
-// 0x00000883 System.Void Oculus.Avatar2.OvrAvatarManager::UpdateNetworkSettings(System.Int64,System.Int64,System.Int64)
+// 0x00000887 System.Void Oculus.Avatar2.OvrAvatarManager::UpdateNetworkSettings(System.Int64,System.Int64,System.Int64)
 extern void OvrAvatarManager_UpdateNetworkSettings_m8DAE79C08AEFFD7FF48709B55208898BF36269E0 (void);
-// 0x00000884 System.ValueTuple`4<System.UInt64,System.UInt64,System.UInt64,System.UInt64> Oculus.Avatar2.OvrAvatarManager::QueryNetworkStats()
+// 0x00000888 System.ValueTuple`4<System.UInt64,System.UInt64,System.UInt64,System.UInt64> Oculus.Avatar2.OvrAvatarManager::QueryNetworkStats()
 extern void OvrAvatarManager_QueryNetworkStats_m1EA01A7E6A01857B8241F60A6864485B25AEFDE9 (void);
-// 0x00000885 System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBPostfix(System.Boolean)
+// 0x00000889 System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBPostfix(System.Boolean)
 extern void OvrAvatarManager_GetPlatformGLBPostfix_mA227F2CD527DFE6805F9492A20B13E7AE52B871E (void);
-// 0x00000886 System.String Oculus.Avatar2.OvrAvatarManager::GetFastLoadGLBPostfix(System.Boolean)
+// 0x0000088A System.String Oculus.Avatar2.OvrAvatarManager::GetFastLoadGLBPostfix(System.Boolean)
 extern void OvrAvatarManager_GetFastLoadGLBPostfix_m23248258AD24F8E15FFB3A0E768E2B10BB7B320A (void);
-// 0x00000887 System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBVersion(System.Boolean,System.Boolean)
+// 0x0000088B System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBVersion(System.Boolean,System.Boolean)
 extern void OvrAvatarManager_GetPlatformGLBVersion_m27304C873CDC42193D17A1B4D418109CB9002E38 (void);
-// 0x00000888 System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBExtension(System.Boolean)
+// 0x0000088C System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformGLBExtension(System.Boolean)
 extern void OvrAvatarManager_GetPlatformGLBExtension_m8629D45AC54DD5EF8F896D293B495ED519A07486 (void);
-// 0x00000889 Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetPlatform()
+// 0x0000088D Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetPlatform()
 extern void OvrAvatarManager_GetPlatform_m76C4D24626AD262B26D8A0EE737522A75C5B8805 (void);
-// 0x0000088A Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarManager::GetControllerType()
+// 0x0000088E Oculus.Avatar2.CAPI/ovrAvatar2ControllerType Oculus.Avatar2.OvrAvatarManager::GetControllerType()
 extern void OvrAvatarManager_GetControllerType_m3B5B8345155AC6E4BFF481F0B18700C2B827B693 (void);
-// 0x0000088B System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformPostfix(System.Boolean)
+// 0x0000088F System.String Oculus.Avatar2.OvrAvatarManager::GetPlatformPostfix(System.Boolean)
 extern void OvrAvatarManager_GetPlatformPostfix_m1F4E82A14BA3670337267F5DCB13EBCD1035D74F (void);
-// 0x0000088C System.String Oculus.Avatar2.OvrAvatarManager::GetFastLoadPostfix(System.Boolean)
+// 0x00000890 System.String Oculus.Avatar2.OvrAvatarManager::GetFastLoadPostfix(System.Boolean)
 extern void OvrAvatarManager_GetFastLoadPostfix_m42DCD8D9A7F9627E4F37A8CCBDC310D9391902E9 (void);
-// 0x0000088D System.String Oculus.Avatar2.OvrAvatarManager::GetAssetPathForFile(System.String,System.Boolean)
+// 0x00000891 System.String Oculus.Avatar2.OvrAvatarManager::GetAssetPathForFile(System.String,System.Boolean)
 extern void OvrAvatarManager_GetAssetPathForFile_mF7ECA77C1952E9CE7F6432145E19A174DACCFCAF (void);
-// 0x0000088E Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetAndroidStandalonePlatform()
+// 0x00000892 Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetAndroidStandalonePlatform()
 extern void OvrAvatarManager_GetAndroidStandalonePlatform_m1C35CE494B80B09F75E8520C14AB8CF59987661E (void);
-// 0x0000088F Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetAndroidStandalonePlatform(System.String)
+// 0x00000893 Oculus.Avatar2.CAPI/ovrAvatar2Platform Oculus.Avatar2.OvrAvatarManager::GetAndroidStandalonePlatform(System.String)
 extern void OvrAvatarManager_GetAndroidStandalonePlatform_m4390A8E14ADA4F3CA71C1B81E777B45E0AF60D13 (void);
-// 0x00000890 System.Void Oculus.Avatar2.OvrAvatarManager::add_OnAvatarMeshLoaded(Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler)
+// 0x00000894 System.Void Oculus.Avatar2.OvrAvatarManager::add_OnAvatarMeshLoaded(Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler)
 extern void OvrAvatarManager_add_OnAvatarMeshLoaded_mD4186394169A47E327F5B259A4C7988020F1E10D (void);
-// 0x00000891 System.Void Oculus.Avatar2.OvrAvatarManager::remove_OnAvatarMeshLoaded(Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler)
+// 0x00000895 System.Void Oculus.Avatar2.OvrAvatarManager::remove_OnAvatarMeshLoaded(Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler)
 extern void OvrAvatarManager_remove_OnAvatarMeshLoaded_m38E5FC2D168402B600C96313A6CFF622DF2E0076 (void);
-// 0x00000892 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_HasMeshLoadListener()
+// 0x00000896 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_HasMeshLoadListener()
 extern void OvrAvatarManager_get_HasMeshLoadListener_m1D96961CA83BFF5979A8D962C1B3119FFB735B68 (void);
-// 0x00000893 System.Void Oculus.Avatar2.OvrAvatarManager::InvokeMeshLoadEvent(Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData)
+// 0x00000897 System.Void Oculus.Avatar2.OvrAvatarManager::InvokeMeshLoadEvent(Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData)
 extern void OvrAvatarManager_InvokeMeshLoadEvent_m475FAAB0B0442D5CEB03D260E112EF892EBEF91F (void);
-// 0x00000894 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceCallback(Oculus.Avatar2.CAPI/ovrAvatar2Asset_Resource&,System.IntPtr)
+// 0x00000898 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceCallback(Oculus.Avatar2.CAPI/ovrAvatar2Asset_Resource&,System.IntPtr)
 extern void OvrAvatarManager_ResourceCallback_m62DB227961682C07AC3B99924DF65B88303FF4D5 (void);
-// 0x00000895 System.Void Oculus.Avatar2.OvrAvatarManager::RequestCallback(Oculus.Avatar2.CAPI/ovrAvatar2RequestId,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
+// 0x00000899 System.Void Oculus.Avatar2.OvrAvatarManager::RequestCallback(Oculus.Avatar2.CAPI/ovrAvatar2RequestId,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
 extern void OvrAvatarManager_RequestCallback_m33DC1C8357E77A29BEB286B7707D8354AF346E95 (void);
-// 0x00000896 System.Boolean Oculus.Avatar2.OvrAvatarManager::IsOvrAvatarAssetLoaded(Oculus.Avatar2.CAPI/ovrAvatar2Id)
+// 0x0000089A System.Boolean Oculus.Avatar2.OvrAvatarManager::IsOvrAvatarAssetLoaded(Oculus.Avatar2.CAPI/ovrAvatar2Id)
 extern void OvrAvatarManager_IsOvrAvatarAssetLoaded_mF50CC8A3A9670E740E525F3495CCEE5055B97FD9 (void);
-// 0x00000897 System.Boolean Oculus.Avatar2.OvrAvatarManager::GetOvrAvatarAsset(Oculus.Avatar2.CAPI/ovrAvatar2Id,T&)
-// 0x00000898 System.Void Oculus.Avatar2.OvrAvatarManager::AddAsset(Oculus.Avatar2.OvrAvatarAssetBase)
+// 0x0000089B System.Boolean Oculus.Avatar2.OvrAvatarManager::GetOvrAvatarAsset(Oculus.Avatar2.CAPI/ovrAvatar2Id,T&)
+// 0x0000089C System.Void Oculus.Avatar2.OvrAvatarManager::AddAsset(Oculus.Avatar2.OvrAvatarAssetBase)
 extern void OvrAvatarManager_AddAsset_mC557586399C88295861AAF294FBF0B735620DA10 (void);
-// 0x00000899 System.Void Oculus.Avatar2.OvrAvatarManager::RemoveAsset(Oculus.Avatar2.OvrAvatarAssetBase)
+// 0x0000089D System.Void Oculus.Avatar2.OvrAvatarManager::RemoveAsset(Oculus.Avatar2.OvrAvatarAssetBase)
 extern void OvrAvatarManager_RemoveAsset_mF3DF880535312AF73DE0B57CF5258856A8D5A797 (void);
-// 0x0000089A System.Void Oculus.Avatar2.OvrAvatarManager::RegisterLoadRequest(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestId)
+// 0x0000089E System.Void Oculus.Avatar2.OvrAvatarManager::RegisterLoadRequest(Oculus.Avatar2.OvrAvatarEntity,Oculus.Avatar2.CAPI/ovrAvatar2LoadRequestId)
 extern void OvrAvatarManager_RegisterLoadRequest_m2DF14BD37CDEA799F151E6219A18FE6492EFF2BF (void);
-// 0x0000089B System.Void Oculus.Avatar2.OvrAvatarManager::RemoveLoadRequests(Oculus.Avatar2.OvrAvatarEntity)
+// 0x0000089F System.Void Oculus.Avatar2.OvrAvatarManager::RemoveLoadRequests(Oculus.Avatar2.OvrAvatarEntity)
 extern void OvrAvatarManager_RemoveLoadRequests_m6419E9CC7CF3AE6BFCBC3D17ED06AD72FC264C65 (void);
-// 0x0000089C System.Void Oculus.Avatar2.OvrAvatarManager::FinishedAvatarLoad()
+// 0x000008A0 System.Void Oculus.Avatar2.OvrAvatarManager::FinishedAvatarLoad()
 extern void OvrAvatarManager_FinishedAvatarLoad_mF51A798F1DB7E2406E01AFC1870DE7EAF83777FA (void);
-// 0x0000089D System.Void Oculus.Avatar2.OvrAvatarManager::QueueLoadAvatar(Oculus.Avatar2.OvrAvatarEntity,System.Action)
+// 0x000008A1 System.Void Oculus.Avatar2.OvrAvatarManager::QueueLoadAvatar(Oculus.Avatar2.OvrAvatarEntity,System.Action)
 extern void OvrAvatarManager_QueueLoadAvatar_mB9F1F9D7F9BC287388C2B916262D144FF9C300CA (void);
-// 0x0000089E System.Void Oculus.Avatar2.OvrAvatarManager::RemoveQueuedLoad(Oculus.Avatar2.OvrAvatarEntity)
+// 0x000008A2 System.Void Oculus.Avatar2.OvrAvatarManager::RemoveQueuedLoad(Oculus.Avatar2.OvrAvatarEntity)
 extern void OvrAvatarManager_RemoveQueuedLoad_m56CA71A263AE218164D98F9DD0EFFE3247960388 (void);
-// 0x0000089F System.Void Oculus.Avatar2.OvrAvatarManager::QueueResourceLoad(Oculus.Avatar2.OvrAvatarResourceLoader)
+// 0x000008A3 System.Void Oculus.Avatar2.OvrAvatarManager::QueueResourceLoad(Oculus.Avatar2.OvrAvatarResourceLoader)
 extern void OvrAvatarManager_QueueResourceLoad_mB5E99D88775431AA0CEE9861A73B0686937D9FAE (void);
-// 0x000008A0 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadComplete(Oculus.Avatar2.OvrAvatarResourceLoader)
+// 0x000008A4 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadComplete(Oculus.Avatar2.OvrAvatarResourceLoader)
 extern void OvrAvatarManager_ResourceLoadComplete_m6B0381D8B3F48D6E115DC9E938C30D91DD21B748 (void);
-// 0x000008A1 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadCancelled(Oculus.Avatar2.OvrAvatarResourceLoader)
+// 0x000008A5 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadCancelled(Oculus.Avatar2.OvrAvatarResourceLoader)
 extern void OvrAvatarManager_ResourceLoadCancelled_m36B97D7EADC9CBE9C16C4A0EE37C4F1A74EEF895 (void);
-// 0x000008A2 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadEnded(Oculus.Avatar2.OvrAvatarResourceLoader)
+// 0x000008A6 System.Void Oculus.Avatar2.OvrAvatarManager::ResourceLoadEnded(Oculus.Avatar2.OvrAvatarResourceLoader)
 extern void OvrAvatarManager_ResourceLoadEnded_m21795D6861805CB8859EEBA04657C6040C18246D (void);
-// 0x000008A3 System.Collections.Generic.Dictionary`2<Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.OvrAvatarResourceLoader> Oculus.Avatar2.OvrAvatarManager::GetResourceID()
+// 0x000008A7 System.Collections.Generic.Dictionary`2<Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.OvrAvatarResourceLoader> Oculus.Avatar2.OvrAvatarManager::GetResourceID()
 extern void OvrAvatarManager_GetResourceID_m400B1481844610D09A82926E1AAA51EE2E741DB3 (void);
-// 0x000008A4 System.Void Oculus.Avatar2.OvrAvatarManager::_ShutdownSingleton(T)
-// 0x000008A5 System.Void Oculus.Avatar2.OvrAvatarManager::PermissionGranted(System.String)
+// 0x000008A8 System.Void Oculus.Avatar2.OvrAvatarManager::_ShutdownSingleton(T)
+// 0x000008A9 System.Void Oculus.Avatar2.OvrAvatarManager::PermissionGranted(System.String)
 extern void OvrAvatarManager_PermissionGranted_m44BAD249A8502CEC065F92A6EFD975833C35DEA3 (void);
-// 0x000008A6 System.Void Oculus.Avatar2.OvrAvatarManager::PermissionDenied(System.String)
+// 0x000008AA System.Void Oculus.Avatar2.OvrAvatarManager::PermissionDenied(System.String)
 extern void OvrAvatarManager_PermissionDenied_mDD0D366E10E9AD2EC372D895E93549F20996B61D (void);
-// 0x000008A7 System.Void Oculus.Avatar2.OvrAvatarManager::PermissionDeniedAndDontAskAgain(System.String)
+// 0x000008AB System.Void Oculus.Avatar2.OvrAvatarManager::PermissionDeniedAndDontAskAgain(System.String)
 extern void OvrAvatarManager_PermissionDeniedAndDontAskAgain_m2C7EB59D3E4335E5B80666880E8EDE632DFDC56C (void);
-// 0x000008A8 System.Void Oculus.Avatar2.OvrAvatarManager::RequestEyeTrackingPermission()
+// 0x000008AC System.Void Oculus.Avatar2.OvrAvatarManager::RequestEyeTrackingPermission()
 extern void OvrAvatarManager_RequestEyeTrackingPermission_m2F0C117DD5D0BA4A7AA73B385EC9B7B94E38636F (void);
-// 0x000008A9 System.Void Oculus.Avatar2.OvrAvatarManager::RequestFaceTrackingPermission()
+// 0x000008AD System.Void Oculus.Avatar2.OvrAvatarManager::RequestFaceTrackingPermission()
 extern void OvrAvatarManager_RequestFaceTrackingPermission_m580AF2951FC0A5F0C906ECF661F4AE4E89C724E9 (void);
-// 0x000008AA System.Void Oculus.Avatar2.OvrAvatarManager::RequestBodyTrackingPermission()
+// 0x000008AE System.Void Oculus.Avatar2.OvrAvatarManager::RequestBodyTrackingPermission()
 extern void OvrAvatarManager_RequestBodyTrackingPermission_m5DE89B135722CD6471FB35DEE233FB2AFE5E4B5A (void);
-// 0x000008AB System.Void Oculus.Avatar2.OvrAvatarManager::RequestMicPermission()
+// 0x000008AF System.Void Oculus.Avatar2.OvrAvatarManager::RequestMicPermission()
 extern void OvrAvatarManager_RequestMicPermission_mB05E8EC49DE2A536BF16F51735124A9F7C7EDC57 (void);
-// 0x000008AC System.Void Oculus.Avatar2.OvrAvatarManager::QueuePermissionRequest(System.String)
+// 0x000008B0 System.Void Oculus.Avatar2.OvrAvatarManager::QueuePermissionRequest(System.String)
 extern void OvrAvatarManager_QueuePermissionRequest_m3076A380C11DB5ABB45CD7B0507F3C1EAF7C8422 (void);
-// 0x000008AD System.Void Oculus.Avatar2.OvrAvatarManager::EnablePermissionRequests()
+// 0x000008B1 System.Void Oculus.Avatar2.OvrAvatarManager::EnablePermissionRequests()
 extern void OvrAvatarManager_EnablePermissionRequests_m8EB3C3B89B97FAFD1614EDDA0537ECABD46D0DEC (void);
-// 0x000008AE System.Void Oculus.Avatar2.OvrAvatarManager::Permission_Update()
+// 0x000008B2 System.Void Oculus.Avatar2.OvrAvatarManager::Permission_Update()
 extern void OvrAvatarManager_Permission_Update_m6F1336D5B2B3FB5C44F2DCDFBC88A49913B708F3 (void);
-// 0x000008AF System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UnitySMRSupported()
+// 0x000008B3 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UnitySMRSupported()
 extern void OvrAvatarManager_get_UnitySMRSupported_m2B05EF12FA6C502E9C4888FB9701A90F7FB2C46B (void);
-// 0x000008B0 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrCPUSkinnerSupported()
+// 0x000008B4 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrCPUSkinnerSupported()
 extern void OvrAvatarManager_get_OvrCPUSkinnerSupported_mE2D346AB09006F2321DB89F663C1E9C888BED24A (void);
-// 0x000008B1 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrGPUSkinnerSupported()
+// 0x000008B5 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrGPUSkinnerSupported()
 extern void OvrAvatarManager_get_OvrGPUSkinnerSupported_mCB0A56F2ABC34051FD67B24F94EDDFEFA2725462 (void);
-// 0x000008B2 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrComputeSkinnerSupported()
+// 0x000008B6 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_OvrComputeSkinnerSupported()
 extern void OvrAvatarManager_get_OvrComputeSkinnerSupported_m6C5CE85B4EF49339853BAD5109124BB6881D7777 (void);
-// 0x000008B3 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UnitySkinnerSupported()
+// 0x000008B7 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_UnitySkinnerSupported()
 extern void OvrAvatarManager_get_UnitySkinnerSupported_mD0E8DE3CBD49FA3F46459A258A98D3B6419488D1 (void);
-// 0x000008B4 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_gpuSkinningShaderLevelSupported()
+// 0x000008B8 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_gpuSkinningShaderLevelSupported()
 extern void OvrAvatarManager_get_gpuSkinningShaderLevelSupported_m3E2184F4F7C9197B6F03C69BFFA3A3E7F7713DCC (void);
-// 0x000008B5 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_computeSkinningShaderLevelSupported()
+// 0x000008B9 System.Boolean Oculus.Avatar2.OvrAvatarManager::get_computeSkinningShaderLevelSupported()
 extern void OvrAvatarManager_get_computeSkinningShaderLevelSupported_m5AAE808185AD6ACE64040BA9DC1AC3A88DFA4C9F (void);
-// 0x000008B6 UnityEngine.SkinQuality Oculus.Avatar2.OvrAvatarManager::GetUnitySkinQualityForLODIndex(System.UInt32)
+// 0x000008BA UnityEngine.SkinQuality Oculus.Avatar2.OvrAvatarManager::GetUnitySkinQualityForLODIndex(System.UInt32)
 extern void OvrAvatarManager_GetUnitySkinQualityForLODIndex_m38C311D9D1F39979E8F35FA93F5A89EEA09C5106 (void);
-// 0x000008B7 UnityEngine.SkinQuality Oculus.Avatar2.OvrAvatarManager::get_HighestUnitySkinningQuality()
+// 0x000008BB UnityEngine.SkinQuality Oculus.Avatar2.OvrAvatarManager::get_HighestUnitySkinningQuality()
 extern void OvrAvatarManager_get_HighestUnitySkinningQuality_m99ABE7608464CEE92708DB6A9B38C69E4E3607BB (void);
-// 0x000008B8 System.Void Oculus.Avatar2.OvrAvatarManager::ValidateSupportedSkinners()
+// 0x000008BC System.Void Oculus.Avatar2.OvrAvatarManager::ValidateSupportedSkinners()
 extern void OvrAvatarManager_ValidateSupportedSkinners_m1212009CCF7D82FA65B908381EA12AC22A2107AF (void);
-// 0x000008B9 UnityEngine.FilterMode Oculus.Avatar2.OvrAvatarManager::get_TextureFilterMode()
+// 0x000008BD UnityEngine.FilterMode Oculus.Avatar2.OvrAvatarManager::get_TextureFilterMode()
 extern void OvrAvatarManager_get_TextureFilterMode_mDC7073636973AACD9D66542AEB4E82FDDE1FF03D (void);
-// 0x000008BA System.Int32 Oculus.Avatar2.OvrAvatarManager::get_TextureAnisoLevel()
+// 0x000008BE System.Int32 Oculus.Avatar2.OvrAvatarManager::get_TextureAnisoLevel()
 extern void OvrAvatarManager_get_TextureAnisoLevel_mF5176A16D9C4C584271E36DB56AD6A950428EDFB (void);
-// 0x000008BB System.Void Oculus.Avatar2.OvrAvatarManager::.ctor()
+// 0x000008BF System.Void Oculus.Avatar2.OvrAvatarManager::.ctor()
 extern void OvrAvatarManager__ctor_m508931410C7653C454100990B30AD997D23AA4E2 (void);
-// 0x000008BC System.Void Oculus.Avatar2.OvrAvatarManager/MeshData::.ctor(System.String,System.Int32[],UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Color32[],UnityEngine.Vector2[],UnityEngine.Vector4[],UnityEngine.BoneWeight[],UnityEngine.Matrix4x4[])
+// 0x000008C0 System.Void Oculus.Avatar2.OvrAvatarManager/MeshData::.ctor(System.String,System.Int32[],UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Color32[],UnityEngine.Vector2[],UnityEngine.Vector4[],UnityEngine.BoneWeight[],UnityEngine.Matrix4x4[])
 extern void MeshData__ctor_m64F9701633DD4EBE10F8138416929B667065C712 (void);
-// 0x000008BD System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::.ctor(System.Object,System.IntPtr)
+// 0x000008C1 System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::.ctor(System.Object,System.IntPtr)
 extern void RequestDelegate__ctor_m4ED68CE80368D59AB593A47421835743F06378E9 (void);
-// 0x000008BE System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::Invoke(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
+// 0x000008C2 System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::Invoke(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
 extern void RequestDelegate_Invoke_m158C512A38BC68881EB66C1ED4227EA7EA8BBD93 (void);
-// 0x000008BF System.IAsyncResult Oculus.Avatar2.OvrAvatarManager/RequestDelegate::BeginInvoke(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x000008C3 System.IAsyncResult Oculus.Avatar2.OvrAvatarManager/RequestDelegate::BeginInvoke(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr,System.AsyncCallback,System.Object)
 extern void RequestDelegate_BeginInvoke_mDD1F20879284BF5CD4C71FDA65BA3826E41EB554 (void);
-// 0x000008C0 System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::EndInvoke(System.IAsyncResult)
+// 0x000008C4 System.Void Oculus.Avatar2.OvrAvatarManager/RequestDelegate::EndInvoke(System.IAsyncResult)
 extern void RequestDelegate_EndInvoke_mCFC2FA4A8B7834EEA23CA2123D3619E79433AD2C (void);
-// 0x000008C1 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::.ctor(System.Object,System.IntPtr)
+// 0x000008C5 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::.ctor(System.Object,System.IntPtr)
 extern void AvatarMeshLoadHandler__ctor_m7DE50F9E803E8F4BB12D1D2435A4D75D44EE63E7 (void);
-// 0x000008C2 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::Invoke(Oculus.Avatar2.OvrAvatarManager,Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData)
+// 0x000008C6 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::Invoke(Oculus.Avatar2.OvrAvatarManager,Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData)
 extern void AvatarMeshLoadHandler_Invoke_mEB78313E5820393E74C2C4D69AAE99D605EFE0E4 (void);
-// 0x000008C3 System.IAsyncResult Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::BeginInvoke(Oculus.Avatar2.OvrAvatarManager,Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData,System.AsyncCallback,System.Object)
+// 0x000008C7 System.IAsyncResult Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::BeginInvoke(Oculus.Avatar2.OvrAvatarManager,Oculus.Avatar2.OvrAvatarPrimitive,Oculus.Avatar2.OvrAvatarManager/MeshData,System.AsyncCallback,System.Object)
 extern void AvatarMeshLoadHandler_BeginInvoke_m45182E9676ED35DBDCB34C6D0C14AAE13FC97BE8 (void);
-// 0x000008C4 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::EndInvoke(System.IAsyncResult)
+// 0x000008C8 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarMeshLoadHandler::EndInvoke(System.IAsyncResult)
 extern void AvatarMeshLoadHandler_EndInvoke_m3E735CC2CFE0FEEFAB6369D4A153354A85E0DDAE (void);
-// 0x000008C5 System.Boolean Oculus.Avatar2.OvrAvatarManager/LoadRequest::Update()
+// 0x000008C9 System.Boolean Oculus.Avatar2.OvrAvatarManager/LoadRequest::Update()
 extern void LoadRequest_Update_m3BAB805AC33575EDB1974AB6AB1FF35A6A40260C (void);
-// 0x000008C6 System.Void Oculus.Avatar2.OvrAvatarManager/LoadRequest::.ctor()
+// 0x000008CA System.Void Oculus.Avatar2.OvrAvatarManager/LoadRequest::.ctor()
 extern void LoadRequest__ctor_mCF2D195A9429705268AB6D0C51EDB82B96A5E212 (void);
-// 0x000008C7 System.Void Oculus.Avatar2.OvrAvatarManager/AvatarRequestBoolResults::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.Nullable`1<System.Boolean>)
+// 0x000008CB System.Void Oculus.Avatar2.OvrAvatarManager/AvatarRequestBoolResults::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.Nullable`1<System.Boolean>)
 extern void AvatarRequestBoolResults__ctor_m834D08CA66198C377F893B9AC457EBCFCD8F8B0E (void);
-// 0x000008C8 System.Void Oculus.Avatar2.OvrAvatarManager/<UserHasAvatarAsync>d__121::MoveNext()
+// 0x000008CC System.Void Oculus.Avatar2.OvrAvatarManager/<UserHasAvatarAsync>d__121::.ctor()
+extern void U3CUserHasAvatarAsyncU3Ed__121__ctor_mA19F18B59BCA91B10A3713B9C3C9F6F7F0943485 (void);
+// 0x000008CD System.Void Oculus.Avatar2.OvrAvatarManager/<UserHasAvatarAsync>d__121::MoveNext()
 extern void U3CUserHasAvatarAsyncU3Ed__121_MoveNext_m663C958091492022F2E8B2D9FA8C3014F711A81B (void);
-// 0x000008C9 System.Void Oculus.Avatar2.OvrAvatarManager/<UserHasAvatarAsync>d__121::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000008CE System.Void Oculus.Avatar2.OvrAvatarManager/<UserHasAvatarAsync>d__121::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CUserHasAvatarAsyncU3Ed__121_SetStateMachine_m92D6DEEE448BFE6B2FC618E33D1E2CBB8FA12B1E (void);
-// 0x000008CA System.Void Oculus.Avatar2.OvrAvatarManager/<SendHasAvatarChangedRequestAsync>d__122::MoveNext()
+// 0x000008CF System.Void Oculus.Avatar2.OvrAvatarManager/<SendHasAvatarChangedRequestAsync>d__122::.ctor()
+extern void U3CSendHasAvatarChangedRequestAsyncU3Ed__122__ctor_mF52BBF938C7294003E9D4CA80B8F15D23E03F737 (void);
+// 0x000008D0 System.Void Oculus.Avatar2.OvrAvatarManager/<SendHasAvatarChangedRequestAsync>d__122::MoveNext()
 extern void U3CSendHasAvatarChangedRequestAsyncU3Ed__122_MoveNext_mEEFF4203461058CAB8B1C9B20F626A93A9A4E48B (void);
-// 0x000008CB System.Void Oculus.Avatar2.OvrAvatarManager/<SendHasAvatarChangedRequestAsync>d__122::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000008D1 System.Void Oculus.Avatar2.OvrAvatarManager/<SendHasAvatarChangedRequestAsync>d__122::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CSendHasAvatarChangedRequestAsyncU3Ed__122_SetStateMachine_m2DB36A4507E3A877A37848E2920F124B5537BE4C (void);
-// 0x000008CC System.Void Oculus.Avatar2.OvrAvatarManager/<>c__DisplayClass123_0::.ctor()
+// 0x000008D2 System.Void Oculus.Avatar2.OvrAvatarManager/<>c__DisplayClass123_0::.ctor()
 extern void U3CU3Ec__DisplayClass123_0__ctor_m1200F60CB1F090089A3092F3B49E14B2E742901B (void);
-// 0x000008CD System.Void Oculus.Avatar2.OvrAvatarManager/<>c__DisplayClass123_0::<_RegisterBoolRequestHandler>b__0(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
+// 0x000008D3 System.Void Oculus.Avatar2.OvrAvatarManager/<>c__DisplayClass123_0::<_RegisterBoolRequestHandler>b__0(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.IntPtr)
 extern void U3CU3Ec__DisplayClass123_0_U3C_RegisterBoolRequestHandlerU3Eb__0_m5004B539AF6E7BE22C3C2BFA546DA5275257DBA5 (void);
-// 0x000008CE System.Void Oculus.Avatar2.OvrAvatarMaterial::.ctor()
+// 0x000008D4 System.Void Oculus.Avatar2.OvrAvatarMaterial::.ctor()
 extern void OvrAvatarMaterial__ctor_mA66CB13FA1B1DC5E74896FC373E4FF93B331C433 (void);
-// 0x000008CF System.Void Oculus.Avatar2.OvrAvatarMaterial::Clear()
+// 0x000008D5 System.Void Oculus.Avatar2.OvrAvatarMaterial::Clear()
 extern void OvrAvatarMaterial_Clear_m41DF1D79907D86F896BA58154AF2729039ABE3D4 (void);
-// 0x000008D0 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetShader(UnityEngine.Shader)
+// 0x000008D6 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetShader(UnityEngine.Shader)
 extern void OvrAvatarMaterial_SetShader_mCA566A23D08F1A90AE6E54AB39F144289E50DC17 (void);
-// 0x000008D1 System.Boolean Oculus.Avatar2.OvrAvatarMaterial::GetKeyword(System.String)
+// 0x000008D7 System.Boolean Oculus.Avatar2.OvrAvatarMaterial::GetKeyword(System.String)
 extern void OvrAvatarMaterial_GetKeyword_m8550980609ACDE8012DE7680BC291210FE609A49 (void);
-// 0x000008D2 System.Boolean Oculus.Avatar2.OvrAvatarMaterial::HasKeyword(System.String)
+// 0x000008D8 System.Boolean Oculus.Avatar2.OvrAvatarMaterial::HasKeyword(System.String)
 extern void OvrAvatarMaterial_HasKeyword_m466D5A1F7E6FFAA0D42762439117CAF3BC2CDBC8 (void);
-// 0x000008D3 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetKeyword(System.String,System.Boolean)
+// 0x000008D9 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetKeyword(System.String,System.Boolean)
 extern void OvrAvatarMaterial_SetKeyword_m967B64FA80865DBE0A23393A3347B57729362E06 (void);
-// 0x000008D4 System.Void Oculus.Avatar2.OvrAvatarMaterial::RemoveKeyword(System.String)
+// 0x000008DA System.Void Oculus.Avatar2.OvrAvatarMaterial::RemoveKeyword(System.String)
 extern void OvrAvatarMaterial_RemoveKeyword_mC545D12CCC02884C48883F04F71D3232CB55D898 (void);
-// 0x000008D5 UnityEngine.Color Oculus.Avatar2.OvrAvatarMaterial::GetColor(System.String)
+// 0x000008DB UnityEngine.Color Oculus.Avatar2.OvrAvatarMaterial::GetColor(System.String)
 extern void OvrAvatarMaterial_GetColor_mF9FB3F50319765A3E84D7085B229050F42F4DD69 (void);
-// 0x000008D6 UnityEngine.Color Oculus.Avatar2.OvrAvatarMaterial::GetColor(System.Int32)
+// 0x000008DC UnityEngine.Color Oculus.Avatar2.OvrAvatarMaterial::GetColor(System.Int32)
 extern void OvrAvatarMaterial_GetColor_mC9C8F9037D90E6747B6FDDC4F65D98C9EF4E3906 (void);
-// 0x000008D7 System.Single Oculus.Avatar2.OvrAvatarMaterial::GetFloat(System.String)
+// 0x000008DD System.Single Oculus.Avatar2.OvrAvatarMaterial::GetFloat(System.String)
 extern void OvrAvatarMaterial_GetFloat_mA61DFB2641810940610A491CE69C35918BDD159A (void);
-// 0x000008D8 System.Single Oculus.Avatar2.OvrAvatarMaterial::GetFloat(System.Int32)
+// 0x000008DE System.Single Oculus.Avatar2.OvrAvatarMaterial::GetFloat(System.Int32)
 extern void OvrAvatarMaterial_GetFloat_m0A9664A672A0336AF39FE5A3ADDFAF1CAB36CA71 (void);
-// 0x000008D9 System.Single[] Oculus.Avatar2.OvrAvatarMaterial::GetFloatArray(System.String)
+// 0x000008DF System.Single[] Oculus.Avatar2.OvrAvatarMaterial::GetFloatArray(System.String)
 extern void OvrAvatarMaterial_GetFloatArray_m3A2E245B57A0F6FA41B870FC92EF32BB3D3E807C (void);
-// 0x000008DA System.Single[] Oculus.Avatar2.OvrAvatarMaterial::GetFloatArray(System.Int32)
+// 0x000008E0 System.Single[] Oculus.Avatar2.OvrAvatarMaterial::GetFloatArray(System.Int32)
 extern void OvrAvatarMaterial_GetFloatArray_m0980FA697652ECD67227798BD52E7CC8CC413744 (void);
-// 0x000008DB System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetInt(System.String)
+// 0x000008E1 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetInt(System.String)
 extern void OvrAvatarMaterial_GetInt_m12E4EEC5BE84313D4FD12DB859BC71404AE8C369 (void);
-// 0x000008DC System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetInt(System.Int32)
+// 0x000008E2 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetInt(System.Int32)
 extern void OvrAvatarMaterial_GetInt_mDC0451FC4BD1C8D937E10D9043C07D7DAA881E73 (void);
-// 0x000008DD UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarMaterial::GetMatrix(System.String)
+// 0x000008E3 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarMaterial::GetMatrix(System.String)
 extern void OvrAvatarMaterial_GetMatrix_m49113E7ED257B919E58E39A6FAD961C85203D44C (void);
-// 0x000008DE UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarMaterial::GetMatrix(System.Int32)
+// 0x000008E4 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarMaterial::GetMatrix(System.Int32)
 extern void OvrAvatarMaterial_GetMatrix_mC6FBBFDED23FD44C3B0D23C831670299A208CD99 (void);
-// 0x000008DF UnityEngine.Texture Oculus.Avatar2.OvrAvatarMaterial::GetTexture(System.String)
+// 0x000008E5 UnityEngine.Texture Oculus.Avatar2.OvrAvatarMaterial::GetTexture(System.String)
 extern void OvrAvatarMaterial_GetTexture_m20E3D52982538BEB688418C6F60A10356FF24DF9 (void);
-// 0x000008E0 UnityEngine.Texture Oculus.Avatar2.OvrAvatarMaterial::GetTexture(System.Int32)
+// 0x000008E6 UnityEngine.Texture Oculus.Avatar2.OvrAvatarMaterial::GetTexture(System.Int32)
 extern void OvrAvatarMaterial_GetTexture_m8861F6ADFE136011400F35350BED109CF0A6D443 (void);
-// 0x000008E1 UnityEngine.Vector4 Oculus.Avatar2.OvrAvatarMaterial::GetVector(System.String)
+// 0x000008E7 UnityEngine.Vector4 Oculus.Avatar2.OvrAvatarMaterial::GetVector(System.String)
 extern void OvrAvatarMaterial_GetVector_mC15DAA3D272304BE87C5540DBFAD94D2615175DD (void);
-// 0x000008E2 UnityEngine.Vector4 Oculus.Avatar2.OvrAvatarMaterial::GetVector(System.Int32)
+// 0x000008E8 UnityEngine.Vector4 Oculus.Avatar2.OvrAvatarMaterial::GetVector(System.Int32)
 extern void OvrAvatarMaterial_GetVector_mCEFFC57099AE30BBEF17A8CC7639D818312E03F4 (void);
-// 0x000008E3 UnityEngine.Vector4[] Oculus.Avatar2.OvrAvatarMaterial::GetVectorArray(System.String)
+// 0x000008E9 UnityEngine.Vector4[] Oculus.Avatar2.OvrAvatarMaterial::GetVectorArray(System.String)
 extern void OvrAvatarMaterial_GetVectorArray_m498A73B20757386C945B037BC9789AE66B861DBA (void);
-// 0x000008E4 UnityEngine.Vector4[] Oculus.Avatar2.OvrAvatarMaterial::GetVectorArray(System.Int32)
+// 0x000008EA UnityEngine.Vector4[] Oculus.Avatar2.OvrAvatarMaterial::GetVectorArray(System.Int32)
 extern void OvrAvatarMaterial_GetVectorArray_m395A10D6EF475815C5C0BFF51EE7B69919687E07 (void);
-// 0x000008E5 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetColor(System.String,UnityEngine.Color)
+// 0x000008EB System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetColor(System.String,UnityEngine.Color)
 extern void OvrAvatarMaterial_SetColor_m0267F7D137A80D9E648606B45F66D58CD5901498 (void);
-// 0x000008E6 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetColor(System.Int32,UnityEngine.Color)
+// 0x000008EC System.Void Oculus.Avatar2.OvrAvatarMaterial::SetColor(System.Int32,UnityEngine.Color)
 extern void OvrAvatarMaterial_SetColor_m900CC03BE4F36EDA0F917D613BC7927940A6E071 (void);
-// 0x000008E7 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetFloat(System.String,System.Single)
+// 0x000008ED System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetFloat(System.String,System.Single)
 extern void OvrAvatarMaterial_SetFloat_m64785D5D190B733F8B94758880D6831B2E7703E1 (void);
-// 0x000008E8 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetFloat(System.Int32,System.Single)
+// 0x000008EE System.Void Oculus.Avatar2.OvrAvatarMaterial::SetFloat(System.Int32,System.Single)
 extern void OvrAvatarMaterial_SetFloat_mA5C4F12BC643BEFE986732D928F955841B5968E9 (void);
-// 0x000008E9 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetFloatArray(System.String,System.Single[])
+// 0x000008EF System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetFloatArray(System.String,System.Single[])
 extern void OvrAvatarMaterial_SetFloatArray_m31E1C162AB22E053064D208FE621AD922D39D9E5 (void);
-// 0x000008EA System.Void Oculus.Avatar2.OvrAvatarMaterial::SetFloatArray(System.Int32,System.Single[])
+// 0x000008F0 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetFloatArray(System.Int32,System.Single[])
 extern void OvrAvatarMaterial_SetFloatArray_m7BE956A2746F9441687E54FC3E5B9CAECAFC684C (void);
-// 0x000008EB System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetInt(System.String,System.Int32)
+// 0x000008F1 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetInt(System.String,System.Int32)
 extern void OvrAvatarMaterial_SetInt_m4A0B308C240A35CA2B224A5FDD5E027024A537D9 (void);
-// 0x000008EC System.Void Oculus.Avatar2.OvrAvatarMaterial::SetInt(System.Int32,System.Int32)
+// 0x000008F2 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetInt(System.Int32,System.Int32)
 extern void OvrAvatarMaterial_SetInt_m711D7525BE4DE5EEF09BF788B67DF62586055BF7 (void);
-// 0x000008ED System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetMatrix(System.String,UnityEngine.Matrix4x4)
+// 0x000008F3 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetMatrix(System.String,UnityEngine.Matrix4x4)
 extern void OvrAvatarMaterial_SetMatrix_m0F033FEE011BBD0CA9655EB6E14CCECB17248A0C (void);
-// 0x000008EE System.Void Oculus.Avatar2.OvrAvatarMaterial::SetMatrix(System.Int32,UnityEngine.Matrix4x4)
+// 0x000008F4 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetMatrix(System.Int32,UnityEngine.Matrix4x4)
 extern void OvrAvatarMaterial_SetMatrix_m249931CC34BCF9B49A629129030BC8EC82820B66 (void);
-// 0x000008EF System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetTexture(System.String,UnityEngine.Texture)
+// 0x000008F5 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetTexture(System.String,UnityEngine.Texture)
 extern void OvrAvatarMaterial_SetTexture_mCE6488C91FB969556F728DB2E778B56B6E737CEB (void);
-// 0x000008F0 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetTexture(System.Int32,UnityEngine.Texture)
+// 0x000008F6 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetTexture(System.Int32,UnityEngine.Texture)
 extern void OvrAvatarMaterial_SetTexture_m2AB3CF98EE05E75A93E7489EFD5151617794A70F (void);
-// 0x000008F1 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetVector(System.String,UnityEngine.Vector4)
+// 0x000008F7 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetVector(System.String,UnityEngine.Vector4)
 extern void OvrAvatarMaterial_SetVector_m05D13146842B9E5F0198ADF66FEE6B37928D73C3 (void);
-// 0x000008F2 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetVector(System.Int32,UnityEngine.Vector4)
+// 0x000008F8 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetVector(System.Int32,UnityEngine.Vector4)
 extern void OvrAvatarMaterial_SetVector_mFE17FF842B39EC78EFFF70CD219979A78C572C91 (void);
-// 0x000008F3 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetVectorArray(System.String,UnityEngine.Vector4[])
+// 0x000008F9 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::SetVectorArray(System.String,UnityEngine.Vector4[])
 extern void OvrAvatarMaterial_SetVectorArray_mE6FB4D92756596860DEDAEFA5F646BDB60677FFC (void);
-// 0x000008F4 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetVectorArray(System.Int32,UnityEngine.Vector4[])
+// 0x000008FA System.Void Oculus.Avatar2.OvrAvatarMaterial::SetVectorArray(System.Int32,UnityEngine.Vector4[])
 extern void OvrAvatarMaterial_SetVectorArray_mB279C08CD9D9F6B71E89083B51543E5C9D9CCC06 (void);
-// 0x000008F5 System.Void Oculus.Avatar2.OvrAvatarMaterial::Apply(Oculus.Avatar2.OvrAvatarRenderable)
+// 0x000008FB System.Void Oculus.Avatar2.OvrAvatarMaterial::Apply(Oculus.Avatar2.OvrAvatarRenderable)
 extern void OvrAvatarMaterial_Apply_mC834F64DE23CF8D9AB8877FD2C9C862AA5B4DF45 (void);
-// 0x000008F6 System.Void Oculus.Avatar2.OvrAvatarMaterial::SetProperty(System.Int32,T&,Oculus.Avatar2.OvrAvatarMaterial/PropertyType)
-// 0x000008F7 System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetShaderIDForProperty(System.String)
+// 0x000008FC System.Void Oculus.Avatar2.OvrAvatarMaterial::SetProperty(System.Int32,T&,Oculus.Avatar2.OvrAvatarMaterial/PropertyType)
+// 0x000008FD System.Int32 Oculus.Avatar2.OvrAvatarMaterial::GetShaderIDForProperty(System.String)
 extern void OvrAvatarMaterial_GetShaderIDForProperty_m56ADC194CA01F711DC6D7454C264051BA6A88BFE (void);
-// 0x000008F8 System.Byte[] Oculus.Avatar2.OvrAvatarPerformanceAnalytics::toByteArray(System.String,System.UInt32&)
+// 0x000008FE System.Byte[] Oculus.Avatar2.OvrAvatarPerformanceAnalytics::toByteArray(System.String,System.UInt32&)
 extern void OvrAvatarPerformanceAnalytics_toByteArray_m11B922D8554035E4E034A6C6CF720A7C78DAA34D (void);
-// 0x000008F9 System.Void Oculus.Avatar2.OvrAvatarPerformanceAnalytics::enable(System.String,System.UInt32)
+// 0x000008FF System.Void Oculus.Avatar2.OvrAvatarPerformanceAnalytics::enable(System.String,System.UInt32)
 extern void OvrAvatarPerformanceAnalytics_enable_m932285C824F8C2855672EA7BE4216FFA6AD5E5F5 (void);
-// 0x000008FA System.Boolean Oculus.Avatar2.OvrAvatarPerformanceAnalytics::updateMetric(System.Int32,System.Double)
+// 0x00000900 System.Boolean Oculus.Avatar2.OvrAvatarPerformanceAnalytics::updateMetric(System.Int32,System.Double)
 extern void OvrAvatarPerformanceAnalytics_updateMetric_mD0841E392B15EB0B3C153491263025D13F8E2006 (void);
-// 0x000008FB System.Boolean Oculus.Avatar2.OvrAvatarPerformanceAnalytics::sendMetric(System.Int32,System.Double,System.String,System.Byte[])
+// 0x00000901 System.Boolean Oculus.Avatar2.OvrAvatarPerformanceAnalytics::sendMetric(System.Int32,System.Double,System.String,System.Byte[])
 extern void OvrAvatarPerformanceAnalytics_sendMetric_m88E0C34878323AC24B5736A8C821008ED40A7B13 (void);
-// 0x000008FC System.Void Oculus.Avatar2.OvrAvatarPerformanceAnalytics::begin()
+// 0x00000902 System.Void Oculus.Avatar2.OvrAvatarPerformanceAnalytics::begin()
 extern void OvrAvatarPerformanceAnalytics_begin_m28AF52A2F948AAF440F39E8CB68AEFE413098F69 (void);
-// 0x000008FD System.String Oculus.Avatar2.OvrAvatarRenderable::get_logScope()
+// 0x00000903 System.String Oculus.Avatar2.OvrAvatarRenderable::get_logScope()
 extern void OvrAvatarRenderable_get_logScope_m6B3CE2E59FE5098CE6DC6C877C62B6336016627F (void);
-// 0x000008FE System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_Visible()
+// 0x00000904 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_Visible()
 extern void OvrAvatarRenderable_get_Visible_m6F97373C35A3C93D480846BC423D946021A4B34B (void);
-// 0x000008FF System.Void Oculus.Avatar2.OvrAvatarRenderable::set_Visible(System.Boolean)
+// 0x00000905 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_Visible(System.Boolean)
 extern void OvrAvatarRenderable_set_Visible_mCDC1B084D0AC93065BDE028F05AC18572F59921C (void);
-// 0x00000900 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_IsHidden()
+// 0x00000906 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_IsHidden()
 extern void OvrAvatarRenderable_get_IsHidden_mD0D50E03CAE7988B99449F89461960F7E012D8C7 (void);
-// 0x00000901 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_IsHidden(System.Boolean)
+// 0x00000907 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_IsHidden(System.Boolean)
 extern void OvrAvatarRenderable_set_IsHidden_mC46EC694CBE41A556CD9F8A1DFED0992126D8096 (void);
-// 0x00000902 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_IsRendered()
+// 0x00000908 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_IsRendered()
 extern void OvrAvatarRenderable_get_IsRendered_mA130B91298A83159AEC6A5858BBAD9FBA9FF9B2D (void);
-// 0x00000903 Oculus.Avatar2.AvatarLODCostData& modreq(System.Runtime.InteropServices.InAttribute) Oculus.Avatar2.OvrAvatarRenderable::get_CostData()
+// 0x00000909 Oculus.Avatar2.AvatarLODCostData& modreq(System.Runtime.InteropServices.InAttribute) Oculus.Avatar2.OvrAvatarRenderable::get_CostData()
 extern void OvrAvatarRenderable_get_CostData_mDCE89450D7691591FF84898BCA66B074BE962796 (void);
-// 0x00000904 Oculus.Avatar2.CAPI/ovrAvatar2EntityViewFlags Oculus.Avatar2.OvrAvatarRenderable::get_viewFlags()
+// 0x0000090A Oculus.Avatar2.CAPI/ovrAvatar2EntityViewFlags Oculus.Avatar2.OvrAvatarRenderable::get_viewFlags()
 extern void OvrAvatarRenderable_get_viewFlags_mE9B01DCBD9109DC183E84C4B777D7AFCFE6B487C (void);
-// 0x00000905 Oculus.Avatar2.CAPI/ovrAvatar2EntityLODFlags Oculus.Avatar2.OvrAvatarRenderable::get_lodFlags()
+// 0x0000090B Oculus.Avatar2.CAPI/ovrAvatar2EntityLODFlags Oculus.Avatar2.OvrAvatarRenderable::get_lodFlags()
 extern void OvrAvatarRenderable_get_lodFlags_mAAB52E99CC92A7165390DA8C03CACD6F461C4F50 (void);
-// 0x00000906 Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags Oculus.Avatar2.OvrAvatarRenderable::get_manifestationFlags()
+// 0x0000090C Oculus.Avatar2.CAPI/ovrAvatar2EntityManifestationFlags Oculus.Avatar2.OvrAvatarRenderable::get_manifestationFlags()
 extern void OvrAvatarRenderable_get_manifestationFlags_m1383E955404D90E94AFD6CF8C67EFA078273ECD2 (void);
-// 0x00000907 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_HasMesh()
+// 0x0000090D System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_HasMesh()
 extern void OvrAvatarRenderable_get_HasMesh_mB55801BE18A52509EE372D459F93EBE103D145E2 (void);
-// 0x00000908 Oculus.Avatar2.CAPI/ovrAvatar2EntitySubMeshInclusionFlags Oculus.Avatar2.OvrAvatarRenderable::get_subMeshInclusionFlags()
+// 0x0000090E Oculus.Avatar2.CAPI/ovrAvatar2EntitySubMeshInclusionFlags Oculus.Avatar2.OvrAvatarRenderable::get_subMeshInclusionFlags()
 extern void OvrAvatarRenderable_get_subMeshInclusionFlags_mAA81F11D643CB539E5438581B04AC6502C803E25 (void);
-// 0x00000909 Oculus.Avatar2.CAPI/ovrAvatar2EntityHighQualityFlags Oculus.Avatar2.OvrAvatarRenderable::get_highQualityFlags()
+// 0x0000090F Oculus.Avatar2.CAPI/ovrAvatar2EntityHighQualityFlags Oculus.Avatar2.OvrAvatarRenderable::get_highQualityFlags()
 extern void OvrAvatarRenderable_get_highQualityFlags_m4CE67B93104AC4327F37526D7EC86F974EBECBD1 (void);
-// 0x0000090A System.Int32 Oculus.Avatar2.OvrAvatarRenderable::get_MeshVertexCount()
+// 0x00000910 System.Int32 Oculus.Avatar2.OvrAvatarRenderable::get_MeshVertexCount()
 extern void OvrAvatarRenderable_get_MeshVertexCount_mBCF5558FED44BCC0EF61F22A005F96461B2DA749 (void);
-// 0x0000090B UnityEngine.Renderer Oculus.Avatar2.OvrAvatarRenderable::get_rendererComponent()
+// 0x00000911 UnityEngine.Renderer Oculus.Avatar2.OvrAvatarRenderable::get_rendererComponent()
 extern void OvrAvatarRenderable_get_rendererComponent_m206D84DD9020A603D1931E5FAB04A4DF66F3CA8C (void);
-// 0x0000090C System.Void Oculus.Avatar2.OvrAvatarRenderable::set_rendererComponent(UnityEngine.Renderer)
+// 0x00000912 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_rendererComponent(UnityEngine.Renderer)
 extern void OvrAvatarRenderable_set_rendererComponent_m5EBEC8F2CBB8B57EE29774C7BD85A9262EA070F9 (void);
-// 0x0000090D Oculus.Avatar2.OvrAvatarPrimitive Oculus.Avatar2.OvrAvatarRenderable::get_AppliedPrimitive()
+// 0x00000913 Oculus.Avatar2.OvrAvatarPrimitive Oculus.Avatar2.OvrAvatarRenderable::get_AppliedPrimitive()
 extern void OvrAvatarRenderable_get_AppliedPrimitive_m4D4960D7A1BFBD1CF529205F144F5FFED859BBAD (void);
-// 0x0000090E System.Void Oculus.Avatar2.OvrAvatarRenderable::set_AppliedPrimitive(Oculus.Avatar2.OvrAvatarPrimitive)
+// 0x00000914 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_AppliedPrimitive(Oculus.Avatar2.OvrAvatarPrimitive)
 extern void OvrAvatarRenderable_set_AppliedPrimitive_mE241853A6B07B44B93967526C9CC45EA78FC51B2 (void);
-// 0x0000090F UnityEngine.Mesh Oculus.Avatar2.OvrAvatarRenderable::get_MyMesh()
+// 0x00000915 UnityEngine.Mesh Oculus.Avatar2.OvrAvatarRenderable::get_MyMesh()
 extern void OvrAvatarRenderable_get_MyMesh_m28D526FAA3F84AFAF9B1E14900DBE36FE443F752 (void);
-// 0x00000910 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MyMesh(UnityEngine.Mesh)
+// 0x00000916 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MyMesh(UnityEngine.Mesh)
 extern void OvrAvatarRenderable_set_MyMesh_m42186B2B8FEC477EE198A9ED87F98BEA7AE0ACED (void);
-// 0x00000911 UnityEngine.MeshFilter Oculus.Avatar2.OvrAvatarRenderable::get_MyMeshFilter()
+// 0x00000917 UnityEngine.MeshFilter Oculus.Avatar2.OvrAvatarRenderable::get_MyMeshFilter()
 extern void OvrAvatarRenderable_get_MyMeshFilter_mF4729B640AB8D00A91AFA458885C7AAE8A6F7A03 (void);
-// 0x00000912 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MyMeshFilter(UnityEngine.MeshFilter)
+// 0x00000918 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MyMeshFilter(UnityEngine.MeshFilter)
 extern void OvrAvatarRenderable_set_MyMeshFilter_m4D247D9CC368CB2FFC91720CDC512E0047C068B3 (void);
-// 0x00000913 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_HasTangents()
+// 0x00000919 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_HasTangents()
 extern void OvrAvatarRenderable_get_HasTangents_m8DEE0D603E87E3694C88E837366183BBDC32275D (void);
-// 0x00000914 System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_InterpolateAttributes()
+// 0x0000091A System.Boolean Oculus.Avatar2.OvrAvatarRenderable::get_InterpolateAttributes()
 extern void OvrAvatarRenderable_get_InterpolateAttributes_mC99E18D0B3C5E1037D9C831906AD6C7631121D2F (void);
-// 0x00000915 Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode Oculus.Avatar2.OvrAvatarRenderable::get_VertexFetchType()
+// 0x0000091B Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode Oculus.Avatar2.OvrAvatarRenderable::get_VertexFetchType()
 extern void OvrAvatarRenderable_get_VertexFetchType_mFAF6E71E3CCF1CBCBC2E8C73C14C8BDBD73AAA94 (void);
-// 0x00000916 UnityEngine.MaterialPropertyBlock Oculus.Avatar2.OvrAvatarRenderable::get_MatBlock()
+// 0x0000091C UnityEngine.MaterialPropertyBlock Oculus.Avatar2.OvrAvatarRenderable::get_MatBlock()
 extern void OvrAvatarRenderable_get_MatBlock_m976F00FB0B7516DAC6811BF3712CEF691AC2F2E6 (void);
-// 0x00000917 System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MatBlock(UnityEngine.MaterialPropertyBlock)
+// 0x0000091D System.Void Oculus.Avatar2.OvrAvatarRenderable::set_MatBlock(UnityEngine.MaterialPropertyBlock)
 extern void OvrAvatarRenderable_set_MatBlock_m40E45DB574D454B7311B0BECCC65ECA4D49023B4 (void);
-// 0x00000918 System.Void Oculus.Avatar2.OvrAvatarRenderable::CheckPropertyIdInit()
+// 0x0000091E System.Void Oculus.Avatar2.OvrAvatarRenderable::CheckPropertyIdInit()
 extern void OvrAvatarRenderable_CheckPropertyIdInit_m5C5098B8A8C935BD61FD1ADEB8E14DDA3798B8DE (void);
-// 0x00000919 System.Void Oculus.Avatar2.OvrAvatarRenderable::SetMaterialKeyword(System.String,System.Boolean)
+// 0x0000091F System.Void Oculus.Avatar2.OvrAvatarRenderable::SetMaterialKeyword(System.String,System.Boolean)
 extern void OvrAvatarRenderable_SetMaterialKeyword_m0AE73BFAAFC74094CEC416E882745EF9B714F659 (void);
-// 0x0000091A System.Void Oculus.Avatar2.OvrAvatarRenderable::SetShader(UnityEngine.Shader)
+// 0x00000920 System.Void Oculus.Avatar2.OvrAvatarRenderable::SetShader(UnityEngine.Shader)
 extern void OvrAvatarRenderable_SetShader_m69631D90A8459AE954F47D5701C92225ACFE60EB (void);
-// 0x0000091B System.Void Oculus.Avatar2.OvrAvatarRenderable::AddDefaultRenderer()
+// 0x00000921 System.Void Oculus.Avatar2.OvrAvatarRenderable::AddDefaultRenderer()
 extern void OvrAvatarRenderable_AddDefaultRenderer_m2B758CBF5524A4487505B2450B468B83E8425466 (void);
-// 0x0000091C System.Void Oculus.Avatar2.OvrAvatarRenderable::OnVisibilityChanged(System.Boolean)
+// 0x00000922 System.Void Oculus.Avatar2.OvrAvatarRenderable::OnVisibilityChanged(System.Boolean)
 extern void OvrAvatarRenderable_OnVisibilityChanged_m991A8BCC22F53E5C1B590EE91BDBD022E65FC8C3 (void);
-// 0x0000091D System.Void Oculus.Avatar2.OvrAvatarRenderable::CheckDefaultRenderer()
+// 0x00000923 System.Void Oculus.Avatar2.OvrAvatarRenderable::CheckDefaultRenderer()
 extern void OvrAvatarRenderable_CheckDefaultRenderer_m953C84686DA8A89EA72855DCDF91D6238E497000 (void);
-// 0x0000091E System.Void Oculus.Avatar2.OvrAvatarRenderable::Awake()
+// 0x00000924 System.Void Oculus.Avatar2.OvrAvatarRenderable::Awake()
 extern void OvrAvatarRenderable_Awake_m42F7234ECD86031368A921EF140161443BCB921E (void);
-// 0x0000091F T Oculus.Avatar2.OvrAvatarRenderable::AddRenderer()
-// 0x00000920 System.Void Oculus.Avatar2.OvrAvatarRenderable::CopyMaterial()
+// 0x00000925 T Oculus.Avatar2.OvrAvatarRenderable::AddRenderer()
+// 0x00000926 System.Void Oculus.Avatar2.OvrAvatarRenderable::CopyMaterial()
 extern void OvrAvatarRenderable_CopyMaterial_m6BDFB75E17EBBFCD7003BB9A7F8726A861D6B977 (void);
-// 0x00000921 System.Void Oculus.Avatar2.OvrAvatarRenderable::OnDestroy()
+// 0x00000927 System.Void Oculus.Avatar2.OvrAvatarRenderable::OnDestroy()
 extern void OvrAvatarRenderable_OnDestroy_m44A85BF20E01C5780255CDA0404BD5AAE3038E84 (void);
-// 0x00000922 System.Void Oculus.Avatar2.OvrAvatarRenderable::ApplyMeshPrimitive(Oculus.Avatar2.OvrAvatarPrimitive)
+// 0x00000928 System.Void Oculus.Avatar2.OvrAvatarRenderable::ApplyMeshPrimitive(Oculus.Avatar2.OvrAvatarPrimitive)
 extern void OvrAvatarRenderable_ApplyMeshPrimitive_mE4DE88646C9E5A5F1610AEB3542EE787EB51A040 (void);
-// 0x00000923 Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode Oculus.Avatar2.OvrAvatarRenderable::GetVertexFetchModeFromKeywords(UnityEngine.Material)
+// 0x00000929 Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode Oculus.Avatar2.OvrAvatarRenderable::GetVertexFetchModeFromKeywords(UnityEngine.Material)
 extern void OvrAvatarRenderable_GetVertexFetchModeFromKeywords_m0BCE2AA5ADBB6101930B3200D3BA0A9512B4BCB6 (void);
-// 0x00000924 System.Void Oculus.Avatar2.OvrAvatarRenderable::SetMaterialVertexFetchKeyword(Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode)
+// 0x0000092A System.Void Oculus.Avatar2.OvrAvatarRenderable::SetMaterialVertexFetchKeyword(Oculus.Avatar2.OvrAvatarRenderable/VertexFetchMode)
 extern void OvrAvatarRenderable_SetMaterialVertexFetchKeyword_m8508D7690365B59D3F14086812B12E4E5FD95059 (void);
-// 0x00000925 System.Void Oculus.Avatar2.OvrAvatarRenderable::Dispose()
+// 0x0000092B System.Void Oculus.Avatar2.OvrAvatarRenderable::Dispose()
 extern void OvrAvatarRenderable_Dispose_mC918958CB0A4302FAAED4209380388F13CFCD138 (void);
-// 0x00000926 System.Void Oculus.Avatar2.OvrAvatarRenderable::Dispose(System.Boolean)
+// 0x0000092C System.Void Oculus.Avatar2.OvrAvatarRenderable::Dispose(System.Boolean)
 extern void OvrAvatarRenderable_Dispose_m6E23C6BFC1C1BADD40602B3F6C51420D30A70AF5 (void);
-// 0x00000927 System.Void Oculus.Avatar2.OvrAvatarRenderable::GetRenderParameters(UnityEngine.Mesh&,UnityEngine.Material&,UnityEngine.Transform&,UnityEngine.MaterialPropertyBlock)
+// 0x0000092D System.Void Oculus.Avatar2.OvrAvatarRenderable::GetRenderParameters(UnityEngine.Mesh&,UnityEngine.Material&,UnityEngine.Transform&,UnityEngine.MaterialPropertyBlock)
 extern void OvrAvatarRenderable_GetRenderParameters_mB24226AA25C5BA28D1FC06ECF9831ABF063C79AF (void);
-// 0x00000928 UnityEngine.Shader Oculus.Avatar2.OvrAvatarRenderable::get_EmergencyFallbackShader()
+// 0x0000092E UnityEngine.Shader Oculus.Avatar2.OvrAvatarRenderable::get_EmergencyFallbackShader()
 extern void OvrAvatarRenderable_get_EmergencyFallbackShader_mB7B28E74B1713BD5FD1620E6730DF1534B9A3C36 (void);
-// 0x00000929 System.Void Oculus.Avatar2.OvrAvatarRenderable::.ctor()
+// 0x0000092F System.Void Oculus.Avatar2.OvrAvatarRenderable::.ctor()
 extern void OvrAvatarRenderable__ctor_m022C8EBD14291618BA71E72196F60BCB2EE7DA5E (void);
-// 0x0000092A System.Void Oculus.Avatar2.OvrAvatarRenderable::.cctor()
+// 0x00000930 System.Void Oculus.Avatar2.OvrAvatarRenderable::.cctor()
 extern void OvrAvatarRenderable__cctor_mB64897B409BFC12D3A058E8174A2D89E9A6B6B12 (void);
-// 0x0000092B System.Boolean Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds::get_IsValid()
+// 0x00000931 System.Boolean Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds::get_IsValid()
 extern void AttributePropertyIds_get_IsValid_mD4A986E0DA7AED8BE4063BF87ADFEA8093F02715 (void);
-// 0x0000092C System.Void Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds::.ctor(Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds/InitMethod)
+// 0x00000932 System.Void Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds::.ctor(Oculus.Avatar2.OvrAvatarRenderable/AttributePropertyIds/InitMethod)
 extern void AttributePropertyIds__ctor_m9B25A230DD07AB7E833C4820A505CB290211AD76 (void);
-// 0x0000092D System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::ApplyKeywords(UnityEngine.Material)
+// 0x00000933 System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::ApplyKeywords(UnityEngine.Material)
 extern void OvrAvatarShaderConfiguration_ApplyKeywords_m490BFF6B8F7498CA3B42339B3E5CE04279C19727 (void);
-// 0x0000092E System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::ApplyFloatConstants(UnityEngine.Material)
+// 0x00000934 System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::ApplyFloatConstants(UnityEngine.Material)
 extern void OvrAvatarShaderConfiguration_ApplyFloatConstants_m1F60DCC1692F46DAA6420C5C1F007B19CBB274BB (void);
-// 0x0000092F System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::.ctor()
+// 0x00000935 System.Void Oculus.Avatar2.OvrAvatarShaderConfiguration::.ctor()
 extern void OvrAvatarShaderConfiguration__ctor_m9BE915622AF587D908DF2D2767F886643AB1E845 (void);
-// 0x00000930 System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerBase::get_Initialized()
+// 0x00000936 System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerBase::get_Initialized()
 extern void OvrAvatarShaderManagerBase_get_Initialized_m4C711DAD793080C65BDA43ED801A3DA39D65BE9E (void);
-// 0x00000931 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::set_Initialized(System.Boolean)
+// 0x00000937 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::set_Initialized(System.Boolean)
 extern void OvrAvatarShaderManagerBase_set_Initialized_mDE55DF3EBECE827F16541167F6BFBA2EDE292DBB (void);
-// 0x00000932 Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerBase::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
-// 0x00000933 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::Start()
+// 0x00000938 Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerBase::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
+// 0x00000939 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::Start()
 extern void OvrAvatarShaderManagerBase_Start_mB526D9019D37FA74CCD3C89A81CF17A461895F76 (void);
-// 0x00000934 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::OnShutdown()
+// 0x0000093A System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::OnShutdown()
 extern void OvrAvatarShaderManagerBase_OnShutdown_m78DFC94F0CDA125CCD3C00F4DF9DE862F83F0ABC (void);
-// 0x00000935 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::Initialize(System.Boolean)
+// 0x0000093B System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::Initialize(System.Boolean)
 extern void OvrAvatarShaderManagerBase_Initialize_mF5B5F4B01E916F47C9DAC4EA58095DF7666EB729 (void);
-// 0x00000936 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::RegisterShaderConfigurationInitializers()
-// 0x00000937 Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType Oculus.Avatar2.OvrAvatarShaderManagerBase::DetermineConfiguration(System.String,System.Boolean,System.Boolean,System.Boolean)
+// 0x0000093C System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::RegisterShaderConfigurationInitializers()
+// 0x0000093D Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType Oculus.Avatar2.OvrAvatarShaderManagerBase::DetermineConfiguration(System.String,System.Boolean,System.Boolean,System.Boolean)
 extern void OvrAvatarShaderManagerBase_DetermineConfiguration_mB43CB1FF010A7E11CCAD6C26B8F74196622E18AA (void);
-// 0x00000938 System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerBase::AutoGenerateShaderConfigurations()
-// 0x00000939 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::InitializeComponent(Oculus.Avatar2.OvrAvatarShaderConfiguration&)
+// 0x0000093E System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerBase::AutoGenerateShaderConfigurations()
+// 0x0000093F System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::InitializeComponent(Oculus.Avatar2.OvrAvatarShaderConfiguration&)
 extern void OvrAvatarShaderManagerBase_InitializeComponent_m4C50F935F72CCF5599A3C67E35643BCA1B25A5D6 (void);
-// 0x0000093A System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::.ctor()
+// 0x00000940 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::.ctor()
 extern void OvrAvatarShaderManagerBase__ctor_mD9864DB2E48C7EFF4D715E24B8CF714C4E10B9E0 (void);
-// 0x0000093B System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::.cctor()
+// 0x00000941 System.Void Oculus.Avatar2.OvrAvatarShaderManagerBase::.cctor()
 extern void OvrAvatarShaderManagerBase__cctor_m74204987D237BF1CF545A0F18EB39A1AD3670FC2 (void);
-// 0x0000093C Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerMultiple::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
+// 0x00000942 Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerMultiple::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
 extern void OvrAvatarShaderManagerMultiple_GetConfiguration_m2A31227E570491AB5507B8C12289CC605E8802EA (void);
-// 0x0000093D System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::Initialize(System.Boolean)
+// 0x00000943 System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::Initialize(System.Boolean)
 extern void OvrAvatarShaderManagerMultiple_Initialize_m7B24202FC954B04F318F319B67D6A0ABA3683A0A (void);
-// 0x0000093E System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::RegisterShaderConfigurationInitializers()
+// 0x00000944 System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::RegisterShaderConfigurationInitializers()
 extern void OvrAvatarShaderManagerMultiple_RegisterShaderConfigurationInitializers_m83F3D9322010732445950D1870325CE6C1F55827 (void);
-// 0x0000093F System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerMultiple::AutoGenerateShaderConfigurations()
+// 0x00000945 System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerMultiple::AutoGenerateShaderConfigurations()
 extern void OvrAvatarShaderManagerMultiple_AutoGenerateShaderConfigurations_mEE7955E7049607FFC365C8B615F01FAD4DFC2580 (void);
-// 0x00000940 System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::.ctor()
+// 0x00000946 System.Void Oculus.Avatar2.OvrAvatarShaderManagerMultiple::.ctor()
 extern void OvrAvatarShaderManagerMultiple__ctor_mBCF38FA9CF13CD474A56C666F205C01F88568689 (void);
-// 0x00000941 Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerSingle::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
+// 0x00000947 Oculus.Avatar2.OvrAvatarShaderConfiguration Oculus.Avatar2.OvrAvatarShaderManagerSingle::GetConfiguration(Oculus.Avatar2.OvrAvatarShaderManagerBase/ShaderType)
 extern void OvrAvatarShaderManagerSingle_GetConfiguration_m7C0CF7CE2BFA87C3259C05B22B3A39324D982F97 (void);
-// 0x00000942 System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::Initialize(System.Boolean)
+// 0x00000948 System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::Initialize(System.Boolean)
 extern void OvrAvatarShaderManagerSingle_Initialize_m88CD21498C4618A6CB332E95A9708CD2BAD49349 (void);
-// 0x00000943 System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::RegisterShaderConfigurationInitializers()
+// 0x00000949 System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::RegisterShaderConfigurationInitializers()
 extern void OvrAvatarShaderManagerSingle_RegisterShaderConfigurationInitializers_m18E35359FBC368B4035EA9F3281BA9148BE44F3A (void);
-// 0x00000944 System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerSingle::AutoGenerateShaderConfigurations()
+// 0x0000094A System.Boolean Oculus.Avatar2.OvrAvatarShaderManagerSingle::AutoGenerateShaderConfigurations()
 extern void OvrAvatarShaderManagerSingle_AutoGenerateShaderConfigurations_m85766EEEEEEC45CE4B0EB232A9DCE7B39E76D628 (void);
-// 0x00000945 System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::.ctor()
+// 0x0000094B System.Void Oculus.Avatar2.OvrAvatarShaderManagerSingle::.ctor()
 extern void OvrAvatarShaderManagerSingle__ctor_m04CAE3BBE0BED1DF21E2BA81C9216691E88C972D (void);
-// 0x00000946 Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyState Oculus.Avatar2.OvrAvatarTrackingBodyState::ToNative()
+// 0x0000094C Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyState Oculus.Avatar2.OvrAvatarTrackingBodyState::ToNative()
 extern void OvrAvatarTrackingBodyState_ToNative_m90EBACB50240B7D0E0170BF89D1F8A05C0F3BD76 (void);
-// 0x00000947 System.Void Oculus.Avatar2.OvrAvatarTrackingBodyState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyState&)
+// 0x0000094D System.Void Oculus.Avatar2.OvrAvatarTrackingBodyState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyState&)
 extern void OvrAvatarTrackingBodyState_FromNative_m6D289971D0F8F1895227761BF553B64D364B531B (void);
-// 0x00000948 System.Void Oculus.Avatar2.OvrAvatarTrackingBodyState::.ctor()
+// 0x0000094E System.Void Oculus.Avatar2.OvrAvatarTrackingBodyState::.ctor()
 extern void OvrAvatarTrackingBodyState__ctor_m012E859AD6D6A79A16A61771B86A1C408A553208 (void);
-// 0x00000949 Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingState Oculus.Avatar2.OvrAvatarTrackingHandsState::ToNative()
+// 0x0000094F Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingState Oculus.Avatar2.OvrAvatarTrackingHandsState::ToNative()
 extern void OvrAvatarTrackingHandsState_ToNative_mF1BCD3870FD3932B846AAF07FC9C1D70B5A3EE1A (void);
-// 0x0000094A System.Void Oculus.Avatar2.OvrAvatarTrackingHandsState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingState&)
+// 0x00000950 System.Void Oculus.Avatar2.OvrAvatarTrackingHandsState::FromNative(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingState&)
 extern void OvrAvatarTrackingHandsState_FromNative_m1F4966946F5C846E4231BC6081D62A23AF773DFE (void);
-// 0x0000094B System.Void Oculus.Avatar2.OvrAvatarTrackingHandsState::.ctor()
+// 0x00000951 System.Void Oculus.Avatar2.OvrAvatarTrackingHandsState::.ctor()
 extern void OvrAvatarTrackingHandsState__ctor_m8199EAD195C352E2CB67BBF8A4B59B383E87F7DB (void);
-// 0x0000094C System.Boolean Oculus.Avatar2.OvrAvatarTrackingPose::SetTransform(Oculus.Avatar2.CAPI/ovrAvatar2Transform,System.Int32)
+// 0x00000952 System.Boolean Oculus.Avatar2.OvrAvatarTrackingPose::SetTransform(Oculus.Avatar2.CAPI/ovrAvatar2Transform,System.Int32)
 extern void OvrAvatarTrackingPose_SetTransform_mB5F22624D7EC9EBA5CE36C9A3F6D720D1D95A3F4 (void);
-// 0x0000094D System.Boolean Oculus.Avatar2.OvrAvatarTrackingPose::SetTransforms(Oculus.Avatar2.CAPI/ovrAvatar2Transform[],System.Int32,System.Int32)
+// 0x00000953 System.Boolean Oculus.Avatar2.OvrAvatarTrackingPose::SetTransforms(Oculus.Avatar2.CAPI/ovrAvatar2Transform[],System.Int32,System.Int32)
 extern void OvrAvatarTrackingPose_SetTransforms_m88298EE7CBF20AB54F34333DC0E62999A6377E47 (void);
-// 0x0000094E System.Void Oculus.Avatar2.OvrAvatarTrackingPose::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
+// 0x00000954 System.Void Oculus.Avatar2.OvrAvatarTrackingPose::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
 extern void OvrAvatarTrackingPose__ctor_mEAD44384315FE3FB14A1DC65D260E99AD7B38414 (void);
-// 0x0000094F System.Void Oculus.Avatar2.OvrAvatarTrackingPose::CopyToNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
+// 0x00000955 System.Void Oculus.Avatar2.OvrAvatarTrackingPose::CopyToNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
 extern void OvrAvatarTrackingPose_CopyToNative_m0CF1959263C9EA5004F23F85653A61AE8423CDE9 (void);
-// 0x00000950 Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose Oculus.Avatar2.OvrAvatarTrackingPose::GetNative()
+// 0x00000956 Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose Oculus.Avatar2.OvrAvatarTrackingPose::GetNative()
 extern void OvrAvatarTrackingPose_GetNative_m6624E02D0C656A45C2836AFC31E67663480B569A (void);
-// 0x00000951 System.Void Oculus.Avatar2.OvrAvatarTrackingPose::CopyFromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
+// 0x00000957 System.Void Oculus.Avatar2.OvrAvatarTrackingPose::CopyFromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodyPose&)
 extern void OvrAvatarTrackingPose_CopyFromNative_m7E6FE0066E1ADF64DB5287469E0F508B28271D9D (void);
-// 0x00000952 System.IntPtr Oculus.Avatar2.OvrSpan`1::get_Address()
-// 0x00000953 System.Int32 Oculus.Avatar2.OvrSpan`1::get_Length()
-// 0x00000954 System.Void Oculus.Avatar2.OvrSpan`1::.ctor(System.Void*,System.Int32)
-// 0x00000955 System.Boolean Oculus.Avatar2.OvrAvatarTrackingSkeleton::SetBone(Oculus.Avatar2.CAPI/ovrAvatar2Bone,System.Int32)
+// 0x00000958 System.IntPtr Oculus.Avatar2.OvrSpan`1::get_Address()
+// 0x00000959 System.Int32 Oculus.Avatar2.OvrSpan`1::get_Length()
+// 0x0000095A System.Void Oculus.Avatar2.OvrSpan`1::.ctor(System.Void*,System.Int32)
+// 0x0000095B System.Boolean Oculus.Avatar2.OvrAvatarTrackingSkeleton::SetBone(Oculus.Avatar2.CAPI/ovrAvatar2Bone,System.Int32)
 extern void OvrAvatarTrackingSkeleton_SetBone_mFBE17975F8265F240AF40473B8B98BCAE4D7C862 (void);
-// 0x00000956 System.Boolean Oculus.Avatar2.OvrAvatarTrackingSkeleton::SetBones(Oculus.Avatar2.CAPI/ovrAvatar2Bone[],System.Int32,System.Int32)
+// 0x0000095C System.Boolean Oculus.Avatar2.OvrAvatarTrackingSkeleton::SetBones(Oculus.Avatar2.CAPI/ovrAvatar2Bone[],System.Int32,System.Int32)
 extern void OvrAvatarTrackingSkeleton_SetBones_m8070242506351894A83B8C370370E328E65841F6 (void);
-// 0x00000957 System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
+// 0x0000095D System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
 extern void OvrAvatarTrackingSkeleton__ctor_mAFDEABD16C18DE843FF6071F064292344BF184A5 (void);
-// 0x00000958 System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::CopyToNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
+// 0x0000095E System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::CopyToNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
 extern void OvrAvatarTrackingSkeleton_CopyToNative_m6B7C50069CC2975FE06D35F4C9F84C4D0175BEED (void);
-// 0x00000959 Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton Oculus.Avatar2.OvrAvatarTrackingSkeleton::GetNative()
+// 0x0000095F Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton Oculus.Avatar2.OvrAvatarTrackingSkeleton::GetNative()
 extern void OvrAvatarTrackingSkeleton_GetNative_m0485E1B65E27FE9D60E1C03539D832B6CA41D9BC (void);
-// 0x0000095A System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::CopyFromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
+// 0x00000960 System.Void Oculus.Avatar2.OvrAvatarTrackingSkeleton::CopyFromNative(Oculus.Avatar2.CAPI/ovrAvatar2TrackingBodySkeleton&)
 extern void OvrAvatarTrackingSkeleton_CopyFromNative_m5C09C928866B2D34504857163F36C41A1246AD6A (void);
-// 0x0000095B Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x00000961 Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarConversions_ConvertSpace_mF7BF0DD8337B090B1A70846EA22704587B2203B1 (void);
-// 0x0000095C Oculus.Avatar2.CAPI/ovrAvatar2Quatf Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
+// 0x00000962 Oculus.Avatar2.CAPI/ovrAvatar2Quatf Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
 extern void OvrAvatarConversions_ConvertSpace_mCE3D3DF472ECD213179D7A700CA77D68762AD0A4 (void);
-// 0x0000095D Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
+// 0x00000963 Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
 extern void OvrAvatarConversions_ConvertSpace_mB47ED7D5673AC7779135EEA43794825A6F146030 (void);
-// 0x0000095E Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Transform)
+// 0x00000964 Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Transform)
 extern void OvrAvatarConversions_ConvertSpace_m3B13510020819C705B8F31E9338BD7960E695018 (void);
-// 0x0000095F Oculus.Avatar2.CAPI/ovrAvatar2Quatf Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Quaternion&)
+// 0x00000965 Oculus.Avatar2.CAPI/ovrAvatar2Quatf Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Quaternion&)
 extern void OvrAvatarConversions_ConvertSpace_m7DD4FFE7FC2A1D39EC3FBF09CF3FADA81355E90F (void);
-// 0x00000960 Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Vector3&)
+// 0x00000966 Oculus.Avatar2.CAPI/ovrAvatar2Vector3f Oculus.Avatar2.OvrAvatarConversions::ConvertSpace(UnityEngine.Vector3&)
 extern void OvrAvatarConversions_ConvertSpace_m11269C8168619012898949DA8B37A56690EED778 (void);
-// 0x00000961 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyWorldOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x00000967 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyWorldOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarConversions_ApplyWorldOvrTransform_m45484A3DFF41B0084051061699A81945C090BB95 (void);
-// 0x00000962 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x00000968 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarConversions_ApplyOvrTransform_m4F3FC803B7F2B219174471D6F9EF8AC151E66DBC (void);
-// 0x00000963 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform*)
+// 0x00000969 System.Void Oculus.Avatar2.OvrAvatarConversions::ApplyOvrTransform(UnityEngine.Transform,Oculus.Avatar2.CAPI/ovrAvatar2Transform*)
 extern void OvrAvatarConversions_ApplyOvrTransform_mE9223EC971ADF34664C770EEDE2BA318EE7712B1 (void);
-// 0x00000964 Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ToWorldOvrTransform(UnityEngine.Transform)
+// 0x0000096A Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarConversions::ToWorldOvrTransform(UnityEngine.Transform)
 extern void OvrAvatarConversions_ToWorldOvrTransform_m17C9886E03A6B83625FB5EA44414EA4B0FFCD38D (void);
-// 0x00000965 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarConversions::ToMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x0000096B UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarConversions::ToMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarConversions_ToMatrix_m56FD6D76BC6D15D791A17CCE321A958161DF4DB7 (void);
-// 0x00000966 Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarUtility::CombineOvrTransforms(Oculus.Avatar2.CAPI/ovrAvatar2Transform&,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x0000096C Oculus.Avatar2.CAPI/ovrAvatar2Transform Oculus.Avatar2.OvrAvatarUtility::CombineOvrTransforms(Oculus.Avatar2.CAPI/ovrAvatar2Transform&,Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarUtility_CombineOvrTransforms_mB04341D16196742EAD1E63DB25D2CFB0AFC276E9 (void);
-// 0x00000967 System.String Oculus.Avatar2.OvrAvatarUtility::GetAsString(Oculus.Avatar2.CAPI/ovrAvatar2Transform&,System.Int32)
+// 0x0000096D System.String Oculus.Avatar2.OvrAvatarUtility::GetAsString(Oculus.Avatar2.CAPI/ovrAvatar2Transform&,System.Int32)
 extern void OvrAvatarUtility_GetAsString_m76D16668F5D45477471CE9ECD05918750D559EB4 (void);
-// 0x00000968 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNaN(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
+// 0x0000096E System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNaN(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
 extern void OvrAvatarUtility_IsNaN_mC7E1AB6A72D63EFCA5BBEE13E895C959BB5FFB45 (void);
-// 0x00000969 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNaN(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
+// 0x0000096F System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNaN(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
 extern void OvrAvatarUtility_IsNaN_mDAE9A09CB47E82E1380071FAE8012AB6FC156818 (void);
-// 0x0000096A System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNan(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x00000970 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNan(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarUtility_IsNan_m486B27241D75BCFD885B36D46E3D608E2ED24F56 (void);
-// 0x0000096B System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsZero(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
+// 0x00000971 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsZero(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
 extern void OvrAvatarUtility_IsZero_mE1CC7932BE89EC81F6E849BD580029B73AFA878B (void);
-// 0x0000096C System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsOne(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
+// 0x00000972 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsOne(Oculus.Avatar2.CAPI/ovrAvatar2Vector3f&)
 extern void OvrAvatarUtility_IsOne_mDCA7EE1E93554E1EAF0FF187E87983CEF3AED6AF (void);
-// 0x0000096D System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsIdentity(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
+// 0x00000973 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsIdentity(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
 extern void OvrAvatarUtility_IsIdentity_m2C004FC97E26FB338EF2AA909703C309C6FE0310 (void);
-// 0x0000096E System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNormalized(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
+// 0x00000974 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsNormalized(Oculus.Avatar2.CAPI/ovrAvatar2Quatf&)
 extern void OvrAvatarUtility_IsNormalized_mF7DA7D0308A9D8380F4BFDD638E4BB24E08B3391 (void);
-// 0x0000096F System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsIdentity(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
+// 0x00000975 System.Boolean Oculus.Avatar2.OvrAvatarUtility::IsIdentity(Oculus.Avatar2.CAPI/ovrAvatar2Transform&)
 extern void OvrAvatarUtility_IsIdentity_mE894FBC7469A2617B233E9264ABEFB6ACE1EC3AB (void);
-// 0x00000970 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarUtility::ToUnityMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&)
+// 0x00000976 UnityEngine.Matrix4x4 Oculus.Avatar2.OvrAvatarUtility::ToUnityMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&)
 extern void OvrAvatarUtility_ToUnityMatrix_m3050316A69786B49377E5835C692703561340F58 (void);
-// 0x00000971 Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f Oculus.Avatar2.OvrAvatarUtility::ToAvatarMatrix(UnityEngine.Matrix4x4&)
+// 0x00000977 Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f Oculus.Avatar2.OvrAvatarUtility::ToAvatarMatrix(UnityEngine.Matrix4x4&)
 extern void OvrAvatarUtility_ToAvatarMatrix_m6CBDE7181667430F6BBF06F129EB51004E8E72AA (void);
-// 0x00000972 System.Void Oculus.Avatar2.OvrAvatarUtility::CopyToUnityMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&,UnityEngine.Matrix4x4&)
+// 0x00000978 System.Void Oculus.Avatar2.OvrAvatarUtility::CopyToUnityMatrix(Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&,UnityEngine.Matrix4x4&)
 extern void OvrAvatarUtility_CopyToUnityMatrix_m3D6BE6760DDBC0D56203EFA4F7A8B2601F052DD7 (void);
-// 0x00000973 System.Void Oculus.Avatar2.OvrAvatarUtility::CopyToAvatarMatrix(UnityEngine.Matrix4x4&,Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&)
+// 0x00000979 System.Void Oculus.Avatar2.OvrAvatarUtility::CopyToAvatarMatrix(UnityEngine.Matrix4x4&,Oculus.Avatar2.CAPI/ovrAvatar2Matrix4f&)
 extern void OvrAvatarUtility_CopyToAvatarMatrix_m6105859610258B7CD5F923A22ACE6C217E53460D (void);
-// 0x00000974 Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContextNative Oculus.Avatar2.OvrAvatarVisemeContext::get_NativeCallbacks()
+// 0x0000097A Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContextNative Oculus.Avatar2.OvrAvatarVisemeContext::get_NativeCallbacks()
 extern void OvrAvatarVisemeContext_get_NativeCallbacks_mE538D92F6AE33F05F613C601D6289B4DD657C53A (void);
-// 0x00000975 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncProviderConfig)
+// 0x0000097B System.Void Oculus.Avatar2.OvrAvatarVisemeContext::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncProviderConfig)
 extern void OvrAvatarVisemeContext__ctor_m7FB40C89516B531CF40B5C6C2E622AD682A2D072 (void);
-// 0x00000976 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Single[],System.Int32)
+// 0x0000097C System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Single[],System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_m7C1BC905FB5D182A4976B1ADFBC6447A0BA7E6A6 (void);
-// 0x00000977 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.ArraySegment`1<System.Single>,System.Int32)
+// 0x0000097D System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.ArraySegment`1<System.Single>,System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_mDA8BBD3937B1F2495EE8D16CF6F0DFC4453EDDC3 (void);
-// 0x00000978 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Single[],System.Int32,System.Int32,System.Int32)
+// 0x0000097E System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Single[],System.Int32,System.Int32,System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_mDC863F89BB9D9069043B97E8F6ECCA31740AE591 (void);
-// 0x00000979 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Int16[],System.Int32)
+// 0x0000097F System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Int16[],System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_mF9392F05EAEA6B326C7BC08E5F08F3773419DE9E (void);
-// 0x0000097A System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.ArraySegment`1<System.Int16>,System.Int32)
+// 0x00000980 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.ArraySegment`1<System.Int16>,System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_mFBC6B75CD2FC642FA4DD73116F861888E02F7974 (void);
-// 0x0000097B System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Int16[],System.Int32,System.Int32,System.Int32)
+// 0x00000981 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::FeedAudio(System.Int16[],System.Int32,System.Int32,System.Int32)
 extern void OvrAvatarVisemeContext_FeedAudio_mAB2B17BC56479E1158CF7AE59494A6C0CC80C569 (void);
-// 0x0000097C System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Reconfigure(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncProviderConfig)
+// 0x00000982 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Reconfigure(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncProviderConfig)
 extern void OvrAvatarVisemeContext_Reconfigure_m31F32EF9D49C399EF23C815A8A2A4DD12457C9AE (void);
-// 0x0000097D System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetMode(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode)
+// 0x00000983 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetMode(Oculus.Avatar2.CAPI/ovrAvatar2LipSyncMode)
 extern void OvrAvatarVisemeContext_SetMode_m6FBBCBA231B6902CA22F82D5F6045837A1CC7741 (void);
-// 0x0000097E System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetSampleRate(System.UInt32,System.UInt32)
+// 0x00000984 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetSampleRate(System.UInt32,System.UInt32)
 extern void OvrAvatarVisemeContext_SetSampleRate_m8783CAE62DD99A475D2CA4F30278A4B9BF723099 (void);
-// 0x0000097F System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetSmoothing(System.Int32)
+// 0x00000985 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetSmoothing(System.Int32)
 extern void OvrAvatarVisemeContext_SetSmoothing_m3135994FD8CAFD1892C053FB8077CAE9D9EC214A (void);
-// 0x00000980 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::EnableViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme)
+// 0x00000986 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::EnableViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme)
 extern void OvrAvatarVisemeContext_EnableViseme_m77C5C69BB9A8DF2674CD56E40A4D105D1C25B2E7 (void);
-// 0x00000981 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::DisableViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme)
+// 0x00000987 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::DisableViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme)
 extern void OvrAvatarVisemeContext_DisableViseme_m4D191787FB6C1016B5D1DD63CDEC59D7F691B125 (void);
-// 0x00000982 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme,System.Int32)
+// 0x00000988 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetViseme(Oculus.Avatar2.CAPI/ovrAvatar2Viseme,System.Int32)
 extern void OvrAvatarVisemeContext_SetViseme_mE711144394D8BEDF55F19266365CD22C66815031 (void);
-// 0x00000983 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetLaughter(System.Int32)
+// 0x00000989 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::SetLaughter(System.Int32)
 extern void OvrAvatarVisemeContext_SetLaughter_mE669AB0E32C31985BE5EDEF02501F9BA3950552A (void);
-// 0x00000984 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContext> Oculus.Avatar2.OvrAvatarVisemeContext::CreateLipSyncContext()
+// 0x0000098A System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2LipSyncContext> Oculus.Avatar2.OvrAvatarVisemeContext::CreateLipSyncContext()
 extern void OvrAvatarVisemeContext_CreateLipSyncContext_mD61A9EECB550B2B6379EEDB785E9C634E105769C (void);
-// 0x00000985 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::ReleaseUnmanagedResources()
+// 0x0000098B System.Void Oculus.Avatar2.OvrAvatarVisemeContext::ReleaseUnmanagedResources()
 extern void OvrAvatarVisemeContext_ReleaseUnmanagedResources_m189F1BBF3FD82062AFF903A0929DFE995E35C333 (void);
-// 0x00000986 System.Boolean Oculus.Avatar2.OvrAvatarVisemeContext::GetLipSyncState(Oculus.Avatar2.OvrAvatarLipSyncState)
+// 0x0000098C System.Boolean Oculus.Avatar2.OvrAvatarVisemeContext::GetLipSyncState(Oculus.Avatar2.OvrAvatarLipSyncState)
 extern void OvrAvatarVisemeContext_GetLipSyncState_mF9B582DA97053A214762CF5A1BB51F2B3DE06082 (void);
-// 0x00000987 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Reconfigure()
+// 0x0000098D System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Reconfigure()
 extern void OvrAvatarVisemeContext_Reconfigure_m540FD2857F1C55667C69A21F6B849F164FC05ACB (void);
-// 0x00000988 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Dispose(System.Boolean)
+// 0x0000098E System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Dispose(System.Boolean)
 extern void OvrAvatarVisemeContext_Dispose_m5951A295F66083D0BBDC1C03C40EBD0D8872447A (void);
-// 0x00000989 System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Finalize()
+// 0x0000098F System.Void Oculus.Avatar2.OvrAvatarVisemeContext::Finalize()
 extern void OvrAvatarVisemeContext_Finalize_m9B1E0796818C345ECB3F2F7E0CC31AD2968E9EFC (void);
-// 0x0000098A System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_Initialize(Oculus.Avatar2.CAPI/LoggingDelegate,System.IntPtr)
+// 0x00000990 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_Initialize(Oculus.Avatar2.CAPI/LoggingDelegate,System.IntPtr)
 extern void OvrPluginTracking_ovrpTracking_Initialize_m07A793E76AA3072C71D7EFD13626D64E6BBF897D (void);
-// 0x0000098B System.Void Oculus.Avatar2.OvrPluginTracking::ovrpTracking_Shutdown()
+// 0x00000991 System.Void Oculus.Avatar2.OvrPluginTracking::ovrpTracking_Shutdown()
 extern void OvrPluginTracking_ovrpTracking_Shutdown_m35A33ECD7E725E30F7477E15AFF2B841CC3F058B (void);
-// 0x0000098C System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateFaceTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider&)
+// 0x00000992 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateFaceTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider&)
 extern void OvrPluginTracking_ovrpTracking_CreateFaceTrackingContext_m1E05FE645424E17A633EE2C1424FF1936FFDD506 (void);
-// 0x0000098D System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateFaceTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative&)
+// 0x00000993 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateFaceTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative&)
 extern void OvrPluginTracking_ovrpTracking_CreateFaceTrackingContextNative_m1D3733830B177A4E07C113CF9A1F7F753FF8F2BF (void);
-// 0x0000098E System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateEyeTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider&)
+// 0x00000994 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateEyeTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider&)
 extern void OvrPluginTracking_ovrpTracking_CreateEyeTrackingContext_m3A2F27781513988DA7011A58D6DE20C9CC7FAF51 (void);
-// 0x0000098F System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateEyeTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative&)
+// 0x00000995 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateEyeTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative&)
 extern void OvrPluginTracking_ovrpTracking_CreateEyeTrackingContextNative_m84748D81BEB9D22594C228A7633BC161EFF5D1CF (void);
-// 0x00000990 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateHandTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext&)
+// 0x00000996 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateHandTrackingContext(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext&)
 extern void OvrPluginTracking_ovrpTracking_CreateHandTrackingContext_m00F1AB29DA1103967B110AF052F9F995AB7E90A1 (void);
-// 0x00000991 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateHandTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative&)
+// 0x00000997 System.Boolean Oculus.Avatar2.OvrPluginTracking::ovrpTracking_CreateHandTrackingContextNative(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative&)
 extern void OvrPluginTracking_ovrpTracking_CreateHandTrackingContextNative_m0A20765F1CBD6C17545FE0BFFCBA707764E3AFB3 (void);
-// 0x00000992 System.Boolean Oculus.Avatar2.OvrPluginTracking::Initialize(Oculus.Avatar2.CAPI/LoggingDelegate,System.IntPtr)
+// 0x00000998 System.Boolean Oculus.Avatar2.OvrPluginTracking::Initialize(Oculus.Avatar2.CAPI/LoggingDelegate,System.IntPtr)
 extern void OvrPluginTracking_Initialize_mFC70BF6750B5521EB70CF491701CD6492EEFFA6A (void);
-// 0x00000993 System.Void Oculus.Avatar2.OvrPluginTracking::Shutdown()
+// 0x00000999 System.Void Oculus.Avatar2.OvrPluginTracking::Shutdown()
 extern void OvrPluginTracking_Shutdown_m5FD6E3C2C5DBE123A5B8DC3D6371B9E7394956BB (void);
-// 0x00000994 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider> Oculus.Avatar2.OvrPluginTracking::CreateInternalFaceTrackingContext()
+// 0x0000099A System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider> Oculus.Avatar2.OvrPluginTracking::CreateInternalFaceTrackingContext()
 extern void OvrPluginTracking_CreateInternalFaceTrackingContext_mB5041768B32E02521DB0C8883F1F46036831A161 (void);
-// 0x00000995 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative> Oculus.Avatar2.OvrPluginTracking::CreateInternalFaceTrackingContextNative()
+// 0x0000099B System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative> Oculus.Avatar2.OvrPluginTracking::CreateInternalFaceTrackingContextNative()
 extern void OvrPluginTracking_CreateInternalFaceTrackingContextNative_m59688669E896A6A2F93A0323216A05ED8A99A018 (void);
-// 0x00000996 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider> Oculus.Avatar2.OvrPluginTracking::CreateInternalEyeTrackingContext()
+// 0x0000099C System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider> Oculus.Avatar2.OvrPluginTracking::CreateInternalEyeTrackingContext()
 extern void OvrPluginTracking_CreateInternalEyeTrackingContext_mC4ED0A5C9D120C3F3C929C2081E06943EDA46530 (void);
-// 0x00000997 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative> Oculus.Avatar2.OvrPluginTracking::CreateInternalEyeTrackingContextNative()
+// 0x0000099D System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative> Oculus.Avatar2.OvrPluginTracking::CreateInternalEyeTrackingContextNative()
 extern void OvrPluginTracking_CreateInternalEyeTrackingContextNative_mE2DEBF574363FCF7217E37739BED37EFD8C59E03 (void);
-// 0x00000998 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext> Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingContext()
+// 0x0000099E System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext> Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingContext()
 extern void OvrPluginTracking_CreateHandTrackingContext_m43AF0901DF1BFEEC7BC7BAE30E8C784E3A423E85 (void);
-// 0x00000999 System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative> Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingContextNative()
+// 0x0000099F System.Nullable`1<Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative> Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingContextNative()
 extern void OvrPluginTracking_CreateHandTrackingContextNative_m989B9396C67C0BFEBAB5376BF8E00FDBBEB7491B (void);
-// 0x0000099A Oculus.Avatar2.IOvrAvatarHandTrackingDelegate Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingDelegate()
+// 0x000009A0 Oculus.Avatar2.IOvrAvatarHandTrackingDelegate Oculus.Avatar2.OvrPluginTracking::CreateHandTrackingDelegate()
 extern void OvrPluginTracking_CreateHandTrackingDelegate_mE1EC9885BB5C92FC8E839BE5255E4ED8777DA4CA (void);
-// 0x0000099B Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrPluginTracking::CreateFaceTrackingContext()
+// 0x000009A1 Oculus.Avatar2.OvrAvatarFacePoseProviderBase Oculus.Avatar2.OvrPluginTracking::CreateFaceTrackingContext()
 extern void OvrPluginTracking_CreateFaceTrackingContext_mB63DBE492DB3271FC1ED6313B89F5BECA0C0519D (void);
-// 0x0000099C Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrPluginTracking::CreateEyeTrackingContext()
+// 0x000009A2 Oculus.Avatar2.OvrAvatarEyePoseProviderBase Oculus.Avatar2.OvrPluginTracking::CreateEyeTrackingContext()
 extern void OvrPluginTracking_CreateEyeTrackingContext_m2B1329FBFC11297AFF9B7202B4B1EFB71AC8B805 (void);
-// 0x0000099D Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::get_NativeContext()
+// 0x000009A3 Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::get_NativeContext()
 extern void HandTrackingDelegate_get_NativeContext_mF357224AABF083C9BD90A1B37DAD5672884A869B (void);
-// 0x0000099E System.Void Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext,Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative)
+// 0x000009A4 System.Void Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContext,Oculus.Avatar2.CAPI/ovrAvatar2HandTrackingDataContextNative)
 extern void HandTrackingDelegate__ctor_mF263893898B54C855A00574D7EF2ED60083D3BEA (void);
-// 0x0000099F System.Boolean Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::GetHandData(Oculus.Avatar2.OvrAvatarTrackingHandsState)
+// 0x000009A5 System.Boolean Oculus.Avatar2.OvrPluginTracking/HandTrackingDelegate::GetHandData(Oculus.Avatar2.OvrAvatarTrackingHandsState)
 extern void HandTrackingDelegate_GetHandData_m7334AB0B09B619F423891DD57338FFADDCCC1E96 (void);
-// 0x000009A0 Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::Oculus.Avatar2.IOvrAvatarNativeFacePose.get_NativeProvider()
+// 0x000009A6 Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::Oculus.Avatar2.IOvrAvatarNativeFacePose.get_NativeProvider()
 extern void OvrPluginFaceTrackingProvider_Oculus_Avatar2_IOvrAvatarNativeFacePose_get_NativeProvider_mB14CB4C65242ABFB17301AF9BDA8074794EF9B76 (void);
-// 0x000009A1 System.Void Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider,Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative)
+// 0x000009A7 System.Void Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProvider,Oculus.Avatar2.CAPI/ovrAvatar2FacePoseProviderNative)
 extern void OvrPluginFaceTrackingProvider__ctor_m2F244A115749D588D889C9D247ACE61ABE4F3009 (void);
-// 0x000009A2 System.Boolean Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::GetFacePose(Oculus.Avatar2.OvrAvatarFacePose)
+// 0x000009A8 System.Boolean Oculus.Avatar2.OvrPluginTracking/OvrPluginFaceTrackingProvider::GetFacePose(Oculus.Avatar2.OvrAvatarFacePose)
 extern void OvrPluginFaceTrackingProvider_GetFacePose_m446010397FBF5E12E7D94BE422DED15BAA02C1E9 (void);
-// 0x000009A3 Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::Oculus.Avatar2.IOvrAvatarNativeEyePose.get_NativeProvider()
+// 0x000009A9 Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::Oculus.Avatar2.IOvrAvatarNativeEyePose.get_NativeProvider()
 extern void OvrPluginEyeTrackingProvider_Oculus_Avatar2_IOvrAvatarNativeEyePose_get_NativeProvider_m33B5C986BDA128402EED072906AD9322C2C0EBE9 (void);
-// 0x000009A4 System.Void Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider,Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative)
+// 0x000009AA System.Void Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::.ctor(Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProvider,Oculus.Avatar2.CAPI/ovrAvatar2EyePoseProviderNative)
 extern void OvrPluginEyeTrackingProvider__ctor_m710BDC1A4346CFB5C2B0A24ADF63D8882A6A6BEE (void);
-// 0x000009A5 System.Boolean Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::GetEyePose(Oculus.Avatar2.OvrAvatarEyesPose)
+// 0x000009AB System.Boolean Oculus.Avatar2.OvrPluginTracking/OvrPluginEyeTrackingProvider::GetEyePose(Oculus.Avatar2.OvrAvatarEyesPose)
 extern void OvrPluginEyeTrackingProvider_GetEyePose_m893CFCA1455CC65D320276A6872E29E27866C702 (void);
-// 0x000009A6 System.Void Oculus.Avatar2.OvrAvatarMaterialExtension::.ctor(System.String,Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries)
+// 0x000009AC System.Void Oculus.Avatar2.OvrAvatarMaterialExtension::.ctor(System.String,Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries)
 extern void OvrAvatarMaterialExtension__ctor_m58CFEFE59753C20E7BF78AA8673A3A0B6B9D632B (void);
-// 0x000009A7 System.String Oculus.Avatar2.OvrAvatarMaterialExtension::get_Name()
+// 0x000009AD System.String Oculus.Avatar2.OvrAvatarMaterialExtension::get_Name()
 extern void OvrAvatarMaterialExtension_get_Name_m261FF78606C0DCB52F9F603DAB890743FD580875 (void);
-// 0x000009A8 System.Void Oculus.Avatar2.OvrAvatarMaterialExtension::ApplyEntriesToMaterial(UnityEngine.Material,Oculus.Avatar2.OvrAvatarMaterialExtensionConfig)
+// 0x000009AE System.Void Oculus.Avatar2.OvrAvatarMaterialExtension::ApplyEntriesToMaterial(UnityEngine.Material,Oculus.Avatar2.OvrAvatarMaterialExtensionConfig)
 extern void OvrAvatarMaterialExtension_ApplyEntriesToMaterial_mE43360DCDDA9BE8884D409B1A9974FC1AF3552C7 (void);
-// 0x000009A9 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::LoadExtension(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,Oculus.Avatar2.OvrAvatarMaterialExtension&)
+// 0x000009AF System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::LoadExtension(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,Oculus.Avatar2.OvrAvatarMaterialExtension&)
 extern void OvrAvatarMaterialExtension_LoadExtension_m329D471BCD7A76A5DCF0F3E3D53DAD46AA0BBBDE (void);
-// 0x000009AA System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::GetMaterialExtensionName(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.String&)
+// 0x000009B0 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::GetMaterialExtensionName(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.String&)
 extern void OvrAvatarMaterialExtension_GetMaterialExtensionName_m2870D2CB96CF95A433A31B16B7A50AFA811A741B (void);
-// 0x000009AB System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::GetNumEntries(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32&)
+// 0x000009B1 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension::GetNumEntries(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32&)
 extern void OvrAvatarMaterialExtension_GetNumEntries_mFF1C47B4266F63FAAE32C089AA3D358EEBE46269 (void);
-// 0x000009AC System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::.ctor(System.String,T)
-// 0x000009AD System.String Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::get_Name()
-// 0x000009AE T Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::get_Payload()
-// 0x000009AF System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::ApplyToMaterial(UnityEngine.Material,System.String,Oculus.Avatar2.OvrAvatarMaterialExtensionConfig)
+// 0x000009B2 System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::.ctor(System.String,T)
+// 0x000009B3 System.String Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::get_Name()
+// 0x000009B4 T Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1::get_Payload()
+// 0x000009B5 System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::ApplyToMaterial(UnityEngine.Material,System.String,Oculus.Avatar2.OvrAvatarMaterialExtensionConfig)
 extern void ExtensionEntries_ApplyToMaterial_m8BA33A99D63E11AF1DB8CF643281B3B900284181 (void);
-// 0x000009B0 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::LoadEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32)
+// 0x000009B6 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::LoadEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32)
 extern void ExtensionEntries_LoadEntry_m46B3992011AFF4D3A0127A8ED30AD6FB850A8F31 (void);
-// 0x000009B1 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::GetEntryMetaData(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&)
+// 0x000009B7 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::GetEntryMetaData(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&)
 extern void ExtensionEntries_GetEntryMetaData_mB06F0FC82BC017E3D3291266B9B69CCEA7678EFF (void);
-// 0x000009B2 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::GetNameAndPayloadForEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&,System.String&,T*)
-// 0x000009B3 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::StoreNameAndPayloadForEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&,System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1<T>>&)
-// 0x000009B4 System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::.ctor()
+// 0x000009B8 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::GetNameAndPayloadForEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&,System.String&,T*)
+// 0x000009B9 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::StoreNameAndPayloadForEntry(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.UInt32,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2MaterialExtensionEntry&,System.Collections.Generic.List`1<Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntry`1<T>>&)
+// 0x000009BA System.Void Oculus.Avatar2.OvrAvatarMaterialExtension/ExtensionEntries::.ctor()
 extern void ExtensionEntries__ctor_m8A5D2997A774933A6CF678CD58A73BB4DD0BB129 (void);
-// 0x000009B5 System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_ExtensionNamesPropertyName()
+// 0x000009BB System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_ExtensionNamesPropertyName()
 extern void OvrAvatarMaterialExtensionConfig_get_ExtensionNamesPropertyName_m852B99FD07CCA6CDF7549EF65BDC526BCF4065F8 (void);
-// 0x000009B6 System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_EntryNamesPropertyName()
+// 0x000009BC System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_EntryNamesPropertyName()
 extern void OvrAvatarMaterialExtensionConfig_get_EntryNamesPropertyName_m7CE5460814FAF204D1BAABBFEA432171305A4253 (void);
-// 0x000009B7 System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_ReplacementNamesPropertyName()
+// 0x000009BD System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::get_ReplacementNamesPropertyName()
 extern void OvrAvatarMaterialExtensionConfig_get_ReplacementNamesPropertyName_mCBAA8A153C4B4FAA2D68915BFD6088DF4EEA2777 (void);
-// 0x000009B8 System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::TryGetNameInShader(System.String,System.String,System.String&)
+// 0x000009BE System.Boolean Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::TryGetNameInShader(System.String,System.String,System.String&)
 extern void OvrAvatarMaterialExtensionConfig_TryGetNameInShader_m9A58187BB67C129D31ED0FDE7E63687E17D26FF3 (void);
-// 0x000009B9 System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::OnBeforeSerialize()
+// 0x000009BF System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::OnBeforeSerialize()
 extern void OvrAvatarMaterialExtensionConfig_OnBeforeSerialize_m14D34F36300141B534040227A19AEE2D71332C23 (void);
-// 0x000009BA System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::OnAfterDeserialize()
+// 0x000009C0 System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::OnAfterDeserialize()
 extern void OvrAvatarMaterialExtensionConfig_OnAfterDeserialize_m2216502A1EEEEABADB8D5B2C807688D830412691 (void);
-// 0x000009BB System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::FindNonDuplicateName(System.String,System.Collections.Generic.HashSet`1<System.String>)
+// 0x000009C1 System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::FindNonDuplicateName(System.String,System.Collections.Generic.HashSet`1<System.String>)
 extern void OvrAvatarMaterialExtensionConfig_FindNonDuplicateName_m4231E4E54AACDDC3BC4899583F8E9F788B61AA48 (void);
-// 0x000009BC System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::FindNonDuplicateNameTuple(System.String,System.String,System.Collections.Generic.HashSet`1<System.Tuple`2<System.String,System.String>>)
+// 0x000009C2 System.String Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::FindNonDuplicateNameTuple(System.String,System.String,System.Collections.Generic.HashSet`1<System.Tuple`2<System.String,System.String>>)
 extern void OvrAvatarMaterialExtensionConfig_FindNonDuplicateNameTuple_mF7FE174CE1201F6CC09A2E3F860702EA591325F9 (void);
-// 0x000009BD System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::.ctor()
+// 0x000009C3 System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::.ctor()
 extern void OvrAvatarMaterialExtensionConfig__ctor_mB8693F96FFD2F6464731101BE561008562F83504 (void);
-// 0x000009BE System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::.cctor()
+// 0x000009C4 System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig::.cctor()
 extern void OvrAvatarMaterialExtensionConfig__cctor_m7E28775A88FD168B0E0C74E7F9F4E69A27BE5B6D (void);
-// 0x000009BF System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig/StringListWrapper::.ctor()
+// 0x000009C5 System.Void Oculus.Avatar2.OvrAvatarMaterialExtensionConfig/StringListWrapper::.ctor()
 extern void StringListWrapper__ctor_m71DC7666CCBB76A07805B2F81034CF1DE514F7B5 (void);
-// 0x000009C0 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Dispose()
+// 0x000009C6 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Dispose()
 extern void OvrAvatarGpuSkinningController_Dispose_m97F0AB6669E0C2D18835763D4EC87B0B2638AEFB (void);
-// 0x000009C1 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Dispose(System.Boolean)
+// 0x000009C7 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Dispose(System.Boolean)
 extern void OvrAvatarGpuSkinningController_Dispose_m5E997C997319BFF6683D467D4FE755AD5029117D (void);
-// 0x000009C2 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Finalize()
+// 0x000009C8 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::Finalize()
 extern void OvrAvatarGpuSkinningController_Finalize_m8690FB0C8F21C91044F6B23A83F57C6067AE398B (void);
-// 0x000009C3 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActiveCombiner(Oculus.Skinning.GpuSkinning.OvrGpuMorphTargetsCombiner)
+// 0x000009C9 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActiveCombiner(Oculus.Skinning.GpuSkinning.OvrGpuMorphTargetsCombiner)
 extern void OvrAvatarGpuSkinningController_AddActiveCombiner_m21BB18A4E4CE2DFE8BB2C1A74076FF6522D849A5 (void);
-// 0x000009C4 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActiveSkinner(Oculus.Skinning.GpuSkinning.IOvrGpuSkinner)
+// 0x000009CA System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActiveSkinner(Oculus.Skinning.GpuSkinning.IOvrGpuSkinner)
 extern void OvrAvatarGpuSkinningController_AddActiveSkinner_m8CFD4176633D9BB3121BE87131B436342D8933D1 (void);
-// 0x000009C5 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActivateComputeAnimator(Oculus.Skinning.GpuSkinning.OvrComputeMeshAnimator)
+// 0x000009CB System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddActivateComputeAnimator(Oculus.Skinning.GpuSkinning.OvrComputeMeshAnimator)
 extern void OvrAvatarGpuSkinningController_AddActivateComputeAnimator_m81084A0AF2AC127D858FD90DED4451C275B7EFD4 (void);
-// 0x000009C6 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::UpdateInternal()
+// 0x000009CC System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::UpdateInternal()
 extern void OvrAvatarGpuSkinningController_UpdateInternal_mEAECA4D32ED3E98EF8254A027A089177B75925CD (void);
-// 0x000009C7 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddGpuSkinningElement(System.Collections.Generic.List`1<T>,T)
-// 0x000009C8 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::StartFrame()
+// 0x000009CD System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::AddGpuSkinningElement(System.Collections.Generic.List`1<T>,T)
+// 0x000009CE System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::StartFrame()
 extern void OvrAvatarGpuSkinningController_StartFrame_m5D2F4353F7177081F4633A9D6D430D358C2273CF (void);
-// 0x000009C9 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::EndFrame()
+// 0x000009CF System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::EndFrame()
 extern void OvrAvatarGpuSkinningController_EndFrame_mBB07E2A662000847B198D91D9A203E45A36443F7 (void);
-// 0x000009CA OvrComputeBufferPool/EntryJoints Oculus.Avatar2.OvrAvatarGpuSkinningController::GetNextEntryJoints()
+// 0x000009D0 OvrComputeBufferPool/EntryJoints Oculus.Avatar2.OvrAvatarGpuSkinningController::GetNextEntryJoints()
 extern void OvrAvatarGpuSkinningController_GetNextEntryJoints_mFE8DA35E14C6AD0E81DD564F6635B95F4394E3B3 (void);
-// 0x000009CB UnityEngine.ComputeBuffer Oculus.Avatar2.OvrAvatarGpuSkinningController::GetJointBuffer()
+// 0x000009D1 UnityEngine.ComputeBuffer Oculus.Avatar2.OvrAvatarGpuSkinningController::GetJointBuffer()
 extern void OvrAvatarGpuSkinningController_GetJointBuffer_m436B79C700AB8D7A52BCFAE075440EA60ED4F5F6 (void);
-// 0x000009CC UnityEngine.ComputeBuffer Oculus.Avatar2.OvrAvatarGpuSkinningController::GetWeightsBuffer()
+// 0x000009D2 UnityEngine.ComputeBuffer Oculus.Avatar2.OvrAvatarGpuSkinningController::GetWeightsBuffer()
 extern void OvrAvatarGpuSkinningController_GetWeightsBuffer_m97C20F0CE8845623615687B25C3DF6D5EB137990 (void);
-// 0x000009CD OvrComputeBufferPool/EntryWeights Oculus.Avatar2.OvrAvatarGpuSkinningController::GetNextEntryWeights(System.Int32)
+// 0x000009D3 OvrComputeBufferPool/EntryWeights Oculus.Avatar2.OvrAvatarGpuSkinningController::GetNextEntryWeights(System.Int32)
 extern void OvrAvatarGpuSkinningController_GetNextEntryWeights_m5FB7EDCB7107C1CB040AD6091AB6DC86A3B2F5F4 (void);
-// 0x000009CE System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::.ctor()
+// 0x000009D4 System.Void Oculus.Avatar2.OvrAvatarGpuSkinningController::.ctor()
 extern void OvrAvatarGpuSkinningController__ctor_mEE7D9C918108212E8495EFCADA5D6AD70C3D9510 (void);
-// 0x000009CF Oculus.Skinning.OvrSkinningTypes/SkinningQuality Oculus.Avatar2.GpuSkinningConfiguration::get_MaxAllowedSkinningQuality()
+// 0x000009D5 Oculus.Skinning.OvrSkinningTypes/SkinningQuality Oculus.Avatar2.GpuSkinningConfiguration::get_MaxAllowedSkinningQuality()
 extern void GpuSkinningConfiguration_get_MaxAllowedSkinningQuality_m9C8AE7F412C2DABCA08197134BE1E83A9EE1E2C4 (void);
-// 0x000009D0 UnityEngine.Shader Oculus.Avatar2.GpuSkinningConfiguration::get_CombineMorphTargetsShader()
+// 0x000009D6 UnityEngine.Shader Oculus.Avatar2.GpuSkinningConfiguration::get_CombineMorphTargetsShader()
 extern void GpuSkinningConfiguration_get_CombineMorphTargetsShader_m18642E9FEB17048A4063DEAA1F8527F58E5069C2 (void);
-// 0x000009D1 UnityEngine.Shader Oculus.Avatar2.GpuSkinningConfiguration::get_SkinToTextureShader()
+// 0x000009D7 UnityEngine.Shader Oculus.Avatar2.GpuSkinningConfiguration::get_SkinToTextureShader()
 extern void GpuSkinningConfiguration_get_SkinToTextureShader_m5B68E47E97D28F70A85B7E112AF70EA7A39EF816 (void);
-// 0x000009D2 System.Void Oculus.Avatar2.GpuSkinningConfiguration::Initialize()
+// 0x000009D8 System.Void Oculus.Avatar2.GpuSkinningConfiguration::Initialize()
 extern void GpuSkinningConfiguration_Initialize_mFF9AF325AEE38C53887A090E24EB7AA4CAC67B9F (void);
-// 0x000009D3 System.Void Oculus.Avatar2.GpuSkinningConfiguration::HandleDefaultConfig(Oculus.Avatar2.OvrAvatarEntity/SkinningConfig&)
+// 0x000009D9 System.Void Oculus.Avatar2.GpuSkinningConfiguration::HandleDefaultConfig(Oculus.Avatar2.OvrAvatarEntity/SkinningConfig&)
 extern void GpuSkinningConfiguration_HandleDefaultConfig_mF43BCBDE93C24DDC5C3E1E3B7B2A175710BF9907 (void);
-// 0x000009D4 Oculus.Skinning.OvrSkinningTypes/SkinningQuality Oculus.Avatar2.GpuSkinningConfiguration::GetQualityForLOD(System.UInt32)
+// 0x000009DA Oculus.Skinning.OvrSkinningTypes/SkinningQuality Oculus.Avatar2.GpuSkinningConfiguration::GetQualityForLOD(System.UInt32)
 extern void GpuSkinningConfiguration_GetQualityForLOD_mED691D57790E033C612AFF3C1895EA5362424DEF (void);
-// 0x000009D5 System.Void Oculus.Avatar2.GpuSkinningConfiguration::ValidateFallbackSkinner(System.Boolean,System.Boolean)
+// 0x000009DB System.Void Oculus.Avatar2.GpuSkinningConfiguration::ValidateFallbackSkinner(System.Boolean,System.Boolean)
 extern void GpuSkinningConfiguration_ValidateFallbackSkinner_m368D9CDC786D160CC2C82963D27A75EDAE54EE77 (void);
-// 0x000009D6 System.Void Oculus.Avatar2.GpuSkinningConfiguration::ValidateTexturePrecision(Oculus.Avatar2.GpuSkinningConfiguration/TexturePrecision&,UnityEngine.Experimental.Rendering.FormatUsage)
+// 0x000009DC System.Void Oculus.Avatar2.GpuSkinningConfiguration::ValidateTexturePrecision(Oculus.Avatar2.GpuSkinningConfiguration/TexturePrecision&,UnityEngine.Experimental.Rendering.FormatUsage)
 extern void GpuSkinningConfiguration_ValidateTexturePrecision_m4ECDFF06E195A3C2A548A877B4F935A97EE99E14 (void);
-// 0x000009D7 System.Void Oculus.Avatar2.GpuSkinningConfiguration::.ctor()
+// 0x000009DD System.Void Oculus.Avatar2.GpuSkinningConfiguration::.ctor()
 extern void GpuSkinningConfiguration__ctor_m97D7269189010796CC68280831D12371DBC0AD7F (void);
-// 0x000009D8 System.Void Oculus.Avatar2.EnumMaskAttribute::.ctor()
+// 0x000009DE System.Void Oculus.Avatar2.EnumMaskAttribute::.ctor()
 extern void EnumMaskAttribute__ctor_m3E543D594E0488353B9CFBA447BC4CBFA84C69D9 (void);
-// 0x000009D9 System.Void Oculus.Avatar2.IblSetupForEnvironment::SetExposureScopeParm()
+// 0x000009DF System.Void Oculus.Avatar2.IblSetupForEnvironment::SetExposureScopeParm()
 extern void IblSetupForEnvironment_SetExposureScopeParm_m8C1AF42D14528854442F3F07112922A93281BB5E (void);
-// 0x000009DA System.Void Oculus.Avatar2.IblSetupForEnvironment::SetAllIblGlobalScopeParams()
+// 0x000009E0 System.Void Oculus.Avatar2.IblSetupForEnvironment::SetAllIblGlobalScopeParams()
 extern void IblSetupForEnvironment_SetAllIblGlobalScopeParams_m0CB6A326EB55BB802B6C5373D7D677D0E2650651 (void);
-// 0x000009DB System.Void Oculus.Avatar2.IblSetupForEnvironment::OnEnable()
+// 0x000009E1 System.Void Oculus.Avatar2.IblSetupForEnvironment::OnEnable()
 extern void IblSetupForEnvironment_OnEnable_m78C9B9FD832B7D82AF7E80D6BB5EC892CB39ABDC (void);
-// 0x000009DC System.Void Oculus.Avatar2.IblSetupForEnvironment::OnDisable()
+// 0x000009E2 System.Void Oculus.Avatar2.IblSetupForEnvironment::OnDisable()
 extern void IblSetupForEnvironment_OnDisable_mFA92BB20F36303E17EB92402DC3A4D2825E50EEA (void);
-// 0x000009DD System.Void Oculus.Avatar2.IblSetupForEnvironment::.ctor()
+// 0x000009E3 System.Void Oculus.Avatar2.IblSetupForEnvironment::.ctor()
 extern void IblSetupForEnvironment__ctor_mBF5E400FAB7B6BDCE5B4479E903A17BDDE591F42 (void);
-// 0x000009DE System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::IsSuccess(Oculus.Avatar2.CAPI/ovrAvatar2Result)
+// 0x000009E4 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::IsSuccess(Oculus.Avatar2.CAPI/ovrAvatar2Result)
 extern void OvrAvatarHelperExtensions_IsSuccess_m00E3731804A880A7544C64902F28564A3661B7AD (void);
-// 0x000009DF System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::IsFailure(Oculus.Avatar2.CAPI/ovrAvatar2Result)
+// 0x000009E5 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::IsFailure(Oculus.Avatar2.CAPI/ovrAvatar2Result)
 extern void OvrAvatarHelperExtensions_IsFailure_m116527B4C39E502F8EBCF93D863A041603E3040E (void);
-// 0x000009E0 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::NullSafeToArray(System.Collections.Generic.HashSet`1<T>)
-// 0x000009E1 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::ToArray(System.Collections.Generic.HashSet`1<T>)
-// 0x000009E2 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&)
-// 0x000009E3 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&,System.UInt32)
-// 0x000009E4 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&,System.Int32)
-// 0x000009E5 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<System.Byte>&)
+// 0x000009E6 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::NullSafeToArray(System.Collections.Generic.HashSet`1<T>)
+// 0x000009E7 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::ToArray(System.Collections.Generic.HashSet`1<T>)
+// 0x000009E8 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&)
+// 0x000009E9 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&,System.UInt32)
+// 0x000009EA System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<T>&,System.Int32)
+// 0x000009EB System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeArray`1<System.Byte>&)
 extern void OvrAvatarHelperExtensions_GetBufferSize_mBA7FBFDCB19C226B7C78EB863DEA9E3F88EB887C (void);
-// 0x000009E6 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetEnumBufferSize(Unity.Collections.NativeArray`1<T>&)
-// 0x000009E7 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetEnumBufferSize(Unity.Collections.NativeArray`1<T>&,System.UInt32)
-// 0x000009E8 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(Unity.Collections.NativeArray`1<T>,System.Collections.Generic.HashSet`1<T>)
-// 0x000009E9 System.IntPtr Oculus.Avatar2.OvrAvatarHelperExtensions::GetIntPtr(Unity.Collections.NativeArray`1<T>&)
-// 0x000009EA T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetPtr(Unity.Collections.NativeArray`1<T>&)
-// 0x000009EB CastT* Oculus.Avatar2.OvrAvatarHelperExtensions::CastPtr(Unity.Collections.NativeArray`1<T>&)
-// 0x000009EC Oculus.Avatar2.CAPI/ovrAvatar2Vector3f* Oculus.Avatar2.OvrAvatarHelperExtensions::CastOvrPtr(Unity.Collections.NativeArray`1<UnityEngine.Vector3>&)
+// 0x000009EC System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetEnumBufferSize(Unity.Collections.NativeArray`1<T>&)
+// 0x000009ED System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetEnumBufferSize(Unity.Collections.NativeArray`1<T>&,System.UInt32)
+// 0x000009EE System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(Unity.Collections.NativeArray`1<T>,System.Collections.Generic.HashSet`1<T>)
+// 0x000009EF System.IntPtr Oculus.Avatar2.OvrAvatarHelperExtensions::GetIntPtr(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F0 T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetPtr(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F1 CastT* Oculus.Avatar2.OvrAvatarHelperExtensions::CastPtr(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F2 Oculus.Avatar2.CAPI/ovrAvatar2Vector3f* Oculus.Avatar2.OvrAvatarHelperExtensions::CastOvrPtr(Unity.Collections.NativeArray`1<UnityEngine.Vector3>&)
 extern void OvrAvatarHelperExtensions_CastOvrPtr_m808B69FFBD3BD1BA5498A20655A41EFC3D7775EE (void);
-// 0x000009ED T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetReadonlyPtr(Unity.Collections.NativeArray`1<T>&)
-// 0x000009EE System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::Reset(Unity.Collections.NativeArray`1<T>&)
-// 0x000009EF Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions::GetDisposeSafe(Unity.Collections.NativeArray`1<T>&)
-// 0x000009F0 T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetPtr(Unity.Collections.NativeSlice`1<T>&)
-// 0x000009F1 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeSlice`1<T>&)
-// 0x000009F2 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeSlice`1<System.Byte>&)
+// 0x000009F3 T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetReadonlyPtr(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F4 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::Reset(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F5 Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions::GetDisposeSafe(Unity.Collections.NativeArray`1<T>&)
+// 0x000009F6 T* Oculus.Avatar2.OvrAvatarHelperExtensions::GetPtr(Unity.Collections.NativeSlice`1<T>&)
+// 0x000009F7 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeSlice`1<T>&)
+// 0x000009F8 System.UInt32 Oculus.Avatar2.OvrAvatarHelperExtensions::GetBufferSize(Unity.Collections.NativeSlice`1<System.Byte>&)
 extern void OvrAvatarHelperExtensions_GetBufferSize_mB40B38FE012C87DD7E68802B3EDC49CBEC105C57 (void);
-// 0x000009F3 System.Collections.Generic.Dictionary`2<K,V> Oculus.Avatar2.OvrAvatarHelperExtensions::Copy(System.Collections.Generic.Dictionary`2<K,V>)
-// 0x000009F4 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(System.Collections.Generic.Dictionary`2<K,V>,System.Collections.Generic.Dictionary`2<K,V>)
-// 0x000009F5 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(System.Collections.Generic.Dictionary`2<K,V[]>,System.Collections.Generic.Dictionary`2<K,System.Collections.Generic.List`1<V>>)
-// 0x000009F6 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::Concat(T[],T&)
-// 0x000009F7 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SliceOut(T[],T&)
-// 0x000009F8 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SliceOutIndex(T[],System.Int32)
-// 0x000009F9 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SwapOut(T[],T&)
-// 0x000009FA T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SwapOutIndex(T[],System.Int32)
-// 0x000009FB System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::IndexOf(T[],T&)
-// 0x000009FC System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::BinarySearch(T[],T&)
-// 0x000009FD System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::BinarySearch(T[],T&,System.Collections.Generic.IComparer`1<T>)
-// 0x000009FE System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(T[],T&)
-// 0x000009FF System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(System.Collections.Generic.IReadOnlyList`1<T>,T&,System.Int32)
-// 0x00000A00 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(System.Array,System.Object&)
+// 0x000009F9 System.Collections.Generic.Dictionary`2<K,V> Oculus.Avatar2.OvrAvatarHelperExtensions::Copy(System.Collections.Generic.Dictionary`2<K,V>)
+// 0x000009FA System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(System.Collections.Generic.Dictionary`2<K,V>,System.Collections.Generic.Dictionary`2<K,V>)
+// 0x000009FB System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::CopyFrom(System.Collections.Generic.Dictionary`2<K,V[]>,System.Collections.Generic.Dictionary`2<K,System.Collections.Generic.List`1<V>>)
+// 0x000009FC T[] Oculus.Avatar2.OvrAvatarHelperExtensions::Concat(T[],T&)
+// 0x000009FD T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SliceOut(T[],T&)
+// 0x000009FE T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SliceOutIndex(T[],System.Int32)
+// 0x000009FF T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SwapOut(T[],T&)
+// 0x00000A00 T[] Oculus.Avatar2.OvrAvatarHelperExtensions::SwapOutIndex(T[],System.Int32)
+// 0x00000A01 System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::IndexOf(T[],T&)
+// 0x00000A02 System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::BinarySearch(T[],T&)
+// 0x00000A03 System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions::BinarySearch(T[],T&,System.Collections.Generic.IComparer`1<T>)
+// 0x00000A04 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(T[],T&)
+// 0x00000A05 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(System.Collections.Generic.IReadOnlyList`1<T>,T&,System.Int32)
+// 0x00000A06 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::Contains(System.Array,System.Object&)
 extern void OvrAvatarHelperExtensions_Contains_m3B5B1EBABD89DCD41B522EBD6B4668D3644D4855 (void);
-// 0x00000A01 System.Nullable`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions::First(System.Collections.Generic.List`1<T>)
-// 0x00000A02 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::AddFirst(System.Collections.Generic.List`1<T>,T)
-// 0x00000A03 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::AddLast(System.Collections.Generic.List`1<T>,T)
-// 0x00000A04 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::RemoveFirst(System.Collections.Generic.List`1<T>)
-// 0x00000A05 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccess(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
+// 0x00000A07 System.Nullable`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions::First(System.Collections.Generic.List`1<T>)
+// 0x00000A08 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::AddFirst(System.Collections.Generic.List`1<T>,T)
+// 0x00000A09 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::AddLast(System.Collections.Generic.List`1<T>,T)
+// 0x00000A0A System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::RemoveFirst(System.Collections.Generic.List`1<T>)
+// 0x00000A0B System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccess(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccess_mF6551F7F72E41C2B89F4545B7A32B224F3A9810A (void);
-// 0x00000A06 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrWarning(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A0C System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrWarning(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrWarning_mEAA529711CE875680B462855FF9AFE744C954762 (void);
-// 0x00000A07 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrWarning(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A0D System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrWarning(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrWarning_m889830EDA59DBBF5617995425089331B5D9EEE57 (void);
-// 0x00000A08 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogVerbose(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A0E System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogVerbose(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLogVerbose_m58469452674433E5738BE5CFCDA16B8181643642 (void);
-// 0x00000A09 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogVerbose(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A0F System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogVerbose(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLogVerbose_m022BD04177E1FB949663EC5C80DE460C9363D32E (void);
-// 0x00000A0A System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogDebug(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A10 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogDebug(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLogDebug_mE6B1205A56D62439F04063044F6E25D383BC9684 (void);
-// 0x00000A0B System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogInfo(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
+// 0x00000A11 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLogInfo(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLogInfo_mB3972C48006D7F352499D8234EEC518213E714D8 (void);
-// 0x00000A0C System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::LogError(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
+// 0x00000A12 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::LogError(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_LogError_mD3EB6F8287097E94A0356BC5169E812768B0E058 (void);
-// 0x00000A0D System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::LogAssert(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
+// 0x00000A13 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::LogAssert(Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,UnityEngine.Object)
 extern void OvrAvatarHelperExtensions_LogAssert_m95241CA0B97B0545BAA4AB7DCF44CAEC5D3D1F7C (void);
-// 0x00000A0E System.String Oculus.Avatar2.OvrAvatarHelperExtensions::_LogAssertBuilder(System.String&,Oculus.Avatar2.CAPI/ovrAvatar2Result&)
+// 0x00000A14 System.String Oculus.Avatar2.OvrAvatarHelperExtensions::_LogAssertBuilder(System.String&,Oculus.Avatar2.CAPI/ovrAvatar2Result&)
 extern void OvrAvatarHelperExtensions__LogAssertBuilder_mB2FBD737F7E77CD140943E8D8F3EB589F6E652C7 (void);
-// 0x00000A0F System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLog(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object,Oculus.Avatar2.OvrAvatarLog/ELogLevel)
+// 0x00000A15 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLog(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object,Oculus.Avatar2.OvrAvatarLog/ELogLevel)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLog_mA35D660E1CD042E81BF836D4454E043C5A46A767 (void);
-// 0x00000A10 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLog(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object,Oculus.Avatar2.OvrAvatarLog/ELogLevel)
+// 0x00000A16 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions::EnsureSuccessOrLog(Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,Oculus.Avatar2.CAPI/ovrAvatar2Result,System.String,System.String,System.String,UnityEngine.Object,Oculus.Avatar2.OvrAvatarLog/ELogLevel)
 extern void OvrAvatarHelperExtensions_EnsureSuccessOrLog_m15B5549C89448CE7CD2315ED42E4A09807E59ACB (void);
-// 0x00000A11 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::.cctor()
+// 0x00000A17 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions::.cctor()
 extern void OvrAvatarHelperExtensions__cctor_m82451580F24BA902B10EFB1F33BB82C48684D232 (void);
-// 0x00000A12 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::.ctor(Unity.Collections.NativeArray`1<T>&)
-// 0x00000A13 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::get_IsCreated()
-// 0x00000A14 System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::get_Length()
-// 0x00000A15 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::Dispose()
-// 0x00000A16 T[] Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::ToArray()
-// 0x00000A17 Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::op_Implicit(Unity.Collections.NativeArray`1<T>&)
-// 0x00000A18 Unity.Collections.NativeArray`1/Enumerator<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::GetEnumerator()
-// 0x00000A19 System.Collections.Generic.IEnumerator`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-// 0x00000A1A System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::System.Collections.IEnumerable.GetEnumerator()
-// 0x00000A1B System.String Oculus.Avatar2.PlatformHelperUtils::GetAndroidSysProp(System.String,System.String)
+// 0x00000A18 System.Void Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::.ctor(Unity.Collections.NativeArray`1<T>&)
+// 0x00000A19 System.Boolean Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::get_IsCreated()
+// 0x00000A1A System.Int32 Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::get_Length()
+// 0x00000A1B System.Void Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::Dispose()
+// 0x00000A1C T[] Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::ToArray()
+// 0x00000A1D Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::op_Implicit(Unity.Collections.NativeArray`1<T>&)
+// 0x00000A1E Unity.Collections.NativeArray`1/Enumerator<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::GetEnumerator()
+// 0x00000A1F System.Collections.Generic.IEnumerator`1<T> Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+// 0x00000A20 System.Collections.IEnumerator Oculus.Avatar2.OvrAvatarHelperExtensions/NativeArrayDisposeWrapper`1::System.Collections.IEnumerable.GetEnumerator()
+// 0x00000A21 System.String Oculus.Avatar2.PlatformHelperUtils::GetAndroidSysProp(System.String,System.String)
 extern void PlatformHelperUtils_GetAndroidSysProp_mD3A9F67BCB699A612A914AAFBCAB4752FC45D07E (void);
-// 0x00000A1C System.Int32 Oculus.Avatar2.PlatformHelperUtils::GetAndroidIntSysProp(System.String,System.Int32,System.String)
+// 0x00000A22 System.Int32 Oculus.Avatar2.PlatformHelperUtils::GetAndroidIntSysProp(System.String,System.Int32,System.String)
 extern void PlatformHelperUtils_GetAndroidIntSysProp_mFCF29264FB1D08C669A5764DB528001FFF449EC1 (void);
-// 0x00000A1D System.Void Oculus.Avatar2.PlatformHelperUtils/AndroidSysProperties::.cctor()
+// 0x00000A23 System.Void Oculus.Avatar2.PlatformHelperUtils/AndroidSysProperties::.cctor()
 extern void AndroidSysProperties__cctor_mA855049BB906FE537083D4A312D195F8B7BBF3CC (void);
-// 0x00000A1E System.Void Oculus.Avatar2.Utils.AvatarLODLookat::Start()
+// 0x00000A24 System.Void Oculus.Avatar2.Utils.AvatarLODLookat::Start()
 extern void AvatarLODLookat_Start_mC8AB28605B86099A9AD4DB011BDDBEFBCF47398C (void);
-// 0x00000A1F System.Void Oculus.Avatar2.Utils.AvatarLODLookat::Update()
+// 0x00000A25 System.Void Oculus.Avatar2.Utils.AvatarLODLookat::Update()
 extern void AvatarLODLookat_Update_m6558D551BCA0156D8C83EA885EAFC30B4D7CE2BD (void);
-// 0x00000A20 System.Void Oculus.Avatar2.Utils.AvatarLODLookat::.ctor()
+// 0x00000A26 System.Void Oculus.Avatar2.Utils.AvatarLODLookat::.ctor()
 extern void AvatarLODLookat__ctor_m890E9751E882B2BA6E0C8E2D07AF488E879F921A (void);
-// 0x00000A21 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_LoadAnimHierarchy(System.IntPtr,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2Id&)
+// 0x00000A27 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_LoadAnimHierarchy(System.IntPtr,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2Id&)
 extern void CAPI_ovrAvatar2Asset_LoadAnimHierarchy_m2EE4D307300A61807FFC66585DF2DDCB5C99EC56 (void);
-// 0x00000A22 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_UnloadAnimHierarchy(Oculus.Avatar2.CAPI/ovrAvatar2Id)
+// 0x00000A28 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_UnloadAnimHierarchy(Oculus.Avatar2.CAPI/ovrAvatar2Id)
 extern void CAPI_ovrAvatar2Asset_UnloadAnimHierarchy_m41971CEDBA3654EC53B9BB61BC9C1ECC4390AD7D (void);
-// 0x00000A23 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_GetAnimHierarchy(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.IntPtr)
+// 0x00000A29 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_GetAnimHierarchy(Oculus.Avatar2.CAPI/ovrAvatar2Id,System.IntPtr)
 extern void CAPI_ovrAvatar2Asset_GetAnimHierarchy_mE2AD78C2AD46BB5711020B46F67D9569541B1B49 (void);
-// 0x00000A24 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_LoadAnimClip(System.IntPtr,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2Id&)
+// 0x00000A2A Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_LoadAnimClip(System.IntPtr,System.UInt32,Oculus.Avatar2.CAPI/ovrAvatar2Id&)
 extern void CAPI_ovrAvatar2Asset_LoadAnimClip_mB8BD20779D2500E495605EB81A53D0AC8D99E6BE (void);
-// 0x00000A25 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_UnloadAnimClip(Oculus.Avatar2.CAPI/ovrAvatar2Id)
+// 0x00000A2B Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_UnloadAnimClip(Oculus.Avatar2.CAPI/ovrAvatar2Id)
 extern void CAPI_ovrAvatar2Asset_UnloadAnimClip_m393A81CA28BEBBABBD55E3860595A7F7F6BE976D (void);
-// 0x00000A26 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_GetAnimClip(Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimClipAsset&)
+// 0x00000A2C Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Asset_GetAnimClip(Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimClipAsset&)
 extern void CAPI_ovrAvatar2Asset_GetAnimClip_m2CBBA51885EBE8589A2BD7D729C99FAB8C7770BF (void);
-// 0x00000A27 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SampleAnimationClip(Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2SampleAnimationClipParams)
+// 0x00000A2D Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SampleAnimationClip(Oculus.Avatar2.CAPI/ovrAvatar2Id,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2SampleAnimationClipParams)
 extern void CAPI_ovrAvatar2Animation_SampleAnimationClip_mF89DBDAE835FD13C3F9B696C4AF22767F1C82938 (void);
-// 0x00000A28 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SetMood(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2Mood)
+// 0x00000A2E Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SetMood(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2Mood)
 extern void CAPI_ovrAvatar2Animation_SetMood_mE9F39F3FE54D8AD51175465738F27B5A93DAD7BA (void);
-// 0x00000A29 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetMood(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2Mood&)
+// 0x00000A2F Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetMood(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2Mood&)
 extern void CAPI_ovrAvatar2Animation_GetMood_mC270D0DC8AB4FFAC31E7E34A9277336379EF9D3D (void);
-// 0x00000A2A Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_LoadAnimStateMachineDefinitionFromJson(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateMachineDefinitionId&)
+// 0x00000A30 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_LoadAnimStateMachineDefinitionFromJson(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateMachineDefinitionId&)
 extern void CAPI_ovrAvatar2Animation_LoadAnimStateMachineDefinitionFromJson_mEF84777F713B61E43DD9A2D08C1B2AA4D1062876 (void);
-// 0x00000A2B Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetHierarchyId(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationHierarchyId&)
+// 0x00000A31 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetHierarchyId(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationHierarchyId&)
 extern void CAPI_ovrAvatar2Animation_GetHierarchyId_m85BB8E547B77B33234FF68670951122366C4CBB6 (void);
-// 0x00000A2C Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateMask(Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationId,System.String,System.String[],System.Int32,System.String[],System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationMaskId&)
+// 0x00000A32 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateMask(Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationId,System.String,System.String[],System.Int32,System.String[],System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationMaskId&)
 extern void CAPI_ovrAvatar2Animation_CreateMask_m01B0088F327C00475ED028F1A51E3FF13CA3622E (void);
-// 0x00000A2D Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SetLayerWeight(System.IntPtr,System.Single)
+// 0x00000A33 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_SetLayerWeight(System.IntPtr,System.Single)
 extern void CAPI_ovrAvatar2Animation_SetLayerWeight_m709E34B56B659E31B718027FABB5DFFC8B5169A4 (void);
-// 0x00000A2E Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_DestroyLayer(System.IntPtr)
+// 0x00000A34 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_DestroyLayer(System.IntPtr)
 extern void CAPI_ovrAvatar2Animation_DestroyLayer_m4BCC5718C2437811CD45EDBE2F8CEF65A63F329B (void);
-// 0x00000A2F Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetParameterId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId&)
+// 0x00000A35 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetParameterId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId&)
 extern void CAPI_ovrAvatar2Animation_GetParameterId_m68A393F1C885BEE22F9D851C794FF3C98EEA414C (void);
-// 0x00000A30 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetStateId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateId&)
+// 0x00000A36 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetStateId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateId&)
 extern void CAPI_ovrAvatar2Animation_GetStateId_m1C5248B9FB8E8F8EBA33B72C4880087062E107C3 (void);
-// 0x00000A31 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetTransitionId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationTransitionId&)
+// 0x00000A37 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_GetTransitionId(System.String,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationTransitionId&)
 extern void CAPI_ovrAvatar2Animation_GetTransitionId_m6B16AC8FC6AA7BA0272217E2D47E896229F309AF (void);
-// 0x00000A32 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateStateLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateMachineDefinitionId,System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationBlendMode,System.IntPtr&)
+// 0x00000A38 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateStateLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateMachineDefinitionId,System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationBlendMode,System.IntPtr&)
 extern void CAPI_ovrAvatar2Animation_CreateStateLayer_m13342B8718219551623A0EC657E8AD96EC1809E6 (void);
-// 0x00000A33 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetFloatParameter(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId,System.Single)
+// 0x00000A39 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetFloatParameter(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId,System.Single)
 extern void CAPI_ovrAvatar2Animation_StateLayerSetFloatParameter_m7159A1EFB1C1F9BE7D5BADCD1497E78E66C46CCD (void);
-// 0x00000A34 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetFloatParameters(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+// 0x00000A3A Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetFloatParameters(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
 extern void CAPI_ovrAvatar2Animation_StateLayerSetFloatParameters_m8531EEDC2F5A2B95BE519CF475AA378C1EC6EB55 (void);
-// 0x00000A35 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetNameParameter(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId,System.String)
+// 0x00000A3B Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetNameParameter(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationParameterId,System.String)
 extern void CAPI_ovrAvatar2Animation_StateLayerSetNameParameter_m9F3E4F1592F0E42F940F63AACF5C4CFE1F903B60 (void);
-// 0x00000A36 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetNameParameters(System.IntPtr,System.Int32,System.IntPtr,System.String[])
+// 0x00000A3C Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerSetNameParameters(System.IntPtr,System.Int32,System.IntPtr,System.String[])
 extern void CAPI_ovrAvatar2Animation_StateLayerSetNameParameters_mEFEFC5F8ED8E38095F56764159AA2DD74A597452 (void);
-// 0x00000A37 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerRequestTransition(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationTransitionId)
+// 0x00000A3D Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerRequestTransition(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationTransitionId)
 extern void CAPI_ovrAvatar2Animation_StateLayerRequestTransition_mC038D0C7C1B3B7ECC988EF5FFAF3F327A818F492 (void);
-// 0x00000A38 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerRequestFadeToState(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateId,System.Single)
+// 0x00000A3E Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_StateLayerRequestFadeToState(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationStateId,System.Single)
 extern void CAPI_ovrAvatar2Animation_StateLayerRequestFadeToState_m87013B4CB83E74ED5E648641D19C5AF2D6F39758 (void);
-// 0x00000A39 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerCreate(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,System.IntPtr&)
+// 0x00000A3F Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerCreate(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,System.IntPtr&)
 extern void CAPI_ovrAvatar2Animation_ClipLayerCreate_mC8C97F0F8F07BFE00ADC7F420502F21F3A6729A5 (void);
-// 0x00000A3A Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetClipByName(System.IntPtr,System.String)
+// 0x00000A40 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetClipByName(System.IntPtr,System.String)
 extern void CAPI_ovrAvatar2Animation_ClipLayerSetClipByName_m55BB49953E42CB34ACF1906E9A7F824D489A64D1 (void);
-// 0x00000A3B Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetClipById(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationClipId)
+// 0x00000A41 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetClipById(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationClipId)
 extern void CAPI_ovrAvatar2Animation_ClipLayerSetClipById_m24D648DD77EB57344FE64A8F91839A4B2BD148F5 (void);
-// 0x00000A3C Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetRate(System.IntPtr,System.Single)
+// 0x00000A42 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetRate(System.IntPtr,System.Single)
 extern void CAPI_ovrAvatar2Animation_ClipLayerSetRate_mCD5CF56E3941C4C1AAA4AC8320368B30777643CE (void);
-// 0x00000A3D Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetPhase(System.IntPtr,System.Single)
+// 0x00000A43 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_ClipLayerSetPhase(System.IntPtr,System.Single)
 extern void CAPI_ovrAvatar2Animation_ClipLayerSetPhase_m78780EE59A207E10DD8847A7D206825027AD3F9E (void);
-// 0x00000A3E Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateVisemeLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimVisemeLayerParams&,System.Int32,System.String[],System.IntPtr&)
+// 0x00000A44 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateVisemeLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimVisemeLayerParams&,System.Int32,System.String[],System.IntPtr&)
 extern void CAPI_ovrAvatar2Animation_CreateVisemeLayer_mD8C2A58CF5C2C397A31CE42888A44682E2954767 (void);
-// 0x00000A3F Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateIkLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,System.IntPtr&)
+// 0x00000A45 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateIkLayer(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,System.IntPtr&)
 extern void CAPI_ovrAvatar2Animation_CreateIkLayer_m23E77C782D43AD798924DA947888B4AA8DB03B65 (void);
-// 0x00000A40 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateIkLayerFromParams(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationIkLayerParams&,System.IntPtr&)
+// 0x00000A46 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_CreateIkLayerFromParams(Oculus.Avatar2.CAPI/ovrAvatar2EntityId,System.Int32,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationIkLayerParams&,System.IntPtr&)
 extern void CAPI_ovrAvatar2Animation_CreateIkLayerFromParams_m474D5DA854D7D6D5148540E77DD3BA5363AE4CAE (void);
-// 0x00000A41 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_IkLayerSetTargetWeight(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationIkTarget,System.Single,System.Single)
+// 0x00000A47 Oculus.Avatar2.CAPI/ovrAvatar2Result Oculus.Avatar2.Experimental.CAPI::ovrAvatar2Animation_IkLayerSetTargetWeight(System.IntPtr,Oculus.Avatar2.Experimental.CAPI/ovrAvatar2AnimationIkTarget,System.Single,System.Single)
 extern void CAPI_ovrAvatar2Animation_IkLayerSetTargetWeight_mEF239685C904DEBDC8BF6BF681DF05227AAFEF10 (void);
-// 0x00000A42 System.Void Oculus.Avatar2.Experimental.CAPI::.ctor()
+// 0x00000A48 System.Void Oculus.Avatar2.Experimental.CAPI::.ctor()
 extern void CAPI__ctor_mBA8D699CB389FF250DEDE422E95EC61D7B6BA122 (void);
-static Il2CppMethodPointer s_methodPointers[2626] = 
+static Il2CppMethodPointer s_methodPointers[2632] = 
 {
 	EmbeddedAttribute__ctor_mFF083C8E1F0F62489E8039C598A2D844F730F464,
 	IsUnmanagedAttribute__ctor_m5F56376D4AC380924C565188D8445C68CD28248D,
@@ -6721,6 +6733,10 @@ static Il2CppMethodPointer s_methodPointers[2626] =
 	OvrAvatarEntity_debugPrimitiveRenderFlagsString_m127F8142E5AFA6AFE31DCAC68E9A1680983059C6,
 	OvrAvatarEntity_debugJointNamesForTypes_m76F715A775F9BD9A6C9421F9BE9A4731B78AEA06,
 	OvrAvatarEntity_StressReloading_LoadUri_mF44B11DA1E9B389BFA626B8AAB15D191DCFEA732,
+	OvrAvatarEntity_get_DebugLineMat_m7E482684F082625F207A97376112EAE8C5CBA453,
+	OvrAvatarEntity_OnCameraPostRender_m8DE863B5B470DDB696C7DBF554F5844DC4A08658,
+	OvrAvatarEntity_GameDebugDrawSkelHierarchyInGame_mC5F0BC781579228FFF02C1FF093500F1307B5841,
+	OvrAvatarEntity_GameDebugDrawSkinTransforms_m2737FC5DE7F0A39F2F5C4775CAA9CE75DB16866F,
 	OvrAvatarEntity_SetCustomWristOffset_mD4006940B1294651F51470DC503E86D7CD09FA72,
 	OvrAvatarEntity_SetCustomHandSkeleton_mD16DD6300BAFB09B432EA17B44383258E911EE8D,
 	OvrAvatarEntity_SetCustomHandPose_m9B98F5DE4FBBE4117FEC1472AC5F28F65C8F16D3,
@@ -6921,26 +6937,26 @@ static Il2CppMethodPointer s_methodPointers[2626] =
 	U3CU3Ec__cctor_m3E369520D875280C9888F8AD87DA94FE03456638,
 	U3CU3Ec__ctor_mB1751DABD39682217ED1A73E1CD5CD47DD4C2210,
 	U3CU3Ec_U3CSetActiveSubMeshInclusionU3Eb__118_0_mA2002F76CBEE6D11C823CCCCC7B7F0965B5DF3C7,
-	U3CU3Ec__DisplayClass179_0__ctor_m8F48AFC2494522AD0850649421BBB4BB19D33452,
-	U3CU3Ec__DisplayClass179_0_U3CRemoveMonitoredJointU3Eb__0_m484AF08D4DC2FF77952B20468AC181EED96D3218,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245__ctor_m3B94B8AA73F01694C6A0C7761DA08D6E891DB6CD,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_IDisposable_Dispose_m5348E7A895E640E731B05376901581E590AA2D38,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_MoveNext_m9F3FE1E59EF0B601B1C82F7D36D007AD8FDB4834,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m629BB0950DBCCEE4DF5095399D14549A148D8C63,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_IEnumerator_Reset_mCC8592C79EBEB44C239B10CD99F79AC823205375,
-	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__245_System_Collections_IEnumerator_get_Current_m720ED7417FE531DF57FDBE7116C5A5C9585EB67D,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246__ctor_m579A7B657BF2FB099C57A73FD26F447CF84CB90F,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246_System_IDisposable_Dispose_mD7B6CC6DDC0B4327211C60A1F7AC538C44E12017,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246_MoveNext_m907237A8690AE0CD7D878AAC6DB5DDB146919AB2,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE196182E4603B5C20559DA5BBBFCE108B8547F2D,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_IEnumerator_Reset_mF61F7FCB1B4D1904CA45363ACFEDE01C4BC10A10,
-	U3CLoadAsync_BuildPrimitivesU3Ed__246_System_Collections_IEnumerator_get_Current_m4E5F161ADC52103605BC9F3C24593B51EE4FFB65,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257__ctor_m23BF5F4B59AE1E8B86716FDBABF903C41F7B6C1F,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_IDisposable_Dispose_m1046E2E92379BDE56003BFBB152962FF3EE2FBF7,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_MoveNext_mF147D55D5293EA15A44BB6EC3A488FA7C9E79A15,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD53F95817A46D6E72B9D73F2EC27DD2D7FAB60F7,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_IEnumerator_Reset_mEED2C3DAF293DDC48B05CF138CB51EAFDA78D370,
-	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__257_System_Collections_IEnumerator_get_Current_m05CFFB332A9F0855FB266F3F19A29D2020656CB7,
+	U3CU3Ec__DisplayClass185_0__ctor_m1342DF21CA0B6E7760A0B5CB9843E4593C7F640E,
+	U3CU3Ec__DisplayClass185_0_U3CRemoveMonitoredJointU3Eb__0_m8B858C03830335DF85D0768AF025DD2AFF59BA12,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251__ctor_m62B38CF92F3EA05F1E2CB6D473C2B7A85799CFBD,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_IDisposable_Dispose_mEE664AD81AA254AE1D7B649DED03F743B3D5B31D,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_MoveNext_m117542919A23DE1986933B4DF8BF9BD8E18AC7DC,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8A005650332A3EDC9A8229AEF66B0F2BD50A9D36,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_IEnumerator_Reset_mC07FC9FE6F8880CD66DB6B090C30A8DA0B904FE0,
+	U3CLoadAsync_BuildSkeletonAndPrimitivesU3Ed__251_System_Collections_IEnumerator_get_Current_m17FDB31A70FFE6D60BEA87531090C05E274C0AD5,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252__ctor_m5128C2D54EB97B5C74B465DB14B1A11F6F744172,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252_System_IDisposable_Dispose_m28724E0FF2CF15302D6C3D139A147842D4A69945,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252_MoveNext_m6A15E3004DCCA1A9969E016988D53079822151FF,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA1E59C387F15FBCD79913556404F8192F7FF6910,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_IEnumerator_Reset_m2C5830F3149995579863A86AF0ECC5425127D1D1,
+	U3CLoadAsync_BuildPrimitivesU3Ed__252_System_Collections_IEnumerator_get_Current_mFC55C2FF1A6429A1136C4882D3E1998DE25B77C1,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263__ctor_m094EF87EB3551212A54B745DBB82A6355E9D7B21,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_IDisposable_Dispose_mCEA7302529D2A675ED358DE0D5E3DE9C48B17D9D,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_MoveNext_m594ADD33EA6B644791A1AAE87A64F921B3874DC1,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFACCA9FF2EF5FEC4B1849078F8A865C1B7624877,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_IEnumerator_Reset_m0B4E59A607B3D39B46353286A526FC7546879FAF,
+	U3CLoadAsyncCoroutine_BuildPrimitives_InternalU3Ed__263_System_Collections_IEnumerator_get_Current_m500507B108D6C4BC2D4393B2A8A183CD6607EFBC,
 	NULL,
 	NULL,
 	NULL,
@@ -7261,8 +7277,10 @@ static Il2CppMethodPointer s_methodPointers[2626] =
 	LoadRequest_Update_m3BAB805AC33575EDB1974AB6AB1FF35A6A40260C,
 	LoadRequest__ctor_mCF2D195A9429705268AB6D0C51EDB82B96A5E212,
 	AvatarRequestBoolResults__ctor_m834D08CA66198C377F893B9AC457EBCFCD8F8B0E,
+	U3CUserHasAvatarAsyncU3Ed__121__ctor_mA19F18B59BCA91B10A3713B9C3C9F6F7F0943485,
 	U3CUserHasAvatarAsyncU3Ed__121_MoveNext_m663C958091492022F2E8B2D9FA8C3014F711A81B,
 	U3CUserHasAvatarAsyncU3Ed__121_SetStateMachine_m92D6DEEE448BFE6B2FC618E33D1E2CBB8FA12B1E,
+	U3CSendHasAvatarChangedRequestAsyncU3Ed__122__ctor_mF52BBF938C7294003E9D4CA80B8F15D23E03F737,
 	U3CSendHasAvatarChangedRequestAsyncU3Ed__122_MoveNext_mEEFF4203461058CAB8B1C9B20F626A93A9A4E48B,
 	U3CSendHasAvatarChangedRequestAsyncU3Ed__122_SetStateMachine_m2DB36A4507E3A877A37848E2920F124B5537BE4C,
 	U3CU3Ec__DisplayClass123_0__ctor_m1200F60CB1F090089A3092F3B49E14B2E742901B,
@@ -7727,16 +7745,12 @@ extern void OvrAvatarInputTrackingState_ToNative_mB2A9C241AE67E5F2FC838373CB6D3D
 extern void OvrAvatarInputTrackingState_FromNative_mBB24C498D01D41E25392602A296C81D9F5E22EDD_AdjustorThunk (void);
 extern void MeshData__ctor_m64F9701633DD4EBE10F8138416929B667065C712_AdjustorThunk (void);
 extern void AvatarRequestBoolResults__ctor_m834D08CA66198C377F893B9AC457EBCFCD8F8B0E_AdjustorThunk (void);
-extern void U3CUserHasAvatarAsyncU3Ed__121_MoveNext_m663C958091492022F2E8B2D9FA8C3014F711A81B_AdjustorThunk (void);
-extern void U3CUserHasAvatarAsyncU3Ed__121_SetStateMachine_m92D6DEEE448BFE6B2FC618E33D1E2CBB8FA12B1E_AdjustorThunk (void);
-extern void U3CSendHasAvatarChangedRequestAsyncU3Ed__122_MoveNext_mEEFF4203461058CAB8B1C9B20F626A93A9A4E48B_AdjustorThunk (void);
-extern void U3CSendHasAvatarChangedRequestAsyncU3Ed__122_SetStateMachine_m2DB36A4507E3A877A37848E2920F124B5537BE4C_AdjustorThunk (void);
 extern void AttributePropertyIds_get_IsValid_mD4A986E0DA7AED8BE4063BF87ADFEA8093F02715_AdjustorThunk (void);
 extern void AttributePropertyIds__ctor_m9B25A230DD07AB7E833C4820A505CB290211AD76_AdjustorThunk (void);
 extern void OvrAvatarMaterialExtension__ctor_m58CFEFE59753C20E7BF78AA8673A3A0B6B9D632B_AdjustorThunk (void);
 extern void OvrAvatarMaterialExtension_get_Name_m261FF78606C0DCB52F9F603DAB890743FD580875_AdjustorThunk (void);
 extern void OvrAvatarMaterialExtension_ApplyEntriesToMaterial_mE43360DCDDA9BE8884D409B1A9974FC1AF3552C7_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[95] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[91] = 
 {
 	{ 0x0600002B, AttributePropertyIds_get_IsValid_m9885EE0BC9A64D7B1836A3F018C7B11D112355CB_AdjustorThunk },
 	{ 0x0600002C, AttributePropertyIds__ctor_mED22CE7401B20634ED70D4DEF3F3218B5C2B5190_AdjustorThunk },
@@ -7798,469 +7812,465 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[95] =
 	{ 0x0600056E, SliceHandle__ctor_m4EA9698E41F7EB2D6CE2D82950AB2CCDE102D803_AdjustorThunk },
 	{ 0x060005C0, AvatarLODCostData__ctor_m0B199A0939909D8AF513A7A78B3372B1DA57057F_AdjustorThunk },
 	{ 0x060005C1, AvatarLODCostData__ctor_m37F27E1E40813E4FA9F8161E3E8D5235CF2F7775_AdjustorThunk },
-	{ 0x06000746, SkeletonJoint__ctor_m11478FE321B5BEB323DEB6A9EF6DFD12D3931F56_AdjustorThunk },
-	{ 0x06000747, SkeletonJoint__ctor_mE74722EF5BE65799EA75B5F2964DF6B50E11D8A1_AdjustorThunk },
-	{ 0x06000748, SkeletonJoint_CompareTo_m0C44CD40BF919ECD0338C251C34A54C850CE3A57_AdjustorThunk },
-	{ 0x06000768, CheckPrimitivesResult__ctor_m371E40EFB6AB8441F634FBC9076CB9EE0DBB7F1A_AdjustorThunk },
-	{ 0x06000769, LodData__ctor_m61F087E0434FC66664CA791CDF0F2B3BCE88FCB0_AdjustorThunk },
-	{ 0x0600076A, LodData_get_IsValid_m4FBC63ECF94A2B623575DBEC6020DE2CA119802E_AdjustorThunk },
-	{ 0x0600076B, LodData_get_HasInstances_mFFACE19CAD8C0F8E0A6357EE5F86A4FC46B3DFAF_AdjustorThunk },
-	{ 0x0600076C, LodData_get_vertexCount_m35C03867392EC15CA560CDCF2FE42133DA61B4D3_AdjustorThunk },
-	{ 0x0600076D, LodData_get_triangleCount_m75BA25701EC3F8A398FC8D9DEE36F97A10400BAE_AdjustorThunk },
-	{ 0x0600076E, LodData_AddInstance_m4A8677E29995670CDE604545586F08944F172ADB_AdjustorThunk },
-	{ 0x0600076F, LodData_RemoveInstance_m2FBFB73DA17C22D6C3915F0294B7A3B8D0C2BC74_AdjustorThunk },
-	{ 0x06000770, LodData_Clear_m26D06EB1DC607763883B616095069372F4E4BE7C_AdjustorThunk },
-	{ 0x060007B8, JointPose__ctor_m0BA07B3853C2D1F0476061E6E9BD578EB9DD883C_AdjustorThunk },
-	{ 0x060007B9, UpdateJointTransformsJob__ctor_m2881660AE394F4D61EF538FE8DBE683CE16E284F_AdjustorThunk },
-	{ 0x060007BA, UpdateJointTransformsJob_UnityEngine_Jobs_IJobParallelForTransform_Execute_m95B896AF570E566061423532073F0E7287F4C773_AdjustorThunk },
-	{ 0x060007C0, OvrAvatarJointPose__ctor_mB1C1C15E9E2E8A4ACA3F5A960C7B275F68C7BA45_AdjustorThunk },
-	{ 0x060007C1, OvrAvatarJointPose__ctor_m5E3227CAC6BD3E49A36CC31C98CB34382C064AA2_AdjustorThunk },
-	{ 0x060007F5, OvrAvatarInputControlState_ToNative_mF588677EB7E741794BBD111C483A042A59A7A18B_AdjustorThunk },
-	{ 0x060007F6, OvrAvatarInputControlState_ToNative_m2307E7BABF7262EA42D2A9AB4B533921A439DD4B_AdjustorThunk },
-	{ 0x060007F7, OvrAvatarInputControlState_FromNative_m184409E8A671B65CAB64E30F2870BE4AA4420876_AdjustorThunk },
-	{ 0x060007F8, OvrAvatarInputControlState_FromNative_m76613578DC582A7B07808788737D4A275ACBC26C_AdjustorThunk },
-	{ 0x0600080F, InputHandDistances__ctor_mCAA69E309A8FD061CB29EE667B7EC2690D68E66A_AdjustorThunk },
-	{ 0x06000810, OvrAvatarInputTrackingState_ToNative_mB2A9C241AE67E5F2FC838373CB6D3D400842CE55_AdjustorThunk },
-	{ 0x06000811, OvrAvatarInputTrackingState_FromNative_mBB24C498D01D41E25392602A296C81D9F5E22EDD_AdjustorThunk },
-	{ 0x060008BC, MeshData__ctor_m64F9701633DD4EBE10F8138416929B667065C712_AdjustorThunk },
-	{ 0x060008C7, AvatarRequestBoolResults__ctor_m834D08CA66198C377F893B9AC457EBCFCD8F8B0E_AdjustorThunk },
-	{ 0x060008C8, U3CUserHasAvatarAsyncU3Ed__121_MoveNext_m663C958091492022F2E8B2D9FA8C3014F711A81B_AdjustorThunk },
-	{ 0x060008C9, U3CUserHasAvatarAsyncU3Ed__121_SetStateMachine_m92D6DEEE448BFE6B2FC618E33D1E2CBB8FA12B1E_AdjustorThunk },
-	{ 0x060008CA, U3CSendHasAvatarChangedRequestAsyncU3Ed__122_MoveNext_mEEFF4203461058CAB8B1C9B20F626A93A9A4E48B_AdjustorThunk },
-	{ 0x060008CB, U3CSendHasAvatarChangedRequestAsyncU3Ed__122_SetStateMachine_m2DB36A4507E3A877A37848E2920F124B5537BE4C_AdjustorThunk },
-	{ 0x0600092B, AttributePropertyIds_get_IsValid_mD4A986E0DA7AED8BE4063BF87ADFEA8093F02715_AdjustorThunk },
-	{ 0x0600092C, AttributePropertyIds__ctor_m9B25A230DD07AB7E833C4820A505CB290211AD76_AdjustorThunk },
-	{ 0x060009A6, OvrAvatarMaterialExtension__ctor_m58CFEFE59753C20E7BF78AA8673A3A0B6B9D632B_AdjustorThunk },
-	{ 0x060009A7, OvrAvatarMaterialExtension_get_Name_m261FF78606C0DCB52F9F603DAB890743FD580875_AdjustorThunk },
-	{ 0x060009A8, OvrAvatarMaterialExtension_ApplyEntriesToMaterial_mE43360DCDDA9BE8884D409B1A9974FC1AF3552C7_AdjustorThunk },
+	{ 0x0600074A, SkeletonJoint__ctor_m11478FE321B5BEB323DEB6A9EF6DFD12D3931F56_AdjustorThunk },
+	{ 0x0600074B, SkeletonJoint__ctor_mE74722EF5BE65799EA75B5F2964DF6B50E11D8A1_AdjustorThunk },
+	{ 0x0600074C, SkeletonJoint_CompareTo_m0C44CD40BF919ECD0338C251C34A54C850CE3A57_AdjustorThunk },
+	{ 0x0600076C, CheckPrimitivesResult__ctor_m371E40EFB6AB8441F634FBC9076CB9EE0DBB7F1A_AdjustorThunk },
+	{ 0x0600076D, LodData__ctor_m61F087E0434FC66664CA791CDF0F2B3BCE88FCB0_AdjustorThunk },
+	{ 0x0600076E, LodData_get_IsValid_m4FBC63ECF94A2B623575DBEC6020DE2CA119802E_AdjustorThunk },
+	{ 0x0600076F, LodData_get_HasInstances_mFFACE19CAD8C0F8E0A6357EE5F86A4FC46B3DFAF_AdjustorThunk },
+	{ 0x06000770, LodData_get_vertexCount_m35C03867392EC15CA560CDCF2FE42133DA61B4D3_AdjustorThunk },
+	{ 0x06000771, LodData_get_triangleCount_m75BA25701EC3F8A398FC8D9DEE36F97A10400BAE_AdjustorThunk },
+	{ 0x06000772, LodData_AddInstance_m4A8677E29995670CDE604545586F08944F172ADB_AdjustorThunk },
+	{ 0x06000773, LodData_RemoveInstance_m2FBFB73DA17C22D6C3915F0294B7A3B8D0C2BC74_AdjustorThunk },
+	{ 0x06000774, LodData_Clear_m26D06EB1DC607763883B616095069372F4E4BE7C_AdjustorThunk },
+	{ 0x060007BC, JointPose__ctor_m0BA07B3853C2D1F0476061E6E9BD578EB9DD883C_AdjustorThunk },
+	{ 0x060007BD, UpdateJointTransformsJob__ctor_m2881660AE394F4D61EF538FE8DBE683CE16E284F_AdjustorThunk },
+	{ 0x060007BE, UpdateJointTransformsJob_UnityEngine_Jobs_IJobParallelForTransform_Execute_m95B896AF570E566061423532073F0E7287F4C773_AdjustorThunk },
+	{ 0x060007C4, OvrAvatarJointPose__ctor_mB1C1C15E9E2E8A4ACA3F5A960C7B275F68C7BA45_AdjustorThunk },
+	{ 0x060007C5, OvrAvatarJointPose__ctor_m5E3227CAC6BD3E49A36CC31C98CB34382C064AA2_AdjustorThunk },
+	{ 0x060007F9, OvrAvatarInputControlState_ToNative_mF588677EB7E741794BBD111C483A042A59A7A18B_AdjustorThunk },
+	{ 0x060007FA, OvrAvatarInputControlState_ToNative_m2307E7BABF7262EA42D2A9AB4B533921A439DD4B_AdjustorThunk },
+	{ 0x060007FB, OvrAvatarInputControlState_FromNative_m184409E8A671B65CAB64E30F2870BE4AA4420876_AdjustorThunk },
+	{ 0x060007FC, OvrAvatarInputControlState_FromNative_m76613578DC582A7B07808788737D4A275ACBC26C_AdjustorThunk },
+	{ 0x06000813, InputHandDistances__ctor_mCAA69E309A8FD061CB29EE667B7EC2690D68E66A_AdjustorThunk },
+	{ 0x06000814, OvrAvatarInputTrackingState_ToNative_mB2A9C241AE67E5F2FC838373CB6D3D400842CE55_AdjustorThunk },
+	{ 0x06000815, OvrAvatarInputTrackingState_FromNative_mBB24C498D01D41E25392602A296C81D9F5E22EDD_AdjustorThunk },
+	{ 0x060008C0, MeshData__ctor_m64F9701633DD4EBE10F8138416929B667065C712_AdjustorThunk },
+	{ 0x060008CB, AvatarRequestBoolResults__ctor_m834D08CA66198C377F893B9AC457EBCFCD8F8B0E_AdjustorThunk },
+	{ 0x06000931, AttributePropertyIds_get_IsValid_mD4A986E0DA7AED8BE4063BF87ADFEA8093F02715_AdjustorThunk },
+	{ 0x06000932, AttributePropertyIds__ctor_m9B25A230DD07AB7E833C4820A505CB290211AD76_AdjustorThunk },
+	{ 0x060009AC, OvrAvatarMaterialExtension__ctor_m58CFEFE59753C20E7BF78AA8673A3A0B6B9D632B_AdjustorThunk },
+	{ 0x060009AD, OvrAvatarMaterialExtension_get_Name_m261FF78606C0DCB52F9F603DAB890743FD580875_AdjustorThunk },
+	{ 0x060009AE, OvrAvatarMaterialExtension_ApplyEntriesToMaterial_mE43360DCDDA9BE8884D409B1A9974FC1AF3552C7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[2626] = 
+static const int32_t s_InvokerIndices[2632] = 
 {
-	7037,
-	7037,
-	10778,
-	10738,
-	10778,
-	7037,
-	6811,
-	5540,
-	5635,
+	8285,
+	8285,
+	12484,
+	12436,
+	12484,
+	8285,
+	8037,
+	6501,
+	6599,
 	0,
 	0,
 	0,
-	5528,
+	6489,
 	0,
 	0,
 	0,
 	0,
 	0,
-	5635,
-	5635,
-	7037,
-	7037,
-	3315,
-	5635,
-	1660,
-	5635,
+	6599,
+	6599,
+	8285,
+	8285,
+	3853,
+	6599,
+	1910,
+	6599,
 	0,
-	7037,
-	7037,
-	5540,
-	7037,
-	7037,
-	7037,
-	7173,
-	6072,
-	6902,
-	6902,
-	7037,
-	5635,
-	7037,
-	10778,
-	10778,
-	6811,
-	5603,
-	6869,
-	5603,
-	7037,
-	6902,
-	7037,
-	7037,
-	7037,
-	5635,
-	5635,
-	5080,
-	5635,
+	8285,
+	8285,
+	6501,
+	8285,
+	8285,
+	8285,
+	8430,
+	7097,
+	8133,
+	8133,
+	8285,
+	6599,
+	8285,
+	12484,
+	12484,
+	8037,
+	6567,
+	8100,
+	6567,
+	8285,
+	8133,
+	8285,
+	8285,
+	8285,
+	6599,
+	6599,
+	5936,
+	6599,
+	1683,
+	6501,
+	8285,
+	8285,
+	8037,
+	11876,
+	6501,
+	12415,
+	8285,
+	6599,
+	8102,
+	8285,
+	8285,
+	11866,
+	11866,
+	11866,
+	10866,
+	12036,
+	11752,
+	11752,
+	10040,
+	10613,
+	8285,
+	8133,
+	6599,
+	8285,
+	6567,
+	8100,
+	8037,
+	4804,
+	11989,
+	11870,
+	4804,
+	8100,
+	8133,
+	12484,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8285,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8133,
+	8100,
+	8037,
+	8133,
+	6599,
+	6501,
+	6489,
+	6501,
+	8285,
+	8285,
+	8285,
+	6658,
+	6658,
+	8037,
+	8285,
+	8133,
+	8100,
+	8037,
+	8133,
+	6599,
+	6501,
+	6489,
+	6501,
+	8285,
+	8285,
+	6658,
+	6658,
+	8037,
+	8037,
+	8285,
+	8133,
+	8100,
+	6501,
+	8285,
+	8285,
+	8285,
+	8037,
+	8285,
+	8285,
+	8133,
+	8100,
+	6501,
+	8285,
+	8285,
+	8037,
+	8285,
+	0,
+	0,
+	8100,
+	8100,
+	6567,
+	8133,
+	12496,
+	12484,
+	8285,
+	6501,
+	8285,
+	8285,
+	6599,
+	6599,
+	6599,
+	5936,
+	6599,
+	1683,
+	6599,
+	11014,
+	8285,
+	12484,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8037,
+	6567,
+	8133,
+	6599,
+	8133,
+	8100,
+	8100,
+	8037,
+	8285,
+	8285,
+	6501,
+	6489,
+	6501,
+	8285,
+	8285,
+	8037,
+	6658,
+	6658,
+	8037,
+	8285,
+	8133,
+	6599,
+	8133,
+	8100,
+	8100,
+	8037,
+	6501,
+	6489,
+	6501,
+	8285,
+	8285,
+	8037,
+	6658,
+	6658,
+	8037,
+	8285,
+	8133,
+	8100,
+	8285,
+	6501,
+	8285,
+	8285,
+	8285,
+	8037,
+	8285,
+	6025,
+	8285,
+	8133,
+	6501,
+	8285,
+	8285,
+	8037,
+	8285,
+	0,
+	12484,
+	8163,
+	6628,
+	8197,
+	6658,
+	8100,
+	8100,
+	8100,
+	8100,
+	6567,
+	8100,
+	6567,
+	8285,
+	6501,
+	8285,
+	8285,
+	8285,
+	6599,
+	8285,
+	8285,
+	6599,
+	5936,
+	6599,
+	1683,
+	8133,
+	6599,
+	11971,
+	11971,
+	6599,
+	7,
+	36,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	12436,
+	8285,
+	12484,
+	8285,
+	8102,
+	8285,
+	8037,
+	6567,
+	11476,
+	8548,
+	8100,
+	6567,
+	8100,
+	212,
+	11008,
+	8133,
+	8133,
+	8276,
+	8276,
+	6359,
+	6356,
+	8285,
+	6567,
+	1458,
 	1464,
-	5540,
-	7037,
-	7037,
-	6811,
-	10228,
-	5540,
-	10720,
-	7037,
-	5635,
-	6871,
-	7037,
-	7037,
-	10220,
-	10220,
-	10220,
-	9298,
-	10372,
-	10113,
-	10113,
-	8583,
-	9083,
-	7037,
-	6902,
-	5635,
-	7037,
-	5603,
-	6869,
-	6811,
-	4106,
-	10330,
-	10224,
-	4106,
-	6869,
-	6902,
-	10778,
+	0,
+	0,
+	2072,
+	3190,
+	8285,
+	1458,
+	10155,
+	10152,
+	12484,
+	8285,
+	6501,
+	8285,
+	12484,
+	8037,
+	6567,
 	0,
 	0,
 	0,
 	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	7037,
-	0,
-	0,
-	0,
-	0,
-	0,
-	6902,
-	6869,
-	6811,
-	6902,
-	5635,
-	5540,
-	5528,
-	5540,
-	7037,
-	7037,
-	7037,
-	5680,
-	5680,
-	6811,
-	7037,
-	6902,
-	6869,
-	6811,
-	6902,
-	5635,
-	5540,
-	5528,
-	5540,
-	7037,
-	7037,
-	5680,
-	5680,
-	6811,
-	6811,
-	7037,
-	6902,
-	6869,
-	5540,
-	7037,
-	7037,
-	7037,
-	6811,
-	7037,
-	7037,
-	6902,
-	6869,
-	5540,
-	7037,
-	7037,
-	6811,
-	7037,
-	0,
-	0,
-	6869,
-	6869,
-	5603,
-	6902,
-	10790,
-	10778,
-	7037,
-	5540,
-	7037,
-	7037,
-	5635,
-	5635,
-	5635,
-	5080,
-	5635,
+	8133,
 	1464,
-	5635,
-	9432,
-	7037,
-	10778,
-	0,
-	0,
-	0,
-	0,
-	0,
-	6811,
-	5603,
-	6902,
-	5635,
-	6902,
-	6869,
-	6869,
-	6811,
-	7037,
-	7037,
-	5540,
-	5528,
-	5540,
-	7037,
-	7037,
-	6811,
-	5680,
-	5680,
-	6811,
-	7037,
-	6902,
-	5635,
-	6902,
-	6869,
-	6869,
-	6811,
-	5540,
-	5528,
-	5540,
-	7037,
-	7037,
-	6811,
-	5680,
-	5680,
-	6811,
-	7037,
-	6902,
-	6869,
-	7037,
-	5540,
-	7037,
-	7037,
-	7037,
-	6811,
-	7037,
-	5145,
-	7037,
-	6902,
-	5540,
-	7037,
-	7037,
-	6811,
-	7037,
-	0,
-	10778,
-	6929,
-	5660,
-	6953,
-	5680,
-	6869,
-	6869,
-	6869,
-	6869,
-	5603,
-	6869,
-	5603,
-	7037,
-	5540,
-	7037,
-	7037,
-	7037,
-	5635,
-	7037,
-	7037,
-	5635,
-	5080,
-	5635,
-	1464,
-	6902,
-	5635,
-	10316,
-	10316,
-	5635,
-	4,
-	30,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	10738,
-	7037,
-	10778,
-	7037,
-	6871,
-	7037,
-	6811,
-	5603,
-	9876,
-	7262,
-	6869,
-	5603,
-	6869,
-	196,
-	9426,
-	6902,
-	6902,
-	7029,
-	7029,
-	5416,
-	5413,
-	7037,
-	5603,
-	1274,
-	1279,
-	0,
-	0,
-	1809,
-	2757,
-	7037,
-	1274,
-	8691,
-	8688,
-	10778,
-	7037,
-	5540,
-	7037,
-	10778,
-	6811,
-	5603,
-	0,
-	0,
-	0,
-	0,
-	6902,
-	1279,
-	7037,
-	100,
-	5416,
-	5413,
-	5741,
-	7037,
-	100,
-	7037,
-	5416,
-	5413,
-	5741,
-	7037,
-	10220,
-	10220,
-	5635,
-	5635,
-	5635,
-	5635,
-	6902,
-	6811,
-	6869,
-	6869,
-	6869,
-	6811,
-	6811,
-	3998,
-	1344,
-	1393,
-	7037,
-	5053,
-	2639,
-	5987,
-	3417,
-	5635,
-	6902,
-	5635,
-	5603,
-	10523,
-	10778,
-	3315,
-	3318,
-	1176,
-	5635,
-	5603,
-	5063,
-	6076,
-	5635,
-	6869,
-	4076,
-	4076,
-	5063,
-	10778,
-	3011,
-	6811,
-	10778,
-	2397,
-	7037,
-	707,
-	3318,
-	7037,
-	88,
-	5635,
-	5007,
-	4106,
-	7037,
-	7037,
-	4076,
-	5635,
-	5528,
-	10778,
-	6902,
-	6869,
-	6869,
-	6869,
-	5635,
-	5635,
+	8285,
+	110,
+	6359,
+	6356,
+	6724,
+	8285,
+	110,
+	8285,
+	6359,
+	6356,
+	6724,
+	8285,
+	11866,
+	11866,
+	6599,
+	6599,
+	6599,
+	6599,
+	8133,
+	8037,
+	8100,
+	8100,
+	8100,
+	8037,
+	8037,
+	4688,
+	1535,
+	1590,
+	8285,
+	5906,
+	3057,
+	7004,
+	3973,
+	6599,
+	8133,
+	6599,
+	6567,
+	12195,
+	12484,
+	3853,
+	3857,
+	1349,
+	6599,
+	6567,
+	5916,
+	7101,
+	6599,
+	8100,
+	4773,
+	4773,
+	5916,
+	12484,
+	3503,
+	8037,
+	12484,
+	2773,
+	8285,
+	793,
+	3857,
+	8285,
+	97,
+	6599,
+	5858,
+	4804,
+	8285,
+	8285,
+	4773,
+	6599,
+	6489,
+	12484,
+	8133,
+	8100,
+	8100,
+	8100,
+	6599,
+	6599,
+	19,
+	8285,
+	5858,
+	4804,
+	1290,
+	6599,
+	7004,
+	8276,
+	8285,
+	8133,
+	6567,
+	3022,
+	8285,
+	9301,
+	12266,
+	3853,
+	3857,
+	1349,
+	6599,
+	8100,
+	6567,
 	16,
-	7037,
-	5007,
-	4106,
-	1127,
-	5635,
-	5987,
-	7029,
-	7037,
-	6902,
-	5603,
-	2607,
-	7037,
-	7928,
-	10591,
-	3315,
-	3318,
-	1176,
-	5635,
-	6869,
-	5603,
-	13,
-	266,
-	5007,
-	6811,
-	7037,
-	4106,
-	6902,
+	288,
+	5858,
+	8037,
+	8285,
+	4804,
+	8133,
 	0,
 	0,
 	0,
@@ -8312,2076 +8322,853 @@ static const int32_t s_InvokerIndices[2626] =
 	0,
 	0,
 	0,
-	219,
-	7037,
-	168,
-	5635,
-	4076,
-	5007,
-	6869,
-	5603,
-	26,
-	6869,
-	5603,
-	40,
-	572,
-	5007,
-	6811,
-	7037,
-	4106,
-	6902,
-	727,
-	7037,
-	298,
-	5635,
-	4076,
-	5007,
-	6869,
-	5603,
-	192,
-	41,
-	1140,
-	5007,
-	6811,
-	6902,
-	10778,
-	7037,
-	4106,
-	728,
-	7037,
-	611,
-	384,
-	10778,
-	8691,
-	8942,
-	9719,
-	9719,
-	10778,
-	6869,
-	6869,
-	10330,
-	3318,
-	7037,
-	3318,
-	5063,
-	6076,
-	5635,
-	4076,
-	5007,
-	7037,
-	5635,
-	10778,
-	10318,
-	6869,
-	6869,
-	1895,
-	7037,
-	3318,
-	3318,
-	5635,
-	5635,
-	10778,
-	10591,
-	7547,
-	0,
-	0,
-	6811,
-	5540,
-	6811,
-	5540,
-	5603,
-	0,
-	7037,
-	7037,
-	6902,
-	7037,
-	0,
-	5603,
-	7037,
-	6811,
-	6902,
-	7037,
-	6902,
-	0,
-	6902,
-	5635,
-	6902,
-	5635,
-	6811,
-	9,
-	5,
-	7037,
-	5540,
-	7037,
-	0,
-	7264,
-	7548,
-	7548,
-	7548,
-	8444,
-	7544,
-	7502,
-	7293,
-	7292,
-	7277,
-	0,
-	0,
-	1288,
-	7037,
-	6869,
-	6869,
-	6869,
-	6869,
-	6869,
-	6869,
-	6869,
-	5603,
-	7037,
-	6811,
-	7037,
-	6869,
-	7037,
-	6902,
-	6811,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6,
-	3,
-	7037,
-	5540,
-	7037,
-	7419,
-	7343,
-	7804,
-	7037,
-	5603,
-	7037,
-	6811,
-	6869,
-	7037,
-	6902,
-	6902,
-	5635,
-	6902,
-	6902,
-	6811,
-	5540,
-	1298,
-	590,
-	1583,
-	7037,
-	5540,
-	5603,
-	7037,
-	6811,
-	6869,
-	7037,
-	6902,
-	7037,
-	7037,
-	7037,
-	7037,
-	6902,
-	6902,
-	6902,
-	5635,
-	6902,
-	5635,
-	6811,
-	5540,
-	6800,
-	6902,
-	5635,
-	6902,
-	5635,
-	7021,
-	6869,
-	5603,
-	6869,
-	5603,
-	6869,
-	5603,
-	6869,
-	5603,
-	6869,
-	5603,
-	6869,
-	5603,
-	6811,
-	6811,
-	7021,
-	7021,
-	7021,
-	7021,
-	5741,
-	7021,
-	6811,
-	5540,
-	7021,
-	6811,
-	6811,
-	3303,
-	5635,
-	6811,
-	7037,
-	6811,
-	7037,
-	6902,
-	7037,
-	5540,
-	6902,
-	2624,
-	6811,
-	2105,
-	4106,
-	4106,
-	4106,
-	5635,
-	719,
-	5528,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5635,
-	2691,
-	5080,
-	5635,
-	10591,
-	3318,
-	3303,
-	3318,
-	5635,
-	0,
-	0,
-	1972,
-	1972,
-	1973,
-	1966,
-	1966,
-	1971,
-	1967,
-	2590,
-	1970,
-	2963,
-	3336,
-	3303,
-	5528,
-	0,
-	6700,
-	5423,
-	6700,
-	5423,
-	6701,
-	5424,
-	6902,
-	5635,
-	7021,
-	5741,
-	6811,
-	5540,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	7037,
-	5540,
-	7037,
-	7037,
-	7037,
-	1376,
-	3315,
-	924,
-	267,
-	4757,
-	3315,
-	420,
-	156,
-	4757,
-	7037,
-	6811,
-	8015,
-	1868,
-	0,
-	0,
-	7403,
-	6869,
-	6869,
-	5603,
-	3011,
-	0,
-	0,
-	640,
-	4076,
-	3329,
-	593,
-	1657,
-	2621,
-	7037,
-	5540,
-	10582,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5603,
-	7037,
-	6811,
-	6869,
-	7037,
-	6902,
-	7037,
-	7037,
-	5635,
-	5635,
-	7037,
-	5603,
-	7037,
-	6811,
-	6869,
-	7037,
-	6902,
-	7037,
-	7037,
-	5603,
-	7037,
-	6811,
-	6869,
-	7037,
-	6902,
-	9061,
-	6811,
-	5540,
-	6811,
-	5540,
-	6811,
-	1129,
-	5603,
-	7037,
-	7037,
-	2105,
-	6902,
-	7037,
-	7037,
-	7037,
-	7037,
-	5540,
-	7037,
-	7037,
-	5603,
-	7037,
-	6811,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	6869,
-	7037,
-	6902,
-	6953,
-	5680,
-	6953,
-	5680,
-	6953,
-	5680,
-	6953,
-	5680,
-	6953,
-	5680,
-	6953,
-	5680,
-	5603,
-	7037,
-	5635,
-	10746,
-	7037,
-	6869,
-	6869,
-	6953,
-	5680,
-	6953,
-	6953,
-	5680,
-	6953,
-	6953,
-	5680,
-	6953,
-	5603,
-	5603,
-	3064,
-	3064,
-	3064,
-	7037,
-	10772,
-	10523,
-	9430,
-	10220,
-	10220,
-	8686,
-	10113,
-	10113,
-	9430,
-	8699,
-	9430,
-	8699,
-	8137,
-	8686,
-	8686,
-	8684,
-	8684,
-	9430,
-	9430,
-	9430,
-	9430,
-	9430,
-	8686,
-	8574,
-	9430,
-	8684,
-	8129,
-	8129,
-	8129,
-	8129,
-	8129,
-	8129,
-	8129,
-	8129,
-	7632,
-	7632,
-	7632,
-	7632,
-	8696,
-	9430,
-	7634,
-	7634,
-	7634,
-	8136,
-	8699,
-	8686,
-	9422,
-	9430,
-	8135,
-	8699,
-	8138,
-	8055,
-	7389,
-	7374,
-	8686,
-	9430,
-	8699,
-	8136,
-	10746,
-	10330,
-	9922,
-	10211,
-	10106,
-	10738,
-	10721,
-	10582,
-	10224,
-	8702,
-	10225,
-	10772,
-	10601,
-	10120,
-	10738,
-	8748,
-	8622,
-	8685,
-	8573,
-	9430,
-	9274,
-	10224,
-	10224,
-	9245,
-	9245,
-	9245,
-	8684,
-	9425,
-	10746,
-	10738,
-	10738,
-	8680,
-	8680,
-	8680,
-	9445,
-	9445,
-	9423,
-	9430,
-	8689,
-	8689,
-	8689,
-	9432,
-	9422,
-	10220,
-	9430,
-	9430,
-	9432,
-	9430,
-	9430,
-	9432,
-	9430,
-	9430,
-	9432,
-	9430,
-	9432,
-	9430,
-	9432,
-	8684,
-	9430,
-	9437,
-	8669,
-	10783,
-	10784,
-	10784,
-	10782,
-	10782,
-	10784,
-	10784,
-	8134,
-	8696,
-	8130,
-	8130,
-	8132,
-	7483,
-	7633,
-	7482,
-	8141,
-	8701,
-	8139,
-	8139,
-	10220,
-	10113,
-	9434,
-	9279,
-	9430,
-	10220,
-	10523,
-	10523,
-	8686,
-	9964,
-	10330,
-	10220,
-	9431,
-	9430,
-	8669,
-	7628,
-	9531,
-	8121,
-	8803,
-	8794,
-	8509,
-	8016,
-	9471,
-	8698,
-	10220,
-	10220,
-	10222,
-	10230,
-	9806,
-	7474,
-	8193,
-	9430,
-	8699,
-	8120,
-	7631,
-	8127,
-	10220,
-	10220,
-	10220,
-	8050,
-	8122,
-	8689,
-	10220,
-	10220,
-	8048,
-	9435,
-	9430,
-	8687,
-	9430,
-	9430,
-	9430,
-	9430,
-	8692,
-	9430,
-	9430,
-	8123,
-	9430,
-	9430,
-	9430,
-	9430,
-	10721,
-	10721,
-	8747,
-	8700,
-	7443,
-	7363,
-	7451,
-	7367,
-	7442,
-	7362,
-	7583,
-	7452,
-	10772,
-	10772,
-	7283,
-	7272,
-	7381,
-	7326,
-	9932,
-	7453,
-	10615,
-	9931,
-	8042,
-	8042,
-	10113,
-	8700,
-	9933,
-	9277,
-	9183,
-	7368,
-	7325,
-	9931,
-	9931,
-	9931,
-	8042,
-	8042,
-	8042,
-	10738,
-	10738,
-	8293,
-	10220,
-	8138,
-	8689,
-	9432,
-	7337,
-	7300,
-	7470,
-	7386,
-	7335,
-	7299,
-	7622,
-	7471,
-	10211,
-	10211,
-	7285,
-	7274,
-	7400,
-	7336,
-	8292,
-	7387,
-	7333,
-	8744,
-	8744,
-	8744,
-	8106,
-	8106,
-	8106,
-	8746,
-	7477,
-	9468,
-	8744,
-	8106,
-	8106,
-	9430,
-	10222,
-	8705,
-	9444,
-	9444,
-	9444,
-	9444,
-	9444,
-	9444,
-	9444,
-	9444,
-	9422,
-	9444,
-	10222,
-	8145,
-	9445,
-	9445,
-	9445,
-	9445,
-	8707,
-	9444,
-	9444,
-	8051,
-	8051,
-	8051,
-	8580,
+	235,
+	8285,
+	180,
+	6599,
+	4773,
+	5858,
+	8100,
+	6567,
+	32,
+	8100,
+	6567,
+	46,
+	641,
+	5858,
+	8037,
+	8285,
+	4804,
+	8133,
+	815,
+	8285,
+	320,
+	6599,
+	4773,
+	5858,
+	8100,
+	6567,
+	207,
+	47,
+	1307,
+	5858,
+	8037,
+	8133,
+	12484,
+	8285,
+	4804,
+	816,
+	8285,
+	682,
+	419,
+	12484,
+	10155,
+	10423,
+	11312,
+	11312,
+	12484,
+	8100,
+	8100,
+	11989,
+	3857,
+	8285,
+	3857,
+	5916,
+	7101,
+	6599,
+	4773,
+	5858,
+	8285,
+	6599,
+	12484,
+	11973,
+	8100,
+	8100,
+	2174,
+	8285,
+	3857,
+	3857,
+	6599,
+	6599,
+	12484,
+	12266,
+	8874,
+	0,
+	0,
+	8037,
+	6501,
+	8037,
+	6501,
+	6567,
+	0,
+	8285,
+	8285,
+	8133,
+	8285,
+	0,
+	6567,
+	8285,
+	8037,
+	8133,
+	8285,
+	8133,
+	0,
+	8133,
+	6599,
+	8133,
+	6599,
+	8037,
+	12,
+	8,
+	8285,
+	6501,
+	8285,
+	0,
+	8550,
+	8875,
+	8875,
+	8875,
+	9881,
+	8871,
+	8823,
+	8584,
+	8583,
 	8564,
-	9279,
-	7037,
-	10778,
-	3315,
-	1828,
-	577,
-	5635,
-	3315,
-	3396,
-	1198,
-	5635,
-	3315,
-	3289,
-	1146,
-	5635,
-	3315,
-	2744,
-	1131,
-	2745,
-	3315,
-	1817,
-	569,
-	5635,
-	3315,
-	2578,
-	1147,
-	5007,
-	3315,
-	770,
-	273,
-	1440,
-	3315,
-	2090,
-	1146,
-	4106,
-	6869,
-	5603,
-	6811,
-	4834,
-	4834,
-	644,
-	1760,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	10612,
-	10561,
-	3391,
-	6953,
-	6953,
-	1928,
-	10613,
-	10563,
-	9927,
-	9927,
-	9928,
-	9928,
-	1411,
-	10614,
-	10572,
-	10134,
-	6953,
-	6953,
-	1411,
-	10609,
-	10361,
-	2740,
-	1746,
-	1746,
-	10611,
-	5145,
-	3064,
-	10608,
-	10265,
-	4732,
-	4834,
-	4732,
-	4834,
-	7095,
-	6811,
-	10778,
-	1279,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	3315,
-	2035,
-	1131,
-	2036,
-	6902,
-	10731,
 	0,
 	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	9321,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	10582,
-	10106,
-	10771,
-	10600,
-	10721,
-	10778,
-	10591,
-	10591,
-	10591,
-	10591,
-	10647,
-	10721,
-	10721,
-	10778,
-	10746,
-	10116,
-	10116,
-	10316,
-	10316,
-	10316,
-	10721,
-	10778,
-	10591,
-	10778,
-	10778,
-	10721,
-	9238,
-	10778,
-	6811,
-	7037,
-	7037,
-	6811,
-	9955,
-	5635,
-	7037,
-	7037,
-	9318,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	6811,
-	9852,
-	10333,
-	6789,
-	5068,
-	2620,
-	9432,
-	7037,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	6902,
-	5635,
-	6902,
-	5635,
-	6811,
-	6811,
-	5540,
-	6869,
-	5603,
-	6869,
-	6869,
-	5635,
-	5635,
-	6869,
-	5603,
-	7021,
-	7037,
-	7037,
-	7037,
-	4021,
-	6811,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5635,
-	5635,
-	7037,
-	3318,
-	5635,
-	2625,
-	1659,
-	4732,
-	4732,
-	4732,
-	6811,
-	7037,
-	7037,
-	5680,
-	7037,
-	0,
-	7037,
-	5635,
-	5635,
-	7037,
-	7037,
-	7037,
-	7037,
-	5635,
-	5635,
-	5635,
-	5540,
-	7037,
-	7037,
-	1939,
-	5635,
-	9205,
-	9205,
-	6902,
-	5635,
-	7037,
-	7037,
-	7037,
-	6869,
-	6869,
-	5603,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	6811,
-	7037,
-	10746,
-	6902,
-	6902,
-	6869,
-	6902,
-	6902,
-	7037,
-	6869,
-	1923,
-	1859,
-	5635,
-	4106,
-	5635,
-	10591,
-	10591,
-	7037,
-	8884,
-	4106,
-	4106,
-	2121,
-	2112,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	6902,
-	7037,
-	5635,
-	7037,
-	7037,
-	7037,
-	10746,
-	2397,
-	7037,
-	7037,
-	4106,
-	7037,
-	4106,
-	10778,
-	7037,
-	4106,
-	10746,
-	9542,
-	7037,
-	7037,
-	5635,
-	7037,
-	7037,
-	7037,
-	6811,
-	7037,
-	6902,
-	5635,
-	7037,
-	7037,
-	6811,
-	7037,
-	7037,
-	7037,
-	5603,
-	5635,
-	7037,
-	5603,
-	5603,
-	4076,
-	7037,
-	0,
-	7037,
-	7090,
-	6871,
-	6902,
-	5635,
-	6902,
-	5635,
-	6904,
-	6902,
-	5635,
-	6903,
-	10318,
-	5540,
-	2963,
-	6716,
-	7037,
-	5540,
-	9243,
-	9243,
-	9243,
-	4106,
-	3998,
-	3998,
-	7089,
-	7037,
-	0,
-	0,
-	0,
-	9243,
-	9243,
-	9243,
-	7037,
-	0,
-	10778,
-	5540,
-	7037,
-	7037,
-	10778,
-	10721,
-	10591,
-	10778,
-	10778,
-	6811,
-	6811,
-	6811,
-	5540,
-	6811,
-	6811,
-	5540,
-	6811,
-	5540,
-	6811,
-	5540,
-	6811,
-	5540,
-	6869,
-	6811,
-	5540,
-	5635,
-	5635,
-	6811,
-	6902,
-	6869,
-	5603,
-	6869,
-	6869,
-	5603,
-	6902,
-	5635,
-	6811,
-	7037,
-	7037,
-	1765,
-	5540,
-	5680,
-	7037,
-	7037,
-	7037,
-	7037,
-	6713,
-	10582,
-	6902,
-	4106,
-	4106,
-	6902,
-	7037,
-	5680,
-	5528,
-	5680,
-	5603,
-	7037,
-	1232,
-	7037,
-	7037,
-	1850,
-	3318,
-	6869,
-	5603,
-	6869,
-	5603,
-	5603,
-	6869,
-	5603,
-	2604,
-	4732,
-	5229,
-	6065,
-	6067,
-	3614,
-	5063,
-	5063,
-	5080,
-	1454,
-	6712,
-	4076,
-	4076,
-	4076,
-	4076,
-	2032,
-	3998,
-	2069,
-	2069,
-	2180,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	3318,
-	2740,
-	7037,
-	5528,
-	1746,
-	2747,
-	5528,
-	6902,
-	5053,
-	5080,
-	5053,
-	5080,
-	5063,
-	6902,
-	4106,
-	2069,
-	2069,
-	2069,
-	4076,
-	4076,
-	4076,
-	4076,
-	5528,
-	4684,
-	6811,
-	6869,
-	5603,
-	6869,
-	5603,
-	7021,
-	6811,
-	6811,
-	6811,
-	6811,
-	6869,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5794,
-	5794,
-	5635,
-	6902,
-	6811,
-	7037,
-	5528,
-	4106,
-	2110,
-	5635,
-	6902,
-	6902,
-	2742,
-	7037,
-	6902,
-	5528,
-	9010,
-	2329,
-	3998,
-	5080,
-	2740,
-	6902,
-	4684,
-	3998,
-	1439,
-	7037,
-	7037,
-	7037,
-	9143,
-	5528,
-	9422,
-	5528,
-	7037,
-	5068,
-	5528,
-	5528,
-	5603,
-	5528,
-	5528,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5794,
-	6869,
-	5603,
-	6869,
-	5603,
-	6869,
-	5603,
-	6902,
-	6902,
-	6902,
-	7037,
-	7037,
-	7037,
-	2740,
-	7037,
-	7037,
-	5540,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	5741,
-	7037,
-	7037,
-	3998,
-	3998,
-	4076,
-	7037,
-	6902,
-	3304,
-	5635,
-	5635,
-	0,
-	7037,
-	5635,
-	7037,
-	5635,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	5540,
-	2625,
-	5068,
-	7037,
-	5635,
-	5635,
-	6811,
-	6869,
-	6902,
-	5001,
-	5001,
-	6811,
-	6811,
-	2069,
-	5540,
-	5233,
-	5680,
-	5063,
-	2690,
-	2690,
-	2690,
-	1703,
-	5603,
-	4106,
-	3998,
-	3998,
-	2091,
-	6811,
-	2037,
-	6715,
-	4021,
-	7037,
-	2069,
-	7037,
-	10778,
-	7037,
-	7037,
-	1369,
-	1758,
-	4930,
-	658,
-	6811,
-	7037,
-	6902,
-	3409,
-	6892,
-	7037,
-	5635,
-	1406,
-	0,
-	6869,
-	6869,
-	5635,
-	6953,
-	1406,
-	3365,
-	3369,
-	3365,
-	10778,
-	6953,
-	5680,
-	6811,
-	5540,
-	5680,
-	7037,
-	5635,
-	3365,
-	7037,
-	7037,
-	7037,
-	7037,
-	3011,
-	5635,
-	6811,
-	6811,
-	6869,
-	6869,
-	5635,
-	4106,
-	7037,
-	10778,
-	7037,
-	5224,
-	7037,
-	4107,
-	5603,
-	7037,
-	6811,
-	6902,
-	7037,
-	6902,
-	5603,
-	7037,
-	6811,
-	6902,
-	7037,
-	6902,
-	5603,
-	7037,
-	6811,
-	6902,
-	7037,
-	6902,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	6902,
-	5635,
-	2032,
-	7037,
-	5635,
-	6902,
-	5063,
-	1855,
-	5680,
-	5635,
-	6902,
-	5635,
-	2032,
-	7037,
-	2740,
-	1922,
-	5680,
-	3318,
-	6902,
-	5063,
-	1855,
-	5680,
-	3318,
-	5063,
-	3036,
-	5680,
-	9498,
-	5540,
-	2740,
-	5528,
-	3105,
-	0,
-	0,
-	0,
-	0,
-	0,
+	1474,
+	8285,
+	8100,
+	8100,
+	8100,
+	8100,
+	8100,
+	8100,
+	8100,
+	6567,
+	8285,
+	8037,
+	8285,
+	8100,
+	8285,
+	8133,
+	8037,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	9,
+	6,
+	8285,
+	6501,
+	8285,
+	8729,
+	8643,
+	9172,
+	8285,
+	6567,
+	8285,
+	8037,
+	8100,
+	8285,
+	8133,
+	8133,
+	6599,
+	8133,
+	8133,
+	8037,
+	6501,
+	1484,
+	661,
+	1824,
+	8285,
+	6501,
+	6567,
+	8285,
+	8037,
+	8100,
+	8285,
+	8133,
+	8285,
+	8285,
+	8285,
+	8285,
+	8133,
+	8133,
+	8133,
+	6599,
+	8133,
+	6599,
+	8037,
+	6501,
+	8026,
+	8133,
+	6599,
+	8133,
+	6599,
+	8268,
+	8100,
+	6567,
+	8100,
+	6567,
+	8100,
+	6567,
+	8100,
+	6567,
+	8100,
+	6567,
+	8100,
+	6567,
+	8037,
+	8037,
+	8268,
+	8268,
+	8268,
+	8268,
+	6724,
+	8268,
+	8037,
+	6501,
+	8268,
+	8037,
+	8037,
+	3840,
+	6599,
+	8037,
+	8285,
+	8037,
+	8285,
+	8133,
+	8285,
+	6501,
+	8133,
+	3041,
+	8037,
+	2427,
+	4804,
+	4804,
+	4804,
+	6599,
+	805,
+	6489,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6599,
 	3114,
-	2740,
-	0,
-	7037,
-	7062,
-	7037,
-	0,
-	9243,
-	6902,
-	7037,
-	7037,
-	7064,
-	5528,
-	7037,
-	10785,
-	7065,
-	5528,
-	7037,
-	0,
-	7037,
-	7066,
-	7037,
-	0,
-	9243,
-	6902,
-	7037,
-	7037,
-	6811,
-	7068,
-	5785,
-	7092,
-	6869,
-	7029,
-	6869,
-	5603,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	4106,
-	5635,
-	7037,
-	10128,
-	10128,
-	7037,
-	0,
-	6869,
-	7037,
-	5975,
-	7073,
-	2740,
-	5528,
-	5635,
-	6902,
-	6902,
-	7037,
-	7037,
-	7037,
-	6904,
-	7037,
-	7074,
-	7037,
-	0,
-	9243,
-	0,
-	3998,
-	10582,
-	5528,
-	9009,
-	9009,
-	8870,
-	9064,
-	10582,
-	7037,
-	3369,
-	7075,
-	5528,
-	0,
-	7037,
-	6869,
-	5603,
-	6869,
-	5603,
-	6902,
-	7037,
-	3313,
-	7037,
-	7037,
-	7037,
-	7037,
-	5603,
-	5603,
-	3313,
-	3313,
-	7037,
-	7037,
-	7079,
-	7037,
-	0,
-	9243,
-	6902,
-	7081,
-	5528,
-	7037,
-	10591,
-	10591,
-	10220,
-	9082,
-	10333,
-	8450,
-	9148,
-	9148,
-	9148,
-	9148,
-	9148,
-	8482,
-	9148,
-	9071,
-	8442,
-	8442,
+	5936,
+	6599,
+	12266,
+	3857,
+	3840,
+	3857,
+	6599,
 	0,
 	0,
-	7930,
-	9870,
-	10778,
-	3315,
-	1829,
-	578,
-	5635,
-	3315,
-	6902,
-	2625,
-	5068,
+	2274,
+	2274,
+	2275,
+	2268,
+	2268,
+	2273,
+	2269,
+	3004,
+	2272,
+	3453,
+	3878,
+	3840,
+	6489,
+	0,
+	7905,
+	6366,
+	7905,
+	6366,
+	7906,
+	6367,
+	8133,
+	6599,
+	8268,
+	6724,
+	8037,
+	6501,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	8285,
+	6501,
+	8285,
+	8285,
+	8285,
+	1570,
+	3853,
+	1052,
+	289,
+	5565,
+	3853,
+	467,
+	168,
+	5565,
+	8285,
+	8037,
+	9402,
+	2144,
 	0,
 	0,
+	8709,
+	8100,
+	8100,
+	6567,
+	3503,
 	0,
 	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	6869,
-	5603,
-	6869,
-	5603,
-	10721,
-	10583,
-	7020,
-	5740,
-	6869,
-	6811,
-	5603,
-	6870,
-	6870,
-	6870,
-	6811,
-	6811,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	7037,
-	9787,
-	7037,
-	5680,
-	2032,
-	5680,
-	7037,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	5081,
-	5063,
-	5063,
-	1844,
-	6798,
-	5054,
-	5054,
-	2594,
-	5054,
-	10738,
-	6869,
-	5054,
-	5054,
-	2621,
-	10738,
-	10224,
-	5635,
-	5635,
-	6811,
-	3340,
-	9789,
-	9078,
-	10113,
-	0,
-	10591,
-	10591,
-	3313,
-	5635,
-	7037,
-	3318,
-	5635,
-	5635,
-	5635,
-	5635,
-	5635,
-	6902,
-	0,
-	5635,
-	5635,
-	5635,
-	7037,
-	7037,
-	7037,
-	7037,
-	5635,
-	7037,
-	7037,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	6811,
-	4834,
-	6869,
-	7037,
-	6869,
-	6869,
-	7037,
-	49,
-	3315,
-	3013,
-	1141,
-	5635,
-	3315,
-	1900,
-	608,
-	5635,
-	6811,
-	7037,
-	2918,
-	7037,
-	5635,
-	7037,
-	5635,
-	7037,
-	3013,
-	7037,
-	7037,
-	5635,
-	4106,
-	4106,
-	3304,
-	5635,
-	4395,
-	4394,
-	5146,
-	5145,
-	5068,
-	5063,
-	4757,
-	4732,
-	5031,
-	5029,
-	5068,
-	5063,
-	5252,
-	5251,
-	5068,
-	5063,
-	2393,
-	2972,
-	2398,
-	3064,
-	2397,
+	713,
+	4773,
+	3871,
+	664,
+	1907,
 	3036,
-	2395,
-	3011,
-	2396,
-	3029,
-	2397,
-	3036,
-	2402,
-	3121,
-	2397,
-	3036,
-	5635,
-	0,
-	10224,
-	9539,
-	9888,
-	9276,
-	8049,
-	10778,
-	6902,
-	6811,
-	5540,
-	6811,
-	5540,
-	6811,
-	6800,
-	6869,
-	6869,
-	6869,
-	6811,
-	6869,
-	6869,
-	6869,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6902,
-	5635,
-	6811,
-	6811,
-	6869,
-	6902,
-	5635,
-	10778,
-	3304,
-	5635,
-	7037,
-	5540,
-	7037,
-	7037,
-	0,
-	7037,
-	7037,
-	5635,
-	4757,
-	5603,
-	7037,
-	5540,
-	1231,
-	10746,
-	7037,
-	10778,
-	6811,
-	5603,
-	5635,
-	5635,
-	7037,
-	6811,
-	5540,
-	0,
-	7037,
-	7037,
-	5540,
-	0,
-	948,
-	0,
-	5528,
-	7037,
-	10778,
-	5063,
-	5540,
-	7037,
-	6811,
-	7037,
-	5063,
-	5540,
-	7037,
-	6811,
-	7037,
-	7088,
-	5528,
-	7037,
-	7071,
-	5528,
-	7037,
-	2211,
-	1492,
-	5528,
-	5528,
-	7086,
-	5528,
-	0,
-	0,
-	0,
-	2210,
-	1492,
-	5528,
-	5528,
-	7087,
-	5528,
-	10610,
-	10609,
-	10613,
-	10611,
-	10609,
-	10613,
-	9870,
-	9870,
-	9870,
-	10611,
-	10265,
-	9925,
+	8285,
+	6501,
+	12257,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6567,
+	8285,
+	8037,
+	8100,
+	8285,
+	8133,
+	8285,
+	8285,
+	6599,
+	6599,
+	8285,
+	6567,
+	8285,
+	8037,
+	8100,
+	8285,
+	8133,
+	8285,
+	8285,
+	6567,
+	8285,
+	8037,
+	8100,
+	8285,
+	8133,
+	10587,
+	8037,
+	6501,
+	8037,
+	6501,
+	8037,
+	1292,
+	6567,
+	8285,
+	8285,
+	2427,
+	8133,
+	8285,
+	8285,
+	8285,
+	8285,
+	6501,
+	8285,
+	8285,
+	6567,
+	8285,
+	8037,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8100,
+	8285,
+	8133,
+	8197,
+	6658,
+	8197,
+	6658,
+	8197,
+	6658,
+	8197,
+	6658,
+	8197,
+	6658,
+	8197,
+	6658,
+	6567,
+	8285,
+	6599,
+	12444,
+	8285,
+	8100,
+	8100,
+	8197,
+	6658,
+	8197,
+	8197,
+	6658,
+	8197,
+	8197,
+	6658,
+	8197,
+	6567,
+	6567,
+	3567,
+	3567,
+	3567,
+	8285,
+	12476,
+	12195,
+	11012,
+	11866,
+	11866,
+	10150,
+	11752,
+	11752,
+	11012,
+	10163,
+	11012,
+	10163,
+	9531,
+	10150,
+	10150,
+	10148,
+	10148,
+	11012,
+	11012,
+	11012,
+	11012,
+	11012,
+	10150,
+	10031,
+	11012,
+	10148,
+	9523,
+	9523,
+	9523,
+	9523,
+	9523,
+	9523,
+	9523,
+	9523,
+	8977,
+	8977,
+	8977,
+	8977,
+	10160,
+	11012,
+	8979,
+	8979,
+	8979,
+	9530,
+	10163,
+	10150,
+	11004,
+	11012,
+	9529,
+	10163,
+	9532,
+	9444,
+	8695,
+	8680,
+	10150,
+	11012,
+	10163,
+	9530,
+	12444,
+	11989,
+	11525,
+	11856,
+	11745,
+	12436,
+	12416,
+	12257,
+	11870,
+	10166,
+	11873,
+	12476,
+	12278,
+	11760,
+	12436,
+	10213,
+	10084,
+	10149,
+	10030,
+	11012,
+	10842,
+	11870,
+	11870,
+	10804,
+	10804,
+	10804,
+	10148,
+	11007,
+	12444,
+	12436,
+	12436,
+	10144,
+	10144,
+	10144,
+	11027,
+	11027,
+	11005,
+	11012,
+	10153,
+	10153,
+	10153,
+	11014,
+	11004,
+	11866,
+	11012,
+	11012,
+	11014,
+	11012,
+	11012,
+	11014,
+	11012,
+	11012,
+	11014,
+	11012,
+	11014,
+	11012,
+	11014,
+	10148,
+	11012,
+	11019,
+	10133,
+	12489,
+	12490,
+	12490,
+	12488,
+	12488,
+	12490,
+	12490,
+	9528,
+	10160,
+	9524,
+	9524,
+	9526,
+	8803,
+	8978,
+	8802,
+	9535,
+	10165,
+	9533,
+	9533,
+	11866,
+	11752,
+	11016,
+	10847,
+	11012,
+	11866,
+	12195,
+	12195,
+	10150,
+	11569,
+	11989,
+	11866,
+	11013,
+	11012,
+	10133,
+	8973,
+	11115,
+	9515,
+	10272,
+	10262,
+	9961,
+	9403,
+	11054,
+	10162,
+	11866,
+	11866,
+	11868,
+	11878,
+	11405,
+	8794,
+	9593,
+	11012,
+	10163,
+	9514,
+	8976,
 	9521,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	10265,
-	10608,
-	9785,
-	9785,
-	7080,
-	5793,
-	3313,
-	2720,
-	1344,
-	3313,
-	2719,
-	1344,
-	5793,
-	5603,
-	3391,
-	5603,
-	5603,
-	5603,
-	3011,
-	5603,
-	6714,
-	7037,
-	4106,
-	7037,
-	5540,
-	7037,
-	9302,
-	10778,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	10106,
-	9302,
-	10778,
-	10695,
-	10696,
-	10693,
-	10694,
-	10697,
-	10698,
-	10746,
-	10746,
-	10746,
-	7070,
-	3416,
-	4106,
-	7067,
-	3415,
-	4106,
-	7063,
-	3414,
-	4106,
-	3318,
-	6902,
-	3318,
-	8584,
-	8584,
-	8584,
+	11866,
+	11866,
+	11866,
+	9439,
+	9516,
+	10153,
+	11866,
+	11866,
+	9437,
+	11017,
+	11012,
+	10151,
+	11012,
+	11012,
+	11012,
+	11012,
+	10156,
+	11012,
+	11012,
+	9517,
+	11012,
+	11012,
+	11012,
+	11012,
+	12416,
+	12416,
+	10212,
+	10164,
+	8760,
+	8669,
+	8768,
+	8673,
+	8759,
+	8668,
+	8923,
+	8769,
+	12476,
+	12476,
+	8570,
+	8559,
+	8687,
+	8622,
+	11535,
+	8770,
+	12293,
+	11534,
+	9429,
+	9429,
+	11752,
+	10164,
+	11536,
+	10845,
+	10726,
+	8674,
+	8621,
+	11534,
+	11534,
+	11534,
+	9429,
+	9429,
+	9429,
+	12436,
+	12436,
+	9710,
+	11866,
+	9532,
+	10153,
+	11014,
+	8634,
+	8591,
+	8790,
+	8692,
+	8632,
+	8590,
+	8966,
+	8791,
+	11856,
+	11856,
+	8572,
+	8561,
+	8706,
+	8633,
+	9709,
+	8693,
+	8630,
+	10209,
+	10209,
+	10209,
+	9499,
+	9499,
+	9499,
+	10211,
+	8797,
+	11051,
+	10209,
+	9499,
+	9499,
+	11012,
+	11868,
+	10169,
+	11026,
+	11026,
+	11026,
+	11026,
+	11026,
+	11026,
+	11026,
+	11026,
+	11004,
+	11026,
+	11868,
+	9539,
+	11027,
+	11027,
+	11027,
+	11027,
+	10171,
+	11026,
+	11026,
+	9440,
+	9440,
+	9440,
+	10037,
+	10020,
+	10847,
+	8285,
+	12484,
+	3853,
+	2095,
+	646,
+	6599,
+	3853,
+	3944,
+	1371,
+	6599,
+	3853,
+	3824,
+	1313,
+	6599,
+	3853,
+	3176,
+	1295,
+	3177,
+	3853,
+	2083,
+	638,
+	6599,
+	3853,
+	2989,
+	1314,
+	5858,
+	3853,
+	873,
+	295,
+	1650,
+	3853,
+	2411,
+	1313,
+	4804,
+	8100,
+	6567,
+	8037,
+	5655,
+	5655,
+	721,
+	2018,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	12290,
+	12233,
+	3939,
+	8197,
+	8197,
+	2218,
+	12291,
+	12235,
+	11530,
+	11530,
+	11531,
+	11531,
+	1611,
+	12292,
+	12246,
+	11774,
+	8197,
+	8197,
+	1611,
+	12287,
+	12025,
+	3171,
+	2004,
+	2004,
+	12289,
+	6025,
+	3567,
+	12286,
+	11915,
+	5539,
+	5655,
+	5539,
+	5655,
+	8344,
+	8037,
+	12484,
+	1464,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	3853,
+	2349,
+	1295,
+	2350,
+	8133,
+	12427,
 	0,
 	0,
 	0,
-	1895,
-	1472,
-	8055,
-	0,
-	0,
-	7037,
-	10746,
-	10746,
-	10746,
-	1495,
-	7037,
-	7037,
-	9551,
-	8832,
-	7037,
-	10778,
-	7037,
-	7037,
-	5540,
-	7037,
-	5635,
-	5635,
-	5635,
-	7037,
-	0,
-	7037,
-	7037,
-	7173,
-	6902,
-	6902,
-	6072,
-	7037,
-	6869,
-	6902,
-	6902,
-	7037,
-	10582,
-	4834,
-	2756,
-	2742,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	7037,
-	10113,
-	10113,
 	0,
 	0,
 	0,
 	0,
-	0,
-	10517,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	10090,
-	0,
-	0,
-	0,
-	0,
-	0,
-	10517,
+	10894,
 	0,
 	0,
 	0,
@@ -10395,24 +9182,6 @@ static const int32_t s_InvokerIndices[2626] =
 	0,
 	0,
 	0,
-	9298,
-	0,
-	0,
-	0,
-	0,
-	8054,
-	7456,
-	7372,
-	7456,
-	7372,
-	7456,
-	7456,
-	8450,
-	8450,
-	9520,
-	7373,
-	7318,
-	10778,
 	0,
 	0,
 	0,
@@ -10422,46 +9191,1293 @@ static const int32_t s_InvokerIndices[2626] =
 	0,
 	0,
 	0,
-	9551,
-	8724,
-	10778,
-	7037,
-	7037,
-	7037,
-	8713,
-	10220,
-	9433,
-	8713,
-	10220,
-	9430,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12257,
+	11745,
+	12475,
+	12277,
+	12416,
+	12484,
+	12266,
+	12266,
+	12266,
+	12266,
+	12325,
+	12416,
+	12416,
+	12484,
+	12444,
+	11755,
+	11755,
+	11971,
+	11971,
+	11971,
+	12416,
+	12484,
+	12266,
+	12484,
+	12484,
+	12416,
+	10797,
+	12484,
+	8037,
+	8285,
+	8285,
+	8037,
+	11558,
+	6599,
+	8285,
+	8285,
+	10890,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8037,
+	11452,
+	11992,
+	8010,
+	5922,
+	3035,
+	11014,
+	8285,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8133,
+	6599,
+	8133,
+	6599,
+	8037,
+	8037,
+	6501,
+	8100,
+	6567,
+	8100,
+	8100,
+	6599,
+	6599,
+	8100,
+	6567,
+	8268,
+	8285,
+	8285,
+	8285,
+	4712,
+	8037,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6599,
+	6599,
+	8285,
+	3857,
+	6599,
+	3042,
+	1909,
+	5539,
+	5539,
+	5539,
+	8037,
+	8285,
+	8285,
+	6658,
+	8285,
+	0,
+	8285,
+	6599,
+	6599,
+	8285,
+	8285,
+	8285,
+	8285,
+	6599,
+	6599,
+	6599,
+	6501,
+	8285,
+	8285,
+	2230,
+	6599,
+	10748,
+	10748,
+	8133,
+	6599,
+	8285,
+	8285,
+	8285,
+	8100,
+	8100,
+	6567,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8037,
+	8285,
+	12444,
+	8133,
+	8133,
+	8100,
+	8133,
+	8133,
+	8285,
+	8100,
+	2213,
+	2131,
+	6599,
+	4804,
+	6599,
+	12266,
+	12266,
+	8285,
+	10362,
+	4804,
+	4804,
+	2446,
+	2435,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8133,
+	8285,
+	6599,
+	8285,
+	8285,
+	8285,
+	12444,
+	2773,
+	8285,
+	8285,
+	4804,
+	8285,
+	4804,
+	12484,
+	8285,
+	4804,
+	12444,
+	11129,
+	8285,
+	8285,
+	6599,
+	8285,
+	8285,
+	8285,
+	8037,
+	8285,
+	8133,
+	6599,
+	8285,
+	8285,
+	8037,
+	8285,
+	8285,
+	8285,
+	6567,
+	6599,
+	8285,
+	6567,
+	6567,
+	4773,
+	8285,
+	0,
+	8285,
+	8339,
+	8102,
+	8133,
+	6599,
+	8133,
+	6599,
+	8135,
+	8133,
+	6599,
+	8134,
+	11973,
+	6501,
+	3453,
+	7927,
+	8285,
+	6501,
+	10802,
+	10802,
+	10802,
+	4804,
+	4688,
+	4688,
+	8338,
+	8285,
+	0,
+	0,
+	0,
+	10802,
+	10802,
+	10802,
+	8285,
+	0,
+	12484,
+	6501,
+	8285,
+	8285,
+	12484,
+	12416,
+	12266,
+	12484,
+	12484,
+	8037,
+	8037,
+	8037,
+	6501,
+	8037,
+	8037,
+	6501,
+	8037,
+	6501,
+	8037,
+	6501,
+	8037,
+	6501,
+	8100,
+	8037,
+	6501,
+	6599,
+	6599,
+	8037,
+	8133,
+	8100,
+	6567,
+	8100,
+	8100,
+	6567,
+	8133,
+	6599,
+	8037,
+	8285,
+	8285,
+	2023,
+	6501,
+	6658,
+	8285,
+	8285,
+	8285,
+	8285,
+	7924,
+	12257,
+	8133,
+	4804,
+	4804,
+	8133,
+	8285,
+	6658,
+	6489,
+	6658,
+	6567,
+	8285,
+	1409,
+	8285,
+	8285,
+	2117,
+	3857,
+	8100,
+	6567,
+	8100,
+	6567,
+	6567,
+	8100,
+	6567,
+	3019,
+	5539,
+	6118,
+	7090,
+	7092,
+	4225,
+	5916,
+	5916,
+	5936,
+	1671,
+	7923,
+	4773,
+	4773,
+	4773,
+	4773,
+	2346,
+	4688,
+	2387,
+	2387,
+	2511,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	3857,
+	3171,
+	8285,
+	6489,
+	2004,
+	3179,
+	6489,
+	8133,
+	5906,
+	5936,
+	5906,
+	5936,
+	5916,
+	8133,
+	4804,
+	8133,
+	6599,
+	8285,
+	3865,
+	2387,
+	2387,
+	2387,
+	4773,
+	4773,
+	4773,
+	4773,
+	6489,
+	5489,
+	8037,
+	8100,
+	6567,
+	8100,
+	6567,
+	8268,
+	8037,
+	8037,
+	8037,
+	8037,
+	8100,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6779,
+	6779,
+	6599,
+	8133,
+	8037,
+	8285,
+	6489,
+	4804,
+	2433,
+	6599,
+	8133,
+	8133,
+	3174,
+	8285,
+	8133,
+	6489,
+	10536,
+	2702,
+	4688,
+	5936,
+	3171,
+	8133,
+	5489,
+	4688,
+	1649,
+	8285,
+	8285,
+	8285,
+	10678,
+	6489,
+	11004,
+	6489,
+	8285,
+	5922,
+	6489,
+	6489,
+	6567,
+	6489,
+	6489,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6779,
+	8100,
+	6567,
+	8100,
+	6567,
+	8100,
+	6567,
+	8133,
+	8133,
+	8133,
+	8285,
+	8285,
+	8285,
+	3171,
+	8285,
+	8285,
+	6501,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	6724,
+	8285,
+	8285,
+	4688,
+	4688,
+	4773,
+	8285,
+	8133,
+	3842,
+	6599,
+	6599,
+	0,
+	8285,
+	6599,
+	8285,
+	6599,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	6501,
+	3042,
+	5922,
+	8285,
+	6599,
+	6599,
+	8037,
+	8100,
+	8133,
+	5851,
+	5851,
+	8037,
+	8037,
+	2387,
+	6501,
+	6122,
+	6658,
+	5916,
+	3113,
+	3113,
+	3113,
+	1958,
+	6567,
+	4804,
+	4688,
+	4688,
+	2412,
+	8037,
+	2351,
+	7926,
+	4712,
+	8285,
+	2387,
+	8285,
+	12484,
+	8285,
+	8285,
+	1563,
+	2016,
+	5760,
+	739,
+	8037,
+	8285,
+	8133,
+	3960,
+	8123,
+	8285,
+	6599,
+	1605,
+	0,
+	8100,
+	8100,
+	6599,
+	8197,
+	1605,
+	3912,
+	3916,
+	3912,
+	12484,
+	8197,
+	6658,
+	8037,
+	6501,
+	6658,
+	8285,
+	6599,
+	3912,
+	8285,
+	8285,
+	8285,
+	8285,
+	3503,
+	6599,
+	8037,
+	8037,
+	8100,
+	8100,
+	6599,
+	4804,
+	8285,
+	12484,
+	8285,
+	6112,
+	8285,
+	4805,
+	6567,
+	8285,
+	8037,
+	8133,
+	8285,
+	8133,
+	6567,
+	8285,
+	8037,
+	8133,
+	8285,
+	8133,
+	6567,
+	8285,
+	8037,
+	8133,
+	8285,
+	8133,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8133,
+	6599,
+	2346,
+	8285,
+	6599,
+	8133,
+	5916,
+	2126,
+	6658,
+	6599,
+	8133,
+	6599,
+	2346,
+	8285,
+	3171,
+	2211,
+	6658,
+	3857,
+	8133,
+	5916,
+	2126,
+	6658,
+	3857,
+	5916,
+	3529,
+	6658,
+	11081,
+	6501,
+	3171,
+	6489,
+	3611,
+	0,
+	0,
+	0,
+	0,
+	0,
+	3620,
+	3171,
+	0,
+	8285,
+	8311,
+	8285,
+	0,
+	10802,
+	8133,
+	8285,
+	8285,
+	8313,
+	6489,
+	8285,
+	12491,
+	8314,
+	6489,
+	8285,
+	0,
+	8285,
+	8315,
+	8285,
+	0,
+	10802,
+	8133,
+	8285,
+	8285,
+	8037,
+	8317,
+	6770,
+	8341,
+	8100,
+	8276,
+	8100,
+	6567,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	4804,
+	6599,
+	8285,
+	11768,
+	11768,
+	8285,
+	0,
+	8100,
+	8285,
+	6991,
+	8322,
+	3171,
+	6489,
+	6599,
+	8133,
+	8133,
+	8285,
+	8285,
+	8285,
+	8135,
+	8285,
+	8323,
+	8285,
+	0,
+	10802,
+	0,
+	4688,
+	12257,
+	6489,
+	10535,
+	10535,
+	10346,
+	10590,
+	12257,
+	8285,
+	3916,
+	8324,
+	6489,
+	0,
+	8285,
+	8100,
+	6567,
+	8100,
+	6567,
+	8133,
+	8285,
+	3851,
+	8285,
+	8285,
+	8285,
+	8285,
+	6567,
+	6567,
+	3851,
+	3851,
+	8285,
+	8285,
+	8328,
+	8285,
+	0,
+	10802,
+	8133,
+	8330,
+	6489,
+	8285,
+	12266,
+	12266,
+	11866,
+	10612,
+	11992,
+	9888,
+	10683,
+	10683,
+	10683,
+	10683,
+	10683,
+	9925,
+	10683,
+	10598,
+	9879,
+	9879,
+	0,
+	0,
+	9303,
+	11470,
+	12484,
+	3853,
+	2096,
+	647,
+	6599,
+	3853,
+	8133,
+	3042,
+	5922,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8100,
+	6567,
+	8100,
+	6567,
+	12416,
+	12258,
+	8267,
+	6723,
+	8100,
+	8037,
+	6567,
+	8101,
+	8101,
+	8101,
+	8037,
+	8037,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8285,
+	11386,
+	8285,
+	6658,
+	2346,
+	6658,
+	8285,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	5937,
+	5916,
+	5916,
+	2111,
+	8024,
+	5907,
+	5907,
+	3008,
+	5907,
+	12436,
+	8100,
+	5907,
+	5907,
+	3036,
+	12436,
+	11870,
+	6599,
+	6599,
+	8037,
+	3883,
+	11388,
+	10607,
+	11752,
+	0,
+	12266,
+	12266,
+	3851,
+	6599,
+	8285,
+	3857,
+	6599,
+	6599,
+	6599,
+	6599,
+	6599,
+	8133,
+	0,
+	6599,
+	6599,
+	6599,
+	8285,
+	8285,
+	8285,
+	8285,
+	6599,
+	8285,
+	8285,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	8037,
+	5655,
+	8100,
+	8285,
+	8100,
+	8100,
+	8285,
+	56,
+	3853,
+	3505,
+	1308,
+	6599,
+	3853,
+	2180,
+	679,
+	6599,
+	8037,
+	8285,
+	3399,
+	8285,
+	8285,
+	6599,
+	8285,
+	8285,
+	6599,
+	8285,
+	3505,
+	8285,
+	8285,
+	6599,
+	4804,
+	4804,
+	3842,
+	6599,
+	5140,
+	5139,
+	6026,
+	6025,
+	5922,
+	5916,
+	5565,
+	5539,
+	5883,
+	5881,
+	5922,
+	5916,
+	6149,
+	6148,
+	5922,
+	5916,
+	2769,
+	3463,
+	2774,
+	3567,
+	2773,
+	3529,
+	2771,
+	3503,
+	2772,
+	3522,
+	2773,
+	3529,
+	2778,
+	3629,
+	2773,
+	3529,
+	6599,
+	0,
+	11870,
+	11126,
+	11488,
+	10844,
 	9438,
-	9432,
-	9430,
-	9452,
-	9430,
-	7401,
-	9448,
-	10222,
-	9452,
-	9452,
-	9452,
-	7629,
-	8715,
-	8143,
-	8714,
-	8144,
-	9450,
-	8715,
-	8689,
-	9447,
-	9445,
-	9448,
-	9448,
-	7627,
-	8689,
-	8122,
-	8146,
-	7037,
+	12484,
+	8133,
+	8037,
+	6501,
+	8037,
+	6501,
+	8037,
+	8026,
+	8100,
+	8100,
+	8100,
+	8037,
+	8100,
+	8100,
+	8100,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8133,
+	6599,
+	8037,
+	8037,
+	8100,
+	8133,
+	6599,
+	12484,
+	3842,
+	6599,
+	8285,
+	6501,
+	8285,
+	8285,
+	0,
+	8285,
+	8285,
+	6599,
+	5565,
+	6567,
+	8285,
+	6501,
+	1407,
+	12444,
+	8285,
+	12484,
+	8037,
+	6567,
+	6599,
+	6599,
+	8285,
+	8037,
+	6501,
+	0,
+	8285,
+	8285,
+	6501,
+	0,
+	1084,
+	0,
+	6489,
+	8285,
+	12484,
+	5916,
+	6501,
+	8285,
+	8037,
+	8285,
+	5916,
+	6501,
+	8285,
+	8037,
+	8285,
+	8337,
+	6489,
+	8285,
+	8320,
+	6489,
+	8285,
+	2546,
+	1717,
+	6489,
+	6489,
+	8335,
+	6489,
+	0,
+	0,
+	0,
+	2545,
+	1717,
+	6489,
+	6489,
+	8336,
+	6489,
+	12288,
+	12287,
+	12291,
+	12289,
+	12287,
+	12291,
+	11470,
+	11470,
+	11470,
+	12289,
+	11915,
+	11528,
+	11104,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	11915,
+	12286,
+	11384,
+	11384,
+	8329,
+	6778,
+	3851,
+	3149,
+	1535,
+	3851,
+	3148,
+	1535,
+	6778,
+	6567,
+	3939,
+	6567,
+	6567,
+	6567,
+	3503,
+	6567,
+	7925,
+	8285,
+	4804,
+	8285,
+	6501,
+	8285,
+	10871,
+	12484,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	11745,
+	10871,
+	12484,
+	12381,
+	12382,
+	12379,
+	12380,
+	12383,
+	12384,
+	12444,
+	12444,
+	12444,
+	8319,
+	3972,
+	4804,
+	8316,
+	3971,
+	4804,
+	8312,
+	3970,
+	4804,
+	3857,
+	8133,
+	3857,
+	10041,
+	10041,
+	10041,
+	0,
+	0,
+	0,
+	2174,
+	1691,
+	9444,
+	0,
+	0,
+	8285,
+	12444,
+	12444,
+	12444,
+	1720,
+	8285,
+	8285,
+	11138,
+	10301,
+	8285,
+	12484,
+	8285,
+	8285,
+	6501,
+	8285,
+	6599,
+	6599,
+	6599,
+	8285,
+	0,
+	8285,
+	8285,
+	8430,
+	8133,
+	8133,
+	7097,
+	8285,
+	8100,
+	8133,
+	8133,
+	8285,
+	12257,
+	5655,
+	3188,
+	3174,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	8285,
+	11752,
+	11752,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12188,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	11723,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12188,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	10866,
+	0,
+	0,
+	0,
+	0,
+	9443,
+	8773,
+	8678,
+	8773,
+	8678,
+	8773,
+	8773,
+	9888,
+	9888,
+	11103,
+	8679,
+	8613,
+	12484,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	11138,
+	10188,
+	12484,
+	8285,
+	8285,
+	8285,
+	10177,
+	11866,
+	11015,
+	10177,
+	11866,
+	11012,
+	11020,
+	11014,
+	11012,
+	11034,
+	11012,
+	8707,
+	11030,
+	11868,
+	11034,
+	11034,
+	11034,
+	8974,
+	10179,
+	9537,
+	10178,
+	9538,
+	11032,
+	10179,
+	10153,
+	11029,
+	11027,
+	11030,
+	11030,
+	8972,
+	10153,
+	9516,
+	9540,
+	8285,
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[13] = 
 {
@@ -10471,23 +10487,23 @@ static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[13] =
 	{ 0x06000636, 10,  (void**)&OvrAvatarBodyTrackingContextBase_BodyStateCallback_mA3829C6F50CF70B2468207656F26DE0CED192370_RuntimeMethod_var, 0 },
 	{ 0x06000637, 9,  (void**)&OvrAvatarBodyTrackingContextBase_BodySkeletonCallback_m442C80CE30BD7DCDEAC0E7D28EE15691F19D9891_RuntimeMethod_var, 0 },
 	{ 0x06000638, 8,  (void**)&OvrAvatarBodyTrackingContextBase_BodyPoseCallback_m22669C69864BE0194A59C70E5A560A655567B4ED_RuntimeMethod_var, 0 },
-	{ 0x060007C7, 11,  (void**)&OvrAvatarEyePoseProviderBase_EyePoseCallback_mDD8BA55CAD4DDEE2DA770E0B7CC3B589D756C402_RuntimeMethod_var, 0 },
-	{ 0x060007D7, 12,  (void**)&OvrAvatarFacePoseProviderBase_FacePoseCallback_mD22F93FA190F519ABBE1BB864DA49115F21D49D9_RuntimeMethod_var, 0 },
-	{ 0x06000804, 13,  (void**)&OvrAvatarInputTrackingContextBase_InputTrackingCallback_m4723F86EF45F4A780A7BEAA1F33A1BD8D0D3DCA6_RuntimeMethod_var, 0 },
-	{ 0x06000828, 14,  (void**)&OvrAvatarLipSyncContextBase_LipSyncCallback_mC6A55084FD73F7BCA793A12CF19D07B578403DE4_RuntimeMethod_var, 0 },
-	{ 0x06000830, 15,  (void**)&OvrAvatarLog_LogCallBack_mE2FAF4BE65847A41AA4124A8124DE2F292F1E782_RuntimeMethod_var, 0 },
-	{ 0x06000894, 17,  (void**)&OvrAvatarManager_ResourceCallback_m62DB227961682C07AC3B99924DF65B88303FF4D5_RuntimeMethod_var, 0 },
-	{ 0x06000895, 16,  (void**)&OvrAvatarManager_RequestCallback_m33DC1C8357E77A29BEB286B7707D8354AF346E95_RuntimeMethod_var, 0 },
+	{ 0x060007CB, 11,  (void**)&OvrAvatarEyePoseProviderBase_EyePoseCallback_mDD8BA55CAD4DDEE2DA770E0B7CC3B589D756C402_RuntimeMethod_var, 0 },
+	{ 0x060007DB, 12,  (void**)&OvrAvatarFacePoseProviderBase_FacePoseCallback_mD22F93FA190F519ABBE1BB864DA49115F21D49D9_RuntimeMethod_var, 0 },
+	{ 0x06000808, 13,  (void**)&OvrAvatarInputTrackingContextBase_InputTrackingCallback_m4723F86EF45F4A780A7BEAA1F33A1BD8D0D3DCA6_RuntimeMethod_var, 0 },
+	{ 0x0600082C, 14,  (void**)&OvrAvatarLipSyncContextBase_LipSyncCallback_mC6A55084FD73F7BCA793A12CF19D07B578403DE4_RuntimeMethod_var, 0 },
+	{ 0x06000834, 15,  (void**)&OvrAvatarLog_LogCallBack_mE2FAF4BE65847A41AA4124A8124DE2F292F1E782_RuntimeMethod_var, 0 },
+	{ 0x06000898, 17,  (void**)&OvrAvatarManager_ResourceCallback_m62DB227961682C07AC3B99924DF65B88303FF4D5_RuntimeMethod_var, 0 },
+	{ 0x06000899, 16,  (void**)&OvrAvatarManager_RequestCallback_m33DC1C8357E77A29BEB286B7707D8354AF346E95_RuntimeMethod_var, 0 },
 };
-static const Il2CppTokenRangePair s_rgctxIndices[70] = 
+static const Il2CppTokenRangePair s_rgctxIndices[72] = 
 {
 	{ 0x02000021, { 0, 5 } },
 	{ 0x02000046, { 9, 47 } },
 	{ 0x0200004A, { 56, 13 } },
 	{ 0x02000110, { 116, 18 } },
 	{ 0x02000111, { 138, 11 } },
-	{ 0x02000154, { 153, 32 } },
-	{ 0x020001AE, { 284, 7 } },
+	{ 0x02000154, { 153, 33 } },
+	{ 0x020001AE, { 292, 7 } },
 	{ 0x0600012D, { 5, 2 } },
 	{ 0x0600012E, { 7, 2 } },
 	{ 0x06000242, { 69, 1 } },
@@ -10510,47 +10526,49 @@ static const Il2CppTokenRangePair s_rgctxIndices[70] =
 	{ 0x0600053D, { 134, 4 } },
 	{ 0x060005B2, { 149, 1 } },
 	{ 0x0600063A, { 150, 1 } },
-	{ 0x06000716, { 151, 2 } },
-	{ 0x0600083D, { 185, 2 } },
-	{ 0x0600083E, { 187, 2 } },
-	{ 0x06000897, { 189, 2 } },
-	{ 0x060008A4, { 191, 1 } },
-	{ 0x060008F6, { 192, 1 } },
-	{ 0x0600091F, { 193, 3 } },
-	{ 0x060009B2, { 196, 2 } },
-	{ 0x060009B3, { 198, 5 } },
-	{ 0x060009C7, { 203, 2 } },
-	{ 0x060009E0, { 205, 2 } },
-	{ 0x060009E1, { 207, 5 } },
-	{ 0x060009E2, { 212, 2 } },
-	{ 0x060009E4, { 214, 1 } },
-	{ 0x060009E6, { 215, 2 } },
-	{ 0x060009E8, { 217, 6 } },
-	{ 0x060009E9, { 223, 1 } },
-	{ 0x060009EA, { 224, 1 } },
-	{ 0x060009EB, { 225, 1 } },
-	{ 0x060009ED, { 226, 1 } },
-	{ 0x060009EE, { 227, 2 } },
-	{ 0x060009EF, { 229, 2 } },
-	{ 0x060009F0, { 231, 1 } },
-	{ 0x060009F1, { 232, 2 } },
-	{ 0x060009F3, { 234, 2 } },
-	{ 0x060009F4, { 236, 10 } },
-	{ 0x060009F5, { 246, 13 } },
-	{ 0x060009F6, { 259, 1 } },
-	{ 0x060009F7, { 260, 2 } },
-	{ 0x060009F8, { 262, 1 } },
-	{ 0x060009F9, { 263, 2 } },
-	{ 0x060009FA, { 265, 1 } },
-	{ 0x060009FB, { 266, 1 } },
+	{ 0x0600071A, { 151, 2 } },
+	{ 0x06000841, { 186, 2 } },
+	{ 0x06000842, { 188, 2 } },
+	{ 0x0600089B, { 190, 2 } },
+	{ 0x060008A8, { 192, 1 } },
+	{ 0x060008FC, { 193, 1 } },
+	{ 0x06000925, { 194, 3 } },
+	{ 0x060009B8, { 197, 2 } },
+	{ 0x060009B9, { 199, 5 } },
+	{ 0x060009CD, { 204, 4 } },
+	{ 0x060009E6, { 208, 2 } },
+	{ 0x060009E7, { 210, 5 } },
+	{ 0x060009E8, { 215, 2 } },
+	{ 0x060009E9, { 217, 1 } },
+	{ 0x060009EA, { 218, 1 } },
+	{ 0x060009EC, { 219, 2 } },
+	{ 0x060009ED, { 221, 1 } },
+	{ 0x060009EE, { 222, 7 } },
+	{ 0x060009EF, { 229, 1 } },
+	{ 0x060009F0, { 230, 1 } },
+	{ 0x060009F1, { 231, 3 } },
+	{ 0x060009F3, { 234, 1 } },
+	{ 0x060009F4, { 235, 2 } },
+	{ 0x060009F5, { 237, 2 } },
+	{ 0x060009F6, { 239, 1 } },
+	{ 0x060009F7, { 240, 2 } },
+	{ 0x060009F9, { 242, 2 } },
+	{ 0x060009FA, { 244, 10 } },
+	{ 0x060009FB, { 254, 13 } },
 	{ 0x060009FC, { 267, 1 } },
-	{ 0x060009FD, { 268, 1 } },
-	{ 0x060009FE, { 269, 1 } },
-	{ 0x060009FF, { 270, 3 } },
-	{ 0x06000A01, { 273, 5 } },
-	{ 0x06000A02, { 278, 2 } },
-	{ 0x06000A03, { 280, 2 } },
-	{ 0x06000A04, { 282, 2 } },
+	{ 0x060009FD, { 268, 2 } },
+	{ 0x060009FE, { 270, 1 } },
+	{ 0x060009FF, { 271, 2 } },
+	{ 0x06000A00, { 273, 1 } },
+	{ 0x06000A01, { 274, 1 } },
+	{ 0x06000A02, { 275, 1 } },
+	{ 0x06000A03, { 276, 1 } },
+	{ 0x06000A04, { 277, 1 } },
+	{ 0x06000A05, { 278, 3 } },
+	{ 0x06000A07, { 281, 5 } },
+	{ 0x06000A08, { 286, 2 } },
+	{ 0x06000A09, { 288, 2 } },
+	{ 0x06000A0A, { 290, 2 } },
 };
 extern const uint32_t g_rgctx_NativeArray_1_get_IsCreated_m711D2E2AD9977FF554FEA7AD79629AD5F8D295C2;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t98DA5FE1672422B7B96AFD293609C242AB078325_m9EC4DB03FCDD7C99EC0CB61BD0312E51588CAAC5;
@@ -10725,6 +10743,7 @@ extern const uint32_t g_rgctx_Enumerator_MoveNext_mB97B0BB80A7BDB146C146AC0F00F9
 extern const uint32_t g_rgctx_Enumerator_t30F85FE2570D45CC7AEACA1838B9CB63EE86DC60;
 extern const Il2CppRGCTXConstrainedData g_rgctx_Enumerator_t30F85FE2570D45CC7AEACA1838B9CB63EE86DC60_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7;
 extern const uint32_t g_rgctx_Dictionary_2_Clear_m28A6E35EFC8735FD1E5030B54C74D2F8915656C0;
+extern const uint32_t g_rgctx_EntityJointMonitorBase_1_get_LogScope_m04485B4DB0D63DFB07B60E12AD86F4B767460564;
 extern const uint32_t g_rgctx_EntityJointMonitorBase_1_CreateNewJointData_mD76582E8C668A11DE6C386AD5C78205706914804;
 extern const uint32_t g_rgctx_Dictionary_2_ContainsKey_m5E65EBE73B8EC19F4FF105D30570A10248931390;
 extern const uint32_t g_rgctx_Dictionary_2_Add_m760C21F7A608C6E09C7F31BD8AD18246FB406258;
@@ -10755,7 +10774,9 @@ extern const uint32_t g_rgctx_ExtensionEntry_1_t14DD593045A505987D80C0C4D3BE9588
 extern const uint32_t g_rgctx_ExtensionEntry_1__ctor_m42FA97474CED6F66C44D8DDBA4AFA1CFF3163A1C;
 extern const uint32_t g_rgctx_List_1_tE352B726ABFFE3975BEB13E7319F9B0DDB951496;
 extern const uint32_t g_rgctx_List_1_Add_m68FA127E5A6FC38ED68234A481EA76298FDAF738;
+extern const uint32_t g_rgctx_T_tB9787930462E94D881FFB972F7F304A6CD3E2AB8;
 extern const uint32_t g_rgctx_List_1_t2D4ABA89BECBBF780C565B647F3C205CB301D4B0;
+extern const uint32_t g_rgctx_List_1_Contains_m9DFBEDFF587AF35CFC4BBAE13C91B14AB4650B54;
 extern const uint32_t g_rgctx_List_1_Add_m8D62EC2CDF9D9C6544F4AF2D3D539010136CC242;
 extern const uint32_t g_rgctx_Array_Empty_TisT_t3176E40ACCE65051E1D82F8BC16A2C1EFD5B8DFD_m27972AC5C080E5F0ECD108D40F846C3A67DBFF01;
 extern const uint32_t g_rgctx_OvrAvatarHelperExtensions_ToArray_TisT_t3176E40ACCE65051E1D82F8BC16A2C1EFD5B8DFD_m43AFD212717F7428B6716E84BDA8B136ADAC78F6;
@@ -10766,10 +10787,13 @@ extern const uint32_t g_rgctx_TU5BU5D_tFC8F2E364E0A098E29CDC28AED2FA98AFA48EE26;
 extern const uint32_t g_rgctx_HashSet_1_CopyTo_mDEB5348B4695E6005655E5FDDAF9F6646D9464FE;
 extern const uint32_t g_rgctx_UnsafeUtility_SizeOf_TisT_t511C6CE13D8E9943CD5662323489C30330CC38C5_mFD8BC2EAD5BFEFA75B7436C5870B395526824AF1;
 extern const uint32_t g_rgctx_OvrAvatarHelperExtensions_GetBufferSize_TisT_t511C6CE13D8E9943CD5662323489C30330CC38C5_mD571D615B270E7F6349BD85AD26470B4AF6591D2;
+extern const uint32_t g_rgctx_UnsafeUtility_SizeOf_TisT_t6BBCA7F4D547AFF6F7E65DCC7092A36FD4770566_m1C3691C17CF3BEE644D0D9596A50D4452C16D51A;
 extern const uint32_t g_rgctx_OvrAvatarHelperExtensions_GetBufferSize_TisT_tA3CFA4D17BEB09FA593EA4CF7F878D1E3F75B300_m2993603E3B15159E937F816325B8BD96757B0158;
 extern const uint32_t g_rgctx_T_tB21B8031D4BE9F9E3181E03F8D7008C9D0F4A9D3;
 extern const uint32_t g_rgctx_OvrAvatarHelperExtensions_GetEnumBufferSize_TisT_tB21B8031D4BE9F9E3181E03F8D7008C9D0F4A9D3_m841255292AAF8A59F9E488F1D1AA7F1A00F8D6B5;
+extern const uint32_t g_rgctx_T_tF777AE7EB9BA41EAC6991EB61CC1BE878B1497CB;
 extern const uint32_t g_rgctx_HashSet_1_tD0093E1176B0616854D2A2A0D28180BC6AC2B425;
+extern const uint32_t g_rgctx_HashSet_1_get_Count_mD50AADB3892C89F46D22E8D5F3C53F89F18EFBFB;
 extern const uint32_t g_rgctx_HashSet_1_GetEnumerator_m4306A60FD5DFA0DFF2504E66DA9E4F6A050FE738;
 extern const uint32_t g_rgctx_Enumerator_get_Current_mB2487DE20E629C2BB4E8D2AAEC443D67A419D017;
 extern const uint32_t g_rgctx_Enumerator_MoveNext_mABF81D06128A27E7D9F5DA7E548E810F8A76C02B;
@@ -10777,6 +10801,8 @@ extern const uint32_t g_rgctx_Enumerator_tCE0AACFF57702EE35AC01F26757F1E68F6308E
 extern const Il2CppRGCTXConstrainedData g_rgctx_Enumerator_tCE0AACFF57702EE35AC01F26757F1E68F6308E31_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_tC255A9D6EBB4FFAAF6B17E850D248A90A254B63E_mA95B55801C79528ECB5A03CA1479579F932D9FE1;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t82A3635CC2C3D602B4E1AA47909AE3CBAFE8CEA0_m26327D5E7C18DD1609B67F35781EC0A1CC8382CF;
+extern const uint32_t g_rgctx_UnsafeUtility_SizeOf_TisCastT_tDDCE3E61FC76BF8258F24BACFC477D59C7C16DAA_m4AE8660B7AC8A966CFBD05322A37F121F0B8E356;
+extern const uint32_t g_rgctx_UnsafeUtility_SizeOf_TisT_t483AD262DD2B257C0A5464462505A017BFD500A7_mBDADC433B79ADC66D69426D8243F049BC556CB0A;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t483AD262DD2B257C0A5464462505A017BFD500A7_m140C164BC68C2F2BE527B64D30CE1B2A1157ACAF;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisT_t25B1785A6BADB70E145262F9602AB4DD5EBBD36F_m251A7C52FA6135743E42AA37CAD7FDA8399C0D8D;
 extern const uint32_t g_rgctx_NativeArray_1_get_IsCreated_m752E92C1A1634DA7E946FF5DB790072C32E89E28;
@@ -10843,7 +10869,7 @@ extern const uint32_t g_rgctx_NativeArray_1_ToArray_mAEC0F99CD25DEF321B288289270
 extern const uint32_t g_rgctx_OvrAvatarHelperExtensions_GetDisposeSafe_TisT_t8368F1ECD8804392C70ABA2E138BE67E62EC1296_mD6FBC02D2FB86B1F8C5F9BD7270531BB6B7AA7EB;
 extern const uint32_t g_rgctx_NativeArray_1_GetEnumerator_m767B1D2BFCEE904C6A260D3BCABD381AD28204D8;
 extern const uint32_t g_rgctx_Enumerator_t66F3AC7309CA70F95912040B8EBDD3B5B7E72DE5;
-static const Il2CppRGCTXDefinition s_rgctxValues[291] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[299] = 
 {
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArray_1_get_IsCreated_m711D2E2AD9977FF554FEA7AD79629AD5F8D295C2 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t98DA5FE1672422B7B96AFD293609C242AB078325_m9EC4DB03FCDD7C99EC0CB61BD0312E51588CAAC5 },
@@ -11018,6 +11044,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[291] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t30F85FE2570D45CC7AEACA1838B9CB63EE86DC60 },
 	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_Enumerator_t30F85FE2570D45CC7AEACA1838B9CB63EE86DC60_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_Clear_m28A6E35EFC8735FD1E5030B54C74D2F8915656C0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EntityJointMonitorBase_1_get_LogScope_m04485B4DB0D63DFB07B60E12AD86F4B767460564 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EntityJointMonitorBase_1_CreateNewJointData_mD76582E8C668A11DE6C386AD5C78205706914804 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_ContainsKey_m5E65EBE73B8EC19F4FF105D30570A10248931390 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_Add_m760C21F7A608C6E09C7F31BD8AD18246FB406258 },
@@ -11048,7 +11075,9 @@ static const Il2CppRGCTXDefinition s_rgctxValues[291] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ExtensionEntry_1__ctor_m42FA97474CED6F66C44D8DDBA4AFA1CFF3163A1C },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_tE352B726ABFFE3975BEB13E7319F9B0DDB951496 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_m68FA127E5A6FC38ED68234A481EA76298FDAF738 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_tB9787930462E94D881FFB972F7F304A6CD3E2AB8 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t2D4ABA89BECBBF780C565B647F3C205CB301D4B0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Contains_m9DFBEDFF587AF35CFC4BBAE13C91B14AB4650B54 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_m8D62EC2CDF9D9C6544F4AF2D3D539010136CC242 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Array_Empty_TisT_t3176E40ACCE65051E1D82F8BC16A2C1EFD5B8DFD_m27972AC5C080E5F0ECD108D40F846C3A67DBFF01 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_OvrAvatarHelperExtensions_ToArray_TisT_t3176E40ACCE65051E1D82F8BC16A2C1EFD5B8DFD_m43AFD212717F7428B6716E84BDA8B136ADAC78F6 },
@@ -11059,10 +11088,13 @@ static const Il2CppRGCTXDefinition s_rgctxValues[291] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_HashSet_1_CopyTo_mDEB5348B4695E6005655E5FDDAF9F6646D9464FE },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnsafeUtility_SizeOf_TisT_t511C6CE13D8E9943CD5662323489C30330CC38C5_mFD8BC2EAD5BFEFA75B7436C5870B395526824AF1 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_OvrAvatarHelperExtensions_GetBufferSize_TisT_t511C6CE13D8E9943CD5662323489C30330CC38C5_mD571D615B270E7F6349BD85AD26470B4AF6591D2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnsafeUtility_SizeOf_TisT_t6BBCA7F4D547AFF6F7E65DCC7092A36FD4770566_m1C3691C17CF3BEE644D0D9596A50D4452C16D51A },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_OvrAvatarHelperExtensions_GetBufferSize_TisT_tA3CFA4D17BEB09FA593EA4CF7F878D1E3F75B300_m2993603E3B15159E937F816325B8BD96757B0158 },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_tB21B8031D4BE9F9E3181E03F8D7008C9D0F4A9D3 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_OvrAvatarHelperExtensions_GetEnumBufferSize_TisT_tB21B8031D4BE9F9E3181E03F8D7008C9D0F4A9D3_m841255292AAF8A59F9E488F1D1AA7F1A00F8D6B5 },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_tF777AE7EB9BA41EAC6991EB61CC1BE878B1497CB },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_HashSet_1_tD0093E1176B0616854D2A2A0D28180BC6AC2B425 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_HashSet_1_get_Count_mD50AADB3892C89F46D22E8D5F3C53F89F18EFBFB },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_HashSet_1_GetEnumerator_m4306A60FD5DFA0DFF2504E66DA9E4F6A050FE738 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_mB2487DE20E629C2BB4E8D2AAEC443D67A419D017 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_MoveNext_mABF81D06128A27E7D9F5DA7E548E810F8A76C02B },
@@ -11070,6 +11102,8 @@ static const Il2CppRGCTXDefinition s_rgctxValues[291] =
 	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_Enumerator_tCE0AACFF57702EE35AC01F26757F1E68F6308E31_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_tC255A9D6EBB4FFAAF6B17E850D248A90A254B63E_mA95B55801C79528ECB5A03CA1479579F932D9FE1 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t82A3635CC2C3D602B4E1AA47909AE3CBAFE8CEA0_m26327D5E7C18DD1609B67F35781EC0A1CC8382CF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnsafeUtility_SizeOf_TisCastT_tDDCE3E61FC76BF8258F24BACFC477D59C7C16DAA_m4AE8660B7AC8A966CFBD05322A37F121F0B8E356 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnsafeUtility_SizeOf_TisT_t483AD262DD2B257C0A5464462505A017BFD500A7_mBDADC433B79ADC66D69426D8243F049BC556CB0A },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArrayUnsafeUtility_GetUnsafePtr_TisT_t483AD262DD2B257C0A5464462505A017BFD500A7_m140C164BC68C2F2BE527B64D30CE1B2A1157ACAF },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisT_t25B1785A6BADB70E145262F9602AB4DD5EBBD36F_m251A7C52FA6135743E42AA37CAD7FDA8399C0D8D },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NativeArray_1_get_IsCreated_m752E92C1A1634DA7E946FF5DB790072C32E89E28 },
@@ -11141,16 +11175,16 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Oculus_AvatarSDK2_CodeGenModule;
 const Il2CppCodeGenModule g_Oculus_AvatarSDK2_CodeGenModule = 
 {
 	"Oculus.AvatarSDK2.dll",
-	2626,
+	2632,
 	s_methodPointers,
-	95,
+	91,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	13,
 	s_reversePInvokeIndices,
-	70,
+	72,
 	s_rgctxIndices,
-	291,
+	299,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,

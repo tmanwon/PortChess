@@ -204,6 +204,8 @@ struct DataView_t882C19B1455AFCE770D60A43A690096801824A50;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 // System.Text.Encoding
 struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
+// System.EventHandler
+struct EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82;
 // System.ComponentModel.EventHandlerList
 struct EventHandlerList_t057D7531265C1DF014C8C83AF251E908D1A0B1C8;
 // System.Exception
@@ -1463,28 +1465,30 @@ struct DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07  : public MarshalByVa
 	DataTableNewRowEventHandler_t874CE0332A55E1F8A8CF67458AF71CE73975D827* ____onTableNewRowDelegate_67;
 	// System.ComponentModel.PropertyChangedEventHandler System.Data.DataTable::_onPropertyChangingDelegate
 	PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ____onPropertyChangingDelegate_68;
+	// System.EventHandler System.Data.DataTable::_onInitialized
+	EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* ____onInitialized_69;
 	// System.Data.DataRowBuilder System.Data.DataTable::_rowBuilder
-	DataRowBuilder_t8EFCEBE1AE55392AAE53DA15D2B334C56BB14566* ____rowBuilder_69;
+	DataRowBuilder_t8EFCEBE1AE55392AAE53DA15D2B334C56BB14566* ____rowBuilder_70;
 	// System.Collections.Generic.List`1<System.Data.DataView> System.Data.DataTable::_delayedViews
-	List_1_t1CDDD861715A83BE1EF98CE75870A483BB5ECC93* ____delayedViews_70;
+	List_1_t1CDDD861715A83BE1EF98CE75870A483BB5ECC93* ____delayedViews_71;
 	// System.Collections.Generic.List`1<System.Data.DataViewListener> System.Data.DataTable::_dataViewListeners
-	List_1_t73C786BB01E05FA7B2ACAA21DA57002B4503C95F* ____dataViewListeners_71;
+	List_1_t73C786BB01E05FA7B2ACAA21DA57002B4503C95F* ____dataViewListeners_72;
 	// System.Collections.Hashtable System.Data.DataTable::_rowDiffId
-	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____rowDiffId_72;
+	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____rowDiffId_73;
 	// System.Threading.ReaderWriterLockSlim System.Data.DataTable::_indexesLock
-	ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* ____indexesLock_73;
+	ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* ____indexesLock_74;
 	// System.Int32 System.Data.DataTable::_ukColumnPositionForInference
-	int32_t ____ukColumnPositionForInference_74;
+	int32_t ____ukColumnPositionForInference_75;
 	// System.Data.SerializationFormat System.Data.DataTable::_remotingFormat
-	int32_t ____remotingFormat_75;
+	int32_t ____remotingFormat_76;
 	// System.Int32 System.Data.DataTable::_objectID
-	int32_t ____objectID_77;
+	int32_t ____objectID_78;
 };
 
 struct DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_StaticFields
 {
 	// System.Int32 System.Data.DataTable::s_objectTypeCount
-	int32_t ___s_objectTypeCount_76;
+	int32_t ___s_objectTypeCount_77;
 };
 
 // System.Delegate
@@ -4639,7 +4643,7 @@ IL_0047:
 		RuntimeObject* L_14 = ___value1;
 		NullCheck(L_13);
 		bool L_15;
-		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
+		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
 		if (L_15)
 		{
 			goto IL_005b;
@@ -5193,7 +5197,7 @@ IL_0025:
 		Type_t* L_6 = __this->___type_0;
 		NullCheck(L_6);
 		FieldInfo_t* L_7;
-		L_7 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_6, _stringLiteralDA4BE0F963380DB493604E9CA0B0B54F040F58C9, ((int32_t)24));
+		L_7 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(85 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_6, _stringLiteralDA4BE0F963380DB493604E9CA0B0B54F040F58C9, ((int32_t)24));
 		V_1 = L_7;
 		FieldInfo_t* L_8 = V_1;
 		bool L_9;

@@ -1236,6 +1236,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SymmetricAlgorithm_get_Ke
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SymmetricAlgorithm_set_KeySize_m2C9A68250B608A9B36DB5A9ED1DE887D9458BDF2 (SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.Int32 System.Security.Cryptography.SymmetricAlgorithm::get_FeedbackSize()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SymmetricAlgorithm_get_FeedbackSize_mCDBCAEF6719C9CA268BAFFC9FF31B0660223B8FF_inline (SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* __this, const RuntimeMethod* method) ;
+// System.Void System.Security.Cryptography.SymmetricAlgorithm::set_FeedbackSize(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SymmetricAlgorithm_set_FeedbackSize_m26EB3BB444518C19FEF3C0231A81330449A5AC2B (SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SymmetricAlgorithm_get_Mode_m83E9F98E0C00F46C4383033150E4CD297D6F35C1_inline (SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* __this, const RuntimeMethod* method) ;
 // System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Mode(System.Security.Cryptography.CipherMode)
@@ -1468,9 +1470,9 @@ IL_001d:
 		VirtualActionInvoker1< int32_t >::Invoke(7 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_BlockSize(System.Int32) */, L_4, L_5);
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_6 = __this->___m_rijndael_11;
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Security.Cryptography.SymmetricAlgorithm::get_KeySize() */, __this);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Security.Cryptography.SymmetricAlgorithm::get_KeySize() */, __this);
 		NullCheck(L_6);
-		VirtualActionInvoker1< int32_t >::Invoke(15 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_KeySize(System.Int32) */, L_6, L_7);
+		VirtualActionInvoker1< int32_t >::Invoke(17 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_KeySize(System.Int32) */, L_6, L_7);
 		return;
 	}
 }
@@ -1485,6 +1487,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesManaged_get_FeedbackSize_m64E56285
 		return L_1;
 	}
 }
+// System.Void System.Security.Cryptography.AesManaged::set_FeedbackSize(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_set_FeedbackSize_mD4FB9442DD139AFD47C5BEE61F6A7BD827EE645D (AesManaged_t153AF8C6AF037AF4614B15A04CAD48A7F7DA0819* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
+		int32_t L_1 = ___value0;
+		NullCheck(L_0);
+		VirtualActionInvoker1< int32_t >::Invoke(9 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_FeedbackSize(System.Int32) */, L_0, L_1);
+		return;
+	}
+}
 // System.Byte[] System.Security.Cryptography.AesManaged::get_IV()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* AesManaged_get_IV_m3CF0BDF7CC0EA199B5EE57F2CBD97404842C0D0B (AesManaged_t153AF8C6AF037AF4614B15A04CAD48A7F7DA0819* __this, const RuntimeMethod* method) 
 {
@@ -1492,7 +1505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
-		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(9 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, L_0);
+		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(10 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, L_0);
 		return L_1;
 	}
 }
@@ -1503,7 +1516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_set_IV_m7063E5F586634E8B2C1DB
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___value0;
 		NullCheck(L_0);
-		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(10 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_IV(System.Byte[]) */, L_0, L_1);
+		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(11 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_IV(System.Byte[]) */, L_0, L_1);
 		return;
 	}
 }
@@ -1514,7 +1527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
-		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(11 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, L_0);
+		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(12 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, L_0);
 		return L_1;
 	}
 }
@@ -1525,7 +1538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_set_Key_m4FC5EDB90F6003EE7264
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___value0;
 		NullCheck(L_0);
-		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(12 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Key(System.Byte[]) */, L_0, L_1);
+		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(13 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Key(System.Byte[]) */, L_0, L_1);
 		return;
 	}
 }
@@ -1536,7 +1549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesManaged_get_KeySize_mD9766E2E53FB1
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Security.Cryptography.SymmetricAlgorithm::get_KeySize() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Security.Cryptography.SymmetricAlgorithm::get_KeySize() */, L_0);
 		return L_1;
 	}
 }
@@ -1547,7 +1560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_set_KeySize_m2E4BE0748CCF8473
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		int32_t L_1 = ___value0;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int32_t >::Invoke(15 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_KeySize(System.Int32) */, L_0, L_1);
+		VirtualActionInvoker1< int32_t >::Invoke(17 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_KeySize(System.Int32) */, L_0, L_1);
 		return;
 	}
 }
@@ -1558,7 +1571,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesManaged_get_Mode_m3B58BE00374E135C
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_0);
 		return L_1;
 	}
 }
@@ -1595,7 +1608,7 @@ IL_0018:
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_4 = __this->___m_rijndael_11;
 		int32_t L_5 = ___value0;
 		NullCheck(L_4);
-		VirtualActionInvoker1< int32_t >::Invoke(17 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Mode(System.Security.Cryptography.CipherMode) */, L_4, L_5);
+		VirtualActionInvoker1< int32_t >::Invoke(19 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Mode(System.Security.Cryptography.CipherMode) */, L_4, L_5);
 		return;
 	}
 }
@@ -1606,7 +1619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesManaged_get_Padding_mF366F82D52635
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_0);
 		return L_1;
 	}
 }
@@ -1617,7 +1630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_set_Padding_m9D52DA6A45835F49
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		int32_t L_1 = ___value0;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int32_t >::Invoke(19 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Padding(System.Security.Cryptography.PaddingMode) */, L_0, L_1);
+		VirtualActionInvoker1< int32_t >::Invoke(21 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::set_Padding(System.Security.Cryptography.PaddingMode) */, L_0, L_1);
 		return;
 	}
 }
@@ -1628,7 +1641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesManaged_CreateDecryptor_m68
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(22 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor() */, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(24 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor() */, L_0);
 		return L_1;
 	}
 }
@@ -1702,7 +1715,7 @@ IL_0055:
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = ___iv1;
 		NullCheck(L_11);
 		RuntimeObject* L_14;
-		L_14 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor(System.Byte[],System.Byte[]) */, L_11, L_12, L_13);
+		L_14 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(25 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor(System.Byte[],System.Byte[]) */, L_11, L_12, L_13);
 		return L_14;
 	}
 }
@@ -1713,7 +1726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesManaged_CreateEncryptor_mBC
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(20 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor() */, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(22 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor() */, L_0);
 		return L_1;
 	}
 }
@@ -1787,7 +1800,7 @@ IL_0055:
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = ___iv1;
 		NullCheck(L_11);
 		RuntimeObject* L_14;
-		L_14 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(21 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor(System.Byte[],System.Byte[]) */, L_11, L_12, L_13);
+		L_14 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor(System.Byte[],System.Byte[]) */, L_11, L_12, L_13);
 		return L_14;
 	}
 }
@@ -1848,7 +1861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_GenerateIV_m3B6E3EEFAA38CEF03
 	{
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(25 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::GenerateIV() */, L_0);
+		VirtualActionInvoker0::Invoke(27 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::GenerateIV() */, L_0);
 		return;
 	}
 }
@@ -1858,7 +1871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesManaged_GenerateKey_m6AC884BFD7DEA4A2
 	{
 		RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39* L_0 = __this->___m_rijndael_11;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(24 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::GenerateKey() */, L_0);
+		VirtualActionInvoker0::Invoke(26 /* System.Void System.Security.Cryptography.SymmetricAlgorithm::GenerateKey() */, L_0);
 		return;
 	}
 }
@@ -1921,7 +1934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesCryptoServiceProvider_Creat
 	}
 	{
 		int32_t L_0;
-		L_0 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, __this);
+		L_0 = VirtualFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, __this);
 		if ((!(((uint32_t)L_0) == ((uint32_t)4))))
 		{
 			goto IL_001e;
@@ -1963,7 +1976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesCryptoServiceProvider_Creat
 	}
 	{
 		int32_t L_0;
-		L_0 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, __this);
+		L_0 = VirtualFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, __this);
 		if ((!(((uint32_t)L_0) == ((uint32_t)4))))
 		{
 			goto IL_001e;
@@ -2057,6 +2070,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesCryptoServiceProvider_get_Feedback
 		return L_0;
 	}
 }
+// System.Void System.Security.Cryptography.AesCryptoServiceProvider::set_FeedbackSize(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AesCryptoServiceProvider_set_FeedbackSize_m37F3AF5C2439316CE965CE37845C764AD9AC524A (AesCryptoServiceProvider_t3D102EBDD7CD9BAE2B27F7A07524FBD15A4F6BD6* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		SymmetricAlgorithm_set_FeedbackSize_m26EB3BB444518C19FEF3C0231A81330449A5AC2B(__this, L_0, NULL);
+		return;
+	}
+}
 // System.Security.Cryptography.CipherMode System.Security.Cryptography.AesCryptoServiceProvider::get_Mode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AesCryptoServiceProvider_get_Mode_m2C4AF6018029680736D3CC1677844A5E07C2C8AC (AesCryptoServiceProvider_t3D102EBDD7CD9BAE2B27F7A07524FBD15A4F6BD6* __this, const RuntimeMethod* method) 
 {
@@ -2113,11 +2135,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesCryptoServiceProvider_Creat
 {
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0;
-		L_0 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(11 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, __this);
+		L_0 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(12 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, __this);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
-		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(9 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, __this);
+		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(10 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, __this);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor(System.Byte[],System.Byte[]) */, __this, L_0, L_1);
+		L_2 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(25 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateDecryptor(System.Byte[],System.Byte[]) */, __this, L_0, L_1);
 		return L_2;
 	}
 }
@@ -2126,11 +2148,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AesCryptoServiceProvider_Creat
 {
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0;
-		L_0 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(11 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, __this);
+		L_0 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(12 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_Key() */, __this);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
-		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(9 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, __this);
+		L_1 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(10 /* System.Byte[] System.Security.Cryptography.SymmetricAlgorithm::get_IV() */, __this);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(21 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor(System.Byte[],System.Byte[]) */, __this, L_0, L_1);
+		L_2 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Security.Cryptography.ICryptoTransform System.Security.Cryptography.SymmetricAlgorithm::CreateEncryptor(System.Byte[],System.Byte[]) */, __this, L_0, L_1);
 		return L_2;
 	}
 }

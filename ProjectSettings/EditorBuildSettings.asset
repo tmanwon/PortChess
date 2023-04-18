@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChessEnvironment.unity
     guid: 42c2991852dfd4d29bfc482708e8923e
-  - enabled: 0
-    path: Assets/Oculus/Avatar2/Example/Scenes/MirrorScene/MirrorScene.unity
-    guid: 9f2e1693a4f24bc498477b3dfeb166aa
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e6049fbf08bb6453fbdc8c5cdf291e3b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f889403df89214081a6dedbedc36a5f8, type: 2}

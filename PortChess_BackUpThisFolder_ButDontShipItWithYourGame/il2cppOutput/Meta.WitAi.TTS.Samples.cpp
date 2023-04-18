@@ -1207,7 +1207,7 @@ inline TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* Object_FindObject
 // System.Void Meta.WitAi.TTS.Samples.TTSCacheToggle::RefreshLocation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_RefreshLocation_m398386BE76BD8FAB1BDA9D4E0E0C4E97384FE4C1 (TTSCacheToggle_tFAFF8B76956969D50DFD25D01C0405D537933BC9* __this, const RuntimeMethod* method) ;
 // UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::get_onClick()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityAction::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
@@ -1237,13 +1237,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606
 // System.Void Meta.WitAi.TTS.Samples.TTSSpeakerInput::RefreshButtons()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_RefreshButtons_mB9BA66FD8B2A8C75A24A04A4F7EEE0EF001789FE (TTSSpeakerInput_tB5AC52F1FF0752F2A719C407055AA6C32E410CE9* __this, const RuntimeMethod* method) ;
 // System.String UnityEngine.UI.InputField::get_text()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704 (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
 // System.Void Meta.WitAi.TTS.Utilities.TTSSpeaker::Speak(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeaker_Speak_m0ABA1A70FAF37002E979AF866EDB7BE48C79CACD (TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* __this, String_t* ___textToSpeak0, const RuntimeMethod* method) ;
 // System.Void Meta.WitAi.TTS.Utilities.TTSSpeaker::SpeakQueued(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeaker_SpeakQueued_mD0D8D308BD6058209262E1F6A444A9D173BBB7AC (TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* __this, String_t* ___textToSpeak0, const RuntimeMethod* method) ;
 // UnityEngine.UI.Graphic UnityEngine.UI.InputField::get_placeholder()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* InputField_get_placeholder_m84C2F2E414B8A03B372C7CEB3C97A2AE72F3A39F_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* InputField_get_placeholder_m84C2F2E414B8A03B372C7CEB3C97A2AE72F3A39F (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.UI.Text>()
 inline Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -1319,40 +1319,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_OnEnable_m4BB182CD11683D0
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (_diskCache == null)
 		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_0 = __this->____diskCache_4;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_0019;
+			goto IL_001e;
 		}
 	}
 	{
 		// _diskCache = GameObject.FindObjectOfType<TTSDiskCache>();
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_2;
-		L_2 = Object_FindObjectOfType_TisTTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2_m8FB289C8FF89BE44A49C96321A8790696E8D37CF(Object_FindObjectOfType_TisTTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2_m8FB289C8FF89BE44A49C96321A8790696E8D37CF_RuntimeMethod_var);
-		__this->____diskCache_4 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____diskCache_4), (void*)L_2);
+		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_3;
+		L_3 = Object_FindObjectOfType_TisTTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2_m8FB289C8FF89BE44A49C96321A8790696E8D37CF(Object_FindObjectOfType_TisTTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2_m8FB289C8FF89BE44A49C96321A8790696E8D37CF_RuntimeMethod_var);
+		__this->____diskCache_4 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____diskCache_4), (void*)L_3);
 	}
 
-IL_0019:
+IL_001e:
 	{
 		// RefreshLocation();
 		TTSCacheToggle_RefreshLocation_m398386BE76BD8FAB1BDA9D4E0E0C4E97384FE4C1(__this, NULL);
 		// _button.onClick.AddListener(ToggleCache);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->____button_6;
-		NullCheck(L_3);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_4;
-		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_3, NULL);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_5 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		NullCheck(L_5);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_5, __this, (intptr_t)((void*)TTSCacheToggle_ToggleCache_m12ED4A95681CC396660F71736590891731A93F40_RuntimeMethod_var), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_4 = __this->____button_6;
 		NullCheck(L_4);
-		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_4, L_5, NULL);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_5;
+		L_5 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_4, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_6 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_6, __this, (intptr_t)((void*)TTSCacheToggle_ToggleCache_m12ED4A95681CC396660F71736590891731A93F40_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_5, L_6, NULL);
 		// }
 		return;
 	}
@@ -1366,6 +1369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TTSCacheToggle_GetCurrentCacheLocatio
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	int32_t G_B3_0 = 0;
 	{
 		// private TTSDiskCacheLocation GetCurrentCacheLocation() => _diskCache == null ? TTSDiskCacheLocation.Stream : _diskCache.DiskCacheDefaultSettings.DiskCacheLocation;
 		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_0 = __this->____diskCache_4;
@@ -1374,7 +1378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TTSCacheToggle_GetCurrentCacheLocatio
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (L_1)
 		{
-			goto IL_001f;
+			goto IL_0020;
 		}
 	}
 	{
@@ -1384,25 +1388,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TTSCacheToggle_GetCurrentCacheLocatio
 		L_3 = TTSDiskCache_get_DiskCacheDefaultSettings_mFEB9E0BFBDC93DAFBACF81CCBD7750AA73E11971_inline(L_2, NULL);
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___DiskCacheLocation_0;
-		return L_4;
+		G_B3_0 = ((int32_t)(L_4));
+		goto IL_0021;
 	}
 
-IL_001f:
+IL_0020:
 	{
-		return (int32_t)(0);
+		G_B3_0 = 0;
+	}
+
+IL_0021:
+	{
+		return (int32_t)(G_B3_0);
 	}
 }
 // System.Void Meta.WitAi.TTS.Samples.TTSCacheToggle::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_Update_m36775E0B77E5453B7BF8312799D240B2F4CB8AF0 (TTSCacheToggle_tFAFF8B76956969D50DFD25D01C0405D537933BC9* __this, const RuntimeMethod* method) 
 {
+	bool V_0 = false;
 	{
 		// if (_cacheLocation != GetCurrentCacheLocation())
 		int32_t L_0 = __this->____cacheLocation_7;
 		int32_t L_1;
 		L_1 = TTSCacheToggle_GetCurrentCacheLocation_mB8E5DFFAB1D1A957F0E03AB8464F594ACF33C134(__this, NULL);
-		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		V_0 = (bool)((((int32_t)((((int32_t)L_0) == ((int32_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_0014;
+			goto IL_001f;
 		}
 	}
 	{
@@ -1410,7 +1423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_Update_m36775E0B77E5453B7
 		TTSCacheToggle_RefreshLocation_m398386BE76BD8FAB1BDA9D4E0E0C4E97384FE4C1(__this, NULL);
 	}
 
-IL_0014:
+IL_001f:
 	{
 		// }
 		return;
@@ -1459,7 +1472,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_OnDisable_m36DFA73E65C0F6
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->____button_6;
 		NullCheck(L_0);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_1;
-		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_0, NULL);
+		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_0, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_2 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)TTSCacheToggle_ToggleCache_m12ED4A95681CC396660F71736590891731A93F40_RuntimeMethod_var), NULL);
@@ -1473,81 +1486,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_OnDisable_m36DFA73E65C0F6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSCacheToggle_ToggleCache_m12ED4A95681CC396660F71736590891731A93F40 (TTSCacheToggle_tFAFF8B76956969D50DFD25D01C0405D537933BC9* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
 	{
 		// TTSDiskCacheLocation cacheLocation = GetCurrentCacheLocation();
 		int32_t L_0;
 		L_0 = TTSCacheToggle_GetCurrentCacheLocation_mB8E5DFFAB1D1A957F0E03AB8464F594ACF33C134(__this, NULL);
 		V_0 = L_0;
+		// switch (cacheLocation)
 		int32_t L_1 = V_0;
-		switch (L_1)
+		V_2 = L_1;
+		int32_t L_2 = V_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		switch (L_3)
 		{
 			case 0:
 			{
-				goto IL_001f;
+				goto IL_0024;
 			}
 			case 1:
 			{
-				goto IL_002b;
+				goto IL_0030;
 			}
 			case 2:
 			{
-				goto IL_0027;
+				goto IL_002c;
 			}
 			case 3:
 			{
-				goto IL_0023;
+				goto IL_0028;
 			}
 		}
 	}
 	{
-		goto IL_002b;
+		goto IL_0030;
 	}
 
-IL_001f:
+IL_0024:
 	{
 		// cacheLocation = TTSDiskCacheLocation.Temporary;
 		V_0 = 3;
 		// break;
-		goto IL_002d;
+		goto IL_0034;
 	}
 
-IL_0023:
+IL_0028:
 	{
 		// cacheLocation = TTSDiskCacheLocation.Persistent;
 		V_0 = 2;
 		// break;
-		goto IL_002d;
+		goto IL_0034;
 	}
 
-IL_0027:
+IL_002c:
 	{
 		// cacheLocation = TTSDiskCacheLocation.Preload;
 		V_0 = 1;
 		// break;
-		goto IL_002d;
+		goto IL_0034;
 	}
 
-IL_002b:
+IL_0030:
 	{
 		// cacheLocation = TTSDiskCacheLocation.Stream;
 		V_0 = 0;
+		// break;
+		goto IL_0034;
 	}
 
-IL_002d:
+IL_0034:
 	{
 		// _diskCache.DiskCacheDefaultSettings.DiskCacheLocation = cacheLocation;
-		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_2 = __this->____diskCache_4;
-		NullCheck(L_2);
-		TTSDiskCacheSettings_tB9D20D402A7386227ADC2A29BA87AE6F1774EE80* L_3;
-		L_3 = TTSDiskCache_get_DiskCacheDefaultSettings_mFEB9E0BFBDC93DAFBACF81CCBD7750AA73E11971_inline(L_2, NULL);
-		int32_t L_4 = V_0;
-		NullCheck(L_3);
-		L_3->___DiskCacheLocation_0 = L_4;
-		// TTSService.Instance.UnloadAll();
-		TTSService_t7DD4DD6DBB4E281054C4BBEF602772814245A57D* L_5;
-		L_5 = TTSService_get_Instance_m2AFDD22A8A5E433E2B13424DFD8DD36A1F9E6F68(NULL);
+		TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* L_4 = __this->____diskCache_4;
+		NullCheck(L_4);
+		TTSDiskCacheSettings_tB9D20D402A7386227ADC2A29BA87AE6F1774EE80* L_5;
+		L_5 = TTSDiskCache_get_DiskCacheDefaultSettings_mFEB9E0BFBDC93DAFBACF81CCBD7750AA73E11971_inline(L_4, NULL);
+		int32_t L_6 = V_0;
 		NullCheck(L_5);
-		TTSService_UnloadAll_m68FE5D7047E13F422277A0D374BC8640FB8EDC11(L_5, NULL);
+		L_5->___DiskCacheLocation_0 = L_6;
+		// TTSService.Instance.UnloadAll();
+		TTSService_t7DD4DD6DBB4E281054C4BBEF602772814245A57D* L_7;
+		L_7 = TTSService_get_Instance_m2AFDD22A8A5E433E2B13424DFD8DD36A1F9E6F68(NULL);
+		NullCheck(L_7);
+		TTSService_UnloadAll_m68FE5D7047E13F422277A0D374BC8640FB8EDC11(L_7, NULL);
 		// RefreshLocation();
 		TTSCacheToggle_RefreshLocation_m398386BE76BD8FAB1BDA9D4E0E0C4E97384FE4C1(__this, NULL);
 		// }
@@ -1583,7 +1605,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSErrorText_Update_mED02A9EA5CDD638EA5D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral623378871EFD071EE67F1698CC4581C5B10D22A0);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
+	bool V_0 = false;
+	String_t* V_1 = NULL;
+	bool V_2 = false;
+	bool V_3 = false;
 	{
 		// if (TTSService.Instance != null)
 		TTSService_t7DD4DD6DBB4E281054C4BBEF602772814245A57D* L_0;
@@ -1591,64 +1616,78 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSErrorText_Update_mED02A9EA5CDD638EA5D
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_0066;
+			goto IL_007b;
 		}
 	}
 	{
 		// string invalidError = TTSService.Instance.GetInvalidError();
-		TTSService_t7DD4DD6DBB4E281054C4BBEF602772814245A57D* L_2;
-		L_2 = TTSService_get_Instance_m2AFDD22A8A5E433E2B13424DFD8DD36A1F9E6F68(NULL);
-		NullCheck(L_2);
-		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String Meta.WitAi.TTS.TTSService::GetInvalidError() */, L_2);
-		V_0 = L_3;
+		TTSService_t7DD4DD6DBB4E281054C4BBEF602772814245A57D* L_3;
+		L_3 = TTSService_get_Instance_m2AFDD22A8A5E433E2B13424DFD8DD36A1F9E6F68(NULL);
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String Meta.WitAi.TTS.TTSService::GetInvalidError() */, L_3);
+		V_1 = L_4;
 		// if (!string.Equals(invalidError, _error))
-		String_t* L_4 = V_0;
-		String_t* L_5 = __this->____error_5;
-		bool L_6;
-		L_6 = String_Equals_m3354EFE6393BED8DD6E18F69BEA131AAADCC622D(L_4, L_5, NULL);
-		if (L_6)
+		String_t* L_5 = V_1;
+		String_t* L_6 = __this->____error_5;
+		bool L_7;
+		L_7 = String_Equals_m3354EFE6393BED8DD6E18F69BEA131AAADCC622D(L_5, L_6, NULL);
+		V_2 = (bool)((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
+		bool L_8 = V_2;
+		if (!L_8)
 		{
-			goto IL_0066;
+			goto IL_007a;
 		}
 	}
 	{
 		// _error = invalidError;
-		String_t* L_7 = V_0;
-		__this->____error_5 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____error_5), (void*)L_7);
+		String_t* L_9 = V_1;
+		__this->____error_5 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____error_5), (void*)L_9);
 		// if (string.IsNullOrEmpty(_error))
-		String_t* L_8 = __this->____error_5;
-		bool L_9;
-		L_9 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_8, NULL);
-		if (!L_9)
+		String_t* L_10 = __this->____error_5;
+		bool L_11;
+		L_11 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_10, NULL);
+		V_3 = L_11;
+		bool L_12 = V_3;
+		if (!L_12)
 		{
-			goto IL_004b;
+			goto IL_005b;
 		}
 	}
 	{
 		// _errorLabel.text = string.Empty;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->____errorLabel_4;
-		String_t* L_11 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
-		NullCheck(L_10);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, L_11);
-		return;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_13 = __this->____errorLabel_4;
+		String_t* L_14 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_13);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_13, L_14);
+		goto IL_0079;
 	}
 
-IL_004b:
+IL_005b:
 	{
 		// _errorLabel.text = $"TTS Service Error: {_error}";
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_12 = __this->____errorLabel_4;
-		String_t* L_13 = __this->____error_5;
-		String_t* L_14;
-		L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral623378871EFD071EE67F1698CC4581C5B10D22A0, L_13, NULL);
-		NullCheck(L_12);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_12, L_14);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_15 = __this->____errorLabel_4;
+		String_t* L_16 = __this->____error_5;
+		String_t* L_17;
+		L_17 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral623378871EFD071EE67F1698CC4581C5B10D22A0, L_16, NULL);
+		NullCheck(L_15);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_15, L_17);
 	}
 
-IL_0066:
+IL_0079:
+	{
+	}
+
+IL_007a:
+	{
+	}
+
+IL_007b:
 	{
 		// }
 		return;
@@ -1699,7 +1738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnEnable_m95890A80A68B4A
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->____stopButton_7;
 		NullCheck(L_0);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_1;
-		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_0, NULL);
+		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_0, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_2 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)TTSSpeakerInput_StopClick_m9ACC3361839C482CCB5F71CFDFFAB90D31EDC553_RuntimeMethod_var), NULL);
@@ -1709,7 +1748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnEnable_m95890A80A68B4A
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->____speakButton_8;
 		NullCheck(L_3);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_4;
-		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_3, NULL);
+		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_3, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_5 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_5, __this, (intptr_t)((void*)TTSSpeakerInput_SpeakClick_m6275F381EE597F002F75F7606B4B66F94D2C11A6_RuntimeMethod_var), NULL);
@@ -1719,7 +1758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnEnable_m95890A80A68B4A
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->____speakQueuedButton_9;
 		NullCheck(L_6);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_7;
-		L_7 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_6, NULL);
+		L_7 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_6, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_8 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_8);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_8, __this, (intptr_t)((void*)TTSSpeakerInput_SpeakQueuedClick_m20D86A57FF5A9A5A8CE711D313C69B74B252E5F6_RuntimeMethod_var), NULL);
@@ -1749,7 +1788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_SpeakClick_m6275F381EE59
 		InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* L_1 = __this->____input_5;
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline(L_1, NULL);
+		L_2 = InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704(L_1, NULL);
 		NullCheck(L_0);
 		TTSSpeaker_Speak_m0ABA1A70FAF37002E979AF866EDB7BE48C79CACD(L_0, L_2, NULL);
 		return;
@@ -1766,10 +1805,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_SpeakQueuedClick_m20D86A
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->____queuedText_10;
 		V_0 = L_0;
 		V_1 = 0;
-		goto IL_001f;
+		goto IL_0024;
 	}
 
-IL_000b:
+IL_000d:
 	{
 		// foreach (var text in _queuedText)
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = V_0;
@@ -1787,7 +1826,7 @@ IL_000b:
 		V_1 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
-IL_001f:
+IL_0024:
 	{
 		// foreach (var text in _queuedText)
 		int32_t L_8 = V_1;
@@ -1795,7 +1834,7 @@ IL_001f:
 		NullCheck(L_9);
 		if ((((int32_t)L_8) < ((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length)))))
 		{
-			goto IL_000b;
+			goto IL_000d;
 		}
 	}
 	{
@@ -1804,7 +1843,7 @@ IL_001f:
 		InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* L_11 = __this->____input_5;
 		NullCheck(L_11);
 		String_t* L_12;
-		L_12 = InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline(L_11, NULL);
+		L_12 = InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704(L_11, NULL);
 		NullCheck(L_10);
 		TTSSpeaker_SpeakQueued_mD0D8D308BD6058209262E1F6A444A9D173BBB7AC(L_10, L_12, NULL);
 		// }
@@ -1828,7 +1867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnDisable_mA633C3F3D320B
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->____stopButton_7;
 		NullCheck(L_0);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_1;
-		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_0, NULL);
+		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_0, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_2 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)TTSSpeakerInput_StopClick_m9ACC3361839C482CCB5F71CFDFFAB90D31EDC553_RuntimeMethod_var), NULL);
@@ -1838,7 +1877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnDisable_mA633C3F3D320B
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->____speakButton_8;
 		NullCheck(L_3);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_4;
-		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_3, NULL);
+		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_3, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_5 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_5, __this, (intptr_t)((void*)TTSSpeakerInput_SpeakClick_m6275F381EE597F002F75F7606B4B66F94D2C11A6_RuntimeMethod_var), NULL);
@@ -1848,7 +1887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_OnDisable_mA633C3F3D320B
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->____speakQueuedButton_9;
 		NullCheck(L_6);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_7;
-		L_7 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_6, NULL);
+		L_7 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C(L_6, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_8 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_8);
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_8, __this, (intptr_t)((void*)TTSSpeakerInput_SpeakQueuedClick_m20D86A57FF5A9A5A8CE711D313C69B74B252E5F6_RuntimeMethod_var), NULL);
@@ -1869,6 +1908,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_Update_mB24644F92F46C3BA
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77235CB916AB2431DB5346DEF4FF7A991FCFF985);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
 	{
 		// if (!string.Equals(_title.text, _speaker.presetVoiceID))
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->____title_4;
@@ -1880,85 +1922,91 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_Update_mB24644F92F46C3BA
 		String_t* L_3 = L_2->___presetVoiceID_4;
 		bool L_4;
 		L_4 = String_Equals_m3354EFE6393BED8DD6E18F69BEA131AAADCC622D(L_1, L_3, NULL);
-		if (L_4)
+		V_0 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_0;
+		if (!L_5)
 		{
-			goto IL_0062;
+			goto IL_006c;
 		}
 	}
 	{
 		// _title.text = _speaker.presetVoiceID;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_5 = __this->____title_4;
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_6 = __this->____speaker_6;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->____title_4;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_7 = __this->____speaker_6;
+		NullCheck(L_7);
+		String_t* L_8 = L_7->___presetVoiceID_4;
 		NullCheck(L_6);
-		String_t* L_7 = L_6->___presetVoiceID_4;
-		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_5, L_7);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_6, L_8);
 		// _input.placeholder.GetComponent<Text>().text = $"Write something to say in {_speaker.presetVoiceID}'s voice";
-		InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* L_8 = __this->____input_5;
-		NullCheck(L_8);
-		Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* L_9;
-		L_9 = InputField_get_placeholder_m84C2F2E414B8A03B372C7CEB3C97A2AE72F3A39F_inline(L_8, NULL);
+		InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* L_9 = __this->____input_5;
 		NullCheck(L_9);
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10;
-		L_10 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_9, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_11 = __this->____speaker_6;
-		NullCheck(L_11);
-		String_t* L_12 = L_11->___presetVoiceID_4;
-		String_t* L_13;
-		L_13 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral77235CB916AB2431DB5346DEF4FF7A991FCFF985, L_12, _stringLiteral29DD95531FCE94DCE288DF8BD4349F991A445F02, NULL);
+		Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* L_10;
+		L_10 = InputField_get_placeholder_m84C2F2E414B8A03B372C7CEB3C97A2AE72F3A39F(L_9, NULL);
 		NullCheck(L_10);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, L_13);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_11;
+		L_11 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_10, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_12 = __this->____speaker_6;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___presetVoiceID_4;
+		String_t* L_14;
+		L_14 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral77235CB916AB2431DB5346DEF4FF7A991FCFF985, L_13, _stringLiteral29DD95531FCE94DCE288DF8BD4349F991A445F02, NULL);
+		NullCheck(L_11);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_14);
 	}
 
-IL_0062:
+IL_006c:
 	{
 		// if (_loading != _speaker.IsLoading)
-		bool L_14 = __this->____loading_11;
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_15 = __this->____speaker_6;
-		NullCheck(L_15);
-		bool L_16;
-		L_16 = TTSSpeaker_get_IsLoading_m4B50BF1337FACC7883D39285F73921155CDC5203(L_15, NULL);
-		if ((((int32_t)L_14) == ((int32_t)L_16)))
+		bool L_15 = __this->____loading_11;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_16 = __this->____speaker_6;
+		NullCheck(L_16);
+		bool L_17;
+		L_17 = TTSSpeaker_get_IsLoading_m4B50BF1337FACC7883D39285F73921155CDC5203(L_16, NULL);
+		V_1 = (bool)((((int32_t)((((int32_t)L_15) == ((int32_t)L_17))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_18 = V_1;
+		if (!L_18)
 		{
-			goto IL_008c;
+			goto IL_00a0;
 		}
 	}
 	{
 		// _loading = _speaker.IsLoading;
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_17 = __this->____speaker_6;
-		NullCheck(L_17);
-		bool L_18;
-		L_18 = TTSSpeaker_get_IsLoading_m4B50BF1337FACC7883D39285F73921155CDC5203(L_17, NULL);
-		__this->____loading_11 = L_18;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_19 = __this->____speaker_6;
+		NullCheck(L_19);
+		bool L_20;
+		L_20 = TTSSpeaker_get_IsLoading_m4B50BF1337FACC7883D39285F73921155CDC5203(L_19, NULL);
+		__this->____loading_11 = L_20;
 		// RefreshButtons();
 		TTSSpeakerInput_RefreshButtons_mB9BA66FD8B2A8C75A24A04A4F7EEE0EF001789FE(__this, NULL);
 	}
 
-IL_008c:
+IL_00a0:
 	{
 		// if (_speaking != _speaker.IsSpeaking)
-		bool L_19 = __this->____speaking_12;
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_20 = __this->____speaker_6;
-		NullCheck(L_20);
-		bool L_21;
-		L_21 = TTSSpeaker_get_IsSpeaking_m53394B349AFA5CA163E029B9726BB5D120EB8EED(L_20, NULL);
-		if ((((int32_t)L_19) == ((int32_t)L_21)))
-		{
-			goto IL_00b6;
-		}
-	}
-	{
-		// _speaking = _speaker.IsSpeaking;
+		bool L_21 = __this->____speaking_12;
 		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_22 = __this->____speaker_6;
 		NullCheck(L_22);
 		bool L_23;
 		L_23 = TTSSpeaker_get_IsSpeaking_m53394B349AFA5CA163E029B9726BB5D120EB8EED(L_22, NULL);
-		__this->____speaking_12 = L_23;
+		V_2 = (bool)((((int32_t)((((int32_t)L_21) == ((int32_t)L_23))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_24 = V_2;
+		if (!L_24)
+		{
+			goto IL_00d4;
+		}
+	}
+	{
+		// _speaking = _speaker.IsSpeaking;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_25 = __this->____speaker_6;
+		NullCheck(L_25);
+		bool L_26;
+		L_26 = TTSSpeaker_get_IsSpeaking_m53394B349AFA5CA163E029B9726BB5D120EB8EED(L_25, NULL);
+		__this->____speaking_12 = L_26;
 		// RefreshButtons();
 		TTSSpeakerInput_RefreshButtons_mB9BA66FD8B2A8C75A24A04A4F7EEE0EF001789FE(__this, NULL);
 	}
 
-IL_00b6:
+IL_00d4:
 	{
 		// }
 		return;
@@ -1979,23 +2027,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSSpeakerInput_RefreshButtons_mB9BA66FD
 		if (L_1)
 		{
 			G_B2_0 = L_0;
-			goto IL_0016;
+			goto IL_0017;
 		}
 	}
 	{
 		bool L_2 = __this->____speaking_12;
 		G_B3_0 = ((int32_t)(L_2));
 		G_B3_1 = G_B1_0;
-		goto IL_0017;
+		goto IL_0018;
 	}
 
-IL_0016:
+IL_0017:
 	{
 		G_B3_0 = 1;
 		G_B3_1 = G_B2_0;
 	}
 
-IL_0017:
+IL_0018:
 	{
 		NullCheck(G_B3_1);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(G_B3_1, (bool)G_B3_0, NULL);
@@ -2295,9 +2343,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSStatusLabel_RefreshLabel_m590AF96190B
 	}
 	StringBuilder_t* V_0 = NULL;
 	int32_t V_1 = 0;
-	TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* V_2 = NULL;
-	int32_t V_3 = 0;
-	TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* V_4 = NULL;
+	bool V_2 = false;
+	TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* V_3 = NULL;
+	int32_t V_4 = 0;
+	TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* V_5 = NULL;
+	bool V_6 = false;
 	{
 		// StringBuilder status = new StringBuilder();
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
@@ -2309,117 +2359,121 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSStatusLabel_RefreshLabel_m590AF96190B
 		NullCheck(L_1);
 		TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* L_2;
 		L_2 = TTSSpeaker_get_SpeakingClip_m222A968361BC058A0EE0BB58C09EFFD61EF56DFA_inline(L_1, NULL);
-		if (!L_2)
+		V_2 = (bool)((!(((RuntimeObject*)(TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827*)L_2) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
 		{
-			goto IL_0034;
+			goto IL_003c;
 		}
 	}
 	{
 		// status.AppendLine($"Speaking: {_speaker.IsSpeaking}");
-		StringBuilder_t* L_3 = V_0;
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_4 = __this->____speaker_4;
+		StringBuilder_t* L_4 = V_0;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_5 = __this->____speaker_4;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = TTSSpeaker_get_IsSpeaking_m53394B349AFA5CA163E029B9726BB5D120EB8EED(L_5, NULL);
+		bool L_7 = L_6;
+		RuntimeObject* L_8 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_7);
+		String_t* L_9;
+		L_9 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFB707AD1232B0ECA35F52C45D2C3321F121FBD53, L_8, NULL);
 		NullCheck(L_4);
-		bool L_5;
-		L_5 = TTSSpeaker_get_IsSpeaking_m53394B349AFA5CA163E029B9726BB5D120EB8EED(L_4, NULL);
-		bool L_6 = L_5;
-		RuntimeObject* L_7 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_6);
-		String_t* L_8;
-		L_8 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFB707AD1232B0ECA35F52C45D2C3321F121FBD53, L_7, NULL);
-		NullCheck(L_3);
-		StringBuilder_t* L_9;
-		L_9 = StringBuilder_AppendLine_mF75744CE941C63E33188E22E936B71A24D3CBF88(L_3, L_8, NULL);
+		StringBuilder_t* L_10;
+		L_10 = StringBuilder_AppendLine_mF75744CE941C63E33188E22E936B71A24D3CBF88(L_4, L_9, NULL);
 	}
 
-IL_0034:
+IL_003c:
 	{
 		// int index = 0;
 		V_1 = 0;
 		// foreach (var clip in _speaker.QueuedClips)
-		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_10 = __this->____speaker_4;
-		NullCheck(L_10);
-		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_11;
-		L_11 = TTSSpeaker_get_QueuedClips_mCC42DCD1509635A8F13236DA8E44E8A962999157(L_10, NULL);
-		V_2 = L_11;
-		V_3 = 0;
-		goto IL_007d;
+		TTSSpeaker_tD5B4F9BF6B84E7144D7DBD08DF599AD60A4CCA9C* L_11 = __this->____speaker_4;
+		NullCheck(L_11);
+		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_12;
+		L_12 = TTSSpeaker_get_QueuedClips_mCC42DCD1509635A8F13236DA8E44E8A962999157(L_11, NULL);
+		V_3 = L_12;
+		V_4 = 0;
+		goto IL_008c;
 	}
 
-IL_0046:
+IL_0050:
 	{
 		// foreach (var clip in _speaker.QueuedClips)
-		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_12 = V_2;
-		int32_t L_13 = V_3;
-		NullCheck(L_12);
-		int32_t L_14 = L_13;
-		TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
-		V_4 = L_15;
+		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_13 = V_3;
+		int32_t L_14 = V_4;
+		NullCheck(L_13);
+		int32_t L_15 = L_14;
+		TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		V_5 = L_16;
 		// status.Insert(0, $"Queue[{index}]: {clip.loadState.ToString()}\n");
-		StringBuilder_t* L_16 = V_0;
-		int32_t L_17 = V_1;
-		int32_t L_18 = L_17;
-		RuntimeObject* L_19 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_18);
-		TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* L_20 = V_4;
-		NullCheck(L_20);
-		int32_t* L_21 = (&L_20->___loadState_7);
-		Il2CppFakeBox<int32_t> L_22(TTSClipLoadState_t928859B4715B204E4587876D365E9F9BD5A8D434_il2cpp_TypeInfo_var, L_21);
-		String_t* L_23;
-		L_23 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_22), NULL);
+		StringBuilder_t* L_17 = V_0;
+		int32_t L_18 = V_1;
+		int32_t L_19 = L_18;
+		RuntimeObject* L_20 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_19);
+		TTSClipData_t6E5451499F8FAE0DFD198CD51F544835F65F3827* L_21 = V_5;
+		NullCheck(L_21);
+		int32_t* L_22 = (&L_21->___loadState_7);
+		Il2CppFakeBox<int32_t> L_23(TTSClipLoadState_t928859B4715B204E4587876D365E9F9BD5A8D434_il2cpp_TypeInfo_var, L_22);
 		String_t* L_24;
-		L_24 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral88DB3D9039D7A91BC9644BF5B94CBB1C4378DA18, L_19, L_23, NULL);
-		NullCheck(L_16);
-		StringBuilder_t* L_25;
-		L_25 = StringBuilder_Insert_mEA426100381DD65FB6A891BA28B5F1208BEDDD29(L_16, 0, L_24, NULL);
+		L_24 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_23), NULL);
+		String_t* L_25;
+		L_25 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral88DB3D9039D7A91BC9644BF5B94CBB1C4378DA18, L_20, L_24, NULL);
+		NullCheck(L_17);
+		StringBuilder_t* L_26;
+		L_26 = StringBuilder_Insert_mEA426100381DD65FB6A891BA28B5F1208BEDDD29(L_17, 0, L_25, NULL);
 		// index++;
-		int32_t L_26 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_26, 1));
-		int32_t L_27 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+		int32_t L_27 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+		int32_t L_28 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_28, 1));
 	}
 
-IL_007d:
+IL_008c:
 	{
 		// foreach (var clip in _speaker.QueuedClips)
-		int32_t L_28 = V_3;
-		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_29 = V_2;
-		NullCheck(L_29);
-		if ((((int32_t)L_28) < ((int32_t)((int32_t)(((RuntimeArray*)L_29)->max_length)))))
+		int32_t L_29 = V_4;
+		TTSClipDataU5BU5D_t2AE56AC2A4BB002E81CB8249EC540E8B9F043260* L_30 = V_3;
+		NullCheck(L_30);
+		if ((((int32_t)L_29) < ((int32_t)((int32_t)(((RuntimeArray*)L_30)->max_length)))))
 		{
-			goto IL_0046;
+			goto IL_0050;
 		}
 	}
 	{
 		// if (status.Length > 0)
-		StringBuilder_t* L_30 = V_0;
-		NullCheck(L_30);
-		int32_t L_31;
-		L_31 = StringBuilder_get_Length_mDEA041E7357C68CC3B5885276BB403676DAAE0D8(L_30, NULL);
-		if ((((int32_t)L_31) <= ((int32_t)0)))
+		StringBuilder_t* L_31 = V_0;
+		NullCheck(L_31);
+		int32_t L_32;
+		L_32 = StringBuilder_get_Length_mDEA041E7357C68CC3B5885276BB403676DAAE0D8(L_31, NULL);
+		V_6 = (bool)((((int32_t)L_32) > ((int32_t)0))? 1 : 0);
+		bool L_33 = V_6;
+		if (!L_33)
 		{
-			goto IL_009c;
+			goto IL_00b4;
 		}
 	}
 	{
 		// status.Remove(status.Length - 1, 1);
-		StringBuilder_t* L_32 = V_0;
-		StringBuilder_t* L_33 = V_0;
-		NullCheck(L_33);
-		int32_t L_34;
-		L_34 = StringBuilder_get_Length_mDEA041E7357C68CC3B5885276BB403676DAAE0D8(L_33, NULL);
-		NullCheck(L_32);
-		StringBuilder_t* L_35;
-		L_35 = StringBuilder_Remove_m0D93692674D1C09795C7D6542420A3B6C5F81E90(L_32, ((int32_t)il2cpp_codegen_subtract(L_34, 1)), 1, NULL);
+		StringBuilder_t* L_34 = V_0;
+		StringBuilder_t* L_35 = V_0;
+		NullCheck(L_35);
+		int32_t L_36;
+		L_36 = StringBuilder_get_Length_mDEA041E7357C68CC3B5885276BB403676DAAE0D8(L_35, NULL);
+		NullCheck(L_34);
+		StringBuilder_t* L_37;
+		L_37 = StringBuilder_Remove_m0D93692674D1C09795C7D6542420A3B6C5F81E90(L_34, ((int32_t)il2cpp_codegen_subtract(L_36, 1)), 1, NULL);
 	}
 
-IL_009c:
+IL_00b4:
 	{
 		// _label.text = status.ToString();
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_36 = __this->____label_5;
-		StringBuilder_t* L_37 = V_0;
-		NullCheck(L_37);
-		String_t* L_38;
-		L_38 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_37);
-		NullCheck(L_36);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_36, L_38);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_38 = __this->____label_5;
+		StringBuilder_t* L_39 = V_0;
+		NullCheck(L_39);
+		String_t* L_40;
+		L_40 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_39);
+		NullCheck(L_38);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_38, L_40);
 		// }
 		return;
 	}
@@ -2435,35 +2489,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSStatusLabel__ctor_mEC750383310FD572E6
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) 
-{
-	{
-		// get { return m_OnClick; }
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_0 = __this->___m_OnClick_20;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TTSDiskCacheSettings_tB9D20D402A7386227ADC2A29BA87AE6F1774EE80* TTSDiskCache_get_DiskCacheDefaultSettings_mFEB9E0BFBDC93DAFBACF81CCBD7750AA73E11971_inline (TTSDiskCache_tB8F8C36CFCA7AB614D88D68E90E3A47BF34CBAA2* __this, const RuntimeMethod* method) 
 {
 	{
 		// public TTSDiskCacheSettings DiskCacheDefaultSettings => _defaultSettings;
 		TTSDiskCacheSettings_tB9D20D402A7386227ADC2A29BA87AE6F1774EE80* L_0 = __this->____defaultSettings_5;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) 
-{
-	{
-		// return m_Text;
-		String_t* L_0 = __this->___m_Text_41;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* InputField_get_placeholder_m84C2F2E414B8A03B372C7CEB3C97A2AE72F3A39F_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Graphic placeholder { get { return m_Placeholder; } set { SetPropertyUtility.SetClass(ref m_Placeholder, value); } }
-		Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* L_0 = __this->___m_Placeholder_25;
 		return L_0;
 	}
 }

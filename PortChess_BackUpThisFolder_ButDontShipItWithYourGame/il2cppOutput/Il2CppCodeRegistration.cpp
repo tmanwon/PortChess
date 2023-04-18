@@ -42,6 +42,12 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Spatializer_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_VR_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Voice_Demo_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Photon3Unity3D_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonChat_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonRealtime_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_Demos_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_Utilities_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
@@ -83,6 +89,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestWWWModule
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Core_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_Management_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_Oculus_CodeGenModule;
@@ -91,7 +98,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[72] = 
+const Il2CppCodeGenModule* g_CodeGenModules[79] = 
 {
 	(&g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
@@ -117,6 +124,12 @@ const Il2CppCodeGenModule* g_CodeGenModules[72] =
 	(&g_Oculus_Spatializer_CodeGenModule),
 	(&g_Oculus_VR_CodeGenModule),
 	(&g_Oculus_Voice_Demo_CodeGenModule),
+	(&g_Photon3Unity3D_CodeGenModule),
+	(&g_PhotonChat_CodeGenModule),
+	(&g_PhotonRealtime_CodeGenModule),
+	(&g_PhotonUnityNetworking_CodeGenModule),
+	(&g_PhotonUnityNetworking_Demos_CodeGenModule),
+	(&g_PhotonUnityNetworking_Utilities_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
@@ -158,6 +171,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[72] =
 	(&g_UnityEngine_VRModule_CodeGenModule),
 	(&g_UnityEngine_VideoModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
+	(&g_Unity_RenderPipelines_Core_Runtime_CodeGenModule),
 	(&g_Unity_TextMeshPro_CodeGenModule),
 	(&g_Unity_XR_Management_CodeGenModule),
 	(&g_Unity_XR_Oculus_CodeGenModule),
@@ -171,18 +185,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	23,
 	g_ReversePInvokeWrapperPointers,
-	46169,
+	57167,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	10791,
+	12498,
 	g_Il2CppInvokerPointers,
-	1778,
+	2159,
 	g_UnresolvedVirtualMethodPointers,
-	973,
+	1034,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	72,
+	79,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

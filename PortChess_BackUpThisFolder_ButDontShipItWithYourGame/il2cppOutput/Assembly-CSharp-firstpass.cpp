@@ -39,6 +39,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2746B283A9377664FAC642B633C6E630FD0DA207
 IL2CPP_EXTERN_C String_t* _stringLiteral2C22DA453C536A0C582C283F29CE62CE5250FBF9;
 IL2CPP_EXTERN_C String_t* _stringLiteral5521F119A9546AC293A71CE4DC89A30740FA9FC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1CB3D1FFF0FAA5773D122C25A73F5673263BC6E;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
@@ -423,7 +424,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConvertDataBaseToMultiPlatform_GenerateC
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* V_1 = NULL;
+	String_t* V_1 = NULL;
+	bool V_2 = false;
+	WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* V_3 = NULL;
+	bool V_4 = false;
+	int32_t G_B3_0 = 0;
 	{
 		// string filepath = Application.persistentDataPath + "/" + DatabaseName;
 		String_t* L_0;
@@ -438,7 +443,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConvertDataBaseToMultiPlatform_GenerateC
 		L_4 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_3, NULL);
 		if (!L_4)
 		{
-			goto IL_0026;
+			goto IL_002b;
 		}
 	}
 	{
@@ -449,50 +454,71 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConvertDataBaseToMultiPlatform_GenerateC
 		NullCheck(L_6);
 		int64_t L_7;
 		L_7 = FileInfo_get_Length_m7FADCE0E3C88678C0A7BFA694786C02AD652A33B(L_6, NULL);
-		if (L_7)
+		G_B3_0 = ((((int64_t)L_7) == ((int64_t)((int64_t)0)))? 1 : 0);
+		goto IL_002c;
+	}
+
+IL_002b:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_002c:
+	{
+		V_2 = (bool)G_B3_0;
+		bool L_8 = V_2;
+		if (!L_8)
 		{
-			goto IL_0055;
+			goto IL_006d;
 		}
 	}
-
-IL_0026:
 	{
 		// WWW loadDb = new WWW("jar:file://" + Application.dataPath + "!/assets/" + DatabaseName);  // this is the path to your StreamingAssets in android
-		String_t* L_8;
-		L_8 = Application_get_dataPath_m4C8412CBEE4EAAAB6711CC9BEFFA73CEE5BDBEF7(NULL);
-		String_t* L_9 = ___DatabaseName0;
-		String_t* L_10;
-		L_10 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral2746B283A9377664FAC642B633C6E630FD0DA207, L_8, _stringLiteral5521F119A9546AC293A71CE4DC89A30740FA9FC7, L_9, NULL);
-		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_11 = (WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB*)il2cpp_codegen_object_new(WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB_il2cpp_TypeInfo_var);
-		NullCheck(L_11);
-		WWW__ctor_m5D29D83E9EE0925ED8252347CE24EC236401503D(L_11, L_10, NULL);
-		V_1 = L_11;
+		String_t* L_9;
+		L_9 = Application_get_dataPath_m4C8412CBEE4EAAAB6711CC9BEFFA73CEE5BDBEF7(NULL);
+		String_t* L_10 = ___DatabaseName0;
+		String_t* L_11;
+		L_11 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral2746B283A9377664FAC642B633C6E630FD0DA207, L_9, _stringLiteral5521F119A9546AC293A71CE4DC89A30740FA9FC7, L_10, NULL);
+		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_12 = (WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB*)il2cpp_codegen_object_new(WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		WWW__ctor_m5D29D83E9EE0925ED8252347CE24EC236401503D(L_12, L_11, NULL);
+		V_3 = L_12;
+		goto IL_0050;
 	}
 
-IL_0041:
+IL_004e:
+	{
+	}
+
+IL_0050:
 	{
 		// while (!loadDb.isDone) { }  // CAREFUL here, for safety reasons you shouldn't let this while loop unattended, place a timer and error check
-		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_12 = V_1;
-		NullCheck(L_12);
-		bool L_13;
-		L_13 = WWW_get_isDone_m7E88B666AD0E3903757043813B2811BBFCCCA52E(L_12, NULL);
-		if (!L_13)
+		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_13 = V_3;
+		NullCheck(L_13);
+		bool L_14;
+		L_14 = WWW_get_isDone_m7E88B666AD0E3903757043813B2811BBFCCCA52E(L_13, NULL);
+		V_4 = (bool)((((int32_t)L_14) == ((int32_t)0))? 1 : 0);
+		bool L_15 = V_4;
+		if (L_15)
 		{
-			goto IL_0041;
+			goto IL_004e;
 		}
 	}
 	{
 		// File.WriteAllBytes(filepath, loadDb.bytes);
-		String_t* L_14 = V_0;
-		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_15 = V_1;
-		NullCheck(L_15);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16;
-		L_16 = WWW_get_bytes_m83F5C24FC5AC80C5F3B9AF1E290E08F8B96C0642(L_15, NULL);
-		File_WriteAllBytes_mC491031DA14AA9B591F62D6AD0181D090E081077(L_14, L_16, NULL);
+		String_t* L_16 = V_0;
+		WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB* L_17 = V_3;
+		NullCheck(L_17);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
+		L_18 = WWW_get_bytes_m83F5C24FC5AC80C5F3B9AF1E290E08F8B96C0642(L_17, NULL);
+		File_WriteAllBytes_mC491031DA14AA9B591F62D6AD0181D090E081077(L_16, L_18, NULL);
 	}
 
-IL_0055:
+IL_006d:
 	{
+		// var dbPath = filepath;
+		String_t* L_19 = V_0;
+		V_1 = L_19;
 		// }
 		return;
 	}
@@ -522,21 +548,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SetDataBaseClass_SetDataBase_m4B504
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C22DA453C536A0C582C283F29CE62CE5250FBF9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF1CB3D1FFF0FAA5773D122C25A73F5673263BC6E);
 		s_Il2CppMethodInitialized = true;
 	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
 	{
+		// string conn = "";
+		V_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		// conn = "URI=file:" + Application.persistentDataPath + "/" + DataBaseName; //Path to database.
 		String_t* L_0;
 		L_0 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
 		String_t* L_1 = ___DataBaseName0;
 		String_t* L_2;
 		L_2 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral2C22DA453C536A0C582C283F29CE62CE5250FBF9, L_0, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, L_1, NULL);
+		V_0 = L_2;
 		// Debug.Log("Android Mode");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF1CB3D1FFF0FAA5773D122C25A73F5673263BC6E, NULL);
 		// return conn;
-		return L_2;
+		String_t* L_3 = V_0;
+		V_1 = L_3;
+		goto IL_002c;
+	}
+
+IL_002c:
+	{
+		// }
+		String_t* L_4 = V_1;
+		return L_4;
 	}
 }
 // System.Void SetDataBaseClass::.ctor()

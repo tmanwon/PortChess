@@ -35,7 +35,7 @@ public class TableCalibration : MonoBehaviour
                 {
                     float fingerZ= bone.Transform.position.y;
                     desk.transform.localPosition = new Vector3(desk.transform.localPosition.x, fingerZ, desk.transform.localPosition.z);
-                    desk.transform.Translate(new Vector3(0, -0.768f, 0));
+                    desk.transform.Translate(new Vector3(0, -0.765f, 0));
                     boardAnchor.transform.position = new Vector3(boardAnchor.transform.position.x, desk.transform.position.y + 0.03f, boardAnchor.transform.position.z);
                 }
             }

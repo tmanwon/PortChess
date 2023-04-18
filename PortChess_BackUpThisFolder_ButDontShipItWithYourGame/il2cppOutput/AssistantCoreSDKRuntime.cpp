@@ -665,55 +665,61 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidServiceConnection_Connect_m72A36F
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9);
 		s_Il2CppMethodInitialized = true;
 	}
-	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
+	bool V_0 = false;
 	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* V_1 = NULL;
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_2 = NULL;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* V_3 = NULL;
 	{
 		// if (null == mAssistantServiceConnection)
 		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->___mAssistantServiceConnection_0;
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_005a;
+			goto IL_0068;
 		}
 	}
 	{
 		// AndroidJNIHelper.debug = true;
 		AndroidJNIHelper_set_debug_m66E40D20DC9DC69BD7B139DA5C367BA1185FCA3F((bool)1, NULL);
 		// AndroidJavaClass unityPlayerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_1 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_1, _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078, NULL);
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_2 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_2, _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078, NULL);
+		V_1 = L_2;
 		// AndroidJavaObject activity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
-		NullCheck(L_1);
-		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2;
-		L_2 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD(L_1, _stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9, AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
-		V_0 = L_2;
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_3 = V_1;
+		NullCheck(L_3);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4;
+		L_4 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD(L_3, _stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9, AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
+		V_2 = L_4;
 		// using (AndroidJavaClass assistantBackgroundFragment = new AndroidJavaClass(serviceFragmentClass))
-		String_t* L_3 = __this->___serviceFragmentClass_1;
-		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_4 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_4, L_3, NULL);
-		V_1 = L_4;
+		String_t* L_5 = __this->___serviceFragmentClass_1;
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_6 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_6, L_5, NULL);
+		V_3 = L_6;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0050:
+FINALLY_005c:
 			{// begin finally (depth: 1)
 				{
-					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_5 = V_1;
-					if (!L_5)
+					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_7 = V_3;
+					if (!L_7)
 					{
-						goto IL_0059;
+						goto IL_0066;
 					}
 				}
 				{
-					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_6 = V_1;
-					NullCheck(L_6);
-					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_6);
+					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_8 = V_3;
+					NullCheck(L_8);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_8);
 				}
 
-IL_0059:
+IL_0066:
 				{
 					return;
 				}
@@ -723,25 +729,24 @@ IL_0059:
 		{// begin try (depth: 1)
 			// mAssistantServiceConnection =
 			//     assistantBackgroundFragment.CallStatic<AndroidJavaObject>("createAndAttach", activity, version);
-			AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_7 = V_1;
-			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
-			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = L_8;
-			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_10 = V_0;
-			NullCheck(L_9);
-			ArrayElementTypeCheck (L_9, L_10);
-			(L_9)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_10);
-			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_11 = L_9;
-			String_t* L_12 = ___version0;
+			AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_9 = V_3;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_11 = L_10;
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_12 = V_2;
 			NullCheck(L_11);
 			ArrayElementTypeCheck (L_11, L_12);
-			(L_11)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_12);
-			NullCheck(L_7);
-			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_13;
-			L_13 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63(L_7, _stringLiteralCD194760A36A1472D970322901CB8E13091FAD56, L_11, AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
-			__this->___mAssistantServiceConnection_0 = L_13;
-			Il2CppCodeGenWriteBarrier((void**)(&__this->___mAssistantServiceConnection_0), (void*)L_13);
-			// }
-			goto IL_005a;
+			(L_11)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_12);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_13 = L_11;
+			String_t* L_14 = ___version0;
+			NullCheck(L_13);
+			ArrayElementTypeCheck (L_13, L_14);
+			(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_14);
+			NullCheck(L_9);
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_15;
+			L_15 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63(L_9, _stringLiteralCD194760A36A1472D970322901CB8E13091FAD56, L_13, AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+			__this->___mAssistantServiceConnection_0 = L_15;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___mAssistantServiceConnection_0), (void*)L_15);
+			goto IL_0067;
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -749,7 +754,11 @@ IL_0059:
 		}
 	}
 
-IL_005a:
+IL_0067:
+	{
+	}
+
+IL_0068:
 	{
 		// }
 		return;
@@ -786,6 +795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2B
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
 	{
 		// return mAssistantServiceConnection.Call<AndroidJavaObject>(serviceGetter);
 		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->___mAssistantServiceConnection_0;
@@ -795,7 +805,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2B
 		NullCheck(L_0);
 		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_3;
 		L_3 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_0, L_1, L_2, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
-		return L_3;
+		V_0 = L_3;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		// }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4 = V_0;
+		return L_4;
 	}
 }
 #ifdef __clang__
@@ -922,61 +940,68 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoiceSDKConsoleLoggerImpl_LogInteraction
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE8005661E088B15159DF9E5FF142DD0D29863BC4);
 		s_Il2CppMethodInitialized = true;
 	}
-	int64_t V_0 = 0;
+	bool V_0 = false;
+	int64_t V_1 = 0;
 	{
 		// if (!ShouldLogToConsole) return;
 		bool L_0;
 		L_0 = VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_m4D45C67EF5CD56C8BC8F06C6C7FB31AEE960B463_inline(__this, NULL);
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0013;
 		}
 	}
 	{
 		// if (!ShouldLogToConsole) return;
-		return;
+		goto IL_0096;
 	}
 
-IL_0009:
+IL_0013:
 	{
 		// Debug.Log($"{TAG}: Interaction started with request ID: " + requestId);
 		il2cpp_codegen_runtime_class_init_inline(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var);
-		String_t* L_1 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_2 = ___requestId0;
-		String_t* L_3;
-		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_1, _stringLiteral170F949C810F0DA1E46A996A5C5802B69D03A77A, L_2, NULL);
+		String_t* L_2 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		String_t* L_3 = ___requestId0;
+		String_t* L_4;
+		L_4 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_2, _stringLiteral170F949C810F0DA1E46A996A5C5802B69D03A77A, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
 		// Debug.Log($"{TAG}: WitApi: " + witApi);
-		String_t* L_4 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_5 = ___witApi1;
-		String_t* L_6;
-		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_4, _stringLiteralE338BB882FA65CF026BABFFF08FF94C251A54C10, L_5, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
+		String_t* L_5 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		String_t* L_6 = ___witApi1;
+		String_t* L_7;
+		L_7 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_5, _stringLiteralE338BB882FA65CF026BABFFF08FF94C251A54C10, L_6, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
 		// Debug.Log($"{TAG}: request_start_time: " + DateTimeUtility.ElapsedMilliseconds.ToString());
-		String_t* L_7 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		int64_t L_8;
-		L_8 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
-		V_0 = L_8;
-		String_t* L_9;
-		L_9 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_0), NULL);
+		String_t* L_8 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		int64_t L_9;
+		L_9 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
+		V_1 = L_9;
 		String_t* L_10;
-		L_10 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_7, _stringLiteral76371D17728A01ECC6F467E7A96AF9867091B461, L_9, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_10, NULL);
+		L_10 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_1), NULL);
+		String_t* L_11;
+		L_11 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_8, _stringLiteral76371D17728A01ECC6F467E7A96AF9867091B461, L_10, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
 		// Debug.Log($"{TAG}: WitAppID: " + WitApplication);
-		String_t* L_11 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_12;
-		L_12 = VoiceSDKConsoleLoggerImpl_get_WitApplication_m6D645BA4007F4C5BE5AAC187E1933C914E10C8B3_inline(__this, NULL);
+		String_t* L_12 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
 		String_t* L_13;
-		L_13 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_11, _stringLiteralE8005661E088B15159DF9E5FF142DD0D29863BC4, L_12, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_13, NULL);
+		L_13 = VoiceSDKConsoleLoggerImpl_get_WitApplication_m6D645BA4007F4C5BE5AAC187E1933C914E10C8B3_inline(__this, NULL);
+		String_t* L_14;
+		L_14 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_12, _stringLiteralE8005661E088B15159DF9E5FF142DD0D29863BC4, L_13, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
 		// Debug.Log($"{TAG}: PackageName: " + Application.identifier);
-		String_t* L_14 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_15;
-		L_15 = Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056(NULL);
+		String_t* L_15 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
 		String_t* L_16;
-		L_16 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_14, _stringLiteral3EBB30C0FE6F71CAD25AA1EE7A257B1742A4DDDC, L_15, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_16, NULL);
+		L_16 = Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056(NULL);
+		String_t* L_17;
+		L_17 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_15, _stringLiteral3EBB30C0FE6F71CAD25AA1EE7A257B1742A4DDDC, L_16, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_17, NULL);
+	}
+
+IL_0096:
+	{
 		// }
 		return;
 	}
@@ -993,40 +1018,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoiceSDKConsoleLoggerImpl_LogInteraction
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB);
 		s_Il2CppMethodInitialized = true;
 	}
-	int64_t V_0 = 0;
+	bool V_0 = false;
+	int64_t V_1 = 0;
 	{
 		// if (!ShouldLogToConsole) return;
 		bool L_0;
 		L_0 = VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_m4D45C67EF5CD56C8BC8F06C6C7FB31AEE960B463_inline(__this, NULL);
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0010;
 		}
 	}
 	{
 		// if (!ShouldLogToConsole) return;
-		return;
+		goto IL_0047;
 	}
 
-IL_0009:
+IL_0010:
 	{
 		// Debug.Log($"{TAG}: Interaction finished successfully");
 		il2cpp_codegen_runtime_class_init_inline(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var);
-		String_t* L_1 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_2;
-		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_1, _stringLiteral5C66F3811CCF22B81735F17FC646A15A06C04558, NULL);
+		String_t* L_2 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		String_t* L_3;
+		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_2, _stringLiteral5C66F3811CCF22B81735F17FC646A15A06C04558, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
 		// Debug.Log($"{TAG}: request_end_time: " + DateTimeUtility.ElapsedMilliseconds.ToString());
-		String_t* L_3 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		int64_t L_4;
-		L_4 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
-		V_0 = L_4;
-		String_t* L_5;
-		L_5 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_0), NULL);
+		String_t* L_4 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		int64_t L_5;
+		L_5 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
+		V_1 = L_5;
 		String_t* L_6;
-		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_3, _stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB, L_5, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
+		L_6 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_1), NULL);
+		String_t* L_7;
+		L_7 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_4, _stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB, L_6, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+	}
+
+IL_0047:
+	{
 		// }
 		return;
 	}
@@ -1043,41 +1075,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoiceSDKConsoleLoggerImpl_LogInteraction
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB);
 		s_Il2CppMethodInitialized = true;
 	}
-	int64_t V_0 = 0;
+	bool V_0 = false;
+	int64_t V_1 = 0;
 	{
 		// if (!ShouldLogToConsole) return;
 		bool L_0;
 		L_0 = VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_m4D45C67EF5CD56C8BC8F06C6C7FB31AEE960B463_inline(__this, NULL);
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0010;
 		}
 	}
 	{
 		// if (!ShouldLogToConsole) return;
-		return;
+		goto IL_0048;
 	}
 
-IL_0009:
+IL_0010:
 	{
 		// Debug.Log($"{TAG}: Interaction finished with error: " + errorMessage);
 		il2cpp_codegen_runtime_class_init_inline(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var);
-		String_t* L_1 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_2 = ___errorMessage0;
-		String_t* L_3;
-		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_1, _stringLiteral471A865BF06498DAA6A4F4C89DA2A4E75FFDA704, L_2, NULL);
+		String_t* L_2 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		String_t* L_3 = ___errorMessage0;
+		String_t* L_4;
+		L_4 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_2, _stringLiteral471A865BF06498DAA6A4F4C89DA2A4E75FFDA704, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
 		// Debug.Log($"{TAG}: request_end_time: " + DateTimeUtility.ElapsedMilliseconds.ToString());
-		String_t* L_4 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		int64_t L_5;
-		L_5 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
-		V_0 = L_5;
-		String_t* L_6;
-		L_6 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_0), NULL);
+		String_t* L_5 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		int64_t L_6;
+		L_6 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
+		V_1 = L_6;
 		String_t* L_7;
-		L_7 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_4, _stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB, L_6, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		L_7 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_1), NULL);
+		String_t* L_8;
+		L_8 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_5, _stringLiteralDA4FDED4B483DC832C8A31B4E99D94B0CC25A9CB, L_7, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_8, NULL);
+	}
+
+IL_0048:
+	{
 		// }
 		return;
 	}
@@ -1096,63 +1135,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoiceSDKConsoleLoggerImpl_LogInteraction
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCFC31EB8349667189A760F7E309FFF77B74CB0CF);
 		s_Il2CppMethodInitialized = true;
 	}
-	int64_t V_0 = 0;
+	bool V_0 = false;
+	int64_t V_1 = 0;
 	{
 		// if (!ShouldLogToConsole) return;
 		bool L_0;
 		L_0 = VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_m4D45C67EF5CD56C8BC8F06C6C7FB31AEE960B463_inline(__this, NULL);
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0010;
 		}
 	}
 	{
 		// if (!ShouldLogToConsole) return;
-		return;
+		goto IL_0063;
 	}
 
-IL_0009:
+IL_0010:
 	{
 		// Debug.Log($"{TAG}: Interaction point: " + interactionPoint);
 		il2cpp_codegen_runtime_class_init_inline(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var);
-		String_t* L_1 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		String_t* L_2 = ___interactionPoint0;
-		String_t* L_3;
-		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_1, _stringLiteralCFC31EB8349667189A760F7E309FFF77B74CB0CF, L_2, NULL);
+		String_t* L_2 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		String_t* L_3 = ___interactionPoint0;
+		String_t* L_4;
+		L_4 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_2, _stringLiteralCFC31EB8349667189A760F7E309FFF77B74CB0CF, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
 		// Debug.Log($"{TAG}: {interactionPoint}_start_time: " + DateTimeUtility.ElapsedMilliseconds.ToString());
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
-		String_t* L_6 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, L_6);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_6);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_5;
-		NullCheck(L_7);
-		ArrayElementTypeCheck (L_7, _stringLiteral1168E92C164109D6220480DEDA987085B2A21155);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral1168E92C164109D6220480DEDA987085B2A21155);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
-		String_t* L_9 = ___interactionPoint0;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
+		String_t* L_7 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_6;
 		NullCheck(L_8);
-		ArrayElementTypeCheck (L_8, L_9);
-		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_9);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_8;
-		NullCheck(L_10);
-		ArrayElementTypeCheck (L_10, _stringLiteral82FAEC07733AB59081A5DD7D522BD8607CBD5A95);
-		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral82FAEC07733AB59081A5DD7D522BD8607CBD5A95);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
-		int64_t L_12;
-		L_12 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
-		V_0 = L_12;
-		String_t* L_13;
-		L_13 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_0), NULL);
+		ArrayElementTypeCheck (L_8, _stringLiteral1168E92C164109D6220480DEDA987085B2A21155);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral1168E92C164109D6220480DEDA987085B2A21155);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = L_8;
+		String_t* L_10 = ___interactionPoint0;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_10);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_10);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_9;
 		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, L_13);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_13);
+		ArrayElementTypeCheck (L_11, _stringLiteral82FAEC07733AB59081A5DD7D522BD8607CBD5A95);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral82FAEC07733AB59081A5DD7D522BD8607CBD5A95);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_11;
+		int64_t L_13;
+		L_13 = DateTimeUtility_get_ElapsedMilliseconds_mFCCD79CB27652B45BB76D679824C381809226602(NULL);
+		V_1 = L_13;
 		String_t* L_14;
-		L_14 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_11, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
+		L_14 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_1), NULL);
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, L_14);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_14);
+		String_t* L_15;
+		L_15 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_12, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
+	}
+
+IL_0063:
+	{
 		// }
 		return;
 	}
@@ -1170,52 +1216,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoiceSDKConsoleLoggerImpl_LogAnnotation_
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5295380188F75D696383F8BDB2147F0053791372);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (!ShouldLogToConsole) return;
 		bool L_0;
 		L_0 = VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_m4D45C67EF5CD56C8BC8F06C6C7FB31AEE960B463_inline(__this, NULL);
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0010;
 		}
 	}
 	{
 		// if (!ShouldLogToConsole) return;
-		return;
+		goto IL_0041;
 	}
 
-IL_0009:
+IL_0010:
 	{
 		// Debug.Log($"{TAG}: Logging key-value pair: {annotationKey}::{annotationValue}");
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
 		il2cpp_codegen_runtime_class_init_inline(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var);
-		String_t* L_3 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, L_3);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_3);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_2;
-		NullCheck(L_4);
-		ArrayElementTypeCheck (L_4, _stringLiteral35EA32AF7F3CC00F7A2F8300CCA6EC5F301F4ABA);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral35EA32AF7F3CC00F7A2F8300CCA6EC5F301F4ABA);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
-		String_t* L_6 = ___annotationKey0;
+		String_t* L_4 = ((VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_StaticFields*)il2cpp_codegen_static_fields_for(VoiceSDKConsoleLoggerImpl_tD830A3FDBCDEFAA68417E5F31BFB7B875818F59B_il2cpp_TypeInfo_var))->___TAG_3;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_3;
 		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, L_6);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_6);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_5;
-		NullCheck(L_7);
-		ArrayElementTypeCheck (L_7, _stringLiteral5295380188F75D696383F8BDB2147F0053791372);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral5295380188F75D696383F8BDB2147F0053791372);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
-		String_t* L_9 = ___annotationValue1;
+		ArrayElementTypeCheck (L_5, _stringLiteral35EA32AF7F3CC00F7A2F8300CCA6EC5F301F4ABA);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral35EA32AF7F3CC00F7A2F8300CCA6EC5F301F4ABA);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
+		String_t* L_7 = ___annotationKey0;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_6;
 		NullCheck(L_8);
-		ArrayElementTypeCheck (L_8, L_9);
-		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_9);
-		String_t* L_10;
-		L_10 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_8, NULL);
+		ArrayElementTypeCheck (L_8, _stringLiteral5295380188F75D696383F8BDB2147F0053791372);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral5295380188F75D696383F8BDB2147F0053791372);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = L_8;
+		String_t* L_10 = ___annotationValue1;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_10);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_10);
+		String_t* L_11;
+		L_11 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_9, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_10, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
+	}
+
+IL_0041:
+	{
 		// }
 		return;
 	}

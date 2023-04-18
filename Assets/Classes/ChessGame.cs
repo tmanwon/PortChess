@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction;
+using Oculus.Platform;
+using Oculus.Platform.Models;
 using UnityEngine;
 using System.Data;
 using Mono.Data.Sqlite;
@@ -24,6 +26,14 @@ public class ChessGame : MonoBehaviour
     public GameObject analysisContent;
     public GameObject gameCardPrefab;
     private ArrayList matchHistory;
+    private int currentMove;
+    private int matchId;
+    private string username;
+    private ArrayList moves;
+    private int moveIndex;
+    private bool isInGame;
+    private bool isAnalyzing;
+    private bool gameOver = false;
     // SQLite
     private string databasePath;
     private SqliteConnection databaseConnection;
@@ -67,22 +77,24 @@ public class ChessGame : MonoBehaviour
 
     float yVelocity = 0.0f;
 
-    // Start is called before the first frame update
+    // CONSTRUCTOR
     void Start()
     {
+        // Initialize ArrayList Trackers
         lightPawns = new ArrayList();
         darkPawns = new ArrayList();
         isWhitesTurn = true;
         matchHistory = new ArrayList();
-
-        // Load SQLite DB File
-        var formattedFilePath = string.Format("{0}/{1}", Application.persistentDataPath, "portchessdb.sqlite");
+        moves = new ArrayList();
+        boardStatus = new Dictionary<int, GameObject>();
+        // Load SQLite DB File from device local storage
+        var formattedFilePath = string.Format("{0}/{1}", UnityEngine.Application.persistentDataPath, "portchessdb.sqlite");
         // If sqlite database hasn't been stored on local device yet...
         if (!File.Exists(formattedFilePath))
         {
             Debug.Log("Master Project: DB not in Persistent Path");
             // Store on Android Device
-            var loadDb = new WWW("jar:file://" + Application.dataPath + "!/assets/" + "portchessdb.sqlite");
+            var loadDb = new WWW("jar:file://" + UnityEngine.Application.dataPath + "!/assets/" + "portchessdb.sqlite");
             while (!loadDb.isDone) { }
             File.WriteAllBytes(formattedFilePath, loadDb.bytes);
             Debug.Log("Master Project: DB has been written to device");
@@ -92,26 +104,66 @@ public class ChessGame : MonoBehaviour
             Debug.Log("Master Project: DB found in Persistent Path");
         }
         // Database Connection
-        //databasePath = "URI=file:" + Application.dataPath + "/StreamingAssets/" + "portchessdb.sqlite";
-        databasePath = "URI=file:" + Application.persistentDataPath + "/" + "portchessdb.sqlite";
+        databasePath = "URI=file:" + UnityEngine.Application.persistentDataPath + "/" + "portchessdb.sqlite";
         databaseConnection = new SqliteConnection(databasePath);
+        databaseConnection.Open();
+        // Get user's Meta display name
+        Oculus.Platform.Users.GetLoggedInUser().OnComplete(GetDisplayNameCallback);
 
+    }
+
+    // Meta display name callback
+    private void GetDisplayNameCallback(Message msg)
+    {
+        print("Master Project - Callback");
+        if (!msg.IsError)
+        {
+            User user = msg.GetUser();
+            username = user.DisplayName;
+        }
     }
 
     // HOST ONLY: Start match against connected opponent
     public void StartGame()
     {
+        gameOver = false;
+        currentMove = 0;
         isWhitesTurn = true;
         InstantiatePieces();
+        CreateMatchID();
+        SaveMove();
+        isInGame = true;
         EnablePieces();
         DisablePieces();
+        foreach(Transform child in analysisContent.transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
 
+    public void CreateMatchID()
+    {
+        queryCommand = new SqliteCommand("INSERT INTO matches (user_id, opponent_id) VALUES (0, 0)", databaseConnection);
+        queryCommand.ExecuteNonQuery();
+        queryCommand = new SqliteCommand("SELECT MAX(match_id) FROM matches", databaseConnection);
+        cursor = queryCommand.ExecuteReader();
+        print("Master Project - Match ID Created");
+        while (cursor.Read())
+        {
+            // Add as element to ArrayList
+            print(string.Format("Master Project - Found Match ID: {0}", cursor[0]));
+            matchId = (int)(Int64) cursor[0];
+        }
+        print(string.Format("Master Project - New Match ID: {0}", matchId));
+    }
+
+    // Host set up
     public void HostGame()
     {
 
     }
 
+    // Client set up
     public void JoinGame()
     {
 
@@ -120,20 +172,84 @@ public class ChessGame : MonoBehaviour
     // Show user's match history
     public void StartAnalysis()
     {
-        databaseConnection.Open();
         LoadMatchHistory();
     }
 
     // Set up board for analyzing the selected game
-    public void AnalyzeSelectedGame()
+    public void AnalyzeSelectedGame(int selectedMatch)
     {
-
+        boardAnchor.GetComponent<ChessBoard>().EndOrbit();
+        isAnalyzing = true;
+        moves.Clear();
+        moveIndex = 0;
+        print(string.Format("Master Project: Loading moves from match {0}", selectedMatch));
+        queryCommand = new SqliteCommand(string.Format("SELECT * FROM moves WHERE match_id = {0}", selectedMatch), databaseConnection);
+        cursor = queryCommand.ExecuteReader();
+        print("Master Project - Preparing to read moves");
+        while (cursor.Read())
+        {
+            // Add move as element to ArrayList
+            print(string.Format("Master Project - Loading Move: {0}", cursor[0]));
+            ArrayList buffer = new ArrayList();
+            // Parse columns A-H into ArrayLists
+            for (int i = 1; i < 9; i++)
+            {
+                buffer.Add(new ArrayList(string.Format("{0}", cursor[i]).Split(",")));
+                print(string.Format("Master Project - Loaded column {0}", i));
+            }
+            moves.Add(buffer);
+            print(string.Format("Master Project - Loaded Move: {0}", cursor[0]));
+        }
+        print(string.Format("Master Project - Finished Loading Moves from Match: {0}", selectedMatch));
+        InstantiatePieces();
+        isWhitesTurn = true;
+        ReadSelectedMove(moveIndex);
     }
 
-    // Update is called once per frame
+    // Back Button Action
+    public void BackButtonClicked()
+    {
+        gameOver = false;
+        boardAnchor.GetComponent<ChessBoard>().Orbit();
+        DestroyPieces();
+        lightPawns.Clear();
+        darkPawns.Clear();
+        isInGame = false;
+        isAnalyzing = false;
+    }
+
+    // Update is called every frame
     void Update()
     {
-        if (isWhitesTurn)
+        if (isInGame && gameOver)
+        {
+            float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
+            leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+
+            leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            foreach (GameObject pawn in lightPawns)
+            {
+                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            }
+            foreach (GameObject pawn in darkPawns)
+            {
+                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            }
+        } else if (isWhitesTurn && isInGame)
         {
             
             float chipScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
@@ -165,7 +281,7 @@ public class ChessGame : MonoBehaviour
                 pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
             }
         }
-        else
+        else if (!isWhitesTurn && isInGame)
         {
             float chipScale = Mathf.SmoothDamp(leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
             float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
@@ -198,6 +314,7 @@ public class ChessGame : MonoBehaviour
         }
     }
 
+    // Load user's match history from database
     public void LoadMatchHistory()
     {
         print("Master Project - Loading Match History");
@@ -209,7 +326,7 @@ public class ChessGame : MonoBehaviour
         while (cursor.Read())
         {
             // Add as element to ArrayList
-            print(string.Format("Master Project - Found Entry: {0}, {1}, {2}", cursor[0], cursor[1], cursor[2]));
+            print(string.Format("Master Project - Found Match: {0}, {1}, {2}", cursor[0], cursor[1], cursor[2]));
             ArrayList buffer = new ArrayList();
             buffer.Add(string.Format("{0}", cursor[0]));
             buffer.Add(string.Format("{0}", cursor[1]));
@@ -218,51 +335,32 @@ public class ChessGame : MonoBehaviour
             buffer.Add(string.Format("{0}", cursor[4]));
             matchHistory.Add(buffer);
         }
-        print("Master Project - BALLS");
-        ArrayList obj = (ArrayList) matchHistory[0];
-        analysisContent.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "WIN";
-        analysisContent.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().text = string.Format("{0}", obj[4]);
-        analysisContent.transform.GetChild(0).gameObject.transform.GetChild(4).gameObject.GetComponent<TMP_Text>().text = "DICK";
-        analysisContent.transform.GetChild(0).gameObject.transform.GetChild(5).gameObject.GetComponent<TMP_Text>().text = "BALLS";
-
-        /*
-        // Create a notebook page for every entry
+        print("Master Project - Finshed Loading Matches");
+        // Create a game card for each match in user's match history
         foreach (ArrayList obj in matchHistory)
         {
-            // Create new page object
-            print(string.Format("Master Project - Adding page: {0}, {1}, {2}", obj[0], obj[1], obj[2]));
-            GameObject page = Instantiate(pagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            page.transform.SetParent(notebook.transform, false);
-            page.transform.localRotation = Quaternion.Euler(-90, 0, 0);
-            page.transform.RotateAroundLocal(Vector3.back, 0f);
-            page.transform.localPosition = new Vector3(0, 0.2f, 0);
-            pages.Add(page);
+            // Create game card
+            print(string.Format("Master Project - Creating Match Card: {0}, {1}, {2}", obj[0], obj[1], obj[2]));
+            GameObject card = Instantiate(gameCardPrefab);
+            card.transform.SetParent(analysisContent.transform, false);
+            card.GetComponent<Match>().match_id = int.Parse(string.Format("{0}", obj[0]));
 
-            // Create new page canvas object to display information
-            GameObject pageCanvas = Instantiate(pokeableTest, new Vector3(0, 0, 0), Quaternion.identity);
-            pageCanvas.transform.SetParent(page.transform, false);
-            pageCanvas.transform.localScale = new Vector3(23, 23, 23);
-            pageCanvas.transform.localRotation = Quaternion.Euler(0, 180, 0);
-            //pageCanvas.transform.Translate(new Vector3(0.02f, -0.15f, -0.015f));
-            pageCanvas.transform.Translate(new Vector3(0.1f, -0.01f, -0.01f));
-
-            dateField = pageCanvas.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TMP_InputField>();
-            contentField = pageCanvas.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<TMP_InputField>();
-
-            contentField.interactable = false;
-            dateField.interactable = false;
-            contentField.interactable = true;
-            dateField.interactable = true;
-            contentField.text = string.Format("{0}", obj[1]);
-            dateField.text = string.Format("{0}", obj[0]);
+            // Match Result
+            card.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = string.Format("{0}", obj[3]);
+            // Datetime
+            card.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().text = string.Format("{0}", obj[4]);
+            // Username
+            card.transform.GetChild(4).gameObject.GetComponent<TMP_Text>().text = "tmanwon";
+            // Opponent Name
+            card.transform.GetChild(5).gameObject.GetComponent<TMP_Text>().text = "Opponent";
+            print("Master Project - Match Card Created");
         }
-        */
-
     }
 
     // Instantiate Chess Pieces and Initialize Board Dictionary
     public void InstantiatePieces()
     {
+        boardStatus.Clear();
         // Dark Rooks
         leftRookDark = Instantiate(rookDarkPrefab) as GameObject;
         leftRookDark.GetComponent<ChessPiece>().id = "LeftRookDark";
@@ -471,6 +569,104 @@ public class ChessGame : MonoBehaviour
 
     }
 
+    // Destroy any instantiated Chess Piece objects
+    public void DestroyPieces()
+    {
+        GameObject[] pieces;
+        pieces = GameObject.FindGameObjectsWithTag("Piece");
+        foreach (GameObject chessPiece in pieces)
+        {
+            Destroy(chessPiece);
+        }
+    }
+
+    // Save move to database
+    public void SaveMove()
+    {
+        print(string.Format("Master Project - Saving Move {0}", currentMove));
+        ArrayList rows = new ArrayList();
+        for (int i = 0; i < 8; i++)
+        {
+            string prepStmt = "";
+            for (int j = 0; j < 8; j++)
+            {
+                if (boardStatus[100 + (10 * i) + j] == boardAnchor)
+                {
+                    prepStmt += "None,";
+                } else
+                {
+                    prepStmt += boardStatus[100 + (10 * i) + j].GetComponent<ChessPiece>().id + ",";
+                }
+            }
+            prepStmt = prepStmt.Remove(prepStmt.Length - 1, 1);
+            print(string.Format("Master Project - Saving Col: {0}", prepStmt));
+            rows.Add(prepStmt);
+        }
+        queryCommand = new SqliteCommand(string.Format("INSERT INTO moves (move_no, A, B, C, D, E, F, G, H, match_id) VALUES ({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', {9})", currentMove, rows[0], rows[1], rows[2], rows[3], rows[4], rows[5], rows[6], rows[7], matchId), databaseConnection);
+        queryCommand.ExecuteNonQuery();
+        print("Master Project - Moved Saved");
+    }
+
+    // Read move from database
+    public void ReadSelectedMove(int selectedMove)
+    {
+        print(string.Format("Master Project - Reading Move {0}", selectedMove));
+        ArrayList moveToRead = (ArrayList)moves[selectedMove];
+
+        for (int i = 0; i < 8; i++)
+        {
+            ArrayList col = (ArrayList) moveToRead[i];
+            for (int j = 0; j < 8; j++)
+            {
+                String row = string.Format("{0}", col[j]);
+                if (row != "None")
+                {
+                    foreach (int key in boardStatus.Keys)
+                    {
+                        if (boardStatus[key].GetComponent<ChessPiece>() != null)
+                        {
+                            if (row == boardStatus[key].GetComponent<ChessPiece>().id)
+                            {
+                                boardStatus[key].transform.localPosition = new Vector3((i * 5) + 3, -3.8f, (j * 5) - 38);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        print("Master Project - Move Showed");
+    }
+
+    // Show next move
+    public void ReadNextMove()
+    {
+        if (moves.Count == (moveIndex + 1))
+        {
+            moveIndex = 0;
+            ReadSelectedMove(moveIndex);
+        } else
+        {
+            moveIndex++;
+            ReadSelectedMove(moveIndex);
+        }
+    }
+
+    // Show previous move
+    public void ReadPreviousMove()
+    {
+        if ((moveIndex - 1) < 0)
+        {
+            moveIndex = moves.Count - 1;
+            ReadSelectedMove(moveIndex);
+        } else
+        {
+            moveIndex--;
+            ReadSelectedMove(moveIndex);
+        }
+    }
+
+    // Enable chess pieces based on who's turn it is
     public void EnablePieces()
     {
         if (isWhitesTurn)
@@ -507,6 +703,7 @@ public class ChessGame : MonoBehaviour
         }
     }
 
+    // Disable pieces based on who's turn it is
     public void DisablePieces()
     {
         if (isWhitesTurn)
@@ -557,6 +754,8 @@ public class ChessGame : MonoBehaviour
                 boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))] = boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))];
                 boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))] = boardAnchor;
                 selectedPiece.GetComponent<ChessPiece>().moves++;
+                currentMove++;
+                SaveMove();
                 isWhitesTurn = (isWhitesTurn) ? (false) : (true);
                 EnablePieces();
                 DisablePieces();
@@ -568,6 +767,8 @@ public class ChessGame : MonoBehaviour
                 boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))] = boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))];
                 boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))] = boardAnchor;
                 selectedPiece.GetComponent<ChessPiece>().moves++;
+                currentMove++;
+                SaveMove();
                 isWhitesTurn = (isWhitesTurn) ? (false) : (true);
                 EnablePieces();
                 DisablePieces();
@@ -577,10 +778,114 @@ public class ChessGame : MonoBehaviour
             {
                 boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))].transform.localPosition = new Vector3((Mathf.RoundToInt(selectedPieceX) * 5) + 3, -3.8f, (Mathf.RoundToInt(selectedPieceY) * 5) - 38);
             }
+
+            // Check if king in checkmate
+            if (inCheckmate()) {
+                print("Master Project - In Checkmate");
+                EndGame();
+            } else
+            {
+                print("Master Project - Not in checkmate");
+            }
+
         } else
         {
             boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))].transform.localPosition = new Vector3((Mathf.RoundToInt(selectedPieceX) * 5) + 3, -3.8f, (Mathf.RoundToInt(selectedPieceY) * 5) - 38);
         }
+
+    }
+
+    // Check if king is in checkmate
+    bool inCheckmate()
+    {
+        foreach (GameObject piece in boardStatus.Values)
+        {
+            if (piece.gameObject.GetComponent<ChessPiece>() != null)
+            {
+                if (piece.gameObject.GetComponent<ChessPiece>().colorType == ColorType.WHITE)
+                {
+                    print("Master Project - Checking piece for black king checkmate " + piece.gameObject.GetComponent<ChessPiece>().id);
+                    int kingX = (Mathf.RoundToInt(KingDark.gameObject.transform.localPosition.x) - 3) / 5;
+                    int kingY = (Mathf.RoundToInt(KingDark.gameObject.transform.localPosition.z) + 38) / 5;
+                    int pieceX = (Mathf.RoundToInt(piece.gameObject.transform.localPosition.x) - 3) / 5;
+                    int pieceY = (Mathf.RoundToInt(piece.gameObject.transform.localPosition.z) + 38) / 5;
+
+                    try
+                    {
+                        if (ValidateMove(piece.gameObject, kingX, kingY, pieceX, pieceY))
+                        {
+                            print("Master Project - Piece can capture Dark king " + piece.gameObject.GetComponent<ChessPiece>().id);
+                            // Update matchstatus in database
+                            queryCommand = new SqliteCommand(string.Format("UPDATE matches SET match_result = 'WIN' WHERE match_id = {0}", matchId), databaseConnection);
+                            queryCommand.ExecuteNonQuery();
+                            return true;
+                        }
+                    } catch
+                    {
+
+                    }
+                } else if (piece.gameObject.GetComponent<ChessPiece>().colorType == ColorType.DARK)
+                {
+                    print("Master Project - Checking piece for white king checkmate" + piece.gameObject.GetComponent<ChessPiece>().id);
+                    int kingX = (Mathf.RoundToInt(KingLight.gameObject.transform.localPosition.x) - 3) / 5;
+                    int kingY = (Mathf.RoundToInt(KingLight.gameObject.transform.localPosition.z) + 38) / 5;
+                    int pieceX = (Mathf.RoundToInt(piece.gameObject.transform.localPosition.x) - 3) / 5;
+                    int pieceY = (Mathf.RoundToInt(piece.gameObject.transform.localPosition.z) + 38) / 5;
+
+                    try
+                    {
+                        if (ValidateMove(piece.gameObject, kingX, kingY, pieceX, pieceY))
+                        {
+                            print("Master Project - Piece can capture Light king " + piece.gameObject.GetComponent<ChessPiece>().id);
+                            // Update matchstatus in database
+                            queryCommand = new SqliteCommand(string.Format("UPDATE matches SET match_result = 'LOSS' WHERE match_id = {0}", matchId), databaseConnection);
+                            queryCommand.ExecuteNonQuery();
+                            return true;
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
+        }
+        // Not in checkmate
+        return false;
+    }
+
+    // End game if a player wins
+    public void EndGame()
+    {
+        // Disable all pieces
+        leftBishopDark.GetComponent<PokeInteractable>().Disable();
+        rightBishopDark.GetComponent<PokeInteractable>().Disable();
+        leftKnightDark.GetComponent<PokeInteractable>().Disable();
+        rightKnightDark.GetComponent<PokeInteractable>().Disable();
+        leftRookDark.GetComponent<PokeInteractable>().Disable();
+        rightRookDark.GetComponent<PokeInteractable>().Disable();
+        KingDark.GetComponent<PokeInteractable>().Disable();
+        QueenDark.GetComponent<PokeInteractable>().Disable();
+
+        foreach (GameObject pawn in darkPawns)
+        {
+            pawn.GetComponent<PokeInteractable>().Disable();
+        }
+        leftRookLight.GetComponent<PokeInteractable>().Disable();
+        rightRookLight.GetComponent<PokeInteractable>().Disable();
+        leftBishopLight.GetComponent<PokeInteractable>().Disable();
+        rightBishopLight.GetComponent<PokeInteractable>().Disable();
+        leftKnightLight.GetComponent<PokeInteractable>().Disable();
+        rightKnightLight.GetComponent<PokeInteractable>().Disable();
+        KingLight.GetComponent<PokeInteractable>().Disable();
+        QueenLight.GetComponent<PokeInteractable>().Disable();
+
+        foreach (GameObject pawn in lightPawns)
+        {
+            pawn.GetComponent<PokeInteractable>().Disable();
+        }
+
+        gameOver = true;
     }
 
     // Validate moves based on piece type
@@ -602,12 +907,6 @@ public class ChessGame : MonoBehaviour
                 if (boardStatus[100 + (testCoordX * 10) + testCoordY].GetComponent<ChessPiece>() != null)
                 {
                     return false;
-                    /*
-                    if (boardStatus[100 + (testCoordX * 10) + testCoordY].GetComponent<ChessPiece>().colorType == pieceToMove.GetComponent<ChessPiece>().colorType)
-                    {
-                        return false;
-                    }
-                    */
                 }
                 testCoordX += incrementX;
                 testCoordY += incrementY;

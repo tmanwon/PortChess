@@ -142,7 +142,6 @@ public class ChessPiece : MonoBehaviour
             {
                 tiles[i].GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
             }
-            //tiles[i].GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
         }
     }
 

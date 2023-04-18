@@ -289,6 +289,8 @@ struct EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293;
 struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
 // System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// System.EventHandler
+struct EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82;
 // System.ComponentModel.EventHandlerList
 struct EventHandlerList_t057D7531265C1DF014C8C83AF251E908D1A0B1C8;
 // System.Exception
@@ -761,9 +763,9 @@ struct AttributeCollection_tD55D3E17234E299E07B6071F31FEEB993C9AD8CA  : public R
 	// System.Attribute[] System.ComponentModel.AttributeCollection::_attributes
 	AttributeU5BU5D_t0F73488E6F1249C889608E8DCC0BCC28A874E8F1* ____attributes_2;
 	// System.ComponentModel.AttributeCollection/AttributeEntry[] System.ComponentModel.AttributeCollection::_foundAttributeTypes
-	AttributeEntryU5BU5D_tF39C046D81AC79FBD2B0C1FBC7513DA6B66BA64F* ____foundAttributeTypes_4;
+	AttributeEntryU5BU5D_tF39C046D81AC79FBD2B0C1FBC7513DA6B66BA64F* ____foundAttributeTypes_5;
 	// System.Int32 System.ComponentModel.AttributeCollection::_index
-	int32_t ____index_5;
+	int32_t ____index_6;
 };
 
 struct AttributeCollection_tD55D3E17234E299E07B6071F31FEEB993C9AD8CA_StaticFields
@@ -1723,6 +1725,8 @@ struct DataSet_t1F72E9737C995EBFDCF793C87CAC3196EA02411B  : public MarshalByValu
 	DataRowCreatedEventHandler_t9A8B728761AB985BA0979A4447A269DF5D429029* ___DataRowCreated_30;
 	// System.Data.DataSetClearEventhandler System.Data.DataSet::ClearFunctionCalled
 	DataSetClearEventhandler_t66917FBEC6137CBE9E5D72CB53E1FF6EBE8333E1* ___ClearFunctionCalled_31;
+	// System.EventHandler System.Data.DataSet::Initialized
+	EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* ___Initialized_32;
 };
 
 struct DataSet_t1F72E9737C995EBFDCF793C87CAC3196EA02411B_StaticFields
@@ -2330,28 +2334,30 @@ struct DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07  : public MarshalByVa
 	DataTableNewRowEventHandler_t874CE0332A55E1F8A8CF67458AF71CE73975D827* ____onTableNewRowDelegate_67;
 	// System.ComponentModel.PropertyChangedEventHandler System.Data.DataTable::_onPropertyChangingDelegate
 	PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ____onPropertyChangingDelegate_68;
+	// System.EventHandler System.Data.DataTable::_onInitialized
+	EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* ____onInitialized_69;
 	// System.Data.DataRowBuilder System.Data.DataTable::_rowBuilder
-	DataRowBuilder_t8EFCEBE1AE55392AAE53DA15D2B334C56BB14566* ____rowBuilder_69;
+	DataRowBuilder_t8EFCEBE1AE55392AAE53DA15D2B334C56BB14566* ____rowBuilder_70;
 	// System.Collections.Generic.List`1<System.Data.DataView> System.Data.DataTable::_delayedViews
-	List_1_t1CDDD861715A83BE1EF98CE75870A483BB5ECC93* ____delayedViews_70;
+	List_1_t1CDDD861715A83BE1EF98CE75870A483BB5ECC93* ____delayedViews_71;
 	// System.Collections.Generic.List`1<System.Data.DataViewListener> System.Data.DataTable::_dataViewListeners
-	List_1_t73C786BB01E05FA7B2ACAA21DA57002B4503C95F* ____dataViewListeners_71;
+	List_1_t73C786BB01E05FA7B2ACAA21DA57002B4503C95F* ____dataViewListeners_72;
 	// System.Collections.Hashtable System.Data.DataTable::_rowDiffId
-	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____rowDiffId_72;
+	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____rowDiffId_73;
 	// System.Threading.ReaderWriterLockSlim System.Data.DataTable::_indexesLock
-	ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* ____indexesLock_73;
+	ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* ____indexesLock_74;
 	// System.Int32 System.Data.DataTable::_ukColumnPositionForInference
-	int32_t ____ukColumnPositionForInference_74;
+	int32_t ____ukColumnPositionForInference_75;
 	// System.Data.SerializationFormat System.Data.DataTable::_remotingFormat
-	int32_t ____remotingFormat_75;
+	int32_t ____remotingFormat_76;
 	// System.Int32 System.Data.DataTable::_objectID
-	int32_t ____objectID_77;
+	int32_t ____objectID_78;
 };
 
 struct DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_StaticFields
 {
 	// System.Int32 System.Data.DataTable::s_objectTypeCount
-	int32_t ___s_objectTypeCount_76;
+	int32_t ___s_objectTypeCount_77;
 };
 
 // System.Delegate
@@ -2566,6 +2572,8 @@ struct ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062  : public 
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____childColumnNames_12;
 	// System.String System.Data.ForeignKeyConstraint::_parentTableName
 	String_t* ____parentTableName_13;
+	// System.String System.Data.ForeignKeyConstraint::_parentTableNamespace
+	String_t* ____parentTableNamespace_14;
 };
 
 // System.RuntimeTypeHandle
@@ -3620,7 +3628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlToDatasetMap_IsMappedColumn_m4211E195
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_0 = ___c0;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
 		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)4))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -3681,7 +3689,7 @@ IL_001f:
 		XmlNodeIdentety__ctor_m253D614797ED00A6EC27A5ACB42A969F147E658D(L_14, L_12, L_13, NULL);
 		TableSchemaInfo_tF9B150D256CF384DEC7A5EEECE93A3790E8934E0* L_15 = V_2;
 		NullCheck(L_11);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_11, L_14, L_15);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_11, L_14, L_15);
 		TableSchemaInfo_tF9B150D256CF384DEC7A5EEECE93A3790E8934E0* L_16 = V_2;
 		return L_16;
 	}
@@ -3795,7 +3803,7 @@ IL_004f:
 		XmlNodeIdentety__ctor_m253D614797ED00A6EC27A5ACB42A969F147E658D(L_29, L_27, L_28, NULL);
 		TableSchemaInfo_tF9B150D256CF384DEC7A5EEECE93A3790E8934E0* L_30 = V_3;
 		NullCheck(L_26);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_26, L_29, L_30);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_26, L_29, L_30);
 		TableSchemaInfo_tF9B150D256CF384DEC7A5EEECE93A3790E8934E0* L_31 = V_3;
 		return L_31;
 	}
@@ -3854,7 +3862,7 @@ IL_001f:
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_13 = V_2;
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_14 = ___col0;
 		NullCheck(L_12);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_15 = ___col0;
 		NullCheck(L_15);
 		String_t* L_16;
@@ -3989,7 +3997,7 @@ IL_0054:
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_29 = V_3;
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_30 = ___col1;
 		NullCheck(L_28);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_28, L_29, L_30);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_28, L_29, L_30);
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_31 = ___col1;
 		NullCheck(L_31);
 		String_t* L_32;
@@ -4040,7 +4048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_m27368D
 		L_1 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_0, NULL);
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
 		XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E* L_3 = (XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E*)il2cpp_codegen_object_new(XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		XmlNodeIdHashtable__ctor_mFE3B169A7AFE6CF4C0989530338F5AB843545146(L_3, L_2, NULL);
@@ -4052,7 +4060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_m27368D
 		L_5 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_4, NULL);
 		NullCheck(L_5);
 		RuntimeObject* L_6;
-		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
+		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
 		V_0 = L_6;
 	}
 	{
@@ -4113,7 +4121,7 @@ IL_0024_1:
 				L_17 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_16, NULL);
 				NullCheck(L_17);
 				RuntimeObject* L_18;
-				L_18 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_17);
+				L_18 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_17);
 				V_3 = L_18;
 			}
 			{
@@ -4256,7 +4264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_mC4162F
 		L_1 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_0, NULL);
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
 		XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E* L_3 = (XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E*)il2cpp_codegen_object_new(XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		XmlNodeIdHashtable__ctor_mFE3B169A7AFE6CF4C0989530338F5AB843545146(L_3, L_2, NULL);
@@ -4302,7 +4310,7 @@ IL_0033:
 		L_16 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_15, NULL);
 		NullCheck(L_16);
 		RuntimeObject* L_17;
-		L_17 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_16);
+		L_17 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_16);
 		V_1 = L_17;
 	}
 	{
@@ -4363,7 +4371,7 @@ IL_004b_1:
 				L_28 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_27, NULL);
 				NullCheck(L_28);
 				RuntimeObject* L_29;
-				L_29 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_28);
+				L_29 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_28);
 				V_4 = L_29;
 			}
 			{
@@ -4453,7 +4461,7 @@ IL_00bc_1:
 				L_45 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_44, NULL);
 				NullCheck(L_45);
 				RuntimeObject* L_46;
-				L_46 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_45);
+				L_46 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_45);
 				V_4 = L_46;
 			}
 			{
@@ -4590,7 +4598,7 @@ IL_013c_2:
 						DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_83;
 						L_83 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_82);
 						NullCheck(L_80);
-						VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_80, L_81, L_83);
+						VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_80, L_81, L_83);
 					}
 
 IL_015b_2:
@@ -4680,7 +4688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_mB96E34
 		L_6 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_5, NULL);
 		NullCheck(L_6);
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_6);
+		L_7 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_6);
 		V_1 = L_7;
 	}
 	{
@@ -4803,7 +4811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_mD8920F
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = V_0;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_2);
 		XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E* L_4 = (XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E*)il2cpp_codegen_object_new(XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
 		XmlNodeIdHashtable__ctor_mFE3B169A7AFE6CF4C0989530338F5AB843545146(L_4, L_3, NULL);
@@ -4812,7 +4820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlToDatasetMap_BuildIdentityMap_mD8920F
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_5 = V_0;
 		NullCheck(L_5);
 		RuntimeObject* L_6;
-		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_5);
+		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(37 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_5);
 		V_1 = L_6;
 	}
 	{
@@ -4873,7 +4881,7 @@ IL_0025_1:
 				L_17 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_16, NULL);
 				NullCheck(L_17);
 				RuntimeObject* L_18;
-				L_18 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_17);
+				L_18 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_17);
 				V_4 = L_18;
 			}
 			{
@@ -4963,7 +4971,7 @@ IL_0096_1:
 				L_34 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_33, NULL);
 				NullCheck(L_34);
 				RuntimeObject* L_35;
-				L_35 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_34);
+				L_35 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_34);
 				V_4 = L_35;
 			}
 			{
@@ -5100,7 +5108,7 @@ IL_0116_2:
 						DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_72;
 						L_72 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_71);
 						NullCheck(L_69);
-						VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_69, L_70, L_72);
+						VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_69, L_70, L_72);
 					}
 
 IL_0135_2:
@@ -5177,7 +5185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_2 = ___dt0;
 		NullCheck(L_1);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_1, L_2);
 		V_1 = 0;
 		goto IL_0074;
 	}
@@ -5188,13 +5196,13 @@ IL_0012:
 		int32_t L_5 = V_1;
 		NullCheck(L_4);
 		RuntimeObject* L_6;
-		L_6 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_4, L_5);
+		L_6 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_4, L_5);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_6, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataRelationCollection_tA8655ADC9860DD89FDC0317E38C95CB740BC2956* L_7;
 		L_7 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_6, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		NullCheck(L_7);
 		RuntimeObject* L_8;
-		L_8 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_7);
+		L_8 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_7);
 		V_2 = L_8;
 	}
 	{
@@ -5244,7 +5252,7 @@ IL_002b_1:
 				L_16 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_15);
 				NullCheck(L_14);
 				bool L_17;
-				L_17 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_14, L_16);
+				L_17 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_14, L_16);
 				if (L_17)
 				{
 					goto IL_0052_1;
@@ -5258,7 +5266,7 @@ IL_002b_1:
 				L_20 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_19);
 				NullCheck(L_18);
 				int32_t L_21;
-				L_21 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_18, L_20);
+				L_21 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_18, L_20);
 			}
 
 IL_0052_1:
@@ -5294,7 +5302,7 @@ IL_0074:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_26 = V_0;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_26);
+		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_26);
 		if ((((int32_t)L_25) < ((int32_t)L_27)))
 		{
 			goto IL_0012;
@@ -5797,7 +5805,7 @@ IL_0042:
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_22 = V_2;
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_23 = ___col0;
 		NullCheck(L_21);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_21, L_22, L_23);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_21, L_22, L_23);
 		return;
 	}
 }
@@ -5926,7 +5934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XmlNodeIdHashtable_get_Item_m5
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___NamespaceURI_1), (void*)L_5);
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_6 = __this->____id_22;
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -5952,7 +5960,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XmlNodeIdHashtable_get_Item_mF
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___NamespaceURI_1), (void*)L_5);
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_6 = __this->____id_22;
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -5978,7 +5986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XmlNodeIdHashtable_get_Item_m2
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___NamespaceURI_1), (void*)L_5);
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_6 = __this->____id_22;
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -6004,7 +6012,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XmlNodeIdHashtable_get_Item_m0
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___NamespaceURI_1), (void*)L_3);
 		XmlNodeIdentety_tE9FABD8AD66EABA03F76B44DBB4A1B8B37F091EB* L_4 = __this->____id_22;
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
+		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
 		return L_5;
 	}
 }
@@ -6036,7 +6044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableSchemaInfo__ctor_m2B8ABF35C7B0EEA53
 		L_2 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_1, NULL);
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_2);
 		XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E* L_4 = (XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E*)il2cpp_codegen_object_new(XmlNodeIdHashtable_t050C2BF886A07F63E01E2F5A03C9332950CB381E_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
 		XmlNodeIdHashtable__ctor_mFE3B169A7AFE6CF4C0989530338F5AB843545146(L_4, L_3, NULL);
@@ -6131,7 +6139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_AddExtendedProperties_m9E5220
 		PropertyCollection_t531D3CA9714C3D7818C1B1C139A9C4F04B73EE7C* L_1 = ___props0;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(26 /* System.Collections.IDictionaryEnumerator System.Collections.Hashtable::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* System.Collections.IDictionaryEnumerator System.Collections.Hashtable::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -6425,7 +6433,7 @@ IL_0030:
 		int32_t L_8 = V_1;
 		NullCheck(L_7);
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_9;
-		L_9 = VirtualFuncInvoker1< PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381*, int32_t >::Invoke(26 /* System.ComponentModel.PropertyDescriptor System.ComponentModel.PropertyDescriptorCollection::get_Item(System.Int32) */, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381*, int32_t >::Invoke(31 /* System.ComponentModel.PropertyDescriptor System.ComponentModel.PropertyDescriptorCollection::get_Item(System.Int32) */, L_7, L_8);
 		RuntimeObject* L_10 = ___instance0;
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_11 = ___root1;
 		XmlDocument_t4DE82998E642C5C21A4A620A5278237C70D3E42B* L_12 = ___xd2;
@@ -6500,7 +6508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_AddXdoProperty_mE355F87C13A53
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_0 = ___pd0;
 		NullCheck(L_0);
 		Type_t* L_1;
-		L_1 = VirtualFuncInvoker0< Type_t* >::Invoke(16 /* System.Type System.ComponentModel.PropertyDescriptor::get_PropertyType() */, L_0);
+		L_1 = VirtualFuncInvoker0< Type_t* >::Invoke(21 /* System.Type System.ComponentModel.PropertyDescriptor::get_PropertyType() */, L_0);
 		V_0 = L_1;
 		V_1 = (bool)0;
 		V_2 = (DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66*)NULL;
@@ -6637,7 +6645,7 @@ IL_00b3:
 		RuntimeObject* L_38 = ___instance1;
 		NullCheck(L_37);
 		bool L_39;
-		L_39 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(20 /* System.Boolean System.ComponentModel.PropertyDescriptor::ShouldSerializeValue(System.Object) */, L_37, L_38);
+		L_39 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.ComponentModel.PropertyDescriptor::ShouldSerializeValue(System.Object) */, L_37, L_38);
 		if (!L_39)
 		{
 			goto IL_00ce;
@@ -6677,7 +6685,7 @@ IL_00d2:
 		RuntimeObject* L_46 = ___instance1;
 		NullCheck(L_45);
 		RuntimeObject* L_47;
-		L_47 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(17 /* System.Object System.ComponentModel.PropertyDescriptor::GetValue(System.Object) */, L_45, L_46);
+		L_47 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(26 /* System.Object System.ComponentModel.PropertyDescriptor::GetValue(System.Object) */, L_45, L_46);
 		V_5 = L_47;
 		RuntimeObject* L_48 = V_5;
 		if (!((InternalDataCollectionBase_tDBDE593FD7AB64DA7E3C512E49C0E0B396D3DDB2*)IsInstClass((RuntimeObject*)L_48, InternalDataCollectionBase_tDBDE593FD7AB64DA7E3C512E49C0E0B396D3DDB2_il2cpp_TypeInfo_var)))
@@ -6706,7 +6714,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_50 = ___pd0;
 		NullCheck(L_50);
 		String_t* L_51;
-		L_51 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_50);
+		L_51 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_50);
 		bool L_52;
 		L_52 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_51, _stringLiteral3A5178AA7F2E9A8A4D934128EC104B51B2795889, 4, NULL);
 		if (L_52)
@@ -6718,7 +6726,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_53 = ___pd0;
 		NullCheck(L_53);
 		String_t* L_54;
-		L_54 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_53);
+		L_54 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_53);
 		bool L_55;
 		L_55 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_54, _stringLiteral8B672CE8842C549D79E6764F4C851BDFC8970102, 4, NULL);
 		if (L_55)
@@ -6730,7 +6738,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_56 = ___pd0;
 		NullCheck(L_56);
 		String_t* L_57;
-		L_57 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_56);
+		L_57 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_56);
 		bool L_58;
 		L_58 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_57, _stringLiteralF5AE989A107B3AF8A6EE467956F3DCB8D1B91DD7, 4, NULL);
 		if (L_58)
@@ -6742,7 +6750,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_59 = ___pd0;
 		NullCheck(L_59);
 		String_t* L_60;
-		L_60 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_59);
+		L_60 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_59);
 		bool L_61;
 		L_61 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_60, _stringLiteralD98FE7007D1F7A79A2A7C688B6F8ADFFCFBF923E, 4, NULL);
 		if (L_61)
@@ -6754,7 +6762,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_62 = ___pd0;
 		NullCheck(L_62);
 		String_t* L_63;
-		L_63 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_62);
+		L_63 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_62);
 		bool L_64;
 		L_64 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_63, _stringLiteralFA4CBFE00B43FFF350A4ECBFFA5949C0BE4D7637, 4, NULL);
 		if (L_64)
@@ -6766,7 +6774,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_65 = ___pd0;
 		NullCheck(L_65);
 		String_t* L_66;
-		L_66 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_65);
+		L_66 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_65);
 		bool L_67;
 		L_67 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_66, _stringLiteralC0EE40A86232F374F41406B68C82CD09A65DE4CB, 4, NULL);
 		if (L_67)
@@ -6778,7 +6786,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_68 = ___pd0;
 		NullCheck(L_68);
 		String_t* L_69;
-		L_69 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_68);
+		L_69 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_68);
 		bool L_70;
 		L_70 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_69, _stringLiteralF0711F440B41760EF9A4A09CB243E636F18523EB, 4, NULL);
 		if (L_70)
@@ -6790,7 +6798,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_71 = ___pd0;
 		NullCheck(L_71);
 		String_t* L_72;
-		L_72 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_71);
+		L_72 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_71);
 		bool L_73;
 		L_73 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_72, _stringLiteral40FA06EA34AC1C55AF86EE917CA36CC2461CE33E, 4, NULL);
 		if (L_73)
@@ -6802,7 +6810,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_74 = ___pd0;
 		NullCheck(L_74);
 		String_t* L_75;
-		L_75 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_74);
+		L_75 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_74);
 		bool L_76;
 		L_76 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_75, _stringLiteralCEB5C51C6AF851E1F9A42289C604A364EE5D3D99, 4, NULL);
 		if (L_76)
@@ -6814,7 +6822,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_77 = ___pd0;
 		NullCheck(L_77);
 		String_t* L_78;
-		L_78 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_77);
+		L_78 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_77);
 		bool L_79;
 		L_79 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_78, _stringLiteralE3E0BC991DA54A4EBC858D968493D0CB4D55810B, 4, NULL);
 		if (L_79)
@@ -6826,7 +6834,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_80 = ___pd0;
 		NullCheck(L_80);
 		String_t* L_81;
-		L_81 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_80);
+		L_81 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_80);
 		bool L_82;
 		L_82 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_81, _stringLiteral123219A26D14E77390D35998655051FBA8B8912C, 4, NULL);
 		if (L_82)
@@ -6838,7 +6846,7 @@ IL_00ef:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_83 = ___pd0;
 		NullCheck(L_83);
 		String_t* L_84;
-		L_84 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_83);
+		L_84 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_83);
 		bool L_85;
 		L_85 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_84, _stringLiteral9FF9E3A3F709EB3BBD1D9157723E98989E6B90C4, 4, NULL);
 		if (!L_85)
@@ -6864,7 +6872,7 @@ IL_01e3:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_87 = ___pd0;
 		NullCheck(L_87);
 		String_t* L_88;
-		L_88 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_87);
+		L_88 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_87);
 		bool L_89;
 		L_89 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_88, _stringLiteralF81EA10CE8905B221B93A36C354A24A86EC751DC, 4, NULL);
 		if (!L_89)
@@ -6991,7 +6999,7 @@ IL_0297:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_120 = ___pd0;
 		NullCheck(L_120);
 		String_t* L_121;
-		L_121 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_120);
+		L_121 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_120);
 		bool L_122;
 		L_122 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_121, _stringLiteral120472D8D40924F6F8355A94DB677A8F142E2EB6, 4, NULL);
 		if (!L_122)
@@ -7008,7 +7016,7 @@ IL_02ab:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_123 = ___pd0;
 		NullCheck(L_123);
 		TypeConverter_t5257E1653EB845D0044BBEDEB7B8AED7A061592C* L_124;
-		L_124 = VirtualFuncInvoker0< TypeConverter_t5257E1653EB845D0044BBEDEB7B8AED7A061592C* >::Invoke(14 /* System.ComponentModel.TypeConverter System.ComponentModel.PropertyDescriptor::get_Converter() */, L_123);
+		L_124 = VirtualFuncInvoker0< TypeConverter_t5257E1653EB845D0044BBEDEB7B8AED7A061592C* >::Invoke(18 /* System.ComponentModel.TypeConverter System.ComponentModel.PropertyDescriptor::get_Converter() */, L_123);
 		RuntimeObject* L_125 = V_5;
 		NullCheck(L_124);
 		String_t* L_126;
@@ -7018,7 +7026,7 @@ IL_02ab:
 		PropertyDescriptor_t03F8CBE01C4EDA631BF9BE7D9EB32C8F30F13381* L_128 = ___pd0;
 		NullCheck(L_128);
 		String_t* L_129;
-		L_129 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_128);
+		L_129 = VirtualFuncInvoker0< String_t* >::Invoke(10 /* System.String System.ComponentModel.MemberDescriptor::get_Name() */, L_128);
 		String_t* L_130 = V_6;
 		NullCheck(L_127);
 		String_t* L_131;
@@ -7753,7 +7761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_GenerateConstraintNames_mE2F3
 		L_1 = DataTable_get_Constraints_mC40BE3EA5B6E0560C8F48573620B62E9F9FED7C5_inline(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_1 = L_2;
 	}
 	{
@@ -7817,7 +7825,7 @@ IL_0013_1:
 				L_12 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(25 /* System.Data.DataTable System.Data.ForeignKeyConstraint::get_RelatedTable() */, ((ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062*)CastclassClass((RuntimeObject*)L_11, ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062_il2cpp_TypeInfo_var)));
 				NullCheck(L_10);
 				bool L_13;
-				L_13 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_10, L_12);
+				L_13 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_10, L_12);
 				if (!L_13)
 				{
 					goto IL_00c1_1;
@@ -7907,7 +7915,7 @@ IL_009c_1:
 				String_t* L_36 = V_4;
 				NullCheck(L_35);
 				bool L_37;
-				L_37 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_35, L_36);
+				L_37 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_35, L_36);
 				if (L_37)
 				{
 					goto IL_004e_1;
@@ -7918,7 +7926,7 @@ IL_009c_1:
 				String_t* L_39 = V_4;
 				NullCheck(L_38);
 				int32_t L_40;
-				L_40 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_38, L_39);
+				L_40 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_38, L_39);
 				Constraint_t0A8908A502F0A089936D95EF44F76F9628CFB50A* L_41 = V_2;
 				String_t* L_42 = V_4;
 				NullCheck(L_41);
@@ -7972,7 +7980,7 @@ IL_0004:
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
 		XmlTreeGen_GenerateConstraintNames_mE2F34D5D5FEFD7B1C33F62B969056FE0DE9A301F(__this, ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_2, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), (bool)1, NULL);
 		int32_t L_3 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
@@ -7984,7 +7992,7 @@ IL_001b:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_5 = ___tables0;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_5);
 		if ((((int32_t)L_4) < ((int32_t)L_6)))
 		{
 			goto IL_0004;
@@ -8015,7 +8023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_GenerateConstraintNames_m99FF
 		L_1 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -8102,7 +8110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlTreeGen__PropsNotEmpty_mC94DF31BEDCA8
 		PropertyCollection_t531D3CA9714C3D7818C1B1C139A9C4F04B73EE7C* L_1 = ___props0;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_1);
 		return (bool)((!(((uint32_t)L_2) <= ((uint32_t)0)))? 1 : 0);
 	}
 
@@ -8208,7 +8216,7 @@ IL_0051:
 		L_19 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_18, NULL);
 		NullCheck(L_19);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_19);
+		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_19);
 		if ((((int32_t)L_17) < ((int32_t)L_20)))
 		{
 			goto IL_0033;
@@ -8228,7 +8236,7 @@ IL_0063:
 		L_24 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_23, NULL);
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
 		if ((((int32_t)L_22) < ((int32_t)L_25)))
 		{
 			goto IL_0013;
@@ -8248,7 +8256,7 @@ IL_0075:
 		int32_t L_28 = V_3;
 		NullCheck(L_27);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_29;
-		L_29 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_27, L_28);
+		L_29 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_27, L_28);
 		NullCheck(L_29);
 		PropertyCollection_t531D3CA9714C3D7818C1B1C139A9C4F04B73EE7C* L_30 = L_29->____extendedProperties_1;
 		bool L_31;
@@ -8277,7 +8285,7 @@ IL_0093:
 		L_35 = DataSet_get_Relations_mB2D3E81455FF325A058A21236CE5165C7B4CE901_inline(L_34, NULL);
 		NullCheck(L_35);
 		int32_t L_36;
-		L_36 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_35);
+		L_36 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_35);
 		if ((((int32_t)L_33) < ((int32_t)L_36)))
 		{
 			goto IL_0075;
@@ -8436,7 +8444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_SetupAutoGenerated_m72787D8A9
 		L_1 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -8530,7 +8538,7 @@ IL_0004:
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
 		XmlTreeGen_SetupAutoGenerated_mB2DBDDC8F7199804CBE1E6A41272BD36513AC680(__this, ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_2, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		int32_t L_3 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
@@ -8542,7 +8550,7 @@ IL_001a:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_5 = ___dt0;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_5);
 		if ((((int32_t)L_4) < ((int32_t)L_6)))
 		{
 			goto IL_0004;
@@ -8583,7 +8591,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_SetupAutoGenerated_mB2DBDDC8F
 		L_1 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -8639,7 +8647,7 @@ IL_000e_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_11 = V_1;
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_12 = V_1;
 				NullCheck(L_10);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_10, L_11, L_12);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_10, L_11, L_12);
 			}
 
 IL_002f_1:
@@ -8671,7 +8679,7 @@ IL_004a:
 		L_16 = DataTable_get_Constraints_mC40BE3EA5B6E0560C8F48573620B62E9F9FED7C5_inline(L_15, NULL);
 		NullCheck(L_16);
 		RuntimeObject* L_17;
-		L_17 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_16);
+		L_17 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_16);
 		V_0 = L_17;
 	}
 	{
@@ -8736,7 +8744,7 @@ IL_005b_1:
 				ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062* L_28 = V_4;
 				ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062* L_29 = V_4;
 				NullCheck(L_27);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_27, L_28, L_29);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_27, L_28, L_29);
 				goto IL_01d5_1;
 			}
 
@@ -8752,7 +8760,7 @@ IL_0094_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_34 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 				NullCheck(L_30);
 				RuntimeObject* L_35;
-				L_35 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_30, L_34);
+				L_35 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_30, L_34);
 				if (!L_35)
 				{
 					goto IL_00bf_1;
@@ -8768,7 +8776,7 @@ IL_0094_1:
 				int32_t L_39 = 0;
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_40 = (L_38)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 				NullCheck(L_36);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_36, L_40, NULL);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_36, L_40, NULL);
 			}
 
 IL_00bf_1:
@@ -8783,7 +8791,7 @@ IL_00bf_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_45 = (L_43)->GetAt(static_cast<il2cpp_array_size_t>(L_44));
 				NullCheck(L_41);
 				RuntimeObject* L_46;
-				L_46 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_41, L_45);
+				L_46 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_41, L_45);
 				if (!L_46)
 				{
 					goto IL_00ea_1;
@@ -8799,7 +8807,7 @@ IL_00bf_1:
 				int32_t L_50 = 0;
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_51 = (L_49)->GetAt(static_cast<il2cpp_array_size_t>(L_50));
 				NullCheck(L_47);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_47, L_51, NULL);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_47, L_51, NULL);
 			}
 
 IL_00ea_1:
@@ -8833,7 +8841,7 @@ IL_00ea_1:
 				UniqueConstraint_tE48A79D2F7DE0EA4A3F1BF5BB322C383E60465F6* L_61 = V_5;
 				NullCheck(L_60);
 				RuntimeObject* L_62;
-				L_62 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_60, L_61);
+				L_62 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_60, L_61);
 				if (!L_62)
 				{
 					goto IL_0137_1;
@@ -8843,7 +8851,7 @@ IL_00ea_1:
 				Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_63 = __this->____autogenerated_2;
 				UniqueConstraint_tE48A79D2F7DE0EA4A3F1BF5BB322C383E60465F6* L_64 = V_5;
 				NullCheck(L_63);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_63, L_64, NULL);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_63, L_64, NULL);
 			}
 
 IL_0137_1:
@@ -8861,7 +8869,7 @@ IL_0137_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_70 = (L_68)->GetAt(static_cast<il2cpp_array_size_t>(L_69));
 				NullCheck(L_65);
 				RuntimeObject* L_71;
-				L_71 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_65, L_70);
+				L_71 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_65, L_70);
 				if (!L_71)
 				{
 					goto IL_01d5_1;
@@ -8880,7 +8888,7 @@ IL_0137_1:
 				int32_t L_76 = 0;
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_77 = (L_75)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
 				NullCheck(L_72);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_72, L_77, NULL);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_72, L_77, NULL);
 				goto IL_01d5_1;
 			}
 
@@ -8901,7 +8909,7 @@ IL_0176_1:
 				UniqueConstraint_tE48A79D2F7DE0EA4A3F1BF5BB322C383E60465F6* L_82 = V_7;
 				UniqueConstraint_tE48A79D2F7DE0EA4A3F1BF5BB322C383E60465F6* L_83 = V_7;
 				NullCheck(L_81);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_81, L_82, L_83);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_81, L_82, L_83);
 				goto IL_01d5_1;
 			}
 
@@ -8920,7 +8928,7 @@ IL_0198_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_89 = (L_87)->GetAt(static_cast<il2cpp_array_size_t>(L_88));
 				NullCheck(L_84);
 				RuntimeObject* L_90;
-				L_90 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_84, L_89);
+				L_90 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_84, L_89);
 				if (!L_90)
 				{
 					goto IL_01d5_1;
@@ -8939,7 +8947,7 @@ IL_0198_1:
 				int32_t L_95 = 0;
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_96 = (L_94)->GetAt(static_cast<il2cpp_array_size_t>(L_95));
 				NullCheck(L_91);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_91, L_96, NULL);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_91, L_96, NULL);
 			}
 
 IL_01d5_1:
@@ -8989,7 +8997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_CreateTablesHierarchy_m01E17A
 		L_1 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -9039,7 +9047,7 @@ IL_000e_1:
 				L_10 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_9);
 				NullCheck(L_8);
 				bool L_11;
-				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
+				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
 				if (L_11)
 				{
 					goto IL_004b_1;
@@ -9053,7 +9061,7 @@ IL_000e_1:
 				L_14 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_13);
 				NullCheck(L_12);
 				int32_t L_15;
-				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
+				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_16 = V_1;
 				NullCheck(L_16);
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_17;
@@ -9108,7 +9116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_CreateRelations_m4CE3DD798828
 		L_1 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -9155,7 +9163,7 @@ IL_000e_1:
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_9 = V_1;
 				NullCheck(L_8);
 				bool L_10;
-				L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_9);
+				L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_9);
 				if (L_10)
 				{
 					goto IL_0041_1;
@@ -9166,7 +9174,7 @@ IL_000e_1:
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_12 = V_1;
 				NullCheck(L_11);
 				int32_t L_13;
-				L_13 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_11, L_12);
+				L_13 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_11, L_12);
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_14 = V_1;
 				NullCheck(L_14);
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_15;
@@ -9233,7 +9241,7 @@ IL_000d:
 		int32_t L_2 = V_2;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
 		V_3 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_3, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var));
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_4 = V_3;
 		NullCheck(L_4);
@@ -9241,7 +9249,7 @@ IL_000d:
 		L_5 = DataTable_get_ParentRelations_m57FFCDEA0F8B8474FCEDA9B064A4875DE50498E9(L_4, NULL);
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_5);
 		if (L_6)
 		{
 			goto IL_0036;
@@ -9252,7 +9260,7 @@ IL_000d:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_8 = V_3;
 		NullCheck(L_7);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_7, L_8);
 		goto IL_0090;
 	}
 
@@ -9272,7 +9280,7 @@ IL_003e:
 		int32_t L_12 = V_5;
 		NullCheck(L_11);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_13;
-		L_13 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_11, L_12);
+		L_13 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_11, L_12);
 		NullCheck(L_13);
 		bool L_14;
 		L_14 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Data.DataRelation::get_Nested() */, L_13);
@@ -9289,7 +9297,7 @@ IL_003e:
 		int32_t L_17 = V_5;
 		NullCheck(L_16);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_18;
-		L_18 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_16, L_17);
+		L_18 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_16, L_17);
 		NullCheck(L_18);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_19;
 		L_19 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(8 /* System.Data.DataTable System.Data.DataRelation::get_ParentTable() */, L_18);
@@ -9324,7 +9332,7 @@ IL_0075:
 		L_24 = DataTable_get_ParentRelations_m57FFCDEA0F8B8474FCEDA9B064A4875DE50498E9(L_23, NULL);
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
 		if ((((int32_t)L_22) < ((int32_t)L_25)))
 		{
 			goto IL_003e;
@@ -9344,7 +9352,7 @@ IL_0084:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_28 = V_3;
 		NullCheck(L_27);
 		int32_t L_29;
-		L_29 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_27, L_28);
+		L_29 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_27, L_28);
 	}
 
 IL_0090:
@@ -9359,7 +9367,7 @@ IL_0094:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_32 = __this->____tables_5;
 		NullCheck(L_32);
 		int32_t L_33;
-		L_33 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_32);
+		L_33 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_32);
 		if ((((int32_t)L_31) < ((int32_t)L_33)))
 		{
 			goto IL_000d;
@@ -9369,7 +9377,7 @@ IL_0094:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_34 = V_0;
 		NullCheck(L_34);
 		int32_t L_35;
-		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
+		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
 		if (L_35)
 		{
 			goto IL_00b3;
@@ -9386,13 +9394,13 @@ IL_00b3:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_37 = V_0;
 		NullCheck(L_37);
 		int32_t L_38;
-		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_37);
+		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_37);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_39 = (DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)SZArrayNew(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F_il2cpp_TypeInfo_var, (uint32_t)L_38);
 		V_1 = L_39;
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_40 = V_0;
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_41 = V_1;
 		NullCheck(L_40);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_40, (RuntimeArray*)L_41, 0);
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_40, (RuntimeArray*)L_41, 0);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_42 = V_1;
 		return L_42;
 	}
@@ -9557,7 +9565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_SchemaTree_mC3E9BD92B691AB7D0
 		L_9 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_8, NULL);
 		NullCheck(L_9);
 		RuntimeObject* L_10;
-		L_10 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_9);
+		L_10 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_9);
 		V_11 = L_10;
 	}
 	{
@@ -9604,7 +9612,7 @@ IL_0059_1:
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_17 = V_12;
 				NullCheck(L_16);
 				int32_t L_18;
-				L_18 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_16, L_17);
+				L_18 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_16, L_17);
 			}
 
 IL_0075_1:
@@ -9654,7 +9662,7 @@ IL_00ab:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_26 = ___dt3;
 		NullCheck(L_25);
 		int32_t L_27;
-		L_27 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_25, L_26);
+		L_27 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_25, L_26);
 		bool L_28 = ___writeHierarchy4;
 		if (!L_28)
 		{
@@ -9772,7 +9780,7 @@ IL_016a:
 		L_56 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_55, NULL);
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_57 = V_4;
 		NullCheck(L_54);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_54, L_56, L_57);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_54, L_56, L_57);
 		goto IL_01a8;
 	}
 
@@ -9785,7 +9793,7 @@ IL_0195:
 		L_60 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_59, NULL);
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_61 = V_4;
 		NullCheck(L_58);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_58, L_60, L_61);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_58, L_60, L_61);
 	}
 
 IL_01a8:
@@ -9811,7 +9819,7 @@ IL_01a8:
 		L_66 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_65, NULL);
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_67 = V_4;
 		NullCheck(L_64);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_64, L_66, L_67);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_64, L_66, L_67);
 		DataSet_t1F72E9737C995EBFDCF793C87CAC3196EA02411B* L_68 = __this->____ds_4;
 		NullCheck(L_68);
 		String_t* L_69;
@@ -9831,7 +9839,7 @@ IL_01a8:
 		String_t* L_73;
 		L_73 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_72, NULL);
 		NullCheck(L_71);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_71, L_73, NULL);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_71, L_73, NULL);
 		goto IL_022e;
 	}
 
@@ -9850,7 +9858,7 @@ IL_01fc:
 		String_t* L_79;
 		L_79 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_78, NULL);
 		NullCheck(L_77);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_77, L_79, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_77, L_79, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
 	}
 
 IL_022e:
@@ -10391,7 +10399,7 @@ IL_0513:
 		L_250 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_249, NULL);
 		NullCheck(L_245);
 		RuntimeObject* L_251;
-		L_251 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_245, L_250);
+		L_251 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_245, L_250);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_252 = V_1;
 		int32_t L_253 = V_14;
 		NullCheck(L_252);
@@ -10456,7 +10464,7 @@ IL_0563:
 		L_279 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_278, NULL);
 		NullCheck(L_274);
 		RuntimeObject* L_280;
-		L_280 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_274, L_279);
+		L_280 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_274, L_279);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_281 = V_1;
 		int32_t L_282 = V_14;
 		NullCheck(L_281);
@@ -10516,7 +10524,7 @@ IL_05da:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_301 = __this->____tables_5;
 		NullCheck(L_301);
 		int32_t L_302;
-		L_302 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_301);
+		L_302 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_301);
 		if ((((int32_t)L_302) <= ((int32_t)0)))
 		{
 			goto IL_065c;
@@ -10529,7 +10537,7 @@ IL_05da:
 		L_304 = DataSet_get_Relations_mB2D3E81455FF325A058A21236CE5165C7B4CE901_inline(L_303, NULL);
 		NullCheck(L_304);
 		int32_t L_305;
-		L_305 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_304);
+		L_305 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_304);
 		DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0* L_306 = (DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0*)(DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0*)SZArrayNew(DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0_il2cpp_TypeInfo_var, (uint32_t)L_305);
 		V_6 = L_306;
 		V_20 = 0;
@@ -10547,7 +10555,7 @@ IL_0633:
 		int32_t L_311 = V_20;
 		NullCheck(L_310);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_312;
-		L_312 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_310, L_311);
+		L_312 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_310, L_311);
 		NullCheck(L_307);
 		ArrayElementTypeCheck (L_307, L_312);
 		(L_307)->SetAt(static_cast<il2cpp_array_size_t>(L_308), (DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*)L_312);
@@ -10564,7 +10572,7 @@ IL_064b:
 		L_316 = DataSet_get_Relations_mB2D3E81455FF325A058A21236CE5165C7B4CE901_inline(L_315, NULL);
 		NullCheck(L_316);
 		int32_t L_317;
-		L_317 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_316);
+		L_317 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_316);
 		if ((((int32_t)L_314) < ((int32_t)L_317)))
 		{
 			goto IL_0633;
@@ -10586,7 +10594,7 @@ IL_065c:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_319 = __this->____tables_5;
 		NullCheck(L_319);
 		int32_t L_320;
-		L_320 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_319);
+		L_320 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_319);
 		if ((((int32_t)L_320) <= ((int32_t)0)))
 		{
 			goto IL_06a5;
@@ -10596,18 +10604,18 @@ IL_065c:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_321 = __this->____tables_5;
 		NullCheck(L_321);
 		RuntimeObject* L_322;
-		L_322 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_321, 0);
+		L_322 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_321, 0);
 		XmlTreeGen_CreateRelations_m4CE3DD798828E2199B9C064A2A1BFE968CC60AE3(__this, ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_322, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_323 = __this->____relations_6;
 		NullCheck(L_323);
 		int32_t L_324;
-		L_324 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_323);
+		L_324 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_323);
 		DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0* L_325 = (DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0*)(DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0*)SZArrayNew(DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0_il2cpp_TypeInfo_var, (uint32_t)L_324);
 		V_6 = L_325;
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_326 = __this->____relations_6;
 		DataRelationU5BU5D_t1640C9372BDC91DAE0359E08BE1E91AE48924FF0* L_327 = V_6;
 		NullCheck(L_326);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_326, (RuntimeArray*)L_327, 0);
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_326, (RuntimeArray*)L_327, 0);
 	}
 
 IL_06a5:
@@ -10709,7 +10717,7 @@ IL_072b:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_356 = __this->____namespaces_1;
 		NullCheck(L_356);
 		int32_t L_357;
-		L_357 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_356);
+		L_357 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_356);
 		if ((((int32_t)L_357) <= ((int32_t)1)))
 		{
 			goto IL_074d;
@@ -10746,7 +10754,7 @@ IL_074e:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_361 = __this->____namespaces_1;
 		NullCheck(L_361);
 		RuntimeObject* L_362;
-		L_362 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_361);
+		L_362 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_361);
 		NullCheck(L_362);
 		RuntimeObject* L_363;
 		L_363 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t6331596D5DD37C462B1B8D49CF6B319B00AB7131_il2cpp_TypeInfo_var, L_362);
@@ -10869,7 +10877,7 @@ IL_07aa_1:
 				String_t* L_387 = V_23;
 				NullCheck(L_386);
 				RuntimeObject* L_388;
-				L_388 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_386, L_387);
+				L_388 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_386, L_387);
 				RuntimeObject* L_389 = L_388;
 				G_B108_0 = L_389;
 				G_B108_1 = _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C;
@@ -10959,7 +10967,7 @@ IL_0853:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_400 = __this->____namespaces_1;
 		NullCheck(L_400);
 		int32_t L_401;
-		L_401 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_400);
+		L_401 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_400);
 		V_25 = L_401;
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_402;
@@ -11011,7 +11019,7 @@ IL_08b9:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_417 = __this->____namespaces_1;
 		NullCheck(L_417);
 		RuntimeObject* L_418;
-		L_418 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_417);
+		L_418 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_417);
 		NullCheck(L_418);
 		RuntimeObject* L_419;
 		L_419 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t6331596D5DD37C462B1B8D49CF6B319B00AB7131_il2cpp_TypeInfo_var, L_418);
@@ -11140,7 +11148,7 @@ IL_0925_1:
 				String_t* L_444 = V_26;
 				NullCheck(L_443);
 				RuntimeObject* L_445;
-				L_445 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_443, L_444);
+				L_445 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_443, L_444);
 				RuntimeObject* L_446 = L_445;
 				G_B132_0 = L_446;
 				G_B132_1 = 3;
@@ -11254,7 +11262,7 @@ IL_0998_2:
 						String_t* L_458 = V_26;
 						NullCheck(L_457);
 						RuntimeObject* L_459;
-						L_459 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_457, L_458);
+						L_459 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_457, L_458);
 						V_28 = ((XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1*)CastclassClass((RuntimeObject*)L_459, XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1_il2cpp_TypeInfo_var));
 						XmlDocument_t4DE82998E642C5C21A4A620A5278237C70D3E42B* L_460 = __this->____dc_7;
 						XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_461 = V_28;
@@ -11264,7 +11272,7 @@ IL_0998_2:
 						Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_463 = __this->____namespaces_1;
 						NullCheck(L_463);
 						RuntimeObject* L_464;
-						L_464 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_463);
+						L_464 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_463);
 						NullCheck(L_464);
 						RuntimeObject* L_465;
 						L_465 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t6331596D5DD37C462B1B8D49CF6B319B00AB7131_il2cpp_TypeInfo_var, L_464);
@@ -11324,7 +11332,7 @@ IL_09d1_3:
 								String_t* L_475 = V_30;
 								NullCheck(L_474);
 								RuntimeObject* L_476;
-								L_476 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_474, L_475);
+								L_476 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_474, L_475);
 								V_31 = ((String_t*)CastclassSealed((RuntimeObject*)L_476, String_t_il2cpp_TypeInfo_var));
 								String_t* L_477 = V_31;
 								if (!L_477)
@@ -11694,7 +11702,7 @@ IL_0063:
 		L_29 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_28, NULL);
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_30 = V_0;
 		NullCheck(L_27);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_27, L_29, L_30);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_27, L_29, L_30);
 		DataSet_t1F72E9737C995EBFDCF793C87CAC3196EA02411B* L_31 = __this->____ds_4;
 		NullCheck(L_31);
 		String_t* L_32;
@@ -11714,7 +11722,7 @@ IL_0063:
 		String_t* L_36;
 		L_36 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_35, NULL);
 		NullCheck(L_34);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_34, L_36, NULL);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_34, L_36, NULL);
 		goto IL_01ab;
 	}
 
@@ -11733,7 +11741,7 @@ IL_011e:
 		String_t* L_42;
 		L_42 = DataSet_get_Namespace_mCD2A82F0F982A56430294CBDAC10A2C8159FA289_inline(L_41, NULL);
 		NullCheck(L_40);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_40, L_42, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_40, L_42, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
 		goto IL_01ab;
 	}
 
@@ -11746,7 +11754,7 @@ IL_0151:
 		L_45 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_44, NULL);
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_46 = V_0;
 		NullCheck(L_43);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_43, L_45, L_46);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_43, L_45, L_46);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_47 = ___dt1;
 		NullCheck(L_47);
 		String_t* L_48;
@@ -11766,7 +11774,7 @@ IL_0151:
 		String_t* L_52;
 		L_52 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_51, NULL);
 		NullCheck(L_50);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_50, L_52, NULL);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_50, L_52, NULL);
 		goto IL_01ab;
 	}
 
@@ -11785,7 +11793,7 @@ IL_0184:
 		String_t* L_58;
 		L_58 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_57, NULL);
 		NullCheck(L_56);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_56, L_58, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_56, L_58, _stringLiteral3CED50D21B6221A04BCEA99659460BCB4CFA3363);
 	}
 
 IL_01ab:
@@ -12313,7 +12321,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_10 = V_0;
 		NullCheck(L_10);
 		String_t* L_11;
-		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(36 /* System.String System.IO.FileStream::get_Name() */, L_10);
+		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_10);
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_12;
 		L_12 = Path_GetDirectoryName_m428BADBE493A3927B51A13DEF658929B430516F6(L_11, NULL);
@@ -12322,7 +12330,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_13 = V_0;
 		NullCheck(L_13);
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(36 /* System.String System.IO.FileStream::get_Name() */, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_13);
 		String_t* L_15;
 		L_15 = Path_GetFileNameWithoutExtension_m2D14CCBAB9C60DC8D32C2443CCE3D34644822FAF(L_14, NULL);
 		__this->____fileName_12 = L_15;
@@ -12330,7 +12338,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_16 = V_0;
 		NullCheck(L_16);
 		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(36 /* System.String System.IO.FileStream::get_Name() */, L_16);
+		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_16);
 		String_t* L_18;
 		L_18 = Path_GetExtension_m6FEAA9E14451BFD210B9D1AEC2430C813F570FE5(L_17, NULL);
 		__this->____fileExt_13 = L_18;
@@ -12964,7 +12972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlElement_t9A08B533E9A6B3548A1DE35476186F7EC
 		String_t* L_1 = ___NamespaceURI0;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_1);
 		V_0 = ((XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1*)CastclassClass((RuntimeObject*)L_2, XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1_il2cpp_TypeInfo_var));
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_3 = V_0;
 		if (L_3)
@@ -13023,7 +13031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlElement_t9A08B533E9A6B3548A1DE35476186F7EC
 		String_t* L_26 = ___NamespaceURI0;
 		String_t* L_27 = V_1;
 		NullCheck(L_25);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_25, L_26, L_27);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_25, L_26, L_27);
 	}
 
 IL_00a5:
@@ -13032,7 +13040,7 @@ IL_00a5:
 		String_t* L_29 = ___NamespaceURI0;
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_30 = V_0;
 		NullCheck(L_28);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_28, L_29, L_30);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_28, L_29, L_30);
 	}
 
 IL_00b2:
@@ -13073,7 +13081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTreeGen_HandleColumnType_mB0D3F3C76E9
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_0 = ___col0;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
 		if ((!(((uint32_t)L_1) == ((uint32_t)3))))
 		{
 			goto IL_0015;
@@ -13265,7 +13273,7 @@ IL_00c5:
 		String_t* L_48 = V_4;
 		NullCheck(L_47);
 		RuntimeObject* L_49;
-		L_49 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_47, L_48);
+		L_49 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_47, L_48);
 		V_6 = ((String_t*)CastclassSealed((RuntimeObject*)L_49, String_t_il2cpp_TypeInfo_var));
 		String_t* L_50 = V_6;
 		if (!L_50)
@@ -13554,7 +13562,7 @@ IL_023a:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_124 = ___col0;
 		NullCheck(L_124);
 		int32_t L_125;
-		L_125 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_124);
+		L_125 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_124);
 		if ((!(((uint32_t)L_125) == ((uint32_t)2))))
 		{
 			goto IL_024e;
@@ -14233,7 +14241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlElement_t9A08B533E9A6B3548A1DE35476186F7EC
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_0 = ___col0;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
 		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
 		{
 			goto IL_0010;
@@ -14352,7 +14360,7 @@ IL_009f:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_37 = ___col0;
 		NullCheck(L_37);
 		int32_t L_38;
-		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_37);
+		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_37);
 		if ((!(((uint32_t)L_38) == ((uint32_t)4))))
 		{
 			goto IL_0152;
@@ -14479,7 +14487,7 @@ IL_0152:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_64 = ___col0;
 		NullCheck(L_64);
 		int32_t L_65;
-		L_65 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_64);
+		L_65 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_64);
 		if ((((int32_t)L_65) == ((int32_t)4)))
 		{
 			goto IL_0243;
@@ -14494,7 +14502,7 @@ IL_0152:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_68 = ___col0;
 		NullCheck(L_68);
 		int32_t L_69;
-		L_69 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_68);
+		L_69 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_68);
 		if ((!(((uint32_t)L_69) == ((uint32_t)2))))
 		{
 			goto IL_01e7;
@@ -14800,7 +14808,7 @@ IL_02de:
 		L_140 = DataColumn_get_Namespace_mE644D180B8FC08C3DD3E852E9A27ECDA251CBE2A(L_139, NULL);
 		NullCheck(L_138);
 		RuntimeObject* L_141;
-		L_141 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_138, L_140);
+		L_141 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_138, L_140);
 		RuntimeObject* L_142 = L_141;
 		G_B46_0 = L_142;
 		G_B46_1 = _stringLiteral5CAD421923F0F10D02AFE6EA17ED4E929131E356;
@@ -14866,7 +14874,7 @@ IL_0318:
 		L_155 = DataColumn_get_Namespace_mE644D180B8FC08C3DD3E852E9A27ECDA251CBE2A(L_154, NULL);
 		NullCheck(L_153);
 		RuntimeObject* L_156;
-		L_156 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_153, L_155);
+		L_156 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_153, L_155);
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_157 = ___col0;
 		NullCheck(L_157);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_158;
@@ -14905,7 +14913,7 @@ IL_037f:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_163 = ___col0;
 		NullCheck(L_163);
 		int32_t L_164;
-		L_164 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_163);
+		L_164 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_163);
 		if ((!(((uint32_t)L_164) == ((uint32_t)2))))
 		{
 			goto IL_039c;
@@ -14929,7 +14937,7 @@ IL_039c:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_167 = ___col0;
 		NullCheck(L_167);
 		int32_t L_168;
-		L_168 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_167);
+		L_168 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_167);
 		if ((!(((uint32_t)L_168) == ((uint32_t)4))))
 		{
 			goto IL_03b7;
@@ -14947,7 +14955,7 @@ IL_03b7:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_170 = ___col0;
 		NullCheck(L_170);
 		int32_t L_171;
-		L_171 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_170);
+		L_171 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_170);
 		if ((((int32_t)L_171) == ((int32_t)2)))
 		{
 			goto IL_03db;
@@ -14976,7 +14984,7 @@ IL_03db:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_176 = ___col0;
 		NullCheck(L_176);
 		int32_t L_177;
-		L_177 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_176);
+		L_177 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_176);
 		bool L_178 = ___fWriteOrdinal3;
 		if (!((int32_t)(((((int32_t)L_177) == ((int32_t)1))? 1 : 0)&(int32_t)L_178)))
 		{
@@ -15310,7 +15318,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlTreeGen_HasMixedColumns_m9FB1C8F3515C
 		L_1 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_2 = L_2;
 	}
 	{
@@ -15363,7 +15371,7 @@ IL_0012_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_9 = V_3;
 				NullCheck(L_9);
 				int32_t L_10;
-				L_10 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_9);
+				L_10 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_9);
 				if ((!(((uint32_t)L_10) == ((uint32_t)1))))
 				{
 					goto IL_002c_1;
@@ -15385,7 +15393,7 @@ IL_002c_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_12 = V_3;
 				NullCheck(L_12);
 				int32_t L_13;
-				L_13 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_12);
+				L_13 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_12);
 				if ((((int32_t)L_13) == ((int32_t)2)))
 				{
 					goto IL_0041_1;
@@ -15395,7 +15403,7 @@ IL_002c_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_14 = V_3;
 				NullCheck(L_14);
 				int32_t L_15;
-				L_15 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_14);
+				L_15 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_14);
 				if ((!(((uint32_t)L_15) == ((uint32_t)4))))
 				{
 					goto IL_004b_1;
@@ -15480,7 +15488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlTreeGen_AutoGenerated_mFA2CD9268D26FC
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_0 = ___col0;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_0);
 		if ((((int32_t)L_1) == ((int32_t)4)))
 		{
 			goto IL_000b;
@@ -15569,7 +15577,7 @@ IL_0062:
 		L_23 = DataTable_get_ParentRelations_m57FFCDEA0F8B8474FCEDA9B064A4875DE50498E9(L_22, NULL);
 		NullCheck(L_23);
 		RuntimeObject* L_24;
-		L_24 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_23);
+		L_24 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_23);
 		V_1 = L_24;
 	}
 	{
@@ -15790,7 +15798,7 @@ IL_0032:
 		L_12 = DataRelation_get_ExtendedProperties_m69064487A467D1E4F85BA7C63C1DB5EF5DDF183C(L_11, NULL);
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_12);
 		if ((((int32_t)L_13) <= ((int32_t)0)))
 		{
 			goto IL_0042;
@@ -15860,7 +15868,7 @@ IL_002a:
 		L_7 = Constraint_get_ExtendedProperties_mCC2213ACF5F8572949C34BAC2BBCC730C7938F22(L_6, NULL);
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_7);
 		if ((((int32_t)L_8) <= ((int32_t)0)))
 		{
 			goto IL_003a;
@@ -15967,7 +15975,7 @@ IL_002e:
 		L_12 = Constraint_get_ExtendedProperties_mCC2213ACF5F8572949C34BAC2BBCC730C7938F22(L_11, NULL);
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(33 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_12);
 		if ((((int32_t)L_13) <= ((int32_t)0)))
 		{
 			goto IL_003e;
@@ -16067,7 +16075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlTreeGen_IsAutoGenerated_mF1DC725E6869
 		RuntimeObject* L_2 = ___o0;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 		return (bool)((!(((RuntimeObject*)(RuntimeObject*)L_3) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 
@@ -16501,7 +16509,7 @@ IL_0177:
 		DataColumnCollection_t8F6538DA2E98DED6F9FBD06C4C475533A548630E* L_74 = V_3;
 		NullCheck(L_74);
 		int32_t L_75;
-		L_75 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_74);
+		L_75 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_74);
 		V_4 = L_75;
 		V_5 = 0;
 		int32_t L_76 = V_4;
@@ -16535,7 +16543,7 @@ IL_01a7:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_81 = V_20;
 		NullCheck(L_81);
 		int32_t L_82;
-		L_82 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_81);
+		L_82 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_81);
 		if ((!(((uint32_t)L_82) == ((uint32_t)4))))
 		{
 			goto IL_0228;
@@ -16557,7 +16565,7 @@ IL_01c8:
 		int32_t L_86 = V_22;
 		NullCheck(L_85);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_87;
-		L_87 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_85, L_86);
+		L_87 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_85, L_86);
 		NullCheck(L_87);
 		bool L_88;
 		L_88 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Data.DataRelation::get_Nested() */, L_87);
@@ -16571,7 +16579,7 @@ IL_01c8:
 		int32_t L_90 = V_22;
 		NullCheck(L_89);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_91;
-		L_91 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_89, L_90);
+		L_91 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_89, L_90);
 		NullCheck(L_91);
 		DataKey_tC6DF14FCD651ACE82D9C872CFC449847B000F73A L_92;
 		L_92 = DataRelation_get_ParentKey_m96F0EDBF5D1A6E75546F723AE2C4C3450310F39F(L_91, NULL);
@@ -16589,7 +16597,7 @@ IL_01c8:
 		int32_t L_95 = V_22;
 		NullCheck(L_94);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_96;
-		L_96 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_94, L_95);
+		L_96 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_94, L_95);
 		NullCheck(L_96);
 		DataKey_tC6DF14FCD651ACE82D9C872CFC449847B000F73A L_97;
 		L_97 = DataRelation_get_ParentKey_m96F0EDBF5D1A6E75546F723AE2C4C3450310F39F(L_96, NULL);
@@ -16622,7 +16630,7 @@ IL_021d:
 		DataRelationCollection_tA8655ADC9860DD89FDC0317E38C95CB740BC2956* L_105 = V_21;
 		NullCheck(L_105);
 		int32_t L_106;
-		L_106 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_105);
+		L_106 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_105);
 		if ((((int32_t)L_104) < ((int32_t)L_106)))
 		{
 			goto IL_01c8;
@@ -16634,7 +16642,7 @@ IL_0228:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_107 = V_20;
 		NullCheck(L_107);
 		int32_t L_108;
-		L_108 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_107);
+		L_108 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_107);
 		if ((!(((uint32_t)L_108) == ((uint32_t)1))))
 		{
 			goto IL_0238;
@@ -16913,7 +16921,7 @@ IL_0369:
 		L_176 = XmlQualifiedName_get_Namespace_m0CAE4A651EF1CA6F0EB657C83608A796038A2615_inline(L_175, NULL);
 		NullCheck(L_173);
 		RuntimeObject* L_177;
-		L_177 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_173, L_176);
+		L_177 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_173, L_176);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_178 = ___table0;
 		NullCheck(L_178);
 		XmlQualifiedName_t2794880B373257E4108CC3F36D7373A343ACC5B9* L_179;
@@ -17111,7 +17119,7 @@ IL_0518:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_248 = V_30;
 		NullCheck(L_248);
 		int32_t L_249;
-		L_249 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_248);
+		L_249 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_248);
 		if ((((int32_t)L_249) == ((int32_t)3)))
 		{
 			goto IL_057e;
@@ -17121,7 +17129,7 @@ IL_0518:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_250 = V_30;
 		NullCheck(L_250);
 		int32_t L_251;
-		L_251 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_250);
+		L_251 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_250);
 		if ((((int32_t)L_251) == ((int32_t)2)))
 		{
 			goto IL_054a;
@@ -17131,7 +17139,7 @@ IL_0518:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_252 = V_30;
 		NullCheck(L_252);
 		int32_t L_253;
-		L_253 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_252);
+		L_253 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_252);
 		if ((((int32_t)L_253) == ((int32_t)1)))
 		{
 			goto IL_054a;
@@ -17141,7 +17149,7 @@ IL_0518:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_254 = V_30;
 		NullCheck(L_254);
 		int32_t L_255;
-		L_255 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_254);
+		L_255 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_254);
 		if ((!(((uint32_t)L_255) == ((uint32_t)4))))
 		{
 			goto IL_057e;
@@ -17162,7 +17170,7 @@ IL_054a:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_258 = V_30;
 		NullCheck(L_258);
 		int32_t L_259;
-		L_259 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_258);
+		L_259 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_258);
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_260 = V_30;
 		XmlDocument_t4DE82998E642C5C21A4A620A5278237C70D3E42B* L_261 = ___dc1;
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_262 = ___schema2;
@@ -17237,7 +17245,7 @@ IL_05ab:
 		int32_t L_278 = V_33;
 		NullCheck(L_277);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_279;
-		L_279 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_277, L_278);
+		L_279 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_277, L_278);
 		NullCheck(L_279);
 		bool L_280;
 		L_280 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Data.DataRelation::get_Nested() */, L_279);
@@ -17251,7 +17259,7 @@ IL_05ab:
 		int32_t L_282 = V_33;
 		NullCheck(L_281);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_283;
-		L_283 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_281, L_282);
+		L_283 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_281, L_282);
 		NullCheck(L_283);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_284;
 		L_284 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_283);
@@ -17429,7 +17437,7 @@ IL_06cc:
 		L_334 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_333, NULL);
 		NullCheck(L_332);
 		RuntimeObject* L_335;
-		L_335 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_332, L_334);
+		L_335 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_332, L_334);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_336 = V_35;
 		NullCheck(L_336);
 		String_t* L_337;
@@ -17451,7 +17459,7 @@ IL_0721:
 		int32_t L_343 = V_33;
 		NullCheck(L_342);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_344;
-		L_344 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_342, L_343);
+		L_344 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_342, L_343);
 		NullCheck(L_344);
 		ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062* L_345;
 		L_345 = VirtualFuncInvoker0< ForeignKeyConstraint_tBEE8801AF7B2F7F6C806B5347D18CEE1294A9062* >::Invoke(13 /* System.Data.ForeignKeyConstraint System.Data.DataRelation::get_ChildKeyConstraint() */, L_344);
@@ -17486,7 +17494,7 @@ IL_0721:
 		int32_t L_358 = V_33;
 		NullCheck(L_357);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_359;
-		L_359 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_357, L_358);
+		L_359 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_357, L_358);
 		XmlDocument_t4DE82998E642C5C21A4A620A5278237C70D3E42B* L_360 = ___dc1;
 		XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1* L_361;
 		L_361 = XmlTreeGen_HandleRelation_m94925DA809C2F236CA8042E0369A591AFBA4EB03(__this, L_359, L_360, NULL);
@@ -17507,7 +17515,7 @@ IL_079b:
 		DataRelationCollection_tA8655ADC9860DD89FDC0317E38C95CB740BC2956* L_365 = V_32;
 		NullCheck(L_365);
 		int32_t L_366;
-		L_366 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_365);
+		L_366 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_365);
 		if ((((int32_t)L_364) < ((int32_t)L_366)))
 		{
 			goto IL_05ab;
@@ -17627,7 +17635,7 @@ IL_0821:
 		L_391 = DataTable_get_Namespace_m3429FD2DF7BBC54DEFEB29AD9826BF89B5BD03E7(L_390, NULL);
 		NullCheck(L_389);
 		RuntimeObject* L_392;
-		L_392 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_389, L_391);
+		L_392 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_389, L_391);
 		String_t* L_393;
 		L_393 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)CastclassSealed((RuntimeObject*)L_392, String_t_il2cpp_TypeInfo_var)), _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D, NULL);
 		G_B117_0 = L_393;
@@ -17871,7 +17879,7 @@ IL_09ab:
 		L_469 = DataColumn_get_Namespace_mE644D180B8FC08C3DD3E852E9A27ECDA251CBE2A(L_468, NULL);
 		NullCheck(L_464);
 		RuntimeObject* L_470;
-		L_470 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_464, L_469);
+		L_470 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_464, L_469);
 		NullCheck(L_463);
 		StringBuilder_t* L_471;
 		L_471 = StringBuilder_Append_m3A7D629DAA5E0E36B8A617A911E34F79AF84AE63(L_463, L_470, NULL);
@@ -17926,7 +17934,7 @@ IL_0a2f:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_492 = (L_489)->GetAt(static_cast<il2cpp_array_size_t>(L_491));
 		NullCheck(L_492);
 		int32_t L_493;
-		L_493 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_492);
+		L_493 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_492);
 		if ((((int32_t)L_493) == ((int32_t)2)))
 		{
 			goto IL_0a49;
@@ -17940,7 +17948,7 @@ IL_0a2f:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_497 = (L_494)->GetAt(static_cast<il2cpp_array_size_t>(L_496));
 		NullCheck(L_497);
 		int32_t L_498;
-		L_498 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_497);
+		L_498 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_497);
 		if ((!(((uint32_t)L_498) == ((uint32_t)4))))
 		{
 			goto IL_0a54;
@@ -18023,7 +18031,7 @@ IL_0ab2:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_523 = __this->____tables_5;
 		NullCheck(L_523);
 		int32_t L_524;
-		L_524 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_523);
+		L_524 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_523);
 		if ((((int32_t)L_524) <= ((int32_t)0)))
 		{
 			goto IL_0b17;
@@ -18037,7 +18045,7 @@ IL_0ab2:
 		L_527 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(25 /* System.Data.DataTable System.Data.ForeignKeyConstraint::get_RelatedTable() */, L_526);
 		NullCheck(L_525);
 		bool L_528;
-		L_528 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_525, L_527);
+		L_528 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_525, L_527);
 		if (!L_528)
 		{
 			goto IL_1079;
@@ -18051,7 +18059,7 @@ IL_0ab2:
 		L_531 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(8 /* System.Data.DataTable System.Data.Constraint::get_Table() */, L_530);
 		NullCheck(L_529);
 		bool L_532;
-		L_532 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_529, L_531);
+		L_532 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_529, L_531);
 		if (!L_532)
 		{
 			goto IL_1079;
@@ -18243,7 +18251,7 @@ IL_0c26:
 		L_595 = DataColumn_get_Namespace_mE644D180B8FC08C3DD3E852E9A27ECDA251CBE2A(L_594, NULL);
 		NullCheck(L_590);
 		RuntimeObject* L_596;
-		L_596 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_590, L_595);
+		L_596 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_590, L_595);
 		NullCheck(L_589);
 		StringBuilder_t* L_597;
 		L_597 = StringBuilder_Append_m3A7D629DAA5E0E36B8A617A911E34F79AF84AE63(L_589, L_596, NULL);
@@ -18298,7 +18306,7 @@ IL_0caa:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_618 = (L_615)->GetAt(static_cast<il2cpp_array_size_t>(L_617));
 		NullCheck(L_618);
 		int32_t L_619;
-		L_619 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_618);
+		L_619 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_618);
 		if ((((int32_t)L_619) == ((int32_t)2)))
 		{
 			goto IL_0cc4;
@@ -18312,7 +18320,7 @@ IL_0caa:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_623 = (L_620)->GetAt(static_cast<il2cpp_array_size_t>(L_622));
 		NullCheck(L_623);
 		int32_t L_624;
-		L_624 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_623);
+		L_624 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_623);
 		if ((!(((uint32_t)L_624) == ((uint32_t)4))))
 		{
 			goto IL_0ccf;
@@ -18742,7 +18750,7 @@ IL_0f77:
 		L_760 = DataColumn_get_Namespace_mE644D180B8FC08C3DD3E852E9A27ECDA251CBE2A(L_759, NULL);
 		NullCheck(L_755);
 		RuntimeObject* L_761;
-		L_761 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_755, L_760);
+		L_761 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_755, L_760);
 		NullCheck(L_754);
 		StringBuilder_t* L_762;
 		L_762 = StringBuilder_Append_m3A7D629DAA5E0E36B8A617A911E34F79AF84AE63(L_754, L_761, NULL);
@@ -18797,7 +18805,7 @@ IL_0ffb:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_783 = (L_780)->GetAt(static_cast<il2cpp_array_size_t>(L_782));
 		NullCheck(L_783);
 		int32_t L_784;
-		L_784 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_783);
+		L_784 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_783);
 		if ((((int32_t)L_784) == ((int32_t)2)))
 		{
 			goto IL_1015;
@@ -18811,7 +18819,7 @@ IL_0ffb:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_788 = (L_785)->GetAt(static_cast<il2cpp_array_size_t>(L_787));
 		NullCheck(L_788);
 		int32_t L_789;
-		L_789 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_788);
+		L_789 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_788);
 		if ((!(((uint32_t)L_789) == ((uint32_t)4))))
 		{
 			goto IL_1020;
@@ -18882,7 +18890,7 @@ IL_107f:
 		ConstraintCollection_tE6135623B0068FD56F0D15E13FFA1882D36BDD40* L_809 = V_9;
 		NullCheck(L_809);
 		int32_t L_810;
-		L_810 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_809);
+		L_810 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_809);
 		if ((((int32_t)L_808) < ((int32_t)L_810)))
 		{
 			goto IL_084b;
@@ -19094,7 +19102,7 @@ IL_002e:
 		L_7 = DataTableCollection_get_Item_mA833EDEEAE51765547DD6502A19B17CC07253636(L_5, L_6, NULL);
 		NullCheck(L_3);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_3, L_7);
+		L_8 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_3, L_7);
 		int32_t L_9 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
@@ -19108,7 +19116,7 @@ IL_004a:
 		L_12 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_11, NULL);
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_12);
 		if ((((int32_t)L_10) < ((int32_t)L_13)))
 		{
 			goto IL_002e;
@@ -19151,7 +19159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen__ctor_m132898CFDF8A70E502
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_4 = ___dt0;
 		NullCheck(L_3);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_3, L_4);
 		bool L_6 = ___writeHierarchy1;
 		if (!L_6)
 		{
@@ -19192,7 +19200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen_CreateTableHierarchy_m2A5
 		L_1 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -19242,7 +19250,7 @@ IL_000e_1:
 				L_10 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_9);
 				NullCheck(L_8);
 				bool L_11;
-				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
+				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
 				if (L_11)
 				{
 					goto IL_004b_1;
@@ -19256,7 +19264,7 @@ IL_000e_1:
 				L_14 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_13);
 				NullCheck(L_12);
 				int32_t L_15;
-				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
+				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_16 = V_1;
 				NullCheck(L_16);
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_17;
@@ -19319,13 +19327,13 @@ IL_0006:
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_3, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataRowCollection_t77048F68C7B973AFF280E6C540CE321E242FF738* L_4;
 		L_4 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_3, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_4);
 		V_0 = ((int32_t)il2cpp_codegen_add(L_0, L_5));
 		int32_t L_6 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
@@ -19337,7 +19345,7 @@ IL_0023:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_8 = ___tables0;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_8);
 		if ((((int32_t)L_7) < ((int32_t)L_9)))
 		{
 			goto IL_0006;
@@ -19360,7 +19368,7 @@ IL_003c:
 		int32_t L_13 = V_2;
 		NullCheck(L_12);
 		RuntimeObject* L_14;
-		L_14 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_12, L_13);
+		L_14 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_12, L_13);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_14, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataRowCollection_t77048F68C7B973AFF280E6C540CE321E242FF738* L_15;
 		L_15 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_14, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
@@ -19368,7 +19376,7 @@ IL_003c:
 		DataRowCollection_t77048F68C7B973AFF280E6C540CE321E242FF738* L_16 = V_3;
 		NullCheck(L_16);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_16);
+		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_16);
 		V_0 = L_17;
 		V_4 = 0;
 		goto IL_007a;
@@ -19386,7 +19394,7 @@ IL_005a:
 		int32_t L_23 = L_22;
 		RuntimeObject* L_24 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_23);
 		NullCheck(L_18);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_18, L_21, L_24);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_18, L_21, L_24);
 		int32_t L_25 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_25, 1));
 	}
@@ -19411,7 +19419,7 @@ IL_0083:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_30 = ___tables0;
 		NullCheck(L_30);
 		int32_t L_31;
-		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_30);
+		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_30);
 		if ((((int32_t)L_29) < ((int32_t)L_31)))
 		{
 			goto IL_003c;
@@ -19442,13 +19450,13 @@ IL_0004:
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_2, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataRowCollection_t77048F68C7B973AFF280E6C540CE321E242FF738* L_3;
 		L_3 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_2, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_3);
 		if ((((int32_t)L_4) <= ((int32_t)0)))
 		{
 			goto IL_0024;
@@ -19470,7 +19478,7 @@ IL_0028:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_7 = __this->____tables_7;
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_7);
 		if ((((int32_t)L_6) < ((int32_t)L_8)))
 		{
 			goto IL_0004;
@@ -19597,7 +19605,7 @@ IL_00ac:
 		L_23 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_22, NULL);
 		NullCheck(L_23);
 		int32_t L_24;
-		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_23);
+		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_23);
 		if ((((int32_t)L_21) < ((int32_t)L_24)))
 		{
 			goto IL_0091;
@@ -19619,7 +19627,7 @@ IL_00c5:
 		int32_t L_26 = V_1;
 		NullCheck(L_25);
 		RuntimeObject* L_27;
-		L_27 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_25, L_26);
+		L_27 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_25, L_26);
 		NewDiffgramGen_GenerateTable_m8F2B97D4B8025492F6DFA2B028D855898F39C6CC(__this, ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_27, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		int32_t L_28 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_28, 1));
@@ -19631,7 +19639,7 @@ IL_00e0:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_30 = __this->____tables_7;
 		NullCheck(L_30);
 		int32_t L_31;
-		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_30);
+		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_30);
 		if ((((int32_t)L_29) < ((int32_t)L_31)))
 		{
 			goto IL_00c5;
@@ -19689,7 +19697,7 @@ IL_0123:
 		L_42 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_41, NULL);
 		NullCheck(L_42);
 		int32_t L_43;
-		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_42);
+		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_42);
 		if ((((int32_t)L_40) < ((int32_t)L_43)))
 		{
 			goto IL_0108;
@@ -19711,7 +19719,7 @@ IL_013c:
 		int32_t L_45 = V_3;
 		NullCheck(L_44);
 		RuntimeObject* L_46;
-		L_46 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_44, L_45);
+		L_46 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_44, L_45);
 		NewDiffgramGen_GenerateTableErrors_mCD0D8E202C77D23152BB81CA4AF992CFB04F6987(__this, ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_46, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		int32_t L_47 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_47, 1));
@@ -19723,7 +19731,7 @@ IL_0157:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_49 = __this->____tables_7;
 		NullCheck(L_49);
 		int32_t L_50;
-		L_50 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_49);
+		L_50 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_49);
 		if ((((int32_t)L_48) < ((int32_t)L_50)))
 		{
 			goto IL_013c;
@@ -19767,7 +19775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen_GenerateTable_m8F2B97D4B8
 		L_1 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(L_0, NULL);
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) > ((int32_t)0)))
@@ -19848,7 +19856,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen_GenerateTableErrors_mCD0D
 		L_1 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(L_0, NULL);
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
 		V_0 = L_2;
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_3 = ___table0;
 		NullCheck(L_3);
@@ -19856,7 +19864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen_GenerateTableErrors_mCD0D
 		L_4 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_3, NULL);
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_4);
 		V_1 = L_5;
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) > ((int32_t)0)))
@@ -20301,7 +20309,7 @@ IL_0039:
 		L_9 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_8, NULL);
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_9);
+		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_9);
 		V_2 = L_10;
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_11 = V_1;
 		NullCheck(L_11);
@@ -20502,7 +20510,7 @@ IL_0181:
 		DataRow_t4C2743279B40E332809F4E6EE3443B75E4C38388* L_65 = ___row0;
 		NullCheck(L_64);
 		RuntimeObject* L_66;
-		L_66 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_64, L_65);
+		L_66 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_64, L_65);
 		NullCheck(L_66);
 		String_t* L_67;
 		L_67 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_66);
@@ -20527,7 +20535,7 @@ IL_01b1:
 		L_72 = DataColumnCollection_get_Item_m58D4D7CEAD439B889E72C42EE698D39CD98B22C5(L_70, L_71, NULL);
 		NullCheck(L_72);
 		int32_t L_73;
-		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_72);
+		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_72);
 		if ((((int32_t)L_73) == ((int32_t)2)))
 		{
 			goto IL_01e5;
@@ -20547,7 +20555,7 @@ IL_01b1:
 		L_78 = DataColumnCollection_get_Item_m58D4D7CEAD439B889E72C42EE698D39CD98B22C5(L_76, L_77, NULL);
 		NullCheck(L_78);
 		int32_t L_79;
-		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_78);
+		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_78);
 		if ((!(((uint32_t)L_79) == ((uint32_t)4))))
 		{
 			goto IL_0203;
@@ -20606,7 +20614,7 @@ IL_0213:
 		L_93 = DataColumnCollection_get_Item_m58D4D7CEAD439B889E72C42EE698D39CD98B22C5(L_91, L_92, NULL);
 		NullCheck(L_93);
 		int32_t L_94;
-		L_94 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_93);
+		L_94 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_93);
 		if ((((int32_t)L_94) == ((int32_t)1)))
 		{
 			goto IL_0247;
@@ -20626,7 +20634,7 @@ IL_0213:
 		L_99 = DataColumnCollection_get_Item_m58D4D7CEAD439B889E72C42EE698D39CD98B22C5(L_97, L_98, NULL);
 		NullCheck(L_99);
 		int32_t L_100;
-		L_100 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_99);
+		L_100 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_99);
 		if ((!(((uint32_t)L_100) == ((uint32_t)3))))
 		{
 			goto IL_0265;
@@ -20735,7 +20743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewDiffgramGen_GenerateColumn_m441934C35
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_5 = ___col1;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_5);
 		if ((!(((uint32_t)L_6) == ((uint32_t)3))))
 		{
 			goto IL_0036;
@@ -20787,7 +20795,7 @@ IL_0051:
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_14 = ___col1;
 		NullCheck(L_14);
 		int32_t L_15;
-		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_14);
+		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_14);
 		V_5 = L_15;
 		int32_t L_16 = V_5;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_16, 1)))
@@ -21358,7 +21366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlDataTreeWriter__ctor_m991590220D229A8
 		L_5 = DataSet_get_Tables_m8F063F3CDD2BB72B97034D0CE1838EFBFA15AC61_inline(L_4, NULL);
 		NullCheck(L_5);
 		RuntimeObject* L_6;
-		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
+		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
 		V_0 = L_6;
 	}
 	{
@@ -21405,7 +21413,7 @@ IL_0032_1:
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_13 = V_1;
 				NullCheck(L_12);
 				int32_t L_14;
-				L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
+				L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
 			}
 
 IL_004b_1:
@@ -21469,7 +21477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlDataTreeWriter__ctor_m63598470DE48443
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_5 = ___dt0;
 		NullCheck(L_4);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_4, L_5);
+		L_6 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_4, L_5);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_7 = (DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)SZArrayNew(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F_il2cpp_TypeInfo_var, (uint32_t)1);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_8 = L_7;
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_9 = ___dt0;
@@ -21493,7 +21501,7 @@ IL_0045:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_13 = ___dt0;
 		NullCheck(L_12);
 		int32_t L_14;
-		L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
+		L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
 		bool L_15 = ___writeHierarchy1;
 		if (!L_15)
 		{
@@ -21557,7 +21565,7 @@ IL_000d:
 		int32_t L_2 = V_2;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, L_2);
 		V_3 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_3, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var));
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_4 = V_3;
 		NullCheck(L_4);
@@ -21565,7 +21573,7 @@ IL_000d:
 		L_5 = DataTable_get_ParentRelations_m57FFCDEA0F8B8474FCEDA9B064A4875DE50498E9(L_4, NULL);
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_5);
 		if (L_6)
 		{
 			goto IL_0036;
@@ -21576,7 +21584,7 @@ IL_000d:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_8 = V_3;
 		NullCheck(L_7);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_7, L_8);
 		goto IL_0090;
 	}
 
@@ -21596,7 +21604,7 @@ IL_003e:
 		int32_t L_12 = V_5;
 		NullCheck(L_11);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_13;
-		L_13 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_11, L_12);
+		L_13 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_11, L_12);
 		NullCheck(L_13);
 		bool L_14;
 		L_14 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Data.DataRelation::get_Nested() */, L_13);
@@ -21613,7 +21621,7 @@ IL_003e:
 		int32_t L_17 = V_5;
 		NullCheck(L_16);
 		DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_18;
-		L_18 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(12 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_16, L_17);
+		L_18 = VirtualFuncInvoker1< DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656*, int32_t >::Invoke(13 /* System.Data.DataRelation System.Data.DataRelationCollection::get_Item(System.Int32) */, L_16, L_17);
 		NullCheck(L_18);
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_19;
 		L_19 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(8 /* System.Data.DataTable System.Data.DataRelation::get_ParentTable() */, L_18);
@@ -21648,7 +21656,7 @@ IL_0075:
 		L_24 = DataTable_get_ParentRelations_m57FFCDEA0F8B8474FCEDA9B064A4875DE50498E9(L_23, NULL);
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_24);
 		if ((((int32_t)L_22) < ((int32_t)L_25)))
 		{
 			goto IL_003e;
@@ -21668,7 +21676,7 @@ IL_0084:
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_28 = V_3;
 		NullCheck(L_27);
 		int32_t L_29;
-		L_29 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_27, L_28);
+		L_29 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_27, L_28);
 	}
 
 IL_0090:
@@ -21683,7 +21691,7 @@ IL_0094:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_32 = __this->____dTables_3;
 		NullCheck(L_32);
 		int32_t L_33;
-		L_33 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_32);
+		L_33 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_32);
 		if ((((int32_t)L_31) < ((int32_t)L_33)))
 		{
 			goto IL_000d;
@@ -21693,7 +21701,7 @@ IL_0094:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_34 = V_0;
 		NullCheck(L_34);
 		int32_t L_35;
-		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
+		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
 		if (L_35)
 		{
 			goto IL_00b3;
@@ -21710,13 +21718,13 @@ IL_00b3:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_37 = V_0;
 		NullCheck(L_37);
 		int32_t L_38;
-		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_37);
+		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_37);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_39 = (DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F*)SZArrayNew(DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F_il2cpp_TypeInfo_var, (uint32_t)L_38);
 		V_1 = L_39;
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_40 = V_0;
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_41 = V_1;
 		NullCheck(L_40);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_40, (RuntimeArray*)L_41, 0);
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::CopyTo(System.Array,System.Int32) */, L_40, (RuntimeArray*)L_41, 0);
 		DataTableU5BU5D_tB4D0AEDE8374D42D9240002365B2F4600A13637F* L_42 = V_1;
 		return L_42;
 	}
@@ -21742,7 +21750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlDataTreeWriter_CreateTablesHierarchy_
 		L_1 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_0, NULL);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_1);
 		V_0 = L_2;
 	}
 	{
@@ -21792,7 +21800,7 @@ IL_000e_1:
 				L_10 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_9);
 				NullCheck(L_8);
 				bool L_11;
-				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(31 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
+				L_11 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(33 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_8, L_10);
 				if (L_11)
 				{
 					goto IL_004b_1;
@@ -21806,7 +21814,7 @@ IL_000e_1:
 				L_14 = VirtualFuncInvoker0< DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, L_13);
 				NullCheck(L_12);
 				int32_t L_15;
-				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
+				L_15 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_14);
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_16 = V_1;
 				NullCheck(L_16);
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_17;
@@ -21857,7 +21865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlDataTreeWriter_RowHasErrors_m7D623E88
 		L_2 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_1, NULL);
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_2);
 		V_0 = L_3;
 		DataRow_t4C2743279B40E332809F4E6EE3443B75E4C38388* L_4 = ___row0;
 		NullCheck(L_4);
@@ -22169,7 +22177,7 @@ IL_00fd:
 		int32_t L_35 = V_1;
 		NullCheck(L_34);
 		RuntimeObject* L_36;
-		L_36 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_34, L_35);
+		L_36 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_34, L_35);
 		V_2 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_36, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var));
 		DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_37 = V_2;
 		NullCheck(L_37);
@@ -22177,7 +22185,7 @@ IL_00fd:
 		L_38 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(L_37, NULL);
 		NullCheck(L_38);
 		RuntimeObject* L_39;
-		L_39 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_38);
+		L_39 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_38);
 		V_3 = L_39;
 	}
 	{
@@ -22246,7 +22254,7 @@ IL_011d_1:
 				int32_t L_51 = V_1;
 				NullCheck(L_50);
 				RuntimeObject* L_52;
-				L_52 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_50, L_51);
+				L_52 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_50, L_51);
 				V_6 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_52, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var));
 				DataRow_t4C2743279B40E332809F4E6EE3443B75E4C38388* L_53 = V_4;
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_54 = V_6;
@@ -22342,7 +22350,7 @@ IL_01bb:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_72 = __this->____dTables_3;
 		NullCheck(L_72);
 		int32_t L_73;
-		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_72);
+		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_72);
 		if ((((int32_t)L_71) < ((int32_t)L_73)))
 		{
 			goto IL_00fd;
@@ -22507,7 +22515,7 @@ IL_0069:
 		L_23 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(L_22, NULL);
 		NullCheck(L_23);
 		int32_t L_24;
-		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_23);
+		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_23);
 		if ((!(((uint32_t)L_24) == ((uint32_t)1))))
 		{
 			goto IL_00a2;
@@ -22613,7 +22621,7 @@ IL_0136:
 		int32_t L_48 = V_3;
 		NullCheck(L_47);
 		RuntimeObject* L_49;
-		L_49 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_47, L_48);
+		L_49 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_47, L_48);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_49, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_50 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_49, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var))->____xmlText_31;
 		if (!L_50)
@@ -22640,7 +22648,7 @@ IL_0173:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_54 = __this->____dTables_3;
 		NullCheck(L_54);
 		int32_t L_55;
-		L_55 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_54);
+		L_55 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_54);
 		if ((((int32_t)L_53) < ((int32_t)L_55)))
 		{
 			goto IL_0136;
@@ -22697,13 +22705,13 @@ IL_01cb:
 		int32_t L_66 = V_4;
 		NullCheck(L_65);
 		RuntimeObject* L_67;
-		L_67 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_65, L_66);
+		L_67 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_65, L_66);
 		NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_67, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 		DataRowCollection_t77048F68C7B973AFF280E6C540CE321E242FF738* L_68;
 		L_68 = DataTable_get_Rows_m494EC146C4A26B22D334DE155CF3D68CE30CE718_inline(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_67, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
 		NullCheck(L_68);
 		RuntimeObject* L_69;
-		L_69 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_68);
+		L_69 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_68);
 		V_5 = L_69;
 	}
 	{
@@ -22773,7 +22781,7 @@ IL_01ee_1:
 				int32_t L_82 = V_4;
 				NullCheck(L_81);
 				RuntimeObject* L_83;
-				L_83 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_81, L_82);
+				L_83 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_81, L_82);
 				NullCheck(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_83, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)));
 				String_t* L_84;
 				L_84 = DataTable_get_EncodedTableName_m8E55AA884BCFCB75D1B46B3C6A0B293646C81788(((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_83, DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var)), NULL);
@@ -22794,7 +22802,7 @@ IL_0234_1:
 				int32_t L_87 = V_4;
 				NullCheck(L_86);
 				RuntimeObject* L_88;
-				L_88 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_86, L_87);
+				L_88 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(27 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_86, L_87);
 				V_8 = ((DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07*)CastclassClass((RuntimeObject*)L_88, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07_il2cpp_TypeInfo_var))));
 				DataTable_t9240A0D6726299C55832BF4EE085C864A1CCBB07* L_89 = V_8;
 				NullCheck(L_89);
@@ -22872,7 +22880,7 @@ IL_02a6:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_104 = __this->____dTables_3;
 		NullCheck(L_104);
 		int32_t L_105;
-		L_105 = VirtualFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_104);
+		L_105 = VirtualFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_104);
 		if ((((int32_t)L_103) < ((int32_t)L_105)))
 		{
 			goto IL_01cb;
@@ -22929,7 +22937,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782
 		L_3 = DataTable_get_ChildRelations_mA020ACE26F7C7F02D1BA5A2BB81A6F2AD5F2EEAA(L_2, NULL);
 		NullCheck(L_3);
 		RuntimeObject* L_4;
-		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_3);
+		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_3);
 		V_1 = L_4;
 	}
 	{
@@ -22986,7 +22994,7 @@ IL_0019_1:
 				DataRelation_tCB36A11AB39874353B080F3CD6432C4F9828C656* L_13 = V_2;
 				NullCheck(L_12);
 				int32_t L_14;
-				L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
+				L_14 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(29 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_12, L_13);
 			}
 
 IL_0035_1:
@@ -23166,7 +23174,7 @@ IL_0024:
 		DataRow_t4C2743279B40E332809F4E6EE3443B75E4C38388* L_25 = ___row0;
 		NullCheck(L_24);
 		RuntimeObject* L_26;
-		L_26 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_24, L_25);
+		L_26 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_24, L_25);
 		NullCheck(L_26);
 		String_t* L_27;
 		L_27 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_26);
@@ -23231,7 +23239,7 @@ IL_0128:
 		L_39 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_38, NULL);
 		NullCheck(L_39);
 		RuntimeObject* L_40;
-		L_40 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_39);
+		L_40 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_39);
 		V_3 = L_40;
 	}
 	{
@@ -23481,7 +23489,7 @@ IL_0253:
 		L_98 = DataTable_get_Columns_mF03D7E14E2C43C9B80521C00ABD8CBE7EA19772E_inline(L_97, NULL);
 		NullCheck(L_98);
 		RuntimeObject* L_99;
-		L_99 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(10 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_98);
+		L_99 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_98);
 		V_3 = L_99;
 	}
 	{
@@ -23603,7 +23611,7 @@ IL_02c6_1:
 				DataColumn_t07796C0DD83AD590E7C821E08FE04A38FE8B1A66* L_121 = V_7;
 				NullCheck(L_121);
 				int32_t L_122;
-				L_122 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_121);
+				L_122 = VirtualFuncInvoker0< int32_t >::Invoke(16 /* System.Data.MappingType System.Data.DataColumn::get_ColumnMapping() */, L_121);
 				if ((!(((uint32_t)L_122) == ((uint32_t)3))))
 				{
 					goto IL_02ef_1;
@@ -24092,7 +24100,7 @@ IL_05c8:
 		L_244 = XmlDataTreeWriter_GetNestedChildRelations_mC16A3C67A75342DE0E75B6182C0F792A5104AF46(__this, L_243, NULL);
 		NullCheck(L_244);
 		RuntimeObject* L_245;
-		L_245 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_244);
+		L_245 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(37 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_244);
 		V_3 = L_245;
 	}
 	{
