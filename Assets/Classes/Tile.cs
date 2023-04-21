@@ -1,7 +1,18 @@
+/*
+ * William Gonzalez
+ * AP CS50
+ * Cmdr. Schenk
+ * 5th Period
+ * Master Project (PortChess) - Tile POCO
+ * 27 April 2023
+ */
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Base class modeling a tile on the chess board
 public class Tile : MonoBehaviour
 {
 
@@ -9,23 +20,23 @@ public class Tile : MonoBehaviour
     public int x;
     public int y;
 
-    public GameObject OrbitPoint;
-    public float OrbitRadius;
-    public float OrbitSpeed;
-    public float CastRadius;
+    public GameObject OrbitPoint; // References Sphere prim in unity scene
+    public float OrbitRadius; // Radius of orbit
+    public float OrbitSpeed; // Orbit speed
+    public float CastRadius; // Margin of error
     public bool RandomPosAcquired;
     public LayerMask Avoid;
     private Vector3 RandomInSphere;
     public bool Orbiting;
 
-    // Start is called before the first frame update
+    // Constructor
     void Start()
     {
         RotSpeed = Random.Range(73f, 192f);
         StartOrbit();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame by Unity
     void Update()
     {
         if (Orbiting) {
@@ -33,6 +44,7 @@ public class Tile : MonoBehaviour
         }
     }
 
+    // Orbit animation
     void Orbit() {
         while (!RandomPosAcquired)
         {
@@ -56,10 +68,10 @@ public class Tile : MonoBehaviour
         }
     }
 
+    // Button Action Events
     public void StartOrbit() {
         Orbiting = true;
     }
-
     public void StopOrbit() {
         Orbiting = false;
     }

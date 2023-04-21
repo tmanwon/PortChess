@@ -1,39 +1,54 @@
+/*
+ * Tillman Won
+ * AP CS50
+ * Cmdr. Schenk
+ * 5th Period
+ * Master Project - Chess Game Controller Class
+ * 27 April 2023
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Oculus.Interaction;
-using Oculus.Platform;
-using Oculus.Platform.Models;
-using UnityEngine;
 using System.Data;
-using Mono.Data.Sqlite;
 using System.IO;
 using System.Xml.Linq;
+using Oculus.Interaction; // Meta Interaction SDK (Hand Tracking)
+using Oculus.Platform; // Meta Platform SDK (Avatars)
+using Oculus.Platform.Models; // Meta Platform SDK (User Profile)
+using Mono.Data.Sqlite; // SQLite
+                        // *We have special permission from you to use SQLite
+                        // because using MySQL would require PHP calls because
+                        // of Meta Quest's network permissions
 using TMPro;
+using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEngine.EventSystems.EventTrigger;
-using System;
 
+// Controller Class managing lifespan of chess game and analysis
+// Also the database controller class
 public class ChessGame : MonoBehaviour
 {
-    // FIELDS OF THE CLASS
-    public GameObject boardAnchor; // Board Anchor
-    public OVRHand hand;
-    public OVRSkeleton handSkeleton;
-    public bool isWhitesTurn;
-    public GameObject selectedPiece;
-    public float selectedPieceX;
-    public float selectedPieceY;
-    public GameObject analysisContent;
-    public GameObject gameCardPrefab;
-    private ArrayList matchHistory;
-    private int currentMove;
-    private int matchId;
-    private string username;
-    private ArrayList moves;
-    private int moveIndex;
-    private bool isInGame;
-    private bool isAnalyzing;
-    private bool gameOver = false;
+    // General fields
+    public GameObject boardAnchor; // Ref board prim in unity editor
+    public OVRHand hand; // Hand tracking object provided by Meta's SDK
+    public OVRSkeleton handSkeleton; // ^^^^^
+    public bool isWhitesTurn; // Tracks player turn
+    public GameObject selectedPiece; // Tracks currently selected piece
+    public float selectedPieceX; // Tracks X of currently selected piece
+    public float selectedPieceY; // Tracks Y of currently selected piece
+    public GameObject analysisContent; // Reference to the scroll view
+    public GameObject gameCardPrefab; // Class template for game card interface
+    private ArrayList matchHistory; // Stores matches loaded from DB
+    private int currentMove; // Tracks current move of game
+    private int matchId; // For generating a new match id in DB
+    private string username; // Username from current user's Meta Profile
+    private ArrayList moves; // Stores board array of each move
+    private int moveIndex; // PK for DB
+    private bool isInGame; // Is in a game?
+    private bool isAnalyzing; // Is analyzing a game?
+    private bool gameOver = false; // Is the game over? (Win/Loss)
+    private int matchAnalyzing;
     // SQLite
     private string databasePath;
     private SqliteConnection databaseConnection;
@@ -73,14 +88,15 @@ public class ChessGame : MonoBehaviour
     private ArrayList lightPawns;
     private ArrayList darkPawns;
 
-    private Dictionary<int, GameObject> boardStatus;
+    private Dictionary<int, GameObject> boardStatus; // Tracks pieces positions
 
-    float yVelocity = 0.0f;
+    float yVelocity = 0.0f; // Init velocity reference for SmoothDamp
 
     // CONSTRUCTOR
     void Start()
     {
         // Initialize ArrayList Trackers
+        matchAnalyzing = 0;
         lightPawns = new ArrayList();
         darkPawns = new ArrayList();
         isWhitesTurn = true;
@@ -89,7 +105,7 @@ public class ChessGame : MonoBehaviour
         boardStatus = new Dictionary<int, GameObject>();
         // Load SQLite DB File from device local storage
         var formattedFilePath = string.Format("{0}/{1}", UnityEngine.Application.persistentDataPath, "portchessdb.sqlite");
-        // If sqlite database hasn't been stored on local device yet...
+        // If SQLite database hasn't been stored on local device yet...
         if (!File.Exists(formattedFilePath))
         {
             Debug.Log("Master Project: DB not in Persistent Path");
@@ -123,7 +139,8 @@ public class ChessGame : MonoBehaviour
         }
     }
 
-    // HOST ONLY: Start match against connected opponent
+    // GAME - Start match against connected opponent
+    // NOTE to Will: *Multiplayer is cut because we have to submit a week early*
     public void StartGame()
     {
         gameOver = false;
@@ -141,6 +158,13 @@ public class ChessGame : MonoBehaviour
         }
     }
 
+    // ANALYSIS - Show user's match history
+    public void StartAnalysis()
+    {
+        LoadMatchHistory();
+    }
+
+    // GAME - Assign this game a match id
     public void CreateMatchID()
     {
         queryCommand = new SqliteCommand("INSERT INTO matches (user_id, opponent_id) VALUES (0, 0)", databaseConnection);
@@ -152,32 +176,15 @@ public class ChessGame : MonoBehaviour
         {
             // Add as element to ArrayList
             print(string.Format("Master Project - Found Match ID: {0}", cursor[0]));
-            matchId = (int)(Int64) cursor[0];
+            matchId = (int)(Int64)cursor[0];
         }
         print(string.Format("Master Project - New Match ID: {0}", matchId));
     }
 
-    // Host set up
-    public void HostGame()
-    {
-
-    }
-
-    // Client set up
-    public void JoinGame()
-    {
-
-    }
-
-    // Show user's match history
-    public void StartAnalysis()
-    {
-        LoadMatchHistory();
-    }
-
-    // Set up board for analyzing the selected game
+    // ANALYSIS - Set up board for analyzing the selected game
     public void AnalyzeSelectedGame(int selectedMatch)
     {
+        matchAnalyzing = selectedMatch;
         boardAnchor.GetComponent<ChessBoard>().EndOrbit();
         isAnalyzing = true;
         moves.Clear();
@@ -206,115 +213,165 @@ public class ChessGame : MonoBehaviour
         ReadSelectedMove(moveIndex);
     }
 
+    public void deleteSelectedGame()
+    {
+        BackButtonClicked();
+        queryCommand = new SqliteCommand(string.Format("DELETE FROM matches WHERE match_id = {0}", matchAnalyzing), databaseConnection);
+        queryCommand.ExecuteNonQuery();
+        foreach (Transform child in analysisContent.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        LoadMatchHistory();
+    }
+
     // Back Button Action
     public void BackButtonClicked()
     {
         gameOver = false;
-        boardAnchor.GetComponent<ChessBoard>().Orbit();
         DestroyPieces();
+        boardAnchor.GetComponent<ChessBoard>().Orbit();
         lightPawns.Clear();
         darkPawns.Clear();
         isInGame = false;
         isAnalyzing = false;
     }
 
-    // Update is called every frame
+    // Update is called every frame by Unity
     void Update()
     {
-        if (isInGame && gameOver)
-        {
-            float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
-            leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+            // GAME - Smooth Animations for enlarging/shrinking pieces based on game state
+            if (isInGame && gameOver)
+            {
+                float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
+                leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
 
-            leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            foreach (GameObject pawn in lightPawns)
-            {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            }
-            foreach (GameObject pawn in darkPawns)
-            {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            }
-        } else if (isWhitesTurn && isInGame)
-        {
-            
-            float chipScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
-            float stackScale = Mathf.SmoothDamp(leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
-            leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                foreach (GameObject pawn in lightPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                } catch
+                {
 
-            leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                }
+                }
+                foreach (GameObject pawn in darkPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                } catch
+                {
 
-            foreach (GameObject pawn in lightPawns)
-            {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                }
+                }
             }
-            foreach (GameObject pawn in darkPawns)
+            else if (isWhitesTurn && isInGame)
             {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            }
-        }
-        else if (!isWhitesTurn && isInGame)
-        {
-            float chipScale = Mathf.SmoothDamp(leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
-            float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
-            leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
-            QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
 
-            leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
-            QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                float chipScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
+                float stackScale = Mathf.SmoothDamp(leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
+                leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
 
-            foreach (GameObject pawn in lightPawns)
-            {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+
+                foreach (GameObject pawn in lightPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                } catch
+                {
+
+                }
+                }
+                foreach (GameObject pawn in darkPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                } catch
+                {
+
+                }
+                }
             }
-            foreach (GameObject pawn in darkPawns)
+            else if (!isWhitesTurn && isInGame)
             {
-                pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                float chipScale = Mathf.SmoothDamp(leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 0.1f, ref yVelocity, 0.01f);
+                float stackScale = Mathf.SmoothDamp(leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale.y, 1f, ref yVelocity, 0.01f);
+                leftRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightRookLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightBishopLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                leftKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                rightKnightLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                KingLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                QueenLight.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+
+                leftBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightBishopDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                leftKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightKnightDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                leftRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                rightRookDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                KingDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                QueenDark.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+
+                foreach (GameObject pawn in lightPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, stackScale, 1);
+                } catch
+                {
+
+                }
+                }
+                foreach (GameObject pawn in darkPawns)
+                {
+                try
+                {
+                    pawn.GetComponent<ChessPiece>().pieceToScale.transform.localScale = new Vector3(1, chipScale, 1);
+                } catch
+                {
+
+                }
+                }
             }
-        }
     }
 
-    // Load user's match history from database
+    // ANALYSIS: Load user's match history from database
     public void LoadMatchHistory()
     {
         print("Master Project - Loading Match History");
@@ -357,7 +414,7 @@ public class ChessGame : MonoBehaviour
         }
     }
 
-    // Instantiate Chess Pieces and Initialize Board Dictionary
+    // GAME: Instantiate Chess Pieces and Initialize Board Dictionary
     public void InstantiatePieces()
     {
         boardStatus.Clear();
@@ -491,6 +548,7 @@ public class ChessGame : MonoBehaviour
             lightPawns.Add(pawnLight);
         }
 
+        // Intialize board tracker with default piece positions
         boardStatus = new Dictionary<int, GameObject>
         {
             // A
@@ -569,7 +627,7 @@ public class ChessGame : MonoBehaviour
 
     }
 
-    // Destroy any instantiated Chess Piece objects
+    // GAME AND ANALYSIS: Destroy any instantiated Chess Piece objects
     public void DestroyPieces()
     {
         GameObject[] pieces;
@@ -580,7 +638,7 @@ public class ChessGame : MonoBehaviour
         }
     }
 
-    // Save move to database
+    // GAME - Save move to database
     public void SaveMove()
     {
         print(string.Format("Master Project - Saving Move {0}", currentMove));
@@ -607,7 +665,7 @@ public class ChessGame : MonoBehaviour
         print("Master Project - Moved Saved");
     }
 
-    // Read move from database
+    // ANALYSIS - Read move from database
     public void ReadSelectedMove(int selectedMove)
     {
         print(string.Format("Master Project - Reading Move {0}", selectedMove));
@@ -638,7 +696,7 @@ public class ChessGame : MonoBehaviour
         print("Master Project - Move Showed");
     }
 
-    // Show next move
+    // ANALYSIS - Show next move
     public void ReadNextMove()
     {
         if (moves.Count == (moveIndex + 1))
@@ -652,7 +710,7 @@ public class ChessGame : MonoBehaviour
         }
     }
 
-    // Show previous move
+    // ANALYSIS Show previous move
     public void ReadPreviousMove()
     {
         if ((moveIndex - 1) < 0)
@@ -666,82 +724,124 @@ public class ChessGame : MonoBehaviour
         }
     }
 
-    // Enable chess pieces based on who's turn it is
+    // GAME - Enable chess pieces based on who's turn it is
     public void EnablePieces()
     {
-        if (isWhitesTurn)
+        try
         {
-            leftRookLight.GetComponent<PokeInteractable>().Enable();
-            rightRookLight.GetComponent<PokeInteractable>().Enable();
-            leftBishopLight.GetComponent<PokeInteractable>().Enable();
-            rightBishopLight.GetComponent<PokeInteractable>().Enable();
-            leftKnightLight.GetComponent<PokeInteractable>().Enable();
-            rightKnightLight.GetComponent<PokeInteractable>().Enable();
-            KingLight.GetComponent<PokeInteractable>().Enable();
-            QueenLight.GetComponent<PokeInteractable>().Enable();
-
-            foreach (GameObject pawn in lightPawns)
+            if (isWhitesTurn)
             {
-                pawn.GetComponent<PokeInteractable>().Enable();
-            }
+                leftRookLight.GetComponent<PokeInteractable>().Enable();
+                rightRookLight.GetComponent<PokeInteractable>().Enable();
+                leftBishopLight.GetComponent<PokeInteractable>().Enable();
+                rightBishopLight.GetComponent<PokeInteractable>().Enable();
+                leftKnightLight.GetComponent<PokeInteractable>().Enable();
+                rightKnightLight.GetComponent<PokeInteractable>().Enable();
+                KingLight.GetComponent<PokeInteractable>().Enable();
+                QueenLight.GetComponent<PokeInteractable>().Enable();
 
-        } else
+                foreach (GameObject pawn in lightPawns)
+                {
+                    try
+                    {
+                        pawn.GetComponent<PokeInteractable>().Enable();
+                    } catch
+                    {
+
+                    }
+                    
+                }
+
+            }
+            else
+            {
+                leftBishopDark.GetComponent<PokeInteractable>().Enable();
+                rightBishopDark.GetComponent<PokeInteractable>().Enable();
+                leftKnightDark.GetComponent<PokeInteractable>().Enable();
+                rightKnightDark.GetComponent<PokeInteractable>().Enable();
+                leftRookDark.GetComponent<PokeInteractable>().Enable();
+                rightRookDark.GetComponent<PokeInteractable>().Enable();
+                KingDark.GetComponent<PokeInteractable>().Enable();
+                QueenDark.GetComponent<PokeInteractable>().Enable();
+
+                foreach (GameObject pawn in darkPawns)
+                {
+                    try
+                    {
+                        pawn.GetComponent<PokeInteractable>().Enable();
+                    } catch
+                    {
+
+                    }
+                    
+                }
+            }
+        } catch
         {
-            leftBishopDark.GetComponent<PokeInteractable>().Enable();
-            rightBishopDark.GetComponent<PokeInteractable>().Enable();
-            leftKnightDark.GetComponent<PokeInteractable>().Enable();
-            rightKnightDark.GetComponent<PokeInteractable>().Enable();
-            leftRookDark.GetComponent<PokeInteractable>().Enable();
-            rightRookDark.GetComponent<PokeInteractable>().Enable();
-            KingDark.GetComponent<PokeInteractable>().Enable();
-            QueenDark.GetComponent<PokeInteractable>().Enable();
 
-            foreach (GameObject pawn in darkPawns)
-            {
-                pawn.GetComponent<PokeInteractable>().Enable();
-            }
         }
     }
 
-    // Disable pieces based on who's turn it is
+    // GAME - Disable pieces based on who's turn it is
     public void DisablePieces()
     {
-        if (isWhitesTurn)
+        try
         {
-            leftBishopDark.GetComponent<PokeInteractable>().Disable();
-            rightBishopDark.GetComponent<PokeInteractable>().Disable();
-            leftKnightDark.GetComponent<PokeInteractable>().Disable();
-            rightKnightDark.GetComponent<PokeInteractable>().Disable();
-            leftRookDark.GetComponent<PokeInteractable>().Disable();
-            rightRookDark.GetComponent<PokeInteractable>().Disable();
-            KingDark.GetComponent<PokeInteractable>().Disable();
-            QueenDark.GetComponent<PokeInteractable>().Disable();
-
-            foreach (GameObject pawn in darkPawns)
+            if (isWhitesTurn)
             {
-                pawn.GetComponent<PokeInteractable>().Disable();
+                leftBishopDark.GetComponent<PokeInteractable>().Disable();
+                rightBishopDark.GetComponent<PokeInteractable>().Disable();
+                leftKnightDark.GetComponent<PokeInteractable>().Disable();
+                rightKnightDark.GetComponent<PokeInteractable>().Disable();
+                leftRookDark.GetComponent<PokeInteractable>().Disable();
+                rightRookDark.GetComponent<PokeInteractable>().Disable();
+                KingDark.GetComponent<PokeInteractable>().Disable();
+                QueenDark.GetComponent<PokeInteractable>().Disable();
+
+                foreach (GameObject pawn in darkPawns)
+                {
+                    try
+                    {
+                        pawn.GetComponent<PokeInteractable>().Disable();
+                    } catch
+                    {
+
+                    }
+                    
+                }
             }
-        } else
+            else
+            {
+                leftRookLight.GetComponent<PokeInteractable>().Disable();
+                rightRookLight.GetComponent<PokeInteractable>().Disable();
+                leftBishopLight.GetComponent<PokeInteractable>().Disable();
+                rightBishopLight.GetComponent<PokeInteractable>().Disable();
+                leftKnightLight.GetComponent<PokeInteractable>().Disable();
+                rightKnightLight.GetComponent<PokeInteractable>().Disable();
+                KingLight.GetComponent<PokeInteractable>().Disable();
+                QueenLight.GetComponent<PokeInteractable>().Disable();
+
+                foreach (GameObject pawn in lightPawns)
+                {
+                    try
+                    {
+                        pawn.GetComponent<PokeInteractable>().Disable();
+                    } catch
+                    {
+
+                    }
+                    
+                }
+
+
+            }
+        } catch
         {
-            leftRookLight.GetComponent<PokeInteractable>().Disable();
-            rightRookLight.GetComponent<PokeInteractable>().Disable();
-            leftBishopLight.GetComponent<PokeInteractable>().Disable();
-            rightBishopLight.GetComponent<PokeInteractable>().Disable();
-            leftKnightLight.GetComponent<PokeInteractable>().Disable();
-            rightKnightLight.GetComponent<PokeInteractable>().Disable();
-            KingLight.GetComponent<PokeInteractable>().Disable();
-            QueenLight.GetComponent<PokeInteractable>().Disable();
-
-            foreach (GameObject pawn in lightPawns)
-            {
-                pawn.GetComponent<PokeInteractable>().Disable();
-            }
-
 
         }
     }
 
-    // Determine legality of move and handle them
+    // CHESS LOGIC: Determine legality of move and handle them
     public void OnMove(float targetX, float targetY)
     {
         // First ensure the selected piece can make the requested move
@@ -763,7 +863,8 @@ public class ChessGame : MonoBehaviour
             // If space is of other color... capture it
             else if (boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))].GetComponent<ChessPiece>() != null && boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))].GetComponent<ChessPiece>().colorType != boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))].GetComponent<ChessPiece>().colorType)
             {
-                Destroy(boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))]);
+                //Destroy(boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))]);
+                boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))].transform.Translate(1000, 1000, 2);
                 boardStatus[(100 + (Mathf.RoundToInt(targetX) * 10) + Mathf.RoundToInt(targetY))] = boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))];
                 boardStatus[(100 + (Mathf.RoundToInt(selectedPieceX) * 10) + Mathf.RoundToInt(selectedPieceY))] = boardAnchor;
                 selectedPiece.GetComponent<ChessPiece>().moves++;
@@ -795,7 +896,7 @@ public class ChessGame : MonoBehaviour
 
     }
 
-    // Check if king is in checkmate
+    // CHESS LOGIC - Check if king is in checkmate
     bool inCheckmate()
     {
         foreach (GameObject piece in boardStatus.Values)
@@ -854,7 +955,7 @@ public class ChessGame : MonoBehaviour
         return false;
     }
 
-    // End game if a player wins
+    // CHESS LOGIC - End game if a player wins
     public void EndGame()
     {
         // Disable all pieces
@@ -888,7 +989,7 @@ public class ChessGame : MonoBehaviour
         gameOver = true;
     }
 
-    // Validate moves based on piece type
+    // CHESS LOGIC - Validate moves based on piece type
     public bool ValidateMove(GameObject pieceToMove, int targetX, int targetY, int selectedX, int selectedY)
     {
         int deltaX = targetX - selectedX;

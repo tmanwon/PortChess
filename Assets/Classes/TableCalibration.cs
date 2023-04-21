@@ -1,8 +1,18 @@
+/*
+ * Tillman Won
+ * AP CS50
+ * Cmdr. Schenk
+ * 5th Period
+ * Master Project - Table Calibration Class
+ * 27 April 2023
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+// Controller class managing the height level of the desk and calibration
 public class TableCalibration : MonoBehaviour
 {
     [SerializeField]
@@ -17,22 +27,26 @@ public class TableCalibration : MonoBehaviour
     private OVRSkeleton handSkeleton;
     private bool isLeveling;
 
-    // Start is called before the first frame update (ie. Constructor)
+    // Constructor
     void Awake()
     {
+        // If hand/handSkeleton objects are null, instantiate them
         if (!hand) hand = GetComponent<OVRHand>();
         if (!handSkeleton) handSkeleton = GetComponent<OVRSkeleton>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame by Unity
     void Update()
     {
+        // If user is pressing the calibration button
         if (isLeveling)
         {
+            // For each bone in Oculus Skeleton Rig...
             foreach (var bone in handSkeleton.Bones)
             {
                 if (bone.Id == OVRSkeleton.BoneId.Hand_IndexTip)
                 {
+                    // Move desk height to right hand index finger
                     float fingerZ= bone.Transform.position.y;
                     desk.transform.localPosition = new Vector3(desk.transform.localPosition.x, fingerZ, desk.transform.localPosition.z);
                     desk.transform.Translate(new Vector3(0, -0.765f, 0));
@@ -42,10 +56,12 @@ public class TableCalibration : MonoBehaviour
         }
     }
 
+    // Button action event for when user is touching calibration button
     public void TableLeveler() {
         isLeveling = true;
     }
 
+    // Button action event for when user releases calibration button
     public void SetLevel() {
         isLeveling = false;
     }

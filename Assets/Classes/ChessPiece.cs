@@ -1,27 +1,34 @@
+/*
+ * Tillman Won
+ * AP CS50
+ * Cmdr. Schenk
+ * 5th Period
+ * Master Project - Chess Piece Controller Class
+ * 27 April 2023
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Controller class managing lifespan of chess piece
 public class ChessPiece : MonoBehaviour
 {
-    public string id;
-    public PieceType pieceType;
-    public ColorType colorType;
-    public int x;
-    public int y;
+    public string id; // ID of chess piece
+    public PieceType pieceType; // Color of chess piece
+    public ColorType colorType; // Type of chess piece
+    public int x; // X Position on board
+    public int y; // Y Position on board
     public OVRHand hand;
     public OVRSkeleton handSkeleton;
-    public GameObject pieceToScale;
-    private bool isSelected;
-    private bool isHovering;
-    private float initialPosition;
-    public int moves;
+    public GameObject pieceToScale; // Reference to chess piece's mesh in scene
+    private bool isSelected; // Is poked
+    public int moves; // Moves piece has made
 
-    // Start is called before the first frame update
+    // Constructor
     void Start()
     {
         isSelected = false;
-        isHovering = false;
         moves = 0;
         hand = hand.GetComponent<OVRHand>();
         handSkeleton = handSkeleton.GetComponent<OVRSkeleton>();
@@ -29,23 +36,10 @@ public class ChessPiece : MonoBehaviour
         if (!handSkeleton) handSkeleton = GetComponent<OVRSkeleton>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame by Unity
     void Update()
     {
-        if (isHovering)
-        {
-            foreach (var bone in handSkeleton.Bones)
-            {
-                if (bone.Id == OVRSkeleton.BoneId.Hand_IndexTip)
-                {
-                    float fingerY = bone.Transform.position.y;
-                    float yTravel = Mathf.Abs(initialPosition - fingerY);
-                    float scaleFactor = ((-0.9f / 0.047f) * yTravel) + 1;
-                    pieceToScale.transform.localScale = new Vector3(1, scaleFactor, 1);
-                }
-            }
-        }
-
+        // Chess piece is selected by user, move chess piece to user's index finger
         if (isSelected)
         {
             foreach (var bone in handSkeleton.Bones)
@@ -59,6 +53,7 @@ public class ChessPiece : MonoBehaviour
         }
     }
 
+    // Find Closest Tile object to Chess Piece
     public GameObject FindClosestTile()
     {
         GameObject[] tiles;
@@ -78,9 +73,11 @@ public class ChessPiece : MonoBehaviour
         return nearestTile;
     }
 
+    // Action event when user selects a piece
     public void Selected()
     {
         GameObject boardAnchor = GameObject.FindGameObjectWithTag("Anchor");
+        // Tell chess game that this piece is selected
         if (boardAnchor.GetComponent<ChessGame>().selectedPiece == null)
         {
             boardAnchor.GetComponent<ChessGame>().selectedPiece = this.gameObject;
@@ -93,6 +90,7 @@ public class ChessPiece : MonoBehaviour
         
     }
 
+    // Action event when user unselects piece
     public void Unselected()
     {
         isSelected = false;
@@ -106,26 +104,19 @@ public class ChessPiece : MonoBehaviour
 
     }
 
+    // Button action event when user hovers over piece
     public void OnHover()
     {
-        //isHovering = true;
         HighlightPossibleMoves();
-        /*
-        foreach (var bone in handSkeleton.Bones)
-        {
-            if (bone.Id == OVRSkeleton.BoneId.Hand_IndexTip)
-            {
-                initialPosition = bone.Transform.position.y;
-            }
-        }
-        */
     }
 
+    // Button action event when user stops hovering over piece
     public void OnHoverExit()
     {
         deHighlight();
     }
 
+    // Highlight possible places for piece to move if being hovered
     public void HighlightPossibleMoves()
     {
         GameObject[] tiles;
@@ -145,6 +136,7 @@ public class ChessPiece : MonoBehaviour
         }
     }
 
+    // Unhighlight all places on board
     public void deHighlight()
     {
         GameObject[] tiles;

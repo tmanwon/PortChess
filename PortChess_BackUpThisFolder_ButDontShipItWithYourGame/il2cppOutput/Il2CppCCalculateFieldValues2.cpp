@@ -29095,24 +29095,8 @@ struct ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___LightTilePrefab_6;
 	// UnityEngine.GameObject[,] ChessBoard::tiles
 	GameObjectU5BU2CU5D_t6EEFFC1B5ACC6E21D9743DEBC8F57BF8A4ACA11E* ___tiles_7;
-	// System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> ChessBoard::BoardDictionary
-	Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* ___BoardDictionary_8;
-	// UnityEngine.GameObject ChessBoard::OrbitPoint
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___OrbitPoint_9;
-	// System.Single ChessBoard::OrbitRadius
-	float ___OrbitRadius_10;
-	// System.Single ChessBoard::OrbitSpeed
-	float ___OrbitSpeed_11;
-	// System.Single ChessBoard::CastRadius
-	float ___CastRadius_12;
-	// System.Boolean ChessBoard::RandomPosAcquired
-	bool ___RandomPosAcquired_13;
-	// UnityEngine.LayerMask ChessBoard::Avoid
-	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___Avoid_14;
-	// UnityEngine.Vector3 ChessBoard::RandomInSphere
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___RandomInSphere_15;
 	// System.Boolean ChessBoard::Orbiting
-	bool ___Orbiting_16;
+	bool ___Orbiting_8;
 };
 
 // ChessGame
@@ -29154,78 +29138,80 @@ struct ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E  : public MonoBehavio
 	bool ___isAnalyzing_20;
 	// System.Boolean ChessGame::gameOver
 	bool ___gameOver_21;
+	// System.Int32 ChessGame::matchAnalyzing
+	int32_t ___matchAnalyzing_22;
 	// System.String ChessGame::databasePath
-	String_t* ___databasePath_22;
+	String_t* ___databasePath_23;
 	// Mono.Data.Sqlite.SqliteConnection ChessGame::databaseConnection
-	SqliteConnection_t75D476DE59F24FF675BFA632CE9DFE9CFFF9AA64* ___databaseConnection_23;
+	SqliteConnection_t75D476DE59F24FF675BFA632CE9DFE9CFFF9AA64* ___databaseConnection_24;
 	// Mono.Data.Sqlite.SqliteCommand ChessGame::queryCommand
-	SqliteCommand_tAE9A9E685124498658C9D390D138F71537964E25* ___queryCommand_24;
+	SqliteCommand_tAE9A9E685124498658C9D390D138F71537964E25* ___queryCommand_25;
 	// Mono.Data.Sqlite.SqliteDataReader ChessGame::cursor
-	SqliteDataReader_t441A323A8F3C9CDFC5146D80C320322C48BA7835* ___cursor_25;
+	SqliteDataReader_t441A323A8F3C9CDFC5146D80C320322C48BA7835* ___cursor_26;
 	// UnityEngine.GameObject ChessGame::bishopDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bishopDarkPrefab_26;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bishopDarkPrefab_27;
 	// UnityEngine.GameObject ChessGame::bishopLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bishopLightPrefab_27;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bishopLightPrefab_28;
 	// UnityEngine.GameObject ChessGame::pawnDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pawnDarkPrefab_28;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pawnDarkPrefab_29;
 	// UnityEngine.GameObject ChessGame::pawnLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pawnLightPrefab_29;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pawnLightPrefab_30;
 	// UnityEngine.GameObject ChessGame::knightDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___knightDarkPrefab_30;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___knightDarkPrefab_31;
 	// UnityEngine.GameObject ChessGame::knightLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___knightLightPrefab_31;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___knightLightPrefab_32;
 	// UnityEngine.GameObject ChessGame::rookDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rookDarkPrefab_32;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rookDarkPrefab_33;
 	// UnityEngine.GameObject ChessGame::rookLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rookLightPrefab_33;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rookLightPrefab_34;
 	// UnityEngine.GameObject ChessGame::kingDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kingDarkPrefab_34;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kingDarkPrefab_35;
 	// UnityEngine.GameObject ChessGame::kingLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kingLightPrefab_35;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kingLightPrefab_36;
 	// UnityEngine.GameObject ChessGame::queenDarkPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___queenDarkPrefab_36;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___queenDarkPrefab_37;
 	// UnityEngine.GameObject ChessGame::queenLightPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___queenLightPrefab_37;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___queenLightPrefab_38;
 	// UnityEngine.GameObject ChessGame::leftBishopDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftBishopDark_38;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftBishopDark_39;
 	// UnityEngine.GameObject ChessGame::rightBishopDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightBishopDark_39;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightBishopDark_40;
 	// UnityEngine.GameObject ChessGame::leftKnightDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftKnightDark_40;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftKnightDark_41;
 	// UnityEngine.GameObject ChessGame::rightKnightDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightKnightDark_41;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightKnightDark_42;
 	// UnityEngine.GameObject ChessGame::leftRookDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftRookDark_42;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftRookDark_43;
 	// UnityEngine.GameObject ChessGame::rightRookDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightRookDark_43;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightRookDark_44;
 	// UnityEngine.GameObject ChessGame::leftBishopLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftBishopLight_44;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftBishopLight_45;
 	// UnityEngine.GameObject ChessGame::rightBishopLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightBishopLight_45;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightBishopLight_46;
 	// UnityEngine.GameObject ChessGame::leftKnightLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftKnightLight_46;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftKnightLight_47;
 	// UnityEngine.GameObject ChessGame::rightKnightLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightKnightLight_47;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightKnightLight_48;
 	// UnityEngine.GameObject ChessGame::leftRookLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftRookLight_48;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftRookLight_49;
 	// UnityEngine.GameObject ChessGame::rightRookLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightRookLight_49;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightRookLight_50;
 	// UnityEngine.GameObject ChessGame::KingDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___KingDark_50;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___KingDark_51;
 	// UnityEngine.GameObject ChessGame::KingLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___KingLight_51;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___KingLight_52;
 	// UnityEngine.GameObject ChessGame::QueenDark
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QueenDark_52;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QueenDark_53;
 	// UnityEngine.GameObject ChessGame::QueenLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QueenLight_53;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___QueenLight_54;
 	// System.Collections.ArrayList ChessGame::lightPawns
-	ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* ___lightPawns_54;
+	ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* ___lightPawns_55;
 	// System.Collections.ArrayList ChessGame::darkPawns
-	ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* ___darkPawns_55;
+	ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* ___darkPawns_56;
 	// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.GameObject> ChessGame::boardStatus
-	Dictionary_2_t3ED995699F3E88D06E5DA7362BEB7584DBD61662* ___boardStatus_56;
+	Dictionary_2_t3ED995699F3E88D06E5DA7362BEB7584DBD61662* ___boardStatus_57;
 	// System.Single ChessGame::yVelocity
-	float ___yVelocity_57;
+	float ___yVelocity_58;
 };
 
 // ChessPiece
@@ -29249,12 +29235,8 @@ struct ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pieceToScale_11;
 	// System.Boolean ChessPiece::isSelected
 	bool ___isSelected_12;
-	// System.Boolean ChessPiece::isHovering
-	bool ___isHovering_13;
-	// System.Single ChessPiece::initialPosition
-	float ___initialPosition_14;
 	// System.Int32 ChessPiece::moves
-	int32_t ___moves_15;
+	int32_t ___moves_13;
 };
 
 // Photon.Realtime.Demo.ConnectAndJoinRandomLb
@@ -40927,15 +40909,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7706[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7707[4] = 
 {
 	static_cast<int32_t>(offsetof(AvatarHandTrackerDelegate_tB0F2F593C0BD7BB4CED7FC8B84BA24D4A45DD952, ____inputManager_4)),static_cast<int32_t>(offsetof(AvatarHandTrackerDelegate_tB0F2F593C0BD7BB4CED7FC8B84BA24D4A45DD952, ___leftHand_5)),static_cast<int32_t>(offsetof(AvatarHandTrackerDelegate_tB0F2F593C0BD7BB4CED7FC8B84BA24D4A45DD952, ___rightHand_6)),static_cast<int32_t>(offsetof(AvatarHandTrackerDelegate_tB0F2F593C0BD7BB4CED7FC8B84BA24D4A45DD952, ___mappedBoneRotations_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7708[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7708[5] = 
 {
-	static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___parent_4)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___DarkTilePrefab_5)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___LightTilePrefab_6)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___tiles_7)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___BoardDictionary_8)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___OrbitPoint_9)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___OrbitRadius_10)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___OrbitSpeed_11)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___CastRadius_12)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___RandomPosAcquired_13)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___Avoid_14)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___RandomInSphere_15)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___Orbiting_16)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7709[54] = 
+	static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___parent_4)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___DarkTilePrefab_5)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___LightTilePrefab_6)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___tiles_7)),static_cast<int32_t>(offsetof(ChessBoard_tD9A056B6EEFCBDF23624211CD89BBDC70FF51191, ___Orbiting_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7709[55] = 
 {
-	static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___boardAnchor_4)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___hand_5)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___handSkeleton_6)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isWhitesTurn_7)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPiece_8)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPieceX_9)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPieceY_10)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___analysisContent_11)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___gameCardPrefab_12)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___matchHistory_13)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___currentMove_14)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___matchId_15)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___username_16)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___moves_17)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___moveIndex_18)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isInGame_19)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isAnalyzing_20)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___gameOver_21)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___databasePath_22)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___databaseConnection_23)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queryCommand_24)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___cursor_25)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___bishopDarkPrefab_26)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___bishopLightPrefab_27)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___pawnDarkPrefab_28)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___pawnLightPrefab_29)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___knightDarkPrefab_30)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___knightLightPrefab_31)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rookDarkPrefab_32)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rookLightPrefab_33)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___kingDarkPrefab_34)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___kingLightPrefab_35)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queenDarkPrefab_36)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queenLightPrefab_37)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftBishopDark_38)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightBishopDark_39)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftKnightDark_40)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightKnightDark_41)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftRookDark_42)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightRookDark_43)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftBishopLight_44)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightBishopLight_45)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftKnightLight_46)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightKnightLight_47)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftRookLight_48)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightRookLight_49)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___KingDark_50)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___KingLight_51)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___QueenDark_52)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___QueenLight_53)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___lightPawns_54)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___darkPawns_55)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___boardStatus_56)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___yVelocity_57)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7710[12] = 
+	static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___boardAnchor_4)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___hand_5)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___handSkeleton_6)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isWhitesTurn_7)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPiece_8)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPieceX_9)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___selectedPieceY_10)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___analysisContent_11)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___gameCardPrefab_12)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___matchHistory_13)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___currentMove_14)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___matchId_15)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___username_16)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___moves_17)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___moveIndex_18)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isInGame_19)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___isAnalyzing_20)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___gameOver_21)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___matchAnalyzing_22)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___databasePath_23)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___databaseConnection_24)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queryCommand_25)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___cursor_26)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___bishopDarkPrefab_27)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___bishopLightPrefab_28)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___pawnDarkPrefab_29)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___pawnLightPrefab_30)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___knightDarkPrefab_31)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___knightLightPrefab_32)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rookDarkPrefab_33)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rookLightPrefab_34)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___kingDarkPrefab_35)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___kingLightPrefab_36)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queenDarkPrefab_37)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___queenLightPrefab_38)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftBishopDark_39)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightBishopDark_40)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftKnightDark_41)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightKnightDark_42)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftRookDark_43)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightRookDark_44)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftBishopLight_45)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightBishopLight_46)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftKnightLight_47)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightKnightLight_48)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___leftRookLight_49)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___rightRookLight_50)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___KingDark_51)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___KingLight_52)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___QueenDark_53)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___QueenLight_54)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___lightPawns_55)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___darkPawns_56)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___boardStatus_57)),static_cast<int32_t>(offsetof(ChessGame_tF68CA6B1770CE88F9596C0A7EE2ED182EF447E8E, ___yVelocity_58)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7710[10] = 
 {
-	static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___id_4)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___pieceType_5)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___colorType_6)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___x_7)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___y_8)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___hand_9)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___handSkeleton_10)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___pieceToScale_11)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___isSelected_12)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___isHovering_13)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___initialPosition_14)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___moves_15)),};
+	static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___id_4)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___pieceType_5)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___colorType_6)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___x_7)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___y_8)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___hand_9)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___handSkeleton_10)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___pieceToScale_11)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___isSelected_12)),static_cast<int32_t>(offsetof(ChessPiece_t717865F6E8A3CB55C5E51815491A8E34B7668357, ___moves_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7711[3] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};

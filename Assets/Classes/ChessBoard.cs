@@ -1,41 +1,39 @@
+/*
+ * Tillman Won
+ * AP CS50
+ * Cmdr. Schenk
+ * 5th Period
+ * Master Project - Chess Board Controller Class
+ * 27 April 2023
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+// Controller class managing the life cycle of the chess board
 public class ChessBoard : MonoBehaviour
 {
     // Fields of the class
     [SerializeField]
-    private GameObject parent;
+    private GameObject parent; // Board anchor primative in unity editor
     [SerializeField]
-    private GameObject DarkTilePrefab;
+    private GameObject DarkTilePrefab; // Predefined Dark tile material
     [SerializeField]
-    private GameObject LightTilePrefab;
-    public GameObject[,] tiles;
-    public Dictionary<string, GameObject> BoardDictionary;
-    [SerializeField]
-    public GameObject OrbitPoint;
-    public float OrbitRadius;
-    public float OrbitSpeed;
-    public float CastRadius;
-    public bool RandomPosAcquired;
-    public LayerMask Avoid;
-    private Vector3 RandomInSphere;
+    private GameObject LightTilePrefab; // Predefined Light tile material
+    public GameObject[,] tiles; // 2D Array tracking each Tile object
     public bool Orbiting;
 
 
-    // Start is called before the first frame update (ie. Contructor)
+    // Constructor
     void Start()
     {
         Orbiting = true;
         GenerateAllTiles(1, 8, 8);
-        //EndOrbit();
-        //parent.GetComponent<ChessGame>().StartGame();
-
     }
 
-    // Update is called once per frame
+    // Update is called once per frame by Unity
     void Update()
     {
         // Stop orbit if game started
